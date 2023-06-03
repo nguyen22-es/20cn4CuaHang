@@ -1,7 +1,13 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\CuaHangCongNghe",
+    "\\CuaHangCongNghe\\Controllers",
+    "\\CuaHangCongNghe\\Views",
+    "\\CuaHangCongNghe\\Views\\Home",
+    "\\CuaHangCongNghe\\Views\\Shared",
+    "\\CuaHangCongNghe\\wwwroot"
   ],
-  "SelectedNode": "\\C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang",
+  "SelectedNode": "\\CuaHangCongNghe\\wwwroot\\css (2)",
   "PreviewInSolutionExplorer": false
 }

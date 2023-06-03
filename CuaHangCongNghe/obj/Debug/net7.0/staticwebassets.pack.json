@@ -1,555 +1,735 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\CuaHangCongNghe.bundle.scp.css",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\CuaHangCongNghe.bundle.scp.css",
       "PackagePath": "staticwebassets\\CuaHangCongNghe.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\computers.html",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\computers.html",
       "PackagePath": "staticwebassets\\computers.html"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\contact.html",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\contact.html",
       "PackagePath": "staticwebassets\\contact.html"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\.DS_Store",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\.DS_Store",
       "PackagePath": "staticwebassets\\css (2)\\.DS_Store"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\animate.min.css",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\animate.min.css",
       "PackagePath": "staticwebassets\\css (2)\\animate.min.css"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\bootstrap-grid.css",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\css (2)\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\css (2)\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\css (2)\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\css (2)\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\css (2)\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\css (2)\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\css (2)\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\css (2)\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\bootstrap.css",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\bootstrap.css",
       "PackagePath": "staticwebassets\\css (2)\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\bootstrap.css.map",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\css (2)\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\bootstrap.min.css",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css (2)\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\css (2)\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\default-skin.css",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\default-skin.css",
       "PackagePath": "staticwebassets\\css (2)\\default-skin.css"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\font-awesome.min.css",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\font-awesome.min.css",
       "PackagePath": "staticwebassets\\css (2)\\font-awesome.min.css"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\icomoon.css",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\icomoon.css",
       "PackagePath": "staticwebassets\\css (2)\\icomoon.css"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\jquery-ui.css",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\jquery-ui.css",
       "PackagePath": "staticwebassets\\css (2)\\jquery-ui.css"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\jquery.fancybox.min.css",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\jquery.fancybox.min.css",
       "PackagePath": "staticwebassets\\css (2)\\jquery.fancybox.min.css"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\jquery.mCustomScrollbar.min.css",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\jquery.mCustomScrollbar.min.css",
       "PackagePath": "staticwebassets\\css (2)\\jquery.mCustomScrollbar.min.css"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\meanmenu.css",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\meanmenu.css",
       "PackagePath": "staticwebassets\\css (2)\\meanmenu.css"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\nice-select.css",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\nice-select.css",
       "PackagePath": "staticwebassets\\css (2)\\nice-select.css"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\normalize.css",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\normalize.css",
       "PackagePath": "staticwebassets\\css (2)\\normalize.css"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\owl.carousel.min.css",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\owl.carousel.min.css",
       "PackagePath": "staticwebassets\\css (2)\\owl.carousel.min.css"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\responsive.css",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\responsive.css",
       "PackagePath": "staticwebassets\\css (2)\\responsive.css"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\slick.css",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\slick.css",
       "PackagePath": "staticwebassets\\css (2)\\slick.css"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\style.css",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\style.css",
       "PackagePath": "staticwebassets\\css (2)\\style.css"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\.DS_Store",
+      "PackagePath": "staticwebassets\\css\\.DS_Store"
+    },
+    {
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\animate.min.css",
+      "PackagePath": "staticwebassets\\css\\animate.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\default-skin.css",
+      "PackagePath": "staticwebassets\\css\\default-skin.css"
+    },
+    {
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\icomoon.css",
+      "PackagePath": "staticwebassets\\css\\icomoon.css"
+    },
+    {
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\jquery-ui.css",
+      "PackagePath": "staticwebassets\\css\\jquery-ui.css"
+    },
+    {
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\jquery.fancybox.min.css",
+      "PackagePath": "staticwebassets\\css\\jquery.fancybox.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\jquery.mCustomScrollbar.min.css",
+      "PackagePath": "staticwebassets\\css\\jquery.mCustomScrollbar.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\meanmenu.css",
+      "PackagePath": "staticwebassets\\css\\meanmenu.css"
+    },
+    {
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\nice-select.css",
+      "PackagePath": "staticwebassets\\css\\nice-select.css"
+    },
+    {
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\normalize.css",
+      "PackagePath": "staticwebassets\\css\\normalize.css"
+    },
+    {
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\css\\owl.carousel.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\responsive.css",
+      "PackagePath": "staticwebassets\\css\\responsive.css"
+    },
+    {
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\slick.css",
+      "PackagePath": "staticwebassets\\css\\slick.css"
+    },
+    {
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\calendar-icon.png",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\calendar-icon.png",
       "PackagePath": "staticwebassets\\images\\calendar-icon.png"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\call-icon.png",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\call-icon.png",
       "PackagePath": "staticwebassets\\images\\call-icon.png"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\camera-img.png",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\camera-img.png",
       "PackagePath": "staticwebassets\\images\\camera-img.png"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\computer-img.png",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\computer-img.png",
       "PackagePath": "staticwebassets\\images\\computer-img.png"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\down-arrow.png",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\down-arrow.png",
       "PackagePath": "staticwebassets\\images\\down-arrow.png"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\fb-icon.png",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\fb-icon.png",
       "PackagePath": "staticwebassets\\images\\fb-icon.png"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\footer-logo.png",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\footer-logo.png",
       "PackagePath": "staticwebassets\\images\\footer-logo.png"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\img-1.png",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\img-1.png",
       "PackagePath": "staticwebassets\\images\\img-1.png"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\img-2.png",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\img-2.png",
       "PackagePath": "staticwebassets\\images\\img-2.png"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\img-3.png",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\img-3.png",
       "PackagePath": "staticwebassets\\images\\img-3.png"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\img-4.png",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\img-4.png",
       "PackagePath": "staticwebassets\\images\\img-4.png"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\instagram-icon.png",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\instagram-icon.png",
       "PackagePath": "staticwebassets\\images\\instagram-icon.png"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\laptop-img.png",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\laptop-img.png",
       "PackagePath": "staticwebassets\\images\\laptop-img.png"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\linkedin-icon.png",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\linkedin-icon.png",
       "PackagePath": "staticwebassets\\images\\linkedin-icon.png"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\logo.png",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\logo.png",
       "PackagePath": "staticwebassets\\images\\logo.png"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\mac-img.png",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\mac-img.png",
       "PackagePath": "staticwebassets\\images\\mac-img.png"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\mail-icon.png",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\mail-icon.png",
       "PackagePath": "staticwebassets\\images\\mail-icon.png"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\map-icon.png",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\map-icon.png",
       "PackagePath": "staticwebassets\\images\\map-icon.png"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\mobile-img.png",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\mobile-img.png",
       "PackagePath": "staticwebassets\\images\\mobile-img.png"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\quick-icon.png",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\quick-icon.png",
       "PackagePath": "staticwebassets\\images\\quick-icon.png"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\search-icon.png",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\search-icon.png",
       "PackagePath": "staticwebassets\\images\\search-icon.png"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\toggle-icon.png",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\toggle-icon.png",
       "PackagePath": "staticwebassets\\images\\toggle-icon.png"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\trolly-icon.png",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\trolly-icon.png",
       "PackagePath": "staticwebassets\\images\\trolly-icon.png"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\twitter-icon.png",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\twitter-icon.png",
       "PackagePath": "staticwebassets\\images\\twitter-icon.png"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\user-icon.png",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\user-icon.png",
       "PackagePath": "staticwebassets\\images\\user-icon.png"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\watch-img.png",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\watch-img.png",
       "PackagePath": "staticwebassets\\images\\watch-img.png"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\youtub-icon.png",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\youtub-icon.png",
       "PackagePath": "staticwebassets\\images\\youtub-icon.png"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\index.html",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\.DS_Store",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\.DS_Store",
       "PackagePath": "staticwebassets\\js (2)\\.DS_Store"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\js (2)\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\js (2)\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\js (2)\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\js (2)\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\bootstrap.js",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\bootstrap.js",
       "PackagePath": "staticwebassets\\js (2)\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\bootstrap.js.map",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\js (2)\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\bootstrap.min.js",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\js (2)\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\js (2)\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\custom.js",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\custom.js",
       "PackagePath": "staticwebassets\\js (2)\\custom.js"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\jquery-3.0.0.min.js",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\jquery-3.0.0.min.js",
       "PackagePath": "staticwebassets\\js (2)\\jquery-3.0.0.min.js"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\jquery.mCustomScrollbar.concat.min.js",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\jquery.mCustomScrollbar.concat.min.js",
       "PackagePath": "staticwebassets\\js (2)\\jquery.mCustomScrollbar.concat.min.js"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\jquery.min.js",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\jquery.min.js",
       "PackagePath": "staticwebassets\\js (2)\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\jquery.validate.js",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\jquery.validate.js",
       "PackagePath": "staticwebassets\\js (2)\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\modernizer.js",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\modernizer.js",
       "PackagePath": "staticwebassets\\js (2)\\modernizer.js"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\plugin.js",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\plugin.js",
       "PackagePath": "staticwebassets\\js (2)\\plugin.js"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\popper.min.js",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\popper.min.js",
       "PackagePath": "staticwebassets\\js (2)\\popper.min.js"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\slider-setting.js",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\slider-setting.js",
       "PackagePath": "staticwebassets\\js (2)\\slider-setting.js"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js\\.DS_Store",
+      "PackagePath": "staticwebassets\\js\\.DS_Store"
+    },
+    {
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js\\custom.js",
+      "PackagePath": "staticwebassets\\js\\custom.js"
+    },
+    {
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js\\jquery-3.0.0.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-3.0.0.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js\\jquery.mCustomScrollbar.concat.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.mCustomScrollbar.concat.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js\\jquery.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\js\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js\\modernizer.js",
+      "PackagePath": "staticwebassets\\js\\modernizer.js"
+    },
+    {
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js\\plugin.js",
+      "PackagePath": "staticwebassets\\js\\plugin.js"
+    },
+    {
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js\\popper.min.js",
+      "PackagePath": "staticwebassets\\js\\popper.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js\\slider-setting.js",
+      "PackagePath": "staticwebassets\\js\\slider-setting.js"
+    },
+    {
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\mans_clothes.html",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\mans_clothes.html",
       "PackagePath": "staticwebassets\\mans_clothes.html"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\womans_clothes.html",
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\womans_clothes.html",
       "PackagePath": "staticwebassets\\womans_clothes.html"
     },
     {

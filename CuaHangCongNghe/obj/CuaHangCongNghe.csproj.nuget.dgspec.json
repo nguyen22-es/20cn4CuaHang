@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\CuaHangCongNghe.csproj": {}
+    "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\CuaHangCongNghe.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\CuaHangCongNghe.csproj": {
+    "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\CuaHangCongNghe.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\CuaHangCongNghe.csproj",
+        "projectUniqueName": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\CuaHangCongNghe.csproj",
         "projectName": "CuaHangCongNghe",
-        "projectPath": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\CuaHangCongNghe.csproj",
+        "projectPath": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\CuaHangCongNghe.csproj",
         "packagesPath": "C:\\Users\\ztzkk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\obj\\",
+        "outputPath": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

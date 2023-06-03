@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "gYHqoU+c7MLMM7PO/+ZH9T34QiAd9w8dcYs1vs7sU0Q=",
+  "Hash": "quRdrBxkEHCnM8RrVyPvCLyAxSruLanh41ovxuDWMhU=",
   "Source": "CuaHangCongNghe",
   "BasePath": "_content/CuaHangCongNghe",
   "Mode": "Default",
@@ -17,10 +17,10 @@
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\obj\\Debug\\net7.0\\scopedcss\\bundle\\CuaHangCongNghe.styles.css",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\obj\\Debug\\net7.0\\scopedcss\\bundle\\CuaHangCongNghe.styles.css",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
       "BasePath": "_content/CuaHangCongNghe",
       "RelativePath": "CuaHangCongNghe.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\obj\\Debug\\net7.0\\scopedcss\\bundle\\CuaHangCongNghe.styles.css"
+      "OriginalItemSpec": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\obj\\Debug\\net7.0\\scopedcss\\bundle\\CuaHangCongNghe.styles.css"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\CuaHangCongNghe.bundle.scp.css",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\CuaHangCongNghe.bundle.scp.css",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/CuaHangCongNghe",
       "RelativePath": "CuaHangCongNghe.bundle.scp.css",
       "AssetKind": "All",
@@ -48,10 +48,10 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\CuaHangCongNghe.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\CuaHangCongNghe.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\computers.html",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\computers.html",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -68,7 +68,7 @@
       "OriginalItemSpec": "wwwroot\\computers.html"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\contact.html",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\contact.html",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -85,7 +85,7 @@
       "OriginalItemSpec": "wwwroot\\contact.html"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\.DS_Store",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\.DS_Store",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -102,7 +102,7 @@
       "OriginalItemSpec": "wwwroot\\css (2)\\.DS_Store"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\animate.min.css",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\animate.min.css",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -119,7 +119,7 @@
       "OriginalItemSpec": "wwwroot\\css (2)\\animate.min.css"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\bootstrap.css",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\bootstrap.css",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -136,7 +136,7 @@
       "OriginalItemSpec": "wwwroot\\css (2)\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\bootstrap.css.map",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\bootstrap.css.map",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -153,7 +153,7 @@
       "OriginalItemSpec": "wwwroot\\css (2)\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\bootstrap.min.css",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\bootstrap.min.css",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -170,7 +170,7 @@
       "OriginalItemSpec": "wwwroot\\css (2)\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\bootstrap.min.css.map",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -187,7 +187,7 @@
       "OriginalItemSpec": "wwwroot\\css (2)\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\bootstrap-grid.css",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\bootstrap-grid.css",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -204,7 +204,7 @@
       "OriginalItemSpec": "wwwroot\\css (2)\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\bootstrap-grid.css.map",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -221,7 +221,7 @@
       "OriginalItemSpec": "wwwroot\\css (2)\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\bootstrap-grid.min.css",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -238,7 +238,7 @@
       "OriginalItemSpec": "wwwroot\\css (2)\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\bootstrap-grid.min.css.map",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -255,7 +255,7 @@
       "OriginalItemSpec": "wwwroot\\css (2)\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\bootstrap-reboot.css",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -272,7 +272,7 @@
       "OriginalItemSpec": "wwwroot\\css (2)\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\bootstrap-reboot.css.map",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -289,7 +289,7 @@
       "OriginalItemSpec": "wwwroot\\css (2)\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\bootstrap-reboot.min.css",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -306,7 +306,7 @@
       "OriginalItemSpec": "wwwroot\\css (2)\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\bootstrap-reboot.min.css.map",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -323,7 +323,7 @@
       "OriginalItemSpec": "wwwroot\\css (2)\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\default-skin.css",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\default-skin.css",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -340,7 +340,7 @@
       "OriginalItemSpec": "wwwroot\\css (2)\\default-skin.css"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\font-awesome.min.css",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\font-awesome.min.css",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -357,7 +357,7 @@
       "OriginalItemSpec": "wwwroot\\css (2)\\font-awesome.min.css"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\icomoon.css",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\icomoon.css",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -374,7 +374,7 @@
       "OriginalItemSpec": "wwwroot\\css (2)\\icomoon.css"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\jquery.fancybox.min.css",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\jquery.fancybox.min.css",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -391,7 +391,7 @@
       "OriginalItemSpec": "wwwroot\\css (2)\\jquery.fancybox.min.css"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\jquery.mCustomScrollbar.min.css",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\jquery.mCustomScrollbar.min.css",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -408,7 +408,7 @@
       "OriginalItemSpec": "wwwroot\\css (2)\\jquery.mCustomScrollbar.min.css"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\jquery-ui.css",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\jquery-ui.css",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -425,7 +425,7 @@
       "OriginalItemSpec": "wwwroot\\css (2)\\jquery-ui.css"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\meanmenu.css",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\meanmenu.css",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -442,7 +442,7 @@
       "OriginalItemSpec": "wwwroot\\css (2)\\meanmenu.css"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\nice-select.css",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\nice-select.css",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -459,7 +459,7 @@
       "OriginalItemSpec": "wwwroot\\css (2)\\nice-select.css"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\normalize.css",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\normalize.css",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -476,7 +476,7 @@
       "OriginalItemSpec": "wwwroot\\css (2)\\normalize.css"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\owl.carousel.min.css",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\owl.carousel.min.css",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -493,7 +493,7 @@
       "OriginalItemSpec": "wwwroot\\css (2)\\owl.carousel.min.css"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\responsive.css",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\responsive.css",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -510,7 +510,7 @@
       "OriginalItemSpec": "wwwroot\\css (2)\\responsive.css"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\slick.css",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\slick.css",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -527,7 +527,7 @@
       "OriginalItemSpec": "wwwroot\\css (2)\\slick.css"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\style.css",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\style.css",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -544,7 +544,432 @@
       "OriginalItemSpec": "wwwroot\\css (2)\\style.css"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\.DS_Store",
+      "SourceId": "CuaHangCongNghe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
+      "BasePath": "_content/CuaHangCongNghe",
+      "RelativePath": "css/.DS_Store",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\.DS_Store"
+    },
+    {
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\animate.min.css",
+      "SourceId": "CuaHangCongNghe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
+      "BasePath": "_content/CuaHangCongNghe",
+      "RelativePath": "css/animate.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\animate.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\bootstrap.css",
+      "SourceId": "CuaHangCongNghe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
+      "BasePath": "_content/CuaHangCongNghe",
+      "RelativePath": "css/bootstrap.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootstrap.css"
+    },
+    {
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\bootstrap.css.map",
+      "SourceId": "CuaHangCongNghe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
+      "BasePath": "_content/CuaHangCongNghe",
+      "RelativePath": "css/bootstrap.css.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootstrap.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\bootstrap.min.css",
+      "SourceId": "CuaHangCongNghe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
+      "BasePath": "_content/CuaHangCongNghe",
+      "RelativePath": "css/bootstrap.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootstrap.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\bootstrap.min.css.map",
+      "SourceId": "CuaHangCongNghe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
+      "BasePath": "_content/CuaHangCongNghe",
+      "RelativePath": "css/bootstrap.min.css.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\bootstrap-grid.css",
+      "SourceId": "CuaHangCongNghe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
+      "BasePath": "_content/CuaHangCongNghe",
+      "RelativePath": "css/bootstrap-grid.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootstrap-grid.css"
+    },
+    {
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\bootstrap-grid.css.map",
+      "SourceId": "CuaHangCongNghe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
+      "BasePath": "_content/CuaHangCongNghe",
+      "RelativePath": "css/bootstrap-grid.css.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\bootstrap-grid.min.css",
+      "SourceId": "CuaHangCongNghe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
+      "BasePath": "_content/CuaHangCongNghe",
+      "RelativePath": "css/bootstrap-grid.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\bootstrap-grid.min.css.map",
+      "SourceId": "CuaHangCongNghe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
+      "BasePath": "_content/CuaHangCongNghe",
+      "RelativePath": "css/bootstrap-grid.min.css.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\bootstrap-reboot.css",
+      "SourceId": "CuaHangCongNghe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
+      "BasePath": "_content/CuaHangCongNghe",
+      "RelativePath": "css/bootstrap-reboot.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\bootstrap-reboot.css.map",
+      "SourceId": "CuaHangCongNghe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
+      "BasePath": "_content/CuaHangCongNghe",
+      "RelativePath": "css/bootstrap-reboot.css.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\bootstrap-reboot.min.css",
+      "SourceId": "CuaHangCongNghe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
+      "BasePath": "_content/CuaHangCongNghe",
+      "RelativePath": "css/bootstrap-reboot.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\bootstrap-reboot.min.css.map",
+      "SourceId": "CuaHangCongNghe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
+      "BasePath": "_content/CuaHangCongNghe",
+      "RelativePath": "css/bootstrap-reboot.min.css.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\default-skin.css",
+      "SourceId": "CuaHangCongNghe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
+      "BasePath": "_content/CuaHangCongNghe",
+      "RelativePath": "css/default-skin.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\default-skin.css"
+    },
+    {
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\font-awesome.min.css",
+      "SourceId": "CuaHangCongNghe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
+      "BasePath": "_content/CuaHangCongNghe",
+      "RelativePath": "css/font-awesome.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\font-awesome.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\icomoon.css",
+      "SourceId": "CuaHangCongNghe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
+      "BasePath": "_content/CuaHangCongNghe",
+      "RelativePath": "css/icomoon.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\icomoon.css"
+    },
+    {
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\jquery.fancybox.min.css",
+      "SourceId": "CuaHangCongNghe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
+      "BasePath": "_content/CuaHangCongNghe",
+      "RelativePath": "css/jquery.fancybox.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\jquery.fancybox.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\jquery.mCustomScrollbar.min.css",
+      "SourceId": "CuaHangCongNghe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
+      "BasePath": "_content/CuaHangCongNghe",
+      "RelativePath": "css/jquery.mCustomScrollbar.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\jquery.mCustomScrollbar.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\jquery-ui.css",
+      "SourceId": "CuaHangCongNghe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
+      "BasePath": "_content/CuaHangCongNghe",
+      "RelativePath": "css/jquery-ui.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\jquery-ui.css"
+    },
+    {
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\meanmenu.css",
+      "SourceId": "CuaHangCongNghe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
+      "BasePath": "_content/CuaHangCongNghe",
+      "RelativePath": "css/meanmenu.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\meanmenu.css"
+    },
+    {
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\nice-select.css",
+      "SourceId": "CuaHangCongNghe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
+      "BasePath": "_content/CuaHangCongNghe",
+      "RelativePath": "css/nice-select.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\nice-select.css"
+    },
+    {
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\normalize.css",
+      "SourceId": "CuaHangCongNghe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
+      "BasePath": "_content/CuaHangCongNghe",
+      "RelativePath": "css/normalize.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\normalize.css"
+    },
+    {
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\owl.carousel.min.css",
+      "SourceId": "CuaHangCongNghe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
+      "BasePath": "_content/CuaHangCongNghe",
+      "RelativePath": "css/owl.carousel.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\owl.carousel.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\responsive.css",
+      "SourceId": "CuaHangCongNghe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
+      "BasePath": "_content/CuaHangCongNghe",
+      "RelativePath": "css/responsive.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\responsive.css"
+    },
+    {
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\site.css",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -561,7 +986,41 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\slick.css",
+      "SourceId": "CuaHangCongNghe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
+      "BasePath": "_content/CuaHangCongNghe",
+      "RelativePath": "css/slick.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\slick.css"
+    },
+    {
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\style.css",
+      "SourceId": "CuaHangCongNghe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
+      "BasePath": "_content/CuaHangCongNghe",
+      "RelativePath": "css/style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\style.css"
+    },
+    {
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\favicon.ico",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -578,7 +1037,7 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\calendar-icon.png",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\calendar-icon.png",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -595,7 +1054,7 @@
       "OriginalItemSpec": "wwwroot\\images\\calendar-icon.png"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\call-icon.png",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\call-icon.png",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -612,7 +1071,7 @@
       "OriginalItemSpec": "wwwroot\\images\\call-icon.png"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\camera-img.png",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\camera-img.png",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -629,7 +1088,7 @@
       "OriginalItemSpec": "wwwroot\\images\\camera-img.png"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\computer-img.png",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\computer-img.png",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -646,7 +1105,7 @@
       "OriginalItemSpec": "wwwroot\\images\\computer-img.png"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\down-arrow.png",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\down-arrow.png",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -663,7 +1122,7 @@
       "OriginalItemSpec": "wwwroot\\images\\down-arrow.png"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\fb-icon.png",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\fb-icon.png",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -680,7 +1139,7 @@
       "OriginalItemSpec": "wwwroot\\images\\fb-icon.png"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\footer-logo.png",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\footer-logo.png",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -697,7 +1156,7 @@
       "OriginalItemSpec": "wwwroot\\images\\footer-logo.png"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\img-1.png",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\img-1.png",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -714,7 +1173,7 @@
       "OriginalItemSpec": "wwwroot\\images\\img-1.png"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\img-2.png",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\img-2.png",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -731,7 +1190,7 @@
       "OriginalItemSpec": "wwwroot\\images\\img-2.png"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\img-3.png",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\img-3.png",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -748,7 +1207,7 @@
       "OriginalItemSpec": "wwwroot\\images\\img-3.png"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\img-4.png",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\img-4.png",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -765,7 +1224,7 @@
       "OriginalItemSpec": "wwwroot\\images\\img-4.png"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\instagram-icon.png",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\instagram-icon.png",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -782,7 +1241,7 @@
       "OriginalItemSpec": "wwwroot\\images\\instagram-icon.png"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\laptop-img.png",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\laptop-img.png",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -799,7 +1258,7 @@
       "OriginalItemSpec": "wwwroot\\images\\laptop-img.png"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\linkedin-icon.png",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\linkedin-icon.png",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -816,7 +1275,7 @@
       "OriginalItemSpec": "wwwroot\\images\\linkedin-icon.png"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\logo.png",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\logo.png",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -833,7 +1292,7 @@
       "OriginalItemSpec": "wwwroot\\images\\logo.png"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\mac-img.png",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\mac-img.png",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -850,7 +1309,7 @@
       "OriginalItemSpec": "wwwroot\\images\\mac-img.png"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\mail-icon.png",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\mail-icon.png",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -867,7 +1326,7 @@
       "OriginalItemSpec": "wwwroot\\images\\mail-icon.png"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\map-icon.png",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\map-icon.png",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -884,7 +1343,7 @@
       "OriginalItemSpec": "wwwroot\\images\\map-icon.png"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\mobile-img.png",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\mobile-img.png",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -901,7 +1360,7 @@
       "OriginalItemSpec": "wwwroot\\images\\mobile-img.png"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\quick-icon.png",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\quick-icon.png",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -918,7 +1377,7 @@
       "OriginalItemSpec": "wwwroot\\images\\quick-icon.png"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\search-icon.png",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\search-icon.png",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -935,7 +1394,7 @@
       "OriginalItemSpec": "wwwroot\\images\\search-icon.png"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\toggle-icon.png",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\toggle-icon.png",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -952,7 +1411,7 @@
       "OriginalItemSpec": "wwwroot\\images\\toggle-icon.png"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\trolly-icon.png",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\trolly-icon.png",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -969,7 +1428,7 @@
       "OriginalItemSpec": "wwwroot\\images\\trolly-icon.png"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\twitter-icon.png",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\twitter-icon.png",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -986,7 +1445,7 @@
       "OriginalItemSpec": "wwwroot\\images\\twitter-icon.png"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\user-icon.png",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\user-icon.png",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -1003,7 +1462,7 @@
       "OriginalItemSpec": "wwwroot\\images\\user-icon.png"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\watch-img.png",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\watch-img.png",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -1020,7 +1479,7 @@
       "OriginalItemSpec": "wwwroot\\images\\watch-img.png"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\youtub-icon.png",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\youtub-icon.png",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -1037,7 +1496,7 @@
       "OriginalItemSpec": "wwwroot\\images\\youtub-icon.png"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\index.html",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\index.html",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -1054,7 +1513,7 @@
       "OriginalItemSpec": "wwwroot\\index.html"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\.DS_Store",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\.DS_Store",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -1071,7 +1530,7 @@
       "OriginalItemSpec": "wwwroot\\js (2)\\.DS_Store"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\bootstrap.bundle.js",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -1088,7 +1547,7 @@
       "OriginalItemSpec": "wwwroot\\js (2)\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\bootstrap.bundle.js.map",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -1105,7 +1564,7 @@
       "OriginalItemSpec": "wwwroot\\js (2)\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\bootstrap.bundle.min.js",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -1122,7 +1581,7 @@
       "OriginalItemSpec": "wwwroot\\js (2)\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\bootstrap.bundle.min.js.map",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -1139,7 +1598,7 @@
       "OriginalItemSpec": "wwwroot\\js (2)\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\bootstrap.js",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\bootstrap.js",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -1156,7 +1615,7 @@
       "OriginalItemSpec": "wwwroot\\js (2)\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\bootstrap.js.map",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\bootstrap.js.map",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -1173,7 +1632,7 @@
       "OriginalItemSpec": "wwwroot\\js (2)\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\bootstrap.min.js",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\bootstrap.min.js",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -1190,7 +1649,7 @@
       "OriginalItemSpec": "wwwroot\\js (2)\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\bootstrap.min.js.map",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -1207,7 +1666,7 @@
       "OriginalItemSpec": "wwwroot\\js (2)\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\custom.js",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\custom.js",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -1224,7 +1683,7 @@
       "OriginalItemSpec": "wwwroot\\js (2)\\custom.js"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\jquery.mCustomScrollbar.concat.min.js",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\jquery.mCustomScrollbar.concat.min.js",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -1241,7 +1700,7 @@
       "OriginalItemSpec": "wwwroot\\js (2)\\jquery.mCustomScrollbar.concat.min.js"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\jquery.min.js",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\jquery.min.js",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -1258,7 +1717,7 @@
       "OriginalItemSpec": "wwwroot\\js (2)\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\jquery.validate.js",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\jquery.validate.js",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -1275,7 +1734,7 @@
       "OriginalItemSpec": "wwwroot\\js (2)\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\jquery-3.0.0.min.js",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\jquery-3.0.0.min.js",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -1292,7 +1751,7 @@
       "OriginalItemSpec": "wwwroot\\js (2)\\jquery-3.0.0.min.js"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\modernizer.js",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\modernizer.js",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -1309,7 +1768,7 @@
       "OriginalItemSpec": "wwwroot\\js (2)\\modernizer.js"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\plugin.js",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\plugin.js",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -1326,7 +1785,7 @@
       "OriginalItemSpec": "wwwroot\\js (2)\\plugin.js"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\popper.min.js",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\popper.min.js",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -1343,7 +1802,7 @@
       "OriginalItemSpec": "wwwroot\\js (2)\\popper.min.js"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\slider-setting.js",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js (2)\\slider-setting.js",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -1360,7 +1819,296 @@
       "OriginalItemSpec": "wwwroot\\js (2)\\slider-setting.js"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js\\.DS_Store",
+      "SourceId": "CuaHangCongNghe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
+      "BasePath": "_content/CuaHangCongNghe",
+      "RelativePath": "js/.DS_Store",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\.DS_Store"
+    },
+    {
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js\\bootstrap.bundle.js",
+      "SourceId": "CuaHangCongNghe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
+      "BasePath": "_content/CuaHangCongNghe",
+      "RelativePath": "js/bootstrap.bundle.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js\\bootstrap.bundle.js.map",
+      "SourceId": "CuaHangCongNghe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
+      "BasePath": "_content/CuaHangCongNghe",
+      "RelativePath": "js/bootstrap.bundle.js.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js\\bootstrap.bundle.min.js",
+      "SourceId": "CuaHangCongNghe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
+      "BasePath": "_content/CuaHangCongNghe",
+      "RelativePath": "js/bootstrap.bundle.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js\\bootstrap.bundle.min.js.map",
+      "SourceId": "CuaHangCongNghe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
+      "BasePath": "_content/CuaHangCongNghe",
+      "RelativePath": "js/bootstrap.bundle.min.js.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js\\bootstrap.js",
+      "SourceId": "CuaHangCongNghe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
+      "BasePath": "_content/CuaHangCongNghe",
+      "RelativePath": "js/bootstrap.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\bootstrap.js"
+    },
+    {
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js\\bootstrap.js.map",
+      "SourceId": "CuaHangCongNghe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
+      "BasePath": "_content/CuaHangCongNghe",
+      "RelativePath": "js/bootstrap.js.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\bootstrap.js.map"
+    },
+    {
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js\\bootstrap.min.js",
+      "SourceId": "CuaHangCongNghe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
+      "BasePath": "_content/CuaHangCongNghe",
+      "RelativePath": "js/bootstrap.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\bootstrap.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js\\bootstrap.min.js.map",
+      "SourceId": "CuaHangCongNghe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
+      "BasePath": "_content/CuaHangCongNghe",
+      "RelativePath": "js/bootstrap.min.js.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js\\custom.js",
+      "SourceId": "CuaHangCongNghe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
+      "BasePath": "_content/CuaHangCongNghe",
+      "RelativePath": "js/custom.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\custom.js"
+    },
+    {
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js\\jquery.mCustomScrollbar.concat.min.js",
+      "SourceId": "CuaHangCongNghe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
+      "BasePath": "_content/CuaHangCongNghe",
+      "RelativePath": "js/jquery.mCustomScrollbar.concat.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\jquery.mCustomScrollbar.concat.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js\\jquery.min.js",
+      "SourceId": "CuaHangCongNghe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
+      "BasePath": "_content/CuaHangCongNghe",
+      "RelativePath": "js/jquery.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\jquery.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js\\jquery.validate.js",
+      "SourceId": "CuaHangCongNghe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
+      "BasePath": "_content/CuaHangCongNghe",
+      "RelativePath": "js/jquery.validate.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\jquery.validate.js"
+    },
+    {
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js\\jquery-3.0.0.min.js",
+      "SourceId": "CuaHangCongNghe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
+      "BasePath": "_content/CuaHangCongNghe",
+      "RelativePath": "js/jquery-3.0.0.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\jquery-3.0.0.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js\\modernizer.js",
+      "SourceId": "CuaHangCongNghe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
+      "BasePath": "_content/CuaHangCongNghe",
+      "RelativePath": "js/modernizer.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\modernizer.js"
+    },
+    {
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js\\plugin.js",
+      "SourceId": "CuaHangCongNghe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
+      "BasePath": "_content/CuaHangCongNghe",
+      "RelativePath": "js/plugin.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\plugin.js"
+    },
+    {
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js\\popper.min.js",
+      "SourceId": "CuaHangCongNghe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
+      "BasePath": "_content/CuaHangCongNghe",
+      "RelativePath": "js/popper.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\popper.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js\\site.js",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -1377,7 +2125,24 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js\\slider-setting.js",
+      "SourceId": "CuaHangCongNghe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
+      "BasePath": "_content/CuaHangCongNghe",
+      "RelativePath": "js/slider-setting.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\slider-setting.js"
+    },
+    {
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -1394,7 +2159,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -1411,7 +2176,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -1428,7 +2193,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -1445,7 +2210,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -1462,7 +2227,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -1479,7 +2244,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -1496,7 +2261,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -1513,7 +2278,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -1530,7 +2295,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -1547,7 +2312,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -1564,7 +2329,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -1581,7 +2346,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -1598,7 +2363,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -1615,7 +2380,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -1632,7 +2397,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -1649,7 +2414,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -1666,7 +2431,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -1683,7 +2448,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -1700,7 +2465,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -1717,7 +2482,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -1734,7 +2499,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -1751,7 +2516,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -1768,7 +2533,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -1785,7 +2550,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -1802,7 +2567,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -1819,7 +2584,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -1836,7 +2601,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -1853,7 +2618,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -1870,7 +2635,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -1887,7 +2652,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -1904,7 +2669,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -1921,7 +2686,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -1938,7 +2703,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -1955,7 +2720,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -1972,7 +2737,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -1989,7 +2754,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -2006,7 +2771,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -2023,7 +2788,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -2040,7 +2805,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -2057,7 +2822,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -2074,7 +2839,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -2091,7 +2856,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -2108,7 +2873,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -2125,7 +2890,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -2142,7 +2907,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -2159,7 +2924,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -2176,7 +2941,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -2193,7 +2958,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -2210,7 +2975,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -2227,7 +2992,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -2244,7 +3009,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -2261,7 +3026,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -2278,7 +3043,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -2295,7 +3060,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -2312,7 +3077,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -2329,7 +3094,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -2346,7 +3111,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\mans_clothes.html",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\mans_clothes.html",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
@@ -2363,7 +3128,7 @@
       "OriginalItemSpec": "wwwroot\\mans_clothes.html"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\Source\\Repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\womans_clothes.html",
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\womans_clothes.html",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
