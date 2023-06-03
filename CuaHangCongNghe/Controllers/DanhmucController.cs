@@ -1,8 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using WebApplication4.Controllers;
+﻿
+using Microsoft.AspNetCore.Mvc;
 
-namespace CuaHangCongNghe.Controllers
-{
+
+
+namespace CuaHangCongNghe.Controllers;
+
     public class DanhmucController : Controller
     {
         private readonly ILogger<DanhmucController> _logger;
@@ -15,9 +17,9 @@ namespace CuaHangCongNghe.Controllers
         {
             return View();
         }
-        public IActionResult maytinh()
-        {
+    public IActionResult maytinh()
+    {
             return View();
-        }
-    }
+    } 
 }
+

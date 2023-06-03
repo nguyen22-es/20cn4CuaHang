@@ -16,16 +16,20 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\ztzkk\source\repos\20cn4CuaHang\CuaHangCongNghe
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/ztzkk/source/repos/20cn4CuaHang/CuaHangCongNghe/Views/Danhmuc/dienthoai.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFuaG11Y1xkaWVudGhvYWkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ztzkk/source/repos/20cn4CuaHang/CuaHangCongNghe/Views/Danhmuc/maytinh.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFuaG11Y1xtYXl0aW5oLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/ztzkk/source/repos/20cn4CuaHang/CuaHangCongNghe/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ztzkk/source/repos/20cn4CuaHang/CuaHangCongNghe/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/ztzkk/source/repos/20cn4CuaHang/CuaHangCongNghe/Views/Maytinh/maytinh.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF5dGluaFxtYXl0aW5oLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ztzkk/source/repos/20cn4CuaHang/CuaHangCongNghe/Views/Shared/Error.cshtml]
