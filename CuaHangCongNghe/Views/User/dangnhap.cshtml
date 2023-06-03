@@ -1,0 +1,24 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="contact_section layout_padding">
+    <div class="container">
+        <h1 class="contact_taital">Đăng Nhập</h1>
+        <div class="contact_section_2">
+            <div class="mail_section_1">
+                <input type="text" class="mail_text" placeholder="Tên " name="gmail">                            
+                <input type="password" class="mail_text" placeholder="Mật khẩu" name="password">
+
+
+                <button type="button" onclick="redirectToRegister()">Đăng nhập</button>
+                <p>Nếu bạn chưa có tài khoản, <a href="dangky">đăng ký</a> tại đây.</p>
+
+                <script>
+                    function redirectToRegister() {
+                        window.location.href = "dangky";
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+</div>

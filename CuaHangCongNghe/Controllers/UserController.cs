@@ -1,12 +1,22 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 
-namespace CuaHangCongNghe.Controllers
+namespace WebApplication4.Controllers
 {
     public class UserController : Controller
     {
-        public IActionResult Index()
+        private readonly ILogger<UserController> _logger;
+
+        public UserController(ILogger<UserController> logger)
+        {
+            _logger = logger;
+        }
+        public IActionResult Login()
         {
             return View();
         }
+        public IActionResult dangky() => View();
+        public IActionResult dangnhap() => View();
+
     }
 }
