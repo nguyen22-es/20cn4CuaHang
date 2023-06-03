@@ -17,6 +17,7 @@ namespace WebApplication4.Controllers
         }
         public IActionResult dangky() => View();
         public IActionResult dangnhap() => View();
+        public IActionResult thongtincanhan() => View();
 
     }
 }

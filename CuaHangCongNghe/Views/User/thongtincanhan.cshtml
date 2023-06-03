@@ -1,0 +1,27 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<form>
+    <div class="personal-info">
+        <h2>Thông tin cá nhân</h2>
+        <div class="info-section">
+            <label for="full-name">Họ và tên:</label>
+            <input type="text" id="full-name" name="full_name" value="">
+        </div>
+        <div class="info-section">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" value="l">
+        </div>
+        <div class="info-section">
+            <label for="phone">Số điện thoại:</label>
+            <input type="tel" id="phone" name="phone_number" value="">
+        </div>
+        <div class="info-section">
+            <label for="address">Địa chỉ:</label>
+            <textarea id="address" rows="4" name="address"></textarea>
+        </div>
+        <div class="button-section">
+            <button type="submit">Cập nhật</button>
+        </div>
+    </div>
+</form>
