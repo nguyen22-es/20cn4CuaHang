@@ -34,8 +34,4 @@ public class HomeController : Controller
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
 }
-public partial class lisuser
-{
-    public List<User> Users { get; set; }
-}
 

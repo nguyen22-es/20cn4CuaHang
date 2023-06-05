@@ -15,8 +15,8 @@ namespace CuaHangCongNghe.Controllers;
 [AllowAnonymous]
 public class UserController : Controller
     {
-    private readonly gantudongcs gantudongcs;
-        private readonly ILogger<UserController> _logger;
+    private static List<int> n = new List<int>();
+    private readonly ILogger<UserController> _logger;
 
         public UserController(ILogger<UserController> logger)
         {
@@ -70,18 +70,29 @@ public class UserController : Controller
         {
             using (var db = new storeContext())
             {
+                Random rnd = new Random();
+                int random = rnd.Next(0, 100);
+                while (n.Contains(random))
+                {
+                    rnd = new Random();
+                    random = rnd.Next(0, 100);
+
+                }
+                n.Add(random);
                 var user = db.Users.FirstOrDefault(c => c.NameUser==dangky.NameUser && c.Password == dangky.Password);
                 if (user == null)
                 {
-                    db.Users.Add(new User
+                    var newUser = new User
                     {
                         Role = "user",
-                      
+                        UserId = random,
                         NameUser = dangky.NameUser,
                         Password = dangky.Password,
                         EmailUser = dangky.EmailUser,
                         AddressUser = dangky.AddressUser,
-                        PhoneUser = dangky.PhoneUser }); ;
+                        PhoneUser = dangky.PhoneUser
+                    };
+                    db.Users.Add(newUser);
                     db.SaveChanges();
                     ViewBag.Message = "mời đăng nhập!";
                     return new RedirectResult(url: "/User/dangnhap");
@@ -89,12 +100,9 @@ public class UserController : Controller
                 ViewBag.Message = "tài khoản hoặc mật khẩu đã tôn tại ";
                 return new RedirectResult(url: "/User/dangky");
             }
+            
         }
-
-
-     return View();
-
-
+        return View();
     } 
         public IActionResult dangnhap() => View();
         public IActionResult thongtincanhan() => View();

@@ -1,8 +1,5 @@
-﻿
-
-using CuaHangCongNghe.Controllers;
-
-namespace CuaHangCongNghe.Models.Tables
+﻿using CuaHangCongNghe.Models.Tables;
+namespace CuaHangCongNghe.Controllers
 {
     public partial class dangky 
     {

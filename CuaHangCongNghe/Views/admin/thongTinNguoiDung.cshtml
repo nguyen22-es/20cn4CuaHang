@@ -1,0 +1,39 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model CuaHangCongNghe.Controllers.admincontroller.userViewModel
+<h1 class="h3 mb-2 text-gray-800"></h1>
+<p class="mb-4">Show list of User from Database</p>
+<!-- End Page Heading -->
+<!-- DataTales Example -->
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">danh sách khách hàng</h6>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Tên</th>
+                        <th>Địa chỉ</th>
+                        <th>Số điện thoại</th>
+                        <th>Ngày đăng ký</th>
+                        <th>ID khách hàng</th>
+                    </tr>
+                </thead>
+                <tbody>
+                   @foreach (var n in Model.Users)
+                    {
+                        <tr>
+                            <td>@n.UserId</td>
+                            <td>@n.NameUser</td>
+                            <td>@n.AddressUser</td>
+                            <td>@n.PhoneUser</td>
+                            <td>@n.RegistrationDate</td>
+                            
+                        </tr>
+                    }*/
+                </tbody>
+            </table>
+        </div>
