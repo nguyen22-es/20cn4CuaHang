@@ -1,24 +1,28 @@
 ﻿@{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+@model CuaHangCongNghe.Controllers.dangnhapview
+
+<form action="Login" method="post">
 <div class="contact_section layout_padding">
     <div class="container">
         <h1 class="contact_taital">Đăng Nhập</h1>
         <div class="contact_section_2">
             <div class="mail_section_1">
-                <input type="text" class="mail_text" placeholder="Tên " name="gmail">                            
-                <input type="password" class="mail_text" placeholder="Mật khẩu" name="password">
+                    <input type="text" class="mail_text" placeholder="Tên " name="NameUser">
+                    <input type="password" class="mail_text" placeholder="Mật khẩu" name="Password">
 
 
-                <button type="button" onclick="redirectToRegister()">Đăng nhập</button>
+                    <button type="submit">Đăng nhập</button>
                 <p>Nếu bạn chưa có tài khoản, <a href="dangky">đăng ký</a> tại đây.</p>
-
-                <script>
-                    function redirectToRegister() {
-                        window.location.href = "dangky";
-                    }
-                </script>
+                    @if (!string.IsNullOrEmpty(ViewBag.Message))
+                    {
+                        <span class="text-danger">
+                            @ViewBag.Message
+                        </span>
+                    }            
             </div>
         </div>
     </div>
 </div>
+</form>

@@ -4,10 +4,8 @@
     "\\CuaHangCongNghe",
     "\\CuaHangCongNghe\\Controllers",
     "\\CuaHangCongNghe\\Views",
-    "\\CuaHangCongNghe\\Views\\Home",
-    "\\CuaHangCongNghe\\Views\\Shared",
-    "\\CuaHangCongNghe\\wwwroot"
+    "\\CuaHangCongNghe\\Views\\User"
   ],
-  "SelectedNode": "\\CuaHangCongNghe\\wwwroot\\css (2)",
+  "SelectedNode": "\\CuaHangCongNghe\\CuaHangCongNghe.csproj.user",
   "PreviewInSolutionExplorer": false
 }

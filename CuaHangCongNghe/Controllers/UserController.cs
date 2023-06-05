@@ -1,8 +1,18 @@
 ﻿
+using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using CuaHangCongNghe.Models;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication;
+using System.Security.Claims;
+using System.ComponentModel.DataAnnotations;
+using CuaHangCongNghe.Models.Tables;
+
 
 
 namespace CuaHangCongNghe.Controllers;
+[AllowAnonymous]
 public class UserController : Controller
     {
         private readonly ILogger<UserController> _logger;
@@ -11,14 +21,60 @@ public class UserController : Controller
         {
             _logger = logger;
         }
-        public IActionResult Login()
+    public async Task<IActionResult> Login(dangnhapview dangnhap)
+    {
+        if (ModelState.IsValid)
         {
-            return View();
+            using (var db = new storeContext())
+            {
+                var user = db.Users.FirstOrDefault(c => c.NameUser == dangnhap.NameUser & c.Password == dangnhap.Password);
+
+                if (user != null)
+                {
+                    var claims = new List<Claim>()
+            {
+                new Claim(ClaimTypes.Name, user.NameUser),
+                new Claim(ClaimTypes.Role, user.Role),
+            };
+                    var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);//quản lý xác thực người dùng, ClaimsIdentity đại diện cho danh tính của người dùng và lưu trữ các khẳng định (claims) về người dùng như tên, vai trò, thông tin xác thực, và các thông tin khác
+                    var principal = new ClaimsPrincipal(identity);// cung cấp thuộc tính truy xuất thong tin người dùng
+                    await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal, new AuthenticationProperties
+                    {
+                        IsPersistent = true
+                    });
+                    return LocalRedirect("/Home/Index");
+                }
+                else
+                {
+                    ViewBag.Message = "đăng nhập không thành công";
+                    return new RedirectResult(url: "/User/dangnhap");
+                }
+            }
+
+
         }
-        public IActionResult dangky() => View();
+        return new RedirectResult(url: "/User/dangnhap");
+
+    }
+    public async Task<IActionResult> Logout()
+    {
+        await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+        return RedirectToAction("Index", "Home");
+    }
+
+    public IActionResult dangky() => View();
         public IActionResult dangnhap() => View();
         public IActionResult thongtincanhan() => View();
-        
+
+    
+}
+public partial class dangnhapview
+{
+
+    public string NameUser { get; set; }
+
+    public string Password { get; set; }
+
 
 }
 

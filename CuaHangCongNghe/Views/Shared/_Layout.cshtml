@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Authentication
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <!-- basic -->
@@ -45,7 +46,17 @@
                     <a href="mans_clothes.html">Điện thoại</a>
                     <a href="womans_clothes.html">Phụ kiện</a>
                     <a href="@Url.Action("thongtincanhan", "User")">Cá Nhân</a>
-                    <a href="@Url.Action("dangnhap", "User")">Đăng nhập</a>
+                   
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <form action="@Url.Action("Logout", "User")" method="post">
+                            <button type="submit">Đăng xuất</button>
+                        </form>
+                    }
+                    else
+                    {
+                        <a href="@Url.Action("dangnhap", "User")">Đăng nhập</a>
+                    }
                 </div>
                 <span style="font-size:30px;cursor:pointer; color: #fff;" onclick="openNav()"><img src="~/images/toggle-icon.png"></span>
                 <a class="navbar-brand" href="index.html"><img src="~/images/logo.png"></a></a>
