@@ -62,10 +62,10 @@ public class UserController : Controller
         await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
         return RedirectToAction("Index", "Home");
     }
-    [HttpPost]
+
     public IActionResult dangky(dangky dangky)
     {
-        int n = gantudongcs.Gantudong();
+  
         if (ModelState.IsValid)
         {
             using (var db = new storeContext())
@@ -76,7 +76,7 @@ public class UserController : Controller
                     db.Users.Add(new User
                     {
                         Role = "user",
-                        UserId =  n ,
+                      
                         NameUser = dangky.NameUser,
                         Password = dangky.Password,
                         EmailUser = dangky.EmailUser,

@@ -25,7 +25,7 @@ namespace CuaHangCongNghe.Controllers
             while (n.Contains(random))
             {
                 rnd = new Random();
-                random = rnd.Next(0, 9);
+                random = rnd.Next(0, 100);
                           
             }
 
