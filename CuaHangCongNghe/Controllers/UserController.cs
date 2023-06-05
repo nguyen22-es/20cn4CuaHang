@@ -15,6 +15,7 @@ namespace CuaHangCongNghe.Controllers;
 [AllowAnonymous]
 public class UserController : Controller
     {
+    private readonly gantudongcs gantudongcs;
         private readonly ILogger<UserController> _logger;
 
         public UserController(ILogger<UserController> logger)
@@ -61,8 +62,40 @@ public class UserController : Controller
         await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
         return RedirectToAction("Index", "Home");
     }
+    [HttpPost]
+    public IActionResult dangky(dangky dangky)
+    {
+        int n = gantudongcs.Gantudong();
+        if (ModelState.IsValid)
+        {
+            using (var db = new storeContext())
+            {
+                var user = db.Users.FirstOrDefault(c => c.NameUser==dangky.NameUser && c.Password == dangky.Password);
+                if (user == null)
+                {
+                    db.Users.Add(new User
+                    {
+                        Role = "user",
+                        UserId =  n ,
+                        NameUser = dangky.NameUser,
+                        Password = dangky.Password,
+                        EmailUser = dangky.EmailUser,
+                        AddressUser = dangky.AddressUser,
+                        PhoneUser = dangky.PhoneUser }); ;
+                    db.SaveChanges();
+                    ViewBag.Message = "mời đăng nhập!";
+                    return new RedirectResult(url: "/User/dangnhap");
+                }
+                ViewBag.Message = "tài khoản hoặc mật khẩu đã tôn tại ";
+                return new RedirectResult(url: "/User/dangky");
+            }
+        }
 
-    public IActionResult dangky() => View();
+
+     return View();
+
+
+    } 
         public IActionResult dangnhap() => View();
         public IActionResult thongtincanhan() => View();
 
@@ -77,4 +110,5 @@ public partial class dangnhapview
 
 
 }
+
 

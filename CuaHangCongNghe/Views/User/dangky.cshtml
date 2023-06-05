@@ -1,20 +1,22 @@
 ﻿@{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<form action="dangky" method="post">
 <div class="contact_section layout_padding">
     <div class="container">
         <h1 class="contact_taital">Đăng Ký</h1>
         <div class="contact_section_2">
             <div class="mail_section_1">
-                <input type="text" class="mail_text" placeholder="Tên" name="tên">
-                <input type="text" class="mail_text" placeholder="Gmail" name="gmail">
-                <input type="text" class="mail_text" placeholder="Số điện thoại" name="phone">
-                <input type="text" class="mail_text" placeholder="Địa chỉ" name="address">
-                <input type="password" class="mail_text" placeholder="Mật khẩu" name="password">
+                    <input type="text" class="mail_text" placeholder="Tên" name="NameUser">
+                    <input type="text" class="mail_text" placeholder="Gmail" name="EmailUser">                
+                <input type="text" class="mail_text" placeholder="Địa chỉ" name="AddressUser">
+                <input type="number" class="mail_text" placeholder="Số điện thoại" name="PhoneUser">
+                    <input type="password" class="mail_text" placeholder="Mật khẩu" name="Password">
                 <input type="password" class="mail_text" placeholder="Nhập lại mật khẩu" name="confirm_password">
-              
-                <div class="send_bt"><a href="#">Đăng ký</a></div>
+                    <h1>@ViewBag.Message</h1>
+                    <button type="submit">Đăng Ký</button>
             </div>
         </div>
     </div>
 </div>
+</form>
