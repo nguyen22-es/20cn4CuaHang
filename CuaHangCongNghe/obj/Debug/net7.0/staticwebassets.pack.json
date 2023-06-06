@@ -265,6 +265,14 @@
       "PackagePath": "staticwebassets\\images\\footer-logo.png"
     },
     {
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\images.jpg",
+      "PackagePath": "staticwebassets\\images\\images.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\images.png",
+      "PackagePath": "staticwebassets\\images\\images.png"
+    },
+    {
       "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\img-1.png",
       "PackagePath": "staticwebassets\\images\\img-1.png"
     },

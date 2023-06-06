@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\ztzkk\Source\Repos\20cn4CuaHang\CuaHangCongNghe
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/ztzkk/Source/Repos/20cn4CuaHang/CuaHangCongNghe/Views/admin/thongTinNguoiDung.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYWRtaW5cdGhvbmdUaW5OZ3VvaUR1bmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/ztzkk/Source/Repos/20cn4CuaHang/CuaHangCongNghe/Views/Danhmuc/dienthoai.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFuaG11Y1xkaWVudGhvYWkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

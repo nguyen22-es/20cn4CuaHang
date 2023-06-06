@@ -17,6 +17,8 @@ namespace CuaHangCongNghe.Models.Tables
         }
 
         public virtual DbSet<Category> Categories { get; set; } = null!;
+        public virtual DbSet<Dangnhapuser> Dangnhapusers { get; set; } = null!;
+        public virtual DbSet<Namerole> Nameroles { get; set; } = null!;
         public virtual DbSet<Order> Orders { get; set; } = null!;
         public virtual DbSet<Orderitem> Orderitems { get; set; } = null!;
         public virtual DbSet<Product> Products { get; set; } = null!;
@@ -47,6 +49,40 @@ namespace CuaHangCongNghe.Models.Tables
                 entity.Property(e => e.Name)
                     .HasMaxLength(255)
                     .UseCollation("utf8mb4_unicode_ci");
+            });
+
+            modelBuilder.Entity<Dangnhapuser>(entity =>
+            {
+                entity.HasKey(e => e.Iddangnhap)
+                    .HasName("PRIMARY");
+
+                entity.ToTable("dangnhapuser");
+
+                entity.Property(e => e.Iddangnhap).HasColumnName("iddangnhap");
+
+                entity.Property(e => e.Password)
+                    .HasMaxLength(50)
+                    .HasColumnName("password");
+
+                entity.Property(e => e.Tendangnhap)
+                    .HasMaxLength(50)
+                    .HasColumnName("tendangnhap");
+            });
+
+            modelBuilder.Entity<Namerole>(entity =>
+            {
+                entity.HasKey(e => e.Idrole)
+                    .HasName("PRIMARY");
+
+                entity.ToTable("namerole");
+
+                entity.Property(e => e.Idrole)
+                    .ValueGeneratedNever()
+                    .HasColumnName("idrole");
+
+                entity.Property(e => e.Tenrole)
+                    .HasMaxLength(50)
+                    .HasColumnName("tenrole");
             });
 
             modelBuilder.Entity<Order>(entity =>
@@ -149,6 +185,10 @@ namespace CuaHangCongNghe.Models.Tables
             {
                 entity.ToTable("users");
 
+                entity.HasIndex(e => e.Iddangnhap, "FK_users_dangnhapuser");
+
+                entity.HasIndex(e => e.Idrole, "FK_users_namerole");
+
                 entity.Property(e => e.UserId)
                     .ValueGeneratedNever()
                     .HasColumnName("user_id");
@@ -163,14 +203,14 @@ namespace CuaHangCongNghe.Models.Tables
                     .HasColumnName("email_user")
                     .UseCollation("utf8mb4_unicode_ci");
 
+                entity.Property(e => e.Iddangnhap).HasColumnName("iddangnhap");
+
+                entity.Property(e => e.Idrole).HasColumnName("idrole");
+
                 entity.Property(e => e.NameUser)
                     .HasMaxLength(200)
                     .HasColumnName("name_user")
                     .UseCollation("utf8mb4_unicode_ci");
-
-                entity.Property(e => e.Password)
-                    .HasMaxLength(200)
-                    .HasColumnName("password");
 
                 entity.Property(e => e.PhoneUser)
                     .HasMaxLength(20)
@@ -178,9 +218,15 @@ namespace CuaHangCongNghe.Models.Tables
 
                 entity.Property(e => e.RegistrationDate).HasColumnName("registration_date");
 
-                entity.Property(e => e.Role)
-                    .HasMaxLength(50)
-                    .HasColumnName("role");
+                entity.HasOne(d => d.IddangnhapNavigation)
+                    .WithMany(p => p.Users)
+                    .HasForeignKey(d => d.Iddangnhap)
+                    .HasConstraintName("FK_users_dangnhapuser");
+
+                entity.HasOne(d => d.IdroleNavigation)
+                    .WithMany(p => p.Users)
+                    .HasForeignKey(d => d.Idrole)
+                    .HasConstraintName("FK_users_namerole");
             });
 
             OnModelCreatingPartial(modelBuilder);

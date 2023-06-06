@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "quRdrBxkEHCnM8RrVyPvCLyAxSruLanh41ovxuDWMhU=",
+  "Hash": "4I9KEJPGbtWnoGv1I21ssmCAAtm3wcsETiQXH68IjNw=",
   "Source": "CuaHangCongNghe",
   "BasePath": "_content/CuaHangCongNghe",
   "Mode": "Default",
@@ -1154,6 +1154,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\footer-logo.png"
+    },
+    {
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\images.jpg",
+      "SourceId": "CuaHangCongNghe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
+      "BasePath": "_content/CuaHangCongNghe",
+      "RelativePath": "images/images.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\images.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\images.png",
+      "SourceId": "CuaHangCongNghe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
+      "BasePath": "_content/CuaHangCongNghe",
+      "RelativePath": "images/images.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\images.png"
     },
     {
       "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\img-1.png",

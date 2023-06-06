@@ -15,12 +15,14 @@
 
                     <button type="submit">Đăng nhập</button>
                 <p>Nếu bạn chưa có tài khoản, <a href="dangky">đăng ký</a> tại đây.</p>
+
                     @if (!string.IsNullOrEmpty(ViewBag.Message))
                     {
-                        <span class="text-danger">
+                        <div class="success">
                             @ViewBag.Message
-                        </span>
-                    }            
+                        </div>
+                    }
+                               
             </div>
         </div>
     </div>

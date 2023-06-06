@@ -1,22 +1,26 @@
 ﻿@{
-    Layout = "~/Views/Shared/_Layout.cshtml";
+Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<form action="dangky" method="post">
-<div class="contact_section layout_padding">
-    <div class="container">
-        <h1 class="contact_taital">Đăng Ký</h1>
-        <div class="contact_section_2">
-            <div class="mail_section_1">
-                    <input type="text" class="mail_text" placeholder="Tên" name="NameUser">
-                    <input type="text" class="mail_text" placeholder="Gmail" name="EmailUser">                
-                <input type="text" class="mail_text" placeholder="Địa chỉ" name="AddressUser">
-                <input type="number" class="mail_text" placeholder="Số điện thoại" name="PhoneUser">
-                    <input type="password" class="mail_text" placeholder="Mật khẩu" name="Password">
-                <input type="password" class="mail_text" placeholder="Nhập lại mật khẩu" name="confirm_password">
-                    <h1>@ViewBag.Message</h1>
-                    <button type="submit">Đăng Ký</button>
-            </div>
-        </div>
-    </div>
-</div>
+<script>
+    function validateForm() {
+      var password = document.getElementById("password").value;
+      var confirm_password = document.getElementById("confirm_password").value;
+
+      if (password != confirm_password) {
+        alert("Mật khẩu và xác nhận mật khẩu không khớp!");
+        return false;
+      }
+    }
+</script>
+<form action="dangkynew" method="get" onsubmit="return validateForm()">
+    <label for="username">Tài khoản:</label>
+    <input type="text" id="NameUser" name="NameUser" required><br><br>
+
+    <label for="password">Mật khẩu:</label>
+    <input type="password" id="password" name="Password" required><br><br>
+
+    <label for="confirm_password">Nhập lại mật khẩu:</label>
+    <input type="password" id="confirm_password" name="confirm_password" required><br><br>
+
+    <input type="submit" value="Đăng ký">
 </form>

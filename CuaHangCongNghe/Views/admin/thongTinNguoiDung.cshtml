@@ -15,11 +15,12 @@
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                 <thead>
                     <tr>
+                        <th>ID khách hàng</th>
                         <th>Tên</th>
                         <th>Địa chỉ</th>
                         <th>Số điện thoại</th>
                         <th>Ngày đăng ký</th>
-                        <th>ID khách hàng</th>
+                       
                     </tr>
                 </thead>
                 <tbody>
@@ -31,9 +32,30 @@
                             <td>@n.AddressUser</td>
                             <td>@n.PhoneUser</td>
                             <td>@n.RegistrationDate</td>
-                            
+                            <td>
+                                <a href="" class="btn btn-danger btn-icon-split">
+                                    <span class="icon text-white-50">
+                                        <i class="fas fa-trash"></i>
+                                    </span>
+                                    <span class="text">Delete</span>
+                                </a>
+                                <div class="my-2"></div>
+                                <a href="" class="btn btn-info btn-icon-split">
+                                    <span class="icon text-white-50">
+                                        <i class="fas fa-info-circle"></i>
+                                    </span>
+                                    <span class="text">Edit</span>
+                                </a>
+                                <div class="my-3"></div>
+                                <a href="" class="btn btn-danger btn-icon-split">
+                                    <span class="icon text-white-50">
+                                        <i class="fas fa-trash"></i>
+                                    </span>
+                                    <span class="text">thông tin đơn hàng</span>
+                                </a>
+                            </td>
                         </tr>
-                    }*/
+                    }
                 </tbody>
             </table>
         </div>

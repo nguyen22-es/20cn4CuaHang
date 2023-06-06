@@ -1,32 +1,44 @@
 ﻿@{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<form>
+@model CuaHangCongNghe.Controllers.dangky
+<form action="saveupdate" method="get">
     <div class="personal-info">
         <h2>Thông tin cá nhân</h2>
         <div class="info-section">
             <label for="full-name">Họ và tên:</label>
-            <input type="text" id="full-name" name="full_name" value="">
+            <input type="text" id="full-name" name="NameUser" value="@Model.NameUser">
         </div>
         <div class="info-section">
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" value="l">
+            <input type="email" id="email" name="EmailUser" value="@Model.EmailUser">
         </div>
         <div class="info-section">
             <label for="phone">Số điện thoại:</label>
-            <input type="tel" id="phone" name="phone_number" value="">
+            <input type="tel" id="phone" name="PhoneUser" value="@Model.PhoneUser">
         </div>
         <div class="info-section">
             <label for="address">Địa chỉ:</label>
-            <textarea id="address" rows="4" name="address"></textarea>
+            <input id="address" type="text" name="AddressUser" value="@Model.AddressUser">
         </div>
         <div class="info-section">
-            <label for="full-name">thông tin đơn hàng của bạn:</label>
-            <input type="text" id="full-name" name="full_name" value="">
+            <label for="tendangnhap">Tên tài khoản:</label>
+            <input id="tendangnhap" type="text" name="tendangnhap" value="@Model.tendangnhap">
         </div>
-        <div class="button-section">
-            <button type="submit">Cập nhật</button>
+        <div class="info-section">
+            <label for="Passwordid">Mật khẩu:</label>
+            <input id="Passwordid" type="text" name="password" value="@Model.password">
         </div>
+        <div class="info-section">
+            <button href=""  >thông tin đơn hàng của bạn:</button>
+      
+        </div>
+       
+        <span class="icon text-white-50">
+                <i class="fas fa-trash"></i>
+            </span>
+        <button type="submit" class="btn btn-danger btn-icon-split">cập nhật</button>
+        </a>
 
     </div>
 </form>
