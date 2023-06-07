@@ -1,28 +1,22 @@
-﻿
-using System.Diagnostics;
-using Microsoft.AspNetCore.Mvc;
-using CuaHangCongNghe.Models;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication;
 using System.Security.Claims;
-using System.ComponentModel.DataAnnotations;
 using CuaHangCongNghe.Models.Tables;
-using System;
-
-
+using CuaHangCongNghe.Controllers.laydulieu;
 
 namespace CuaHangCongNghe.Controllers;
 [AllowAnonymous]
 public class UserController : Controller
-    {
+{
     private static List<int> n = new List<int>();
     private readonly ILogger<UserController> _logger;
 
-        public UserController(ILogger<UserController> logger)
-        {
-            _logger = logger;
-        }
+    public UserController(ILogger<UserController> logger)
+    {
+        _logger = logger;
+    }
     public async Task<IActionResult> Login(dangnhapview dangnhap)
     {
         if (ModelState.IsValid)
@@ -38,7 +32,7 @@ public class UserController : Controller
                 new Claim(ClaimTypes.Name, user.Tendangnhap),
                 new Claim(ClaimTypes.Role, "user"),
                 new Claim(ClaimTypes.NameIdentifier, user.Iddangnhap.ToString())
-            
+
 
                 };
                     var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);//quản lý xác thực người dùng, ClaimsIdentity đại diện cho danh tính của người dùng và lưu trữ các khẳng định (claims) về người dùng như tên, vai trò, thông tin xác thực, và các thông tin khác
@@ -48,7 +42,7 @@ public class UserController : Controller
                         IsPersistent = true
                     });
                     return LocalRedirect("/Home/Index");
-                    
+
                 }
                 else
                 {
@@ -71,12 +65,12 @@ public class UserController : Controller
     [HttpGet]
     public RedirectResult dangkynew(dangnhapview dangnhapview)
     {
-  
+
         if (ModelState.IsValid)
         {
             using (var db = new storeContext())
             {
-                int i = 0; 
+                int i = 0;
                 var allUsers = db.Dangnhapusers.ToList();
 
                 foreach (var user in allUsers)
@@ -85,9 +79,9 @@ public class UserController : Controller
                     {
                         i++;
                     }
-                   
+
                 }
-                var dangnhapuser = db.Dangnhapusers.FirstOrDefault(c => c.Tendangnhap== dangnhapview.NameUser && c.Password == dangnhapview.Password);
+                var dangnhapuser = db.Dangnhapusers.FirstOrDefault(c => c.Tendangnhap == dangnhapview.NameUser && c.Password == dangnhapview.Password);
                 if (dangnhapuser == null)
                 {
                     var newdangnhapUser = new Dangnhapuser
@@ -95,34 +89,35 @@ public class UserController : Controller
                         Tendangnhap = dangnhapview.NameUser,
                         Password = dangnhapview.Password,
                         Iddangnhap = i,
-                       
+
                     };
                     db.Dangnhapusers.Add(newdangnhapUser);
-                    
+
                     ViewBag.Message = "đăng ký thành công!";
-                  
+
                     db.SaveChanges();
                     return new RedirectResult(url: "/User/dangnhap");
-                   
+
                 }
                 ViewBag.Message = "tài khoản hoặc mật khẩu đã tôn tại ";
                 return new RedirectResult(url: "/User/dangky");
             }
-            
+
         }
-         return new RedirectResult(url: "/User/dangky");
-        
-    } 
-   
-        public IActionResult dangnhap() => View();
+        return new RedirectResult(url: "/User/dangky");
+
+    }
+
+    public IActionResult dangnhap() => View();
     [HttpGet]
-    public IActionResult thongtincanhan() {
-        using  (var db = new storeContext())
+    public IActionResult thongtincanhan()
+    {
+        using (var db = new storeContext())
         {
             var userClaims = User.Claims;
 
             // Lấy giá trị của một Claim cụ thể
-            string name = User.FindFirstValue(ClaimTypes.Name);        
+            string name = User.FindFirstValue(ClaimTypes.Name);
             string identifier = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
 
@@ -134,15 +129,15 @@ public class UserController : Controller
             {
                 update.tendangnhap = userdangnhap.Tendangnhap;
                 update.password = userdangnhap?.Password;
-                
-                return View(update);                          
+
+                return View(update);
             }
-            if(userdangnhap != null && user!=null) 
+            if (userdangnhap != null && user != null)
             {
-                update.NameUser = user.NameUser;              
+                update.NameUser = user.NameUser;
                 update.EmailUser = user.EmailUser;
                 update.AddressUser = user.AddressUser;
-                update.PhoneUser  = user.PhoneUser;
+                update.PhoneUser = user.PhoneUser;
                 update.tendangnhap = userdangnhap.Tendangnhap;
                 update.password = userdangnhap?.Password;
                 return View(update);
@@ -154,23 +149,13 @@ public class UserController : Controller
     {
         if (ModelState.IsValid)
         {
-            using(var db = new storeContext())
+            using (var db = new storeContext())
             {
-                string identifier = User.FindFirstValue(ClaimTypes.NameIdentifier);
-                dangky.iddangnhap = int.Parse(identifier);
-                var dangnhap = db.Dangnhapusers.FirstOrDefault(c => c.Tendangnhap == dangky.tendangnhap);
-                var user = db.Users.FirstOrDefault(c => c.Iddangnhap == dangky.iddangnhap);
-                if(user != null)
-                {
-                    user.AddressUser = dangky.AddressUser;
-                    user.PhoneUser = dangky.PhoneUser;
-                    user.NameUser = dangky.NameUser;
-                    user.EmailUser = dangky.EmailUser;
-                    dangnhap.Tendangnhap = dangky.tendangnhap;
-                    dangnhap.Password = dangky.password;              
-                    db.SaveChanges();
-                }
-                if(user == null)
+
+
+                var user = db.Users.FirstOrDefault(c => c.UserId == dangky.iduser);
+
+                if (user != null)
                 {
                     db.Users.Add(new User
                     {
@@ -179,18 +164,22 @@ public class UserController : Controller
                         NameUser = dangky.NameUser,
                         EmailUser = dangky.EmailUser,
                         Iddangnhap = dangky.iddangnhap,
-                        RegistrationDate =DateTime.Now
+                        RegistrationDate = DateTime.Now
 
-                    }) ;
-                   db.SaveChanges();
-                    return new RedirectResult(url: "/User/thongtincanhan");
+                    });
+                    db.SaveChanges();
+                    db.Dangnhapusers.Add(new Dangnhapuser
+                    {
+                        Password = dangky.password,
+                    });
+                    return new RedirectResult(url: "/admin/thongtincanhan");
                 }
-            }         
+            }
         }
-        return new RedirectResult(url: "/User/thongtincanhan");
+        return new RedirectResult(url: "/admin/thongtincanhan");
     }
-        public IActionResult dangky() => View();
-    
+    public IActionResult dangky() => View();
+
 }
 public partial class dangnhapview
 {

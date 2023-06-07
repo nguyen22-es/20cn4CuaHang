@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\CuaHangCongNghe"
+    "\\CuaHangCongNghe",
+    "\\CuaHangCongNghe\\Controllers"
   ],
-  "SelectedNode": "\\CuaHangCongNghe\\CuaHangCongNghe.csproj",
+  "SelectedNode": "\\CuaHangCongNghe\\Controllers\\UserController.cs",
   "PreviewInSolutionExplorer": false
 }

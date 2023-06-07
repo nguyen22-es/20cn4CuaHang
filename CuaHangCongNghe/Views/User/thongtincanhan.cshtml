@@ -1,10 +1,13 @@
 ﻿@{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-@model CuaHangCongNghe.Controllers.dangky
+
 <form action="saveupdate" method="get">
     <div class="personal-info">
         <h2>Thông tin cá nhân</h2>
+        <div class="form-group">
+            <input name="iduser" type="hidden" class="form-control" id="IDInput" value="@Model.iduser">
+        </div>
         <div class="info-section">
             <label for="full-name">Họ và tên:</label>
             <input type="text" id="full-name" name="NameUser" value="@Model.NameUser">
@@ -30,7 +33,7 @@
             <input id="Passwordid" type="text" name="password" value="@Model.password">
         </div>
         <div class="info-section">
-            <button href=""  >thông tin đơn hàng của bạn:</button>
+            <button href=""  >thông tin đơn hàng:</button>
       
         </div>
        
