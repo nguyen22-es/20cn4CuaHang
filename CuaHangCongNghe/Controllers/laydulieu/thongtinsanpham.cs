@@ -1,27 +1,29 @@
 ﻿
 
-namespace CuaHangCongNghe.Controllers.laydulieu
+using CuaHangCongNghe.Models.Tables;
+using Microsoft.AspNetCore.Mvc;
+
+namespace CuaHangCongNghe.Controllers
 {
-    public partial class thongtinsanpham
+    public class thongtinsanpham : Controller
     {
-        public int OrderId { get; set; }
-        public int UserId { get; set; }
-        public int OrderItemsId { get; set; }
-        public string Name { get; set; }
 
-        public int Quantity { get; set; }
-        public DateOnly OrderDate { get; set; }
-        public string? Status { get; set; }
-           
-        public int ProductId { get; set; }
-       
-        public float Price { get; set; }
-        public int Id { get; set; }
-   
-        public string? Description { get; set; } 
+        public partial class listthongtin
+        {
+            public List<thongtinsanpham1> thongtinsanpham1s { get; set; }
+        }
 
+        public partial class thongtinsanpham1
+        {
+            public int idSanpham { get; set; }
+            public string Namesanpham { get; set; }
+            public DateTime oderDate { get; set; }
+            public string? Status { get; set; }
+            public float Price { get; set; }
+            public int Soluong { get; set; }
 
-
-
+        }
+            
+        
     }
 }

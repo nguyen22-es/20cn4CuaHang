@@ -1,5 +1,85 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
+@model CuaHangCongNghe.Controllers.thongtinsanpham
+
+<h1 class="h3 mb-2 text-gray-800"></h1>
+<p class="mb-4">danh sách những đơn hàng</p>
+<!-- End Page Heading -->
+<!-- DataTales Example -->
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+       @if (User.Identity.IsAuthenticated)   
+    if (User.IsInRole("admin"))
+    {
+        // Hiển thị nội dung cho vai trò "admin"
+        <h6 class="m-0 font-weight-bold text-primary"> thông tin đơn hàng của: @Model.NameUser</h6>
+    }
+    else if (User.IsInRole("user"))
+    {
+        // Hiển thị nội dung cho vai trò "user"
+        <h1>Xin chào User!</h1>
+    }
+    
+  
+       
+       
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>id sản phẩm</th>
+                        <th>Tên sản phẩm </th>
+                        <th>Ngày mua </th>
+                        <th>trạng thái</th>
+                        <th>số lượng</th>
+                       
+                    </tr>
+                </thead>
+                <tbody>
+                   @foreach (var n in Model.thongtinsanphams)
+                    {
+                        <tr>
+                            <td>@n.idSanpham</td>
+                            <td>@n.Namesanpham</td>
+                            <td>@n.oderDate</td>
+                            <td>@n.Status</td>
+                            <td>@n.Soluong</td>
+                            <td>
+                                @if (User.Identity.IsAuthenticated)
+                                {
+                                    if (User.IsInRole("admin"))
+                                    {
+                                       
+                                        <h6 class="m-0 font-weight-bold text-primary"> thông tin đơn hàng của: @Model.NameUser</h6>
+                                    }
+                                    else if (User.IsInRole("user"))
+                                    {
+                                        <a href="/admin/Deleteuser/@n.idSanpham" class="btn btn-danger btn-icon-split">
+                                    <span class="icon text-white-50">
+                                        <i class="fas fa-trash"></i>
+                                    </span>
+                                    <span class="text">Delete</span>
+                                </a>
+                                <div class="my-2"></div>
+                                <a href="/admin/thongtindonhang/@n.idSanpham" class="btn btn-info btn-icon-split">
+                                    <span class="icon text-white-50">
+                                        <i class="fas fa-info-circle"></i>
+                                    </span>
+                                    <span class="text">thông tin đơn hàng</span>
+                                </a >   
+                                     
+                                        <h1>Xin chào User!</h1>
+                                    }
+                                }
+
+                                                          
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>

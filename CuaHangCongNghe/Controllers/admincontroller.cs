@@ -3,6 +3,7 @@ using CuaHangCongNghe.Models.Tables;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
+using static CuaHangCongNghe.Controllers.thongtinsanpham;
 
 namespace CuaHangCongNghe.Controllers
 {
@@ -44,19 +45,37 @@ namespace CuaHangCongNghe.Controllers
                 return new RedirectResult(url: "/admin/thongTinNguoiDung");
             }
         }
-        public IActionResult thongtindonhang(int id)
+     public thongtinsanpham GetThongtinsanpham()
         {
             using (var db = new storeContext())
             {
-               var user = db.Users.()                  
+                var thongtin = listthongtin();
+            }
+        }
+        public IActionResult thongtindonhang(int id)
+        {
+            using (var db = new storeContext())
 
-                var update = new dangky();
-                if (userdangnhap != null && user == null)
+            {
+              
+                var oderitemlist = new oderitem();
+
+                var oderlist = db.Orderitems.ToList();
+              
+
+                var oderuser = db.Orders.Where(c => c.UserId ==id).FirstOrDefault();
+
+                if (oderuser != null )
                 {
-                    update.tendangnhap = userdangnhap.Tendangnhap;
-                    update.password = userdangnhap?.Password;
+                   var tensp = db.Orderitems.Where(c => c.OrderId ==oderuser.OrderId).FirstOrDefault();
+                    if (tensp != null)
+                    {
+                        
 
-                    return View(update);
+                    }
+
+
+
                 }
                 if (userdangnhap != null && user != null)
                 {
@@ -76,5 +95,11 @@ namespace CuaHangCongNghe.Controllers
             public List<User> Users { get; set; }
 
         }
+
+        public partial class oderitem
+        {
+            public List<oderitem> Oderitems { get; set; }
+        }
+      
     }  
 }
