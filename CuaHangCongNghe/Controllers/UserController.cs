@@ -24,13 +24,13 @@ public class UserController : Controller
             using (var db = new storeContext())
             {
                 var user = db.Dangnhapusers.FirstOrDefault(c => c.Tendangnhap == dangnhap.NameUser & c.Password == dangnhap.Password);
-
+               
                 if (user != null)
                 {
                     var claims = new List<Claim>()
             {
                 new Claim(ClaimTypes.Name, user.Tendangnhap),
-                new Claim(ClaimTypes.Role, "user"),
+                new Claim(ClaimTypes.Role, user.Idrole.ToString() ),
                 new Claim(ClaimTypes.NameIdentifier, user.Iddangnhap.ToString())
 
 

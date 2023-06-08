@@ -1,9 +1,8 @@
-﻿using CuaHangCongNghe.Controllers.laydulieu;
-using CuaHangCongNghe.Models.Tables;
+﻿using CuaHangCongNghe.Models.Tables;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using System.Security.Claims;
-using static CuaHangCongNghe.Controllers.thongtinsanpham;
+using CuaHangCongNghe.Controllers.laydulieu;
+
 
 namespace CuaHangCongNghe.Controllers
 {
@@ -17,15 +16,15 @@ namespace CuaHangCongNghe.Controllers
             _logger = logger;
         }
 
-        public IActionResult thongTinNguoiDung()
+      public IActionResult thongTinNguoiDung()
         {
             using (var db = new storeContext())
             {
                 var userViewModel = new userViewModel();
 
-                var categories = db.Users.ToList();
+                var user1 = db.Users.ToList();
 
-                userViewModel.Users = categories;
+                userViewModel.Users = user1;
 
                 return View(userViewModel);
             }
@@ -45,61 +44,95 @@ namespace CuaHangCongNghe.Controllers
                 return new RedirectResult(url: "/admin/thongTinNguoiDung");
             }
         }
-     public thongtinsanpham GetThongtinsanpham()
+        public thongtinsanpham xemlist(int id)
         {
             using (var db = new storeContext())
             {
-                var thongtin = listthongtin();
+                var thongtindonhang = new thongtinsanpham();
+
+                var oder = db.Orders.Where(c => c.OrderId == id).FirstOrDefault();
+                if (oder != null)
+                {
+                    thongtindonhang.oderDate = DateTime.Now;
+                    thongtindonhang.Status = oder.Status;
+                    thongtindonhang.idDonHang = oder.OrderId;
+                }
+                else
+                {
+                    thongtindonhang.oderDate = DateTime.MinValue; // Giá trị mặc định cho oderDate khi oder là null
+                    thongtindonhang.Status = string.Empty; // Giá trị mặc định cho Status khi oder là null
+                    thongtindonhang.idDonHang = 0; // Giá trị mặc định cho idDonHang khi oder là null
+                }
+
+                var oderitems = db.Orderitems.Where(c => c.OrderId == thongtindonhang.idDonHang).FirstOrDefault();
+                if (oderitems != null)
+                {
+                    thongtindonhang.idHang = oderitems.ProductId;
+                    thongtindonhang.Soluong = oderitems.Quantity;
+                }
+                else
+                {
+                    thongtindonhang.idHang = 0; // Giá trị mặc định cho idHang khi oderitems là null
+                    thongtindonhang.Soluong = 0; // Giá trị mặc định cho Soluong khi oderitems là null
+                }
+
+                var sanpham = db.Products.Where(c => c.Id == thongtindonhang.idHang).FirstOrDefault();
+                if (sanpham != null)
+                {
+                    thongtindonhang.Namesanpham = sanpham.Name;
+                    thongtindonhang.Price = sanpham.Price * thongtindonhang.Soluong;
+                }
+                else
+                {
+                    thongtindonhang.Namesanpham = string.Empty; // Giá trị mặc định cho Namesanpham khi sanpham là null
+                    thongtindonhang.Price = 0; // Giá trị mặc định cho Price khi sanpham là null
+                }
+
+                return thongtindonhang;
             }
         }
+
         public IActionResult thongtindonhang(int id)
         {
             using (var db = new storeContext())
-
             {
-              
-                var oderitemlist = new oderitem();
+                var oderlist = new oder();
+                var listthongtindonhang = new listoder();
+                listthongtindonhang.thongtinsanphams = new List<thongtinsanpham>(); ;
+                var listoder = db.Orders.ToList();
+                oderlist.Orders = listoder;
 
-                var oderlist = db.Orderitems.ToList();
-              
-
-                var oderuser = db.Orders.Where(c => c.UserId ==id).FirstOrDefault();
-
-                if (oderuser != null )
+                foreach (var item in listoder)
                 {
-                   var tensp = db.Orderitems.Where(c => c.OrderId ==oderuser.OrderId).FirstOrDefault();
-                    if (tensp != null)
+                    if (item.UserId == id)
                     {
-                        
-
+                        var thongtindonhang = xemlist(item.OrderId);
+                        if (thongtindonhang != null)
+                        {
+                            listthongtindonhang.thongtinsanphams.Add(xemlist(item.OrderId));
+                        }
                     }
-
-
-
                 }
-                if (userdangnhap != null && user != null)
-                {
-                    update.NameUser = user.NameUser;
-                    update.EmailUser = user.EmailUser;
-                    update.AddressUser = user.AddressUser;
-                    update.PhoneUser = user.PhoneUser;
-                    update.tendangnhap = userdangnhap.Tendangnhap;
-                    update.password = userdangnhap?.Password;
-                    return View(update);
-                }
-                return new RedirectResult(url: "/Home/Index");
+
+                return View(listthongtindonhang);
             }
-        }       
+
+}
         public partial class userViewModel
         {
             public List<User> Users { get; set; }
 
         }
 
-        public partial class oderitem
+        public partial class oder
         {
-            public List<oderitem> Oderitems { get; set; }
+            public List<Order>  Orders { get; set; }
         }
-      
-    }  
+        public partial class listoder
+        {
+            public List<thongtinsanpham> thongtinsanphams { get; set; }
+        }
+
+    }
+
 }

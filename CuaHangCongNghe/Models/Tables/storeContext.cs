@@ -58,7 +58,11 @@ namespace CuaHangCongNghe.Models.Tables
 
                 entity.ToTable("dangnhapuser");
 
+                entity.HasIndex(e => e.Idrole, "FK_dangnhapuser_namerole");
+
                 entity.Property(e => e.Iddangnhap).HasColumnName("iddangnhap");
+
+                entity.Property(e => e.Idrole).HasColumnName("idrole");
 
                 entity.Property(e => e.Password)
                     .HasMaxLength(50)
@@ -67,6 +71,11 @@ namespace CuaHangCongNghe.Models.Tables
                 entity.Property(e => e.Tendangnhap)
                     .HasMaxLength(50)
                     .HasColumnName("tendangnhap");
+
+                entity.HasOne(d => d.IdroleNavigation)
+                    .WithMany(p => p.Dangnhapusers)
+                    .HasForeignKey(d => d.Idrole)
+                    .HasConstraintName("FK_dangnhapuser_namerole");
             });
 
             modelBuilder.Entity<Namerole>(entity =>
@@ -89,7 +98,7 @@ namespace CuaHangCongNghe.Models.Tables
             {
                 entity.ToTable("orders");
 
-                entity.HasIndex(e => e.UserId, "user_id");
+                entity.HasIndex(e => e.UserId, "orders_ibfk_1");
 
                 entity.Property(e => e.OrderId)
                     .ValueGeneratedNever()
@@ -107,7 +116,6 @@ namespace CuaHangCongNghe.Models.Tables
                 entity.HasOne(d => d.User)
                     .WithMany(p => p.Orders)
                     .HasForeignKey(d => d.UserId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("orders_ibfk_1");
             });
 
@@ -118,7 +126,7 @@ namespace CuaHangCongNghe.Models.Tables
 
                 entity.ToTable("orderitems");
 
-                entity.HasIndex(e => e.OrderId, "order_id");
+                entity.HasIndex(e => e.OrderId, "orderitems_ibfk_1");
 
                 entity.HasIndex(e => e.ProductId, "product_id");
 
@@ -128,8 +136,6 @@ namespace CuaHangCongNghe.Models.Tables
 
                 entity.Property(e => e.OrderId).HasColumnName("order_id");
 
-                entity.Property(e => e.Price).HasColumnName("price");
-
                 entity.Property(e => e.ProductId).HasColumnName("product_id");
 
                 entity.Property(e => e.Quantity).HasColumnName("quantity");
@@ -137,7 +143,6 @@ namespace CuaHangCongNghe.Models.Tables
                 entity.HasOne(d => d.Order)
                     .WithMany(p => p.Orderitems)
                     .HasForeignKey(d => d.OrderId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("orderitems_ibfk_1");
 
                 entity.HasOne(d => d.Product)
@@ -221,6 +226,7 @@ namespace CuaHangCongNghe.Models.Tables
                 entity.HasOne(d => d.IddangnhapNavigation)
                     .WithMany(p => p.Users)
                     .HasForeignKey(d => d.Iddangnhap)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_users_dangnhapuser");
 
                 entity.HasOne(d => d.IdroleNavigation)

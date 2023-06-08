@@ -1,0 +1,76 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model CuaHangCongNghe.Controllers.admincontroller.listoder
+<h1 class="h3 mb-2 text-gray-800"></h1>
+<p class="mb-4">danh sách những đơn hàng</p>
+<!-- End Page Heading -->
+<!-- DataTales Example -->
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+       @if (User.Identity.IsAuthenticated)   
+    if (User.IsInRole("1"))
+    {
+        // Hiển thị nội dung cho vai trò "admin"
+        <h6 class="m-0 font-weight-bold text-primary"> thông tin đơn hàng của: </h6>
+    }
+    else if (User.IsInRole("0"))
+    {
+        // Hiển thị nội dung cho vai trò "user"
+        <h1>Xin chào User!</h1>
+    }
+    
+  
+       
+       
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <tbody>
+                    <tr>
+                        <th></th>
+                        <th>id sản phẩm</th>
+                        <th>Tên sản phẩm </th>
+                        <th>Ngày mua </th>
+                        <th>tổng giá của sản phẩm</th>
+                        <th>trạng thái</th>
+                        <th>số lượng</th>                      
+                    </tr>
+                    @if (Model != null && Model.thongtinsanphams != null && Model.thongtinsanphams.Count > 0)
+                    {
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Order Date</th>
+                                    <th>Status</th>
+                                    <th>Order ID</th>
+                                    <th>Product Name</th>
+                                    <th>Quantity</th>
+                                    <th>Price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var thongtindonhang in Model.thongtinsanphams)
+                                {
+                                    <tr>
+                                        <td>@thongtindonhang.oderDate</td>
+                                        <td>@thongtindonhang.Status</td>
+                                        <td>@thongtindonhang.idDonHang</td>
+                                        <td>@thongtindonhang.Namesanpham</td>
+                                        <td>@thongtindonhang.Soluong</td>
+                                        <td>@thongtindonhang.Price</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    }
+                    else
+                    {
+                        <p>No order information available.</p>
+                    }
+
+              </tbody>
+            </table>
+        </div>
