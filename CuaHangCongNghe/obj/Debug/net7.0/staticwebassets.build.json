@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "4I9KEJPGbtWnoGv1I21ssmCAAtm3wcsETiQXH68IjNw=",
+  "Hash": "6RzjPnNs8bBLG8EWZvUYlnovFA7cg53JokVchcQCSDE=",
   "Source": "CuaHangCongNghe",
   "BasePath": "_content/CuaHangCongNghe",
   "Mode": "Default",
@@ -1037,6 +1037,23 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\asus.png",
+      "SourceId": "CuaHangCongNghe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
+      "BasePath": "_content/CuaHangCongNghe",
+      "RelativePath": "images/asus.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\asus.png"
+    },
+    {
       "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\calendar-icon.png",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
@@ -1086,6 +1103,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\camera-img.png"
+    },
+    {
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\chuptainghePro.jpg",
+      "SourceId": "CuaHangCongNghe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
+      "BasePath": "_content/CuaHangCongNghe",
+      "RelativePath": "images/chuptainghePro.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\chuptainghePro.jpg"
     },
     {
       "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\computer-img.png",
@@ -1224,40 +1258,6 @@
       "OriginalItemSpec": "wwwroot\\images\\img-2.png"
     },
     {
-      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\img-3.png",
-      "SourceId": "CuaHangCongNghe",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
-      "BasePath": "_content/CuaHangCongNghe",
-      "RelativePath": "images/img-3.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\img-3.png"
-    },
-    {
-      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\img-4.png",
-      "SourceId": "CuaHangCongNghe",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
-      "BasePath": "_content/CuaHangCongNghe",
-      "RelativePath": "images/img-4.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\img-4.png"
-    },
-    {
       "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\instagram-icon.png",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
@@ -1273,6 +1273,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\instagram-icon.png"
+    },
+    {
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\iphone-14-pro-93.jpg",
+      "SourceId": "CuaHangCongNghe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
+      "BasePath": "_content/CuaHangCongNghe",
+      "RelativePath": "images/iphone-14-pro-93.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\iphone-14-pro-93.jpg"
     },
     {
       "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\laptop-img.png",

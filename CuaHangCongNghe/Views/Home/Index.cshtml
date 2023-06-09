@@ -1,7 +1,7 @@
 ﻿@{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
+@model CuaHangCongNghe.Controllers.HomeController.listsanpham
 <!-- banner section start -->
 <div class="banner_section layout_padding">
     <div id="my_slider" class="carousel slide" data-ride="carousel">
@@ -10,7 +10,7 @@
                 <div class="container">
                     <div class="row border_1">
                         <div class="col-md-4">
-                            <div class="image_1"><img src="images/img-1.png" style="width:100%"></div>
+                            <div class="image_1"><img src="~/images/img-1.png" style="width:100%"></div>
                         </div>
                         <div class="col-md-4">
                             <h1 class="banner_taital">khuyến mãi lớn</h1>
@@ -18,7 +18,7 @@
                             <div class="contact_bt"><a href="contact.html">Contact Us</a></div>
                         </div>
                         <div class="col-md-4">
-                            <div class="image_2"><img src="images/img-2.png" style="width:100%"></div>
+                            <div class="image_2"><img src="~/images/img-2.png" style="width:100%"></div>
                         </div>
                     </div>
                 </div>
@@ -27,7 +27,7 @@
                 <div class="container">
                     <div class="row border_1">
                         <div class="col-md-4">
-                            <div class="image_1"><img src="images/img-1.png" style="width:100%"></div>
+                            <div class="image_1"><img src="~/images/img-1.png" style="width:100%"></div>
                         </div>
                         <div class="col-md-4">
                             <h1 class="banner_taital">khuyến mãi lớn</h1>
@@ -35,7 +35,7 @@
                             <div class="contact_bt"><a href="contact.html">Contact Us</a></div>
                         </div>
                         <div class="col-md-4">
-                            <div class="image_2"><img src="images/img-2.png" style="width:100%"></div>
+                            <div class="image_2"><img src="~/images/img-2.png" style="width:100%"></div>
                         </div>
                     </div>
                 </div>
@@ -44,7 +44,7 @@
                 <div class="container">
                     <div class="row border_1">
                         <div class="col-md-4">
-                            <div class="image_1"><img src="images/img-1.png" style="width:100%"></div>
+                            <div class="image_1"><img src="~/images/img-1.png" style="width:100%"></div>
                         </div>
                         <div class="col-md-4">
                             <h1 class="banner_taital">khuyến mãi lớn</h1>
@@ -52,7 +52,7 @@
                             <div class="contact_bt"><a href="contact.html">Contact Us</a></div>
                         </div>
                         <div class="col-md-4">
-                            <div class="image_2"><img src="images/img-2.png" style="width:100%"></div>
+                            <div class="image_2"><img src="~/images/img-2.png" style="width:100%"></div>
                         </div>
                     </div>
                 </div>
@@ -75,14 +75,7 @@
                 <h2 class="categary_text">Danh mục</h2>
             </div>
             <div class="catagary_right">
-                <div class="catagary_menu">
-                    <ul>
-                        <li><a href="#">điện thoại</a></li>
-                        <li><a href="#">máy tính</a></li>
-                        <li><a href="#">phụ kiện</a></li>
-
-                    </ul>
-                </div>
+                
             </div>
         </div>
     </div>
@@ -93,36 +86,31 @@
             <div class="col-md-4">
                 <div class="box_man">
                     <h3 class="mobile_text">điện thoại</h3>
-                    <div class="mobile_img"><img src="images/mobile-img.png"></div>
+                    <div class="mobile_img"><img src="~/images/mobile-img.png"></div>
                     <div class="cart_main">
-                        <div class="cart_bt"><a href="#">Add To Cart</a></div>
-                        <h4 class="samsung_text">Samsung</h4>
-                        <h6 class="rate_text"><a href="#">$500</a></h6>
-                        <h6 class="rate_text_1">$1000</h6>
+                        <div class="cart_bt"><a href="#">mua ngay</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="box_man">
+                    <h3 class="mobile_text">máy tính</h3>
+                    <div class="watch_img"><img src="~/images/watch-img.png"></div>
+                    <div class="cart_main">
+                        <div class="cart_bt"><a href="#">mua ngay</a></div>
+                       
+
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="box_man">
-                    <h3 class="mobile_text">Watch</h3>
-                    <div class="watch_img"><img src="images/watch-img.png"></div>
+                    <h3 class="mobile_text">phụ kiện</h3>
+                    <div class="camera_img"><img src="~/images/camera-img.png"></div>
                     <div class="cart_main">
-                        <div class="cart_bt"><a href="#">Add To Cart</a></div>
-                        <h4 class="samsung_text">Samsung</h4>
-                        <h6 class="rate_text"><a href="#">$500</a></h6>
-                        <h6 class="rate_text_1">$1000</h6>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="box_man">
-                    <h3 class="mobile_text">Camera</h3>
-                    <div class="camera_img"><img src="images/camera-img.png"></div>
-                    <div class="cart_main">
-                        <div class="cart_bt"><a href="#">Add To Cart</a></div>
-                        <h4 class="samsung_text">Samsung</h4>
-                        <h6 class="rate_text"><a href="#">$500</a></h6>
-                        <h6 class="rate_text_1">$1000</h6>
+                        <div class="cart_bt"><a href="#">mua ngay</a></div>
+
                     </div>
                 </div>
             </div>
@@ -133,7 +121,41 @@
 <!-- computers section start -->
 <div class="computers_section layout_padding">
     <div class="container">
-        <h1 class="computers_taital">Computers & Laptop</h1>
+        <h1 class="computers_taital">máy tính & Laptop</h1>
+    </div>
+</div>
+<div class="computers_section_2">
+    <div class="container-fluid">
+        <div class="computer_main">
+            <div class="row">
+                @{int count =  0;
+                foreach (var item in Model.Products)
+                {
+                    if (count < 3)
+                    {
+                        <div class="col-md-4">
+                            <div class="card">
+                                    <img class="product-image" src="@item.ImageUrl" alt="@item.Name">
+                                    <div class="card_main">
+                                        <h6 class="price_text">giá: @item.Price</h6>
+                                        <h6 class="price_text">số lượng còn lại: @item.Stockquantity</h6>
+                                        <h5 class="samsung_text">@item.Name</h5>
+                                        <a href="#" class="btn btn-primary">thêm vào giỏ hàng</a>
+                                </div>
+                            </div>
+                        </div>
+                    }
+
+                    count++;
+                }
+             }
+            </div>
+        </div>
+    </div>
+</div>
+<div class="computers_section layout_padding">
+    <div class="container">
+        <h1 class="computers_taital">phụ kiện</h1>
     </div>
 </div>
 <div class="computers_section_2">
@@ -141,7 +163,7 @@
         <div class="computer_main">
             <div class="row">
                 <div class="col-md-4">
-                    <div class="computer_img"><img src="images/computer-img.png"></div>
+                    <div class="computer_img"><img ><img src="~/images/1803_asusvivobooka515ep.png" /></div>
                     <h4 class="computer_text">COMPUTER</h4>
                     <div class="computer_text_main">
                         <h4 class="dell_text">Samsung</h4>
@@ -149,9 +171,11 @@
                         <h6 class="price_text_1"><a href="#">$1000</a></h6>
                     </div>
                     <div class="cart_bt_1"><a href="#">Add To Cart</a></div>
+
+
                 </div>
                 <div class="col-md-4">
-                    <div class="computer_img"><img src="images/laptop-img.png"></div>
+                    <div class="computer_img"><img src="~/images/laptop-img.png"></div>
                     <h4 class="computer_text">LAPTOP</h4>
                     <div class="computer_text_main">
                         <h4 class="dell_text">Dell</h4>
@@ -160,8 +184,9 @@
                     </div>
                     <div class="cart_bt_1"><a href="#">Add To Cart</a></div>
                 </div>
+
                 <div class="col-md-4">
-                    <div class="computer_img"><img src="images/mac-img.png"></div>
+                    <div class="computer_img"><img src="~/images/mac-img.png"></div>
                     <h4 class="computer_text">macOS</h4>
                     <div class="computer_text_main">
                         <h4 class="dell_text">Apple</h4>
@@ -174,3 +199,4 @@
         </div>
     </div>
 </div>
+

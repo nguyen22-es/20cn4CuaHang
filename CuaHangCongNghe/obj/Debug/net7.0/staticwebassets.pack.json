@@ -237,6 +237,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\asus.png",
+      "PackagePath": "staticwebassets\\images\\asus.png"
+    },
+    {
       "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\calendar-icon.png",
       "PackagePath": "staticwebassets\\images\\calendar-icon.png"
     },
@@ -247,6 +251,10 @@
     {
       "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\camera-img.png",
       "PackagePath": "staticwebassets\\images\\camera-img.png"
+    },
+    {
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\chuptainghePro.jpg",
+      "PackagePath": "staticwebassets\\images\\chuptainghePro.jpg"
     },
     {
       "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\computer-img.png",
@@ -281,16 +289,12 @@
       "PackagePath": "staticwebassets\\images\\img-2.png"
     },
     {
-      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\img-3.png",
-      "PackagePath": "staticwebassets\\images\\img-3.png"
-    },
-    {
-      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\img-4.png",
-      "PackagePath": "staticwebassets\\images\\img-4.png"
-    },
-    {
       "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\instagram-icon.png",
       "PackagePath": "staticwebassets\\images\\instagram-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\iphone-14-pro-93.jpg",
+      "PackagePath": "staticwebassets\\images\\iphone-14-pro-93.jpg"
     },
     {
       "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\laptop-img.png",

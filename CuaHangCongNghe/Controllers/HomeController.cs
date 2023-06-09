@@ -16,11 +16,20 @@ public class HomeController : Controller
         _logger = logger;
     }
 
+  
     public IActionResult Index()
     {
-        return View();
-    }
+        using (var db = new storeContext())
+        {
+            var Listsanpham = new listsanpham();
 
+            var sanpham = db.Products.ToList();
+
+            Listsanpham.Products = sanpham;
+
+            return View(Listsanpham);
+        }
+    }
     public IActionResult Privacy()
     {
         return View();
@@ -32,6 +41,13 @@ public class HomeController : Controller
     public IActionResult Error()
     {
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+    }
+    public partial class listsanpham 
+    {
+    
+    public List<Product> Products { get; set; }
+    
+    
     }
 }
 
