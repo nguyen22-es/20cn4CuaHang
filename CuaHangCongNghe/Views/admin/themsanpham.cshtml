@@ -1,0 +1,33 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model CuaHangCongNghe.Controllers.admincontroller.listdanhmuc
+<form action="savesanpham" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="name">tên sản phẩm :</label>
+        <input type="text" name="Name" id="name" class="form-control" required>
+    </div>
+    <div class="form-group">
+        <label for="price">giá sản phẩm:</label>
+        <input type="number" name="Price" id="price" class="form-control" required>
+    </div>
+    <div class="form-group">
+        <label for="description">số lượng:</label>
+        <input name="Description" id="description" class="form-control" required></input>
+    </div>
+ 
+    <label for="ipdanhmuc">thêm loại sản phẩm mới:</label>
+    <input type="text" id="ipdanhmuc" name="Namecategory">
+    <label for="ipdanhmuc">Chọn một loại sản phẩm:</label>
+    <select id="ipdanhmuc-select" name="Name">
+        @foreach (var item in Model.Categories)
+        {
+            <option value="@item.Name">@item.Name</option>
+        }
+    </select>
+    <div class="form-group">
+        <label for="image">Image:</label>
+        <input type="file" name="image" id="image" class="form-control-file" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Add Product</button>
+</form>

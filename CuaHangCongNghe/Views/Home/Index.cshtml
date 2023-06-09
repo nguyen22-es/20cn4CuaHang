@@ -131,7 +131,7 @@
                 @{int count =  0;
                 foreach (var item in Model.Products)
                 {
-                    if (count < 3)
+                    if (count < 3 && item.CategoryId == 2)
                     {
                         <div class="col-md-4">
                             <div class="card">
@@ -155,6 +155,41 @@
 </div>
 <div class="computers_section layout_padding">
     <div class="container">
+        <h1 class="computers_taital">điện thoại</h1>
+    </div>
+</div>
+<div class="computers_section_2">
+    <div class="container-fluid">
+        <div class="computer_main">
+            <div class="row">
+                @{
+                    int coun = 0;
+                    foreach (var item in Model.Products)
+                    {
+                        if (coun < 3 && item.CategoryId == 1)
+                        {
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img class="product-image" src="@item.ImageUrl" alt="@item.Name">
+                                    <div class="card_main">
+                                        <h6 class="price_text">giá: @item.Price</h6>
+                                        <h6 class="price_text">số lượng còn lại: @item.Stockquantity</h6>
+                                        <h5 class="samsung_text">@item.Name</h5>
+                                        <a href="#" class="btn btn-primary">thêm vào giỏ hàng</a>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+
+                        coun++;
+                    }
+                }
+            </div>
+        </div>
+    </div>
+</div>
+<div class="computers_section layout_padding">
+    <div class="container">
         <h1 class="computers_taital">phụ kiện</h1>
     </div>
 </div>
@@ -162,41 +197,29 @@
     <div class="container-fluid">
         <div class="computer_main">
             <div class="row">
-                <div class="col-md-4">
-                    <div class="computer_img"><img ><img src="~/images/1803_asusvivobooka515ep.png" /></div>
-                    <h4 class="computer_text">COMPUTER</h4>
-                    <div class="computer_text_main">
-                        <h4 class="dell_text">Samsung</h4>
-                        <h6 class="price_text"><a href="#">$500</a></h6>
-                        <h6 class="price_text_1"><a href="#">$1000</a></h6>
-                    </div>
-                    <div class="cart_bt_1"><a href="#">Add To Cart</a></div>
+                @{
+                    int cou = 0;
+                    foreach (var item in Model.Products)
+                    {
+                        if (cou < 3 && item.CategoryId == 3)
+                        {
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img class="product-image" src="@item.ImageUrl" alt="@item.Name">
+                                    <div class="card_main">
+                                        <h6 class="price_text">giá: @item.Price</h6>
+                                        <h6 class="price_text">số lượng còn lại: @item.Stockquantity</h6>
+                                        <h5 class="samsung_text">@item.Name</h5>
+                                        <a href="#" class="btn btn-primary">thêm vào giỏ hàng</a>
+                                    </div>
+                                </div>
+                            </div>
+                        }
 
-
-                </div>
-                <div class="col-md-4">
-                    <div class="computer_img"><img src="~/images/laptop-img.png"></div>
-                    <h4 class="computer_text">LAPTOP</h4>
-                    <div class="computer_text_main">
-                        <h4 class="dell_text">Dell</h4>
-                        <h6 class="price_text"><a href="#">$500</a></h6>
-                        <h6 class="price_text_1"><a href="#">$1000</a></h6>
-                    </div>
-                    <div class="cart_bt_1"><a href="#">Add To Cart</a></div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="computer_img"><img src="~/images/mac-img.png"></div>
-                    <h4 class="computer_text">macOS</h4>
-                    <div class="computer_text_main">
-                        <h4 class="dell_text">Apple</h4>
-                        <h6 class="price_text"><a href="#">$500</a></h6>
-                        <h6 class="price_text_1"><a href="#">$1000</a></h6>
-                    </div>
-                    <div class="cart_bt_1"><a href="#">Add To Cart</a></div>
-                </div>
+                        cou++;
+                    }
+                }
             </div>
         </div>
     </div>
 </div>
-

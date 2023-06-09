@@ -40,18 +40,22 @@
                                 <td>
                                     @thongtindonhang.Status
                                 </td>
-                                @if (User.Identity.IsAuthenticated && User.IsInRole("admin"))
+                                @if (User.Identity.IsAuthenticated && User.IsInRole("user"))
                                 {
-                                    // Hiển thị nội dung cho vai trò "user"
+
                                     <form action="/admin/saveTrangThai" method="post">
-                                        <p>Trạng thái của đơn hàng:</p>
-                                        <input type="hidden" id="idInput" name="id1" value="@thongtindonhang.oderid">
-                                        <label for="trangThai">Nhập trạng thái đơn hàng:</label>
-                                        <input type="text" id="trangThai" name="name" required><br><br>
-                                        <a href="/admin/thongtindonhang" >
-                                         <input type="hidden" id="iduser" name="id" value="@thongtindonhang.iduser">
-                                        <input type="submit" value="Thay đổi">
-                                    </form>
+                                    <label for="fruits">Chọn một loại trái cây:</label>
+                                    <input type="hidden" id="idInput" name="id1" value="@thongtindonhang.oderid">
+                                    <input type="hidden" id="iduser" name="id" value="@thongtindonhang.iduser">
+                                    <select id="fruits" name="name">
+                                        <option value="đang xử lý">đang xử lý</option>
+                                        <option value="đã giao">đã giao</option>
+                                        <option value="chưa giao">chưa giao</option>
+                                        <option value="giao chậm">giao chậm</option>
+                                    </select>
+                                    <input type="submit" value="Thay đổi">
+
+                                    </form>                             
                                 }
                             </tr>
                         }
