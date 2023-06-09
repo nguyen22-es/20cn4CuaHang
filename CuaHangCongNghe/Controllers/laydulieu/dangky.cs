@@ -29,6 +29,7 @@ namespace CuaHangCongNghe.Controllers.laydulieu
         public string password { get; set; }
 
         public int iduser { get; set; }
+        public int idrole { get; set; }
 
     }
 }

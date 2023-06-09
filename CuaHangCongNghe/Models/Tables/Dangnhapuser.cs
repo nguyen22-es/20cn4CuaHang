@@ -13,8 +13,7 @@ namespace CuaHangCongNghe.Models.Tables
         public int Iddangnhap { get; set; }
         public string? Password { get; set; }
         public string? Tendangnhap { get; set; }
-        public int? Idrole { get; set; }
-
+        public int Idrole { get; set; }
 
         public virtual Namerole? IdroleNavigation { get; set; }
         public virtual ICollection<User> Users { get; set; }

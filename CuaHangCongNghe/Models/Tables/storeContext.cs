@@ -226,7 +226,6 @@ namespace CuaHangCongNghe.Models.Tables
                 entity.HasOne(d => d.IddangnhapNavigation)
                     .WithMany(p => p.Users)
                     .HasForeignKey(d => d.Iddangnhap)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_users_dangnhapuser");
 
                 entity.HasOne(d => d.IdroleNavigation)

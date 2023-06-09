@@ -24,13 +24,13 @@ public class UserController : Controller
             using (var db = new storeContext())
             {
                 var user = db.Dangnhapusers.FirstOrDefault(c => c.Tendangnhap == dangnhap.NameUser & c.Password == dangnhap.Password);
-               
+                var namerole = db.Nameroles.FirstOrDefault(c => c.Idrole == user.Idrole);
                 if (user != null)
                 {
                     var claims = new List<Claim>()
             {
                 new Claim(ClaimTypes.Name, user.Tendangnhap),
-                new Claim(ClaimTypes.Role, user.Idrole.ToString() ),
+                new Claim(ClaimTypes.Role, namerole.Tenrole),
                 new Claim(ClaimTypes.NameIdentifier, user.Iddangnhap.ToString())
 
 
@@ -89,6 +89,7 @@ public class UserController : Controller
                         Tendangnhap = dangnhapview.NameUser,
                         Password = dangnhapview.Password,
                         Iddangnhap = i,
+                        Idrole = 0
 
                     };
                     db.Dangnhapusers.Add(newdangnhapUser);
@@ -129,7 +130,9 @@ public class UserController : Controller
             {
                 update.tendangnhap = userdangnhap.Tendangnhap;
                 update.password = userdangnhap?.Password;
-
+                update.idrole = userdangnhap.Idrole;
+                update.iddangnhap = userdangnhap.Iddangnhap;
+                
                 return View(update);
             }
             if (userdangnhap != null && user != null)
@@ -140,6 +143,8 @@ public class UserController : Controller
                 update.PhoneUser = user.PhoneUser;
                 update.tendangnhap = userdangnhap.Tendangnhap;
                 update.password = userdangnhap?.Password;
+                update.iddangnhap = userdangnhap.Iddangnhap;
+                update.iduser = user.UserId;
                 return View(update);
             }
             return new RedirectResult(url: "/Home/Index");
@@ -153,9 +158,9 @@ public class UserController : Controller
             {
 
 
-                var user = db.Users.FirstOrDefault(c => c.UserId == dangky.iduser);
+                var user = db.Users.FirstOrDefault(c => c.Iddangnhap == dangky.iddangnhap);
 
-                if (user != null)
+                if (user == null)
                 {
                     db.Users.Add(new User
                     {
@@ -164,19 +169,27 @@ public class UserController : Controller
                         NameUser = dangky.NameUser,
                         EmailUser = dangky.EmailUser,
                         Iddangnhap = dangky.iddangnhap,
-                        RegistrationDate = DateTime.Now
-
-                    });
-                    db.SaveChanges();
-                    db.Dangnhapusers.Add(new Dangnhapuser
-                    {
-                        Password = dangky.password,
-                    });
-                    return new RedirectResult(url: "/admin/thongtincanhan");
+                        RegistrationDate = DateTime.Now,
+                         Idrole = dangky.idrole,
+                    }) ;
+                    db.SaveChanges();               
+                    return new RedirectResult(url: "/user/thongtincanhan");
+                }
+                else
+                {
+                    var matkhau = db.Dangnhapusers.FirstOrDefault(c => c.Iddangnhap == dangky.iddangnhap);
+                 
+                    user.AddressUser = dangky.AddressUser;
+                    user.EmailUser = dangky.EmailUser;
+                    user.PhoneUser = dangky.PhoneUser;
+                    user.NameUser = dangky.NameUser;
+                    matkhau.Password = dangky.password;
+                    
+                    db.SaveChanges();                 
                 }
             }
         }
-        return new RedirectResult(url: "/admin/thongtincanhan");
+        return new RedirectResult(url: "/user/thongtincanhan");
     }
     public IActionResult dangky() => View();
 
@@ -186,6 +199,8 @@ public partial class dangnhapview
     public string NameUser { get; set; }
 
     public string Password { get; set; }
+
+    public int idrole { get; set; }
 
 
 }

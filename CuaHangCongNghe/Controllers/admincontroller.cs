@@ -53,7 +53,9 @@ namespace CuaHangCongNghe.Controllers
                 var oder = db.Orders.Where(c => c.OrderId == id).FirstOrDefault();
                 if (oder != null)
                 {
-                    thongtindonhang.oderDate = DateTime.Now;
+                    thongtindonhang.iduser = oder.UserId;
+                    thongtindonhang.oderid = oder.OrderId;
+                    thongtindonhang.oderDate = oder.OrderDate;
                     thongtindonhang.Status = oder.Status;
                     thongtindonhang.idDonHang = oder.OrderId;
                 }
@@ -117,13 +119,31 @@ namespace CuaHangCongNghe.Controllers
                 return View(listthongtindonhang);
             }
 
-}
+        }
+        [HttpPost]
+        public IActionResult saveTrangThai(string name, int id1,int id)
+        {
+            if (ModelState.IsValid)
+            {
+                using (var db = new storeContext())
+                {
+                    var status = db.Orders.FirstOrDefault(c => c.OrderId == id1);
+                    if (status != null)
+                    {
+                        status.Status = name;
+                        db.SaveChanges();
+                    }
+                }
+            }
+
+            return RedirectToAction("thongtindonhang",new {id});
+        }
         public partial class userViewModel
         {
             public List<User> Users { get; set; }
 
         }
-
+       
         public partial class oder
         {
             public List<Order>  Orders { get; set; }

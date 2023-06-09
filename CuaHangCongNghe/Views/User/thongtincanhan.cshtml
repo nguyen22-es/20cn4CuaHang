@@ -8,6 +8,12 @@
         <div class="form-group">
             <input name="iduser" type="hidden" class="form-control" id="IDInput" value="@Model.iduser">
         </div>
+        <div class="form-group">
+            <input name="idrole" type="hidden" class="form-control" id="IDInput" value="@Model.idrole">
+        </div>
+        <div class="form-group">
+            <input name="iddangnhap" type="hidden" class="form-control" id="IDInput" value="@Model.iddangnhap">
+        </div>
         <div class="info-section">
             <label for="full-name">Họ và tên:</label>
             <input type="text" id="full-name" name="NameUser" value="@Model.NameUser">
@@ -32,12 +38,15 @@
             <label for="Passwordid">Mật khẩu:</label>
             <input id="Passwordid" type="text" name="password" value="@Model.password">
         </div>
-        <div class="info-section">
-            <button href=""  >thông tin đơn hàng:</button>
-      
-        </div>
-       
-        <span class="icon text-white-50">
+
+
+
+        <a href="/admin/thongtindonhang/@Model.iduser" >
+            <span class="icon text-white-50">
+                <i class="fas fa-trash"></i>
+            </span>
+            <span class="btn btn-danger btn-icon-split">thông tin đơn hàng</span>
+            <span class="icon text-white-50">
                 <i class="fas fa-trash"></i>
             </span>
         <button type="submit" class="btn btn-danger btn-icon-split">cập nhật</button>
