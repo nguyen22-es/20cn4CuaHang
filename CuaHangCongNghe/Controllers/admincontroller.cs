@@ -154,6 +154,8 @@ namespace CuaHangCongNghe.Controllers
             }
             
         }
+
+
         [HttpPost]
         public RedirectResult savesanpham(sanpham sanpham, IFormFile image)
         {
@@ -166,7 +168,7 @@ namespace CuaHangCongNghe.Controllers
                 {
                     // Tạo đường dẫn lưu trữ hình ảnh
                     string fileName = Path.GetFileName(image.FileName);              
-                    string path = Path.Combine(Directory.GetCurrentDirectory(),"wwwroot/images",fileName);//lấy đường dẫn tới tệp wwwroot/images
+                    string path = Path.Combine(Directory.GetCurrentDirectory(),"images",fileName);//lấy đường dẫn tới tệp wwwroot/images
 
                     // Lưu hình ảnh vào thư mục Images
                     using (var fileStream = new FileStream(path, FileMode.Create))// tạo filesstream trong using var để giải phóng dữ liệu khi hoàn thành,FileMode.Create gi đè hoặc tạo file mới
@@ -176,15 +178,31 @@ namespace CuaHangCongNghe.Controllers
 
                     // Lưu đường dẫn hình ảnh vào thuộc tính ImageUrl của sản phẩm
                     sanpham.ImageUrl = "~/images/" + fileName;
-                }
+
+
+        }
                 using (var db = new storeContext())
                 {
-                    var name = db.Categories.FirstOrDefault(c => c.Name == sanpham.Namecategory);
+                    var name = db.Categories.FirstOrDefault(c => c.Name == sanpham.Namecategory);                   
                     if (name == null)
                     {
                         db.Categories.Add(new Category
                         {
+
                             Name = sanpham.Namecategory,
+
+
+                        });
+                        db.Products.Add(new Product
+                        {
+
+
+                            Name = sanpham.Name,
+                            Description = sanpham.Description,
+                            Price = sanpham.Price,
+                            ImageUrl = sanpham.ImageUrl,
+                            Stockquantity = sanpham.Stockquantity,
+                            CategoryId = name.Id,
 
 
                         });
@@ -195,13 +213,15 @@ namespace CuaHangCongNghe.Controllers
                         db.Products.Add(new Product
                         {
 
+                            
                             Name = sanpham.Name,
                             Description = sanpham.Description,
                             Price = sanpham.Price,
                             ImageUrl= sanpham.ImageUrl,
                             Stockquantity = sanpham.Stockquantity,
-                            CategoryId = name.Id
+                            CategoryId = name.Id,
 
+                            
                         });
                         db.SaveChanges();
                     }

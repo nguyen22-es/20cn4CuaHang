@@ -29,6 +29,7 @@ public class UserController : Controller
                 {
                     var claims = new List<Claim>()
             {
+                        
                 new Claim(ClaimTypes.Name, user.Tendangnhap),
                 new Claim(ClaimTypes.Role, namerole.Tenrole),
                 new Claim(ClaimTypes.NameIdentifier, user.Iddangnhap.ToString())
@@ -46,6 +47,7 @@ public class UserController : Controller
                 }
                 else
                 {
+
                     ViewBag.Message = "đăng nhập không thành công";
                     return new RedirectResult(url: "/User/dangnhap");
                 }
