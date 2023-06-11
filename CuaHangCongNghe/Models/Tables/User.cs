@@ -15,7 +15,7 @@ namespace CuaHangCongNghe.Models.Tables
         public string? EmailUser { get; set; }
         public string? AddressUser { get; set; }
         public string? PhoneUser { get; set; }
-        public DateTime RegistrationDate { get; set; }
+        public DateTime? RegistrationDate { get; set; }
         public int? Idrole { get; set; }
         public int? Iddangnhap { get; set; }
 

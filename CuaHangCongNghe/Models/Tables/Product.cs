@@ -10,9 +10,7 @@ namespace CuaHangCongNghe.Models.Tables
         public string? Description { get; set; }
         public float Price { get; set; }
         public int? CategoryId { get; set; }
-        public string ImageUrl { get; set; } = null!;
-        public int Stockquantity { get; set; }
-
-        public virtual Category? Category { get; set; }
+        public string? ImageUrl { get; set; }
+        public int? Stockquantity { get; set; }
     }
 }

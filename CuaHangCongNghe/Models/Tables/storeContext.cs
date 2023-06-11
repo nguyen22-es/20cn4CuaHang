@@ -156,11 +156,7 @@ namespace CuaHangCongNghe.Models.Tables
             {
                 entity.ToTable("products");
 
-                entity.HasIndex(e => e.CategoryId, "categoryID");
-
-                entity.Property(e => e.Id)
-                    .ValueGeneratedNever()
-                    .HasColumnName("ID");
+                entity.Property(e => e.Id).HasColumnName("ID");
 
                 entity.Property(e => e.CategoryId).HasColumnName("categoryID");
 
@@ -179,11 +175,6 @@ namespace CuaHangCongNghe.Models.Tables
                 entity.Property(e => e.Price).HasColumnName("price");
 
                 entity.Property(e => e.Stockquantity).HasColumnName("stockquantity");
-
-                entity.HasOne(d => d.Category)
-                    .WithMany(p => p.Products)
-                    .HasForeignKey(d => d.CategoryId)
-                    .HasConstraintName("products_ibfk_1");
             });
 
             modelBuilder.Entity<User>(entity =>

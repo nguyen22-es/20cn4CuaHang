@@ -2,32 +2,36 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 @model CuaHangCongNghe.Controllers.admincontroller.listdanhmuc
-<form action="savesanpham" method="post" enctype="multipart/form-data">
+<form action="/admin/savesanpham" method="post" enctype="multipart/form-data">
     <div class="form-group">
         <label for="name">tên sản phẩm :</label>
-        <input type="text" name="Name" id="name" class="form-control" required>
+        <input type="text" name="sanpham.Name" id="name" class="form-control" value="" required>
     </div>
     <div class="form-group">
         <label for="price">giá sản phẩm:</label>
-        <input type="number" name="Price" id="price" class="form-control" required>
+        <input type="number" name="sanpham.Price" id="price" class="form-control-range" required>
     </div>
     <div class="form-group">
         <label for="description">số lượng:</label>
-        <input name="Stockquantity" id="description" class="form-control" required>
+        <input type="number" name="sanpham.Stockquantity" id="description" class="form-control" required>
     </div>
- 
-    <label for="ipdanhmuc">thêm loại sản phẩm mới:</label>
-    <input type="text" id="ipdanhmuc" name="Namecategory">
+    <div class="form-group">
+        <label for="description">mô tả sản phẩm:</label>
+        <input name="sanpham.Description" id="description" class="form-control" required>
+    </div>
+    
+
+  
     <label for="ipdanhmuc1">Chọn một loại sản phẩm:</label>
-    <select id="ipdanhmuc1" name="Name">
+    <select id="ipdanhmuc1" name="name1">
         @foreach (var item in Model.Categories)
         {
             <option value="@item.Name">@item.Name</option>
         }
     </select>
     <div class="form-group">
-        <label for="image">Image:</label>
+     
         <input type="file" name="image" id="image" class="form-control-file" required>
     </div>
-    <button type="submit" class="btn btn-primary">Add Product</button>
+    <input type="submit" class="btn btn-primary" value="thêm sản phẩm">
 </form>

@@ -4,6 +4,8 @@ using Microsoft.AspNetCore.Mvc;
 using CuaHangCongNghe.Controllers.laydulieu;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Hosting.Internal;
+using System.IO;
+using Microsoft.CodeAnalysis.VisualBasic.Syntax;
 
 namespace CuaHangCongNghe.Controllers
 {
@@ -157,86 +159,66 @@ namespace CuaHangCongNghe.Controllers
 
 
         [HttpPost]
-        public RedirectResult savesanpham(sanpham sanpham, IFormFile image)
+        public IActionResult savesanpham(sanpham sanpham, IFormFile image, string name1)
         {
-            if (ModelState.IsValid)
+
+            // Lưu thông tin sản phẩm vào cơ sở dữ liệu
+            // Lưu đường dẫn của hình ảnh vào thuộc tính ImageUrl của sản phẩm
+
+            if (image != null )
             {
-                // Lưu thông tin sản phẩm vào cơ sở dữ liệu
-                // Lưu đường dẫn của hình ảnh vào thuộc tính ImageUrl của sản phẩm
-                var Products = new Product();
-                if (image != null)
+                // Tạo đường dẫn lưu trữ hình ảnh
+                string fileName = Path.GetFileName(image.FileName);
+                string path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images",fileName); //lấy đường dẫn tới tệp wwwroot/images
+
+                // Lưu hình ảnh vào thư mục Images
+                using (var stream = new FileStream(path, FileMode.Create))
                 {
-                    // Tạo đường dẫn lưu trữ hình ảnh
-                    string fileName = Path.GetFileName(image.FileName);              
-                    string path = Path.Combine(Directory.GetCurrentDirectory(),"images",fileName);//lấy đường dẫn tới tệp wwwroot/images
+                    image.CopyTo(stream);
+                }
 
-                    // Lưu hình ảnh vào thư mục Images
-                    using (var fileStream = new FileStream(path, FileMode.Create))// tạo filesstream trong using var để giải phóng dữ liệu khi hoàn thành,FileMode.Create gi đè hoặc tạo file mới
-                    {
-                        image.CopyTo(fileStream);//FileStream để ghi dữ liệu từ image vào tệp tin được chỉ định bởi path. Sau khi hoàn thành, tệp tin ảnh sẽ được lưu trữ tại vị trí được chỉ định trong path.
-                    }
+                // Lưu đường dẫn hình ảnh vào thuộc tính ImageUrl của sản phẩm
+                sanpham.ImageUrl = "images/" + fileName;
+            }
+            else
+            {
+                sanpham.ImageUrl = "không có gì";
+            }
 
-                    // Lưu đường dẫn hình ảnh vào thuộc tính ImageUrl của sản phẩm
-                    sanpham.ImageUrl = "~/images/" + fileName;
+    
 
-
-        }
                 using (var db = new storeContext())
                 {
-                    var name = db.Categories.FirstOrDefault(c => c.Name == sanpham.Namecategory);                   
-                    if (name == null)
+
+                    var name = db.Categories.FirstOrDefault(c => c.Name == name1);
+                    int y = name.Id;
+                    if (name != null)
                     {
-                        db.Categories.Add(new Category
+                       
+                     
+                        Product newProduct = new Product
                         {
-
-                            Name = sanpham.Namecategory,
-
-
-                        });
-                        db.Products.Add(new Product
-                        {
-
-
                             Name = sanpham.Name,
                             Description = sanpham.Description,
                             Price = sanpham.Price,
                             ImageUrl = sanpham.ImageUrl,
                             Stockquantity = sanpham.Stockquantity,
-                            CategoryId = name.Id,
-
-
-                        });
+                            CategoryId = y
+                        };
+                        db.Products.Add(newProduct);
                         db.SaveChanges();
-                    }
-                    
-                    {
-                        db.Products.Add(new Product
-                        {
-
-                            
-                            Name = sanpham.Name,
-                            Description = sanpham.Description,
-                            Price = sanpham.Price,
-                            ImageUrl= sanpham.ImageUrl,
-                            Stockquantity = sanpham.Stockquantity,
-                            CategoryId = name.Id,
-
-                            
-                        });
-                        db.SaveChanges();
-                    }
-
-
+                    return new RedirectResult("thongtinNguoiDung");
                 }
+               
 
-                // Tiếp tục xử lý và lưu thông tin sản phẩm
-                // ...
-
-                return new RedirectResult("themsanpham");
             }
+              
+            
 
             // Nếu có lỗi, quay lại view để hiển thị lỗi
-            return new RedirectResult("themsanpham");
+           
+           
+            return new RedirectResult("index");
         }
 
         public partial class userViewModel

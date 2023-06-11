@@ -69,6 +69,10 @@
       "PackagePath": "staticwebassets\\css (2)\\bootstrap.min.css.map"
     },
     {
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\corner-tag.css",
+      "PackagePath": "staticwebassets\\css (2)\\corner-tag.css"
+    },
+    {
       "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css (2)\\default-skin.css",
       "PackagePath": "staticwebassets\\css (2)\\default-skin.css"
     },
@@ -123,6 +127,10 @@
     {
       "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\.DS_Store",
       "PackagePath": "staticwebassets\\css\\.DS_Store"
+    },
+    {
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\StyleSheet.css",
+      "PackagePath": "staticwebassets\\css\\StyleSheet.css"
     },
     {
       "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\animate.min.css",
@@ -217,6 +225,10 @@
       "PackagePath": "staticwebassets\\css\\owl.carousel.min.css"
     },
     {
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\product-container.css",
+      "PackagePath": "staticwebassets\\css\\product-container.css"
+    },
+    {
       "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\responsive.css",
       "PackagePath": "staticwebassets\\css\\responsive.css"
     },
@@ -233,8 +245,16 @@
       "PackagePath": "staticwebassets\\css\\style.css"
     },
     {
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\desktop.ini",
+      "PackagePath": "staticwebassets\\desktop.ini"
+    },
+    {
       "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\Screenshot 2023-04-02 181428.png",
+      "PackagePath": "staticwebassets\\images\\Screenshot 2023-04-02 181428.png"
     },
     {
       "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\asus.png",

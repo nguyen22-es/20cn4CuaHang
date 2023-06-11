@@ -32,12 +32,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFuaG11Y1xkaWVudGhvYWkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ztzkk/source/repos/20cn4CuaHang/CuaHangCongNghe/Views/Danhmuc/maytinh.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFuaG11Y1xtYXl0aW5oLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/ztzkk/source/repos/20cn4CuaHang/CuaHangCongNghe/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ztzkk/source/repos/20cn4CuaHang/CuaHangCongNghe/Views/Home/maytinh.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxtYXl0aW5oLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ztzkk/source/repos/20cn4CuaHang/CuaHangCongNghe/Views/Home/Privacy.cshtml]

@@ -10,6 +10,7 @@ namespace CuaHangCongNghe.Controllers;
 [AllowAnonymous]
 public class UserController : Controller
 {
+  
     private static List<int> n = new List<int>();
     private readonly ILogger<UserController> _logger;
 
@@ -117,7 +118,7 @@ public class UserController : Controller
     {
         using (var db = new storeContext())
         {
-            var userClaims = User.Claims;
+          
 
             // Lấy giá trị của một Claim cụ thể
             string name = User.FindFirstValue(ClaimTypes.Name);
@@ -125,6 +126,7 @@ public class UserController : Controller
 
 
             var userdangnhap = db.Dangnhapusers.Where(c => c.Tendangnhap == name).FirstOrDefault();
+            
             var user = db.Users.Where(c => c.Iddangnhap == int.Parse(identifier)).FirstOrDefault();
 
             var update = new dangky();
@@ -186,7 +188,8 @@ public class UserController : Controller
                     user.PhoneUser = dangky.PhoneUser;
                     user.NameUser = dangky.NameUser;
                     matkhau.Password = dangky.password;
-                    
+                    user.Idrole = dangky.idrole;
+                    matkhau.Idrole = dangky.idrole;
                     db.SaveChanges();                 
                 }
             }
@@ -195,6 +198,37 @@ public class UserController : Controller
     }
     public IActionResult dangky() => View();
 
+
+     public IActionResult addsanpham(int id,int soluong)
+        {
+            using (var db = new storeContext())
+            {
+                var thongtindonhang = new thongtinsanpham();
+            string identifier = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            //  var oderitem = db.Orderitems.Where(c => c.ProductId == id).FirstOrDefault();
+            //  if (oderitem != null)
+            var donhang = new Order
+            {
+                UserId = int.Parse(identifier),
+                OrderDate = DateTime.Today,
+                Status = "đang xử lý",
+
+            };
+            db.Orders.Add(donhang);
+         
+            var item = new Orderitem
+            {
+                OrderId = donhang.OrderId,
+                Quantity = soluong,
+                ProductId = id,
+            };
+            db.Orderitems.Add(item);
+            db.SaveChanges();
+
+
+            return new RedirectResult(url: "/Home/Index");
+        }
+     }
 }
 public partial class dangnhapview
 {
