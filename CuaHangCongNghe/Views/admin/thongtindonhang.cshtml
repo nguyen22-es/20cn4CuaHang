@@ -1,0 +1,76 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model CuaHangCongNghe.Controllers.admincontroller.listoder
+<h1 class="h3 mb-2 text-gray-800"></h1>
+<p class="mb-4">danh sách những đơn hàng</p>
+<!-- End Page Heading -->
+<!-- DataTales Example -->
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        
+           
+                <h1>Xin chào!</h1>
+            
+        
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <tbody>
+                    <tr>
+                        <th>Ngày mua</th>
+                        <th>id sản phẩm</th>
+                        <th>Tên sản phẩm</th>
+                        <th>số lượng</th>
+                        <th>tổng giá của sản phẩm</th>
+                        <th>trạng thái</th>
+                    </tr>
+                    @if (Model != null && Model.thongtinsanphams != null && Model.thongtinsanphams.Count > 0)
+                    {
+                        @foreach (var thongtindonhang in Model.thongtinsanphams)
+                        {
+                            <tr>
+                                <td>@thongtindonhang.oderDate</td>
+                                <td>@thongtindonhang.idDonHang</td>
+                                <td>@thongtindonhang.Namesanpham</td>
+                                <td>@thongtindonhang.Soluong</td>
+                                <td>@thongtindonhang.Price</td>
+                                <td>
+                                    @thongtindonhang.Status
+                                </td>
+                                <td>
+                                @if (User.Identity.IsAuthenticated && User.IsInRole("user1"))
+                                {
+
+                                    <form action="/admin/saveTrangThai" method="post">
+                                    <label for="fruits"></label>
+                                    <input type="hidden" id="idInput" name="id1" value="@thongtindonhang.oderid">
+                                    <input type="hidden" id="iduser" name="id" value="@thongtindonhang.iduser">
+                                    <select id="fruits" name="name">
+                                        <option value=""></option>
+                                        <option value="đang xử lý">đang xử lý</option>
+                                        <option value="đã giao">đã giao</option>
+                                        <option value="chưa giao">chưa giao</option>
+                                        <option value="giao chậm">giao chậm</option>
+                                    </select>
+                                    <input type="submit" value="Thay đổi">
+
+                                    </form>                             
+                                }
+                                </td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr>
+                            <td colspan="6">No order information available.</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

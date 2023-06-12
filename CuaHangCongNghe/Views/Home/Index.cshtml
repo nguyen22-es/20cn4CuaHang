@@ -1,0 +1,241 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model CuaHangCongNghe.Controllers.HomeController.listsanpham
+<!-- banner section start -->
+<div class="banner_section layout_padding">
+    <div id="my_slider" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="container">
+                    <div class="row border_1">
+                        <div class="col-md-4">
+                            <div class="image_1"><img src="~/images/img-1.png" style="width:100%"></div>
+                        </div>
+                        <div class="col-md-4">
+                            <h1 class="banner_taital">khuyến mãi lớn</h1>
+                            <div class="buynow_bt active"><a href="#">mua ngay</a></div>
+                            <div class="contact_bt"><a href="contact.html">Contact Us</a></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="image_2"><img src="~/images/img-2.png" style="width:100%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="row border_1">
+                        <div class="col-md-4">
+                            <div class="image_1"><img src="~/images/img-1.png" style="width:100%"></div>
+                        </div>
+                        <div class="col-md-4">
+                            <h1 class="banner_taital">khuyến mãi lớn</h1>
+                            <div class="buynow_bt active"><a href="#">mua ngay</a></div>
+                            <div class="contact_bt"><a href="contact.html">Contact Us</a></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="image_2"><img src="~/images/img-2.png" style="width:100%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="row border_1">
+                        <div class="col-md-4">
+                            <div class="image_1"><img src="~/images/img-1.png" style="width:100%"></div>
+                        </div>
+                        <div class="col-md-4">
+                            <h1 class="banner_taital">khuyến mãi lớn</h1>
+                            <div class="buynow_bt active"><a href="#">mua ngay</a></div>
+                            <div class="contact_bt"><a href="contact.html">Contact Us</a></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="image_2"><img src="~/images/img-2.png" style="width:100%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#my_slider" role="button" data-slide="prev">
+            <i class="fa fa-angle-left"></i>
+        </a>
+        <a class="carousel-control-next" href="#my_slider" role="button" data-slide="next">
+            <i class="fa fa-angle-right"></i>
+        </a>
+    </div>
+</div>
+<!-- banner section end -->
+<!-- catagary section start -->
+<div class="catagary_section layout_padding">
+    <div class="container">
+        <div class="catagary_main">
+            <div class="catagary_left">
+                <h2 class="categary_text">Danh mục</h2>
+            </div>
+            <div class="catagary_right">
+                
+            </div>
+        </div>
+    </div>
+</div>
+<div class="catagary_section_2">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="box_man">
+                    <h3 class="mobile_text">điện thoại</h3>
+                    <div class="mobile_img"><img src="~/images/mobile-img.png"></div>
+                    <div class="cart_main">
+                        <div class="cart_bt"><a href="#">mua ngay</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="box_man">
+                    <h3 class="mobile_text">máy tính</h3>
+                    <div class="watch_img"><img src="~/images/watch-img.png"></div>
+                    <div class="cart_main">
+                        <div class="cart_bt"><a href="#">mua ngay</a></div>
+                       
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="box_man">
+                    <h3 class="mobile_text">phụ kiện</h3>
+                    <div class="camera_img"><img src="~/images/camera-img.png"></div>
+                    <div class="cart_main">
+                        <div class="cart_bt"><a href="#">mua ngay</a></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- catagary section end -->
+<!-- computers section start -->
+<div class="computers_section layout_padding">
+    <div class="container">
+        <h1 class="computers_taital">máy tính & Laptop</h1>
+    </div>
+</div>
+<div class="computers_section_2">
+    <div class="container-fluid">
+        <div class="computer_main">
+            <div class="row">
+                @{int count =  0;
+                foreach (var item in Model.Products)
+                {
+                    if (count < 5 && item.CategoryId == 2)
+                    {
+                        <div class="col-md-4">
+                            <div class="card">
+                                    <img class="product-image" src="@item.ImageUrl" alt="@item.Name">
+                                    <div class="card_main">
+                                        <h6 class="price_text">giá: @item.Price</h6>
+                                        <h6 class="price_text">số lượng còn lại: @item.Stockquantity</h6>
+
+                                        @if (User.Identity.IsAuthenticated )
+                                        {
+                                            if(User.IsInRole("user1"))
+                                            {
+                                                <a href="User/sanphamadd/@item.Id" class="btn btn-primary">thêm vào giỏ hàng</a>
+                                            }
+                                            else if(User.IsInRole("user"))
+                                            {
+                                                
+                                            
+                                            }
+                                          
+                                        }
+                                        else
+                                        {
+                                            <a href="#" class="btn btn-primary">thêm vào giỏ hàng</a>
+                                        }
+                                    </div>
+                            </div>
+                        </div>
+                    }
+
+                    count++;
+                }
+             }
+            </div>
+        </div>
+    </div>
+</div>
+<div class="computers_section layout_padding">
+    <div class="container">
+        <h1 class="computers_taital">điện thoại</h1>
+    </div>
+</div>
+<div class="computers_section_2">
+    <div class="container-fluid">
+        <div class="computer_main">
+            <div class="row">
+                @{
+                    int coun = 0;
+                    foreach (var item in Model.Products)
+                    {
+                        if ( item.CategoryId == 1)
+                        {
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img class="product-image" src="@item.ImageUrl" alt="@item.Name">
+                                    <div class="card_main">
+                                        <h6 class="price_text">giá: @item.Price</h6>
+                                        <h6 class="price_text">số lượng còn lại: @item.Stockquantity</h6>
+                                        <h5 class="samsung_text">@item.Name</h5>
+                                        <a href="#" class="btn btn-primary">thêm vào giỏ hàng</a>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+
+                        coun++;
+                    }
+                }
+            </div>
+        </div>
+    </div>
+</div>
+<div class="computers_section layout_padding">
+    <div class="container">
+        <h1 class="computers_taital">phụ kiện</h1>
+    </div>
+</div>
+<div class="computers_section_2">
+    <div class="container-fluid">
+        <div class="computer_main">
+            <div class="row">
+                @{
+                    int cou = 0;
+                    foreach (var item in Model.Products)
+                    {
+                        if (cou < 3 && item.CategoryId == 3)
+                        {
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img class="product-image" src="@item.ImageUrl" alt="@item.Name">
+                                    <div class="card_main">
+                                        <h6 class="price_text">giá: @item.Price</h6>
+                                        <h6 class="price_text">số lượng còn lại: @item.Stockquantity</h6>
+                                        <h5 class="samsung_text">@item.Name</h5>
+                                        <a href="#" class="btn btn-primary">thêm vào giỏ hàng</a>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+
+                        cou++;
+                    }
+                }
+            </div>
+        </div>
+    </div>
+</div>
