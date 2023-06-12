@@ -10,14 +10,16 @@ namespace CuaHangCongNghe.Controllers;
 [AllowAnonymous]
 public class UserController : Controller
 {
-  
-    private static List<int> n = new List<int>();
+
+
     private readonly ILogger<UserController> _logger;
 
     public UserController(ILogger<UserController> logger)
     {
         _logger = logger;
+
     }
+
     public async Task<IActionResult> Login(dangnhapview dangnhap)
     {
         if (ModelState.IsValid)
@@ -30,18 +32,18 @@ public class UserController : Controller
                 {
                     var claims = new List<Claim>()
             {
-                        
+
                 new Claim(ClaimTypes.Name, user.Tendangnhap),
                 new Claim(ClaimTypes.Role, namerole.Tenrole),
                 new Claim(ClaimTypes.NameIdentifier, user.Iddangnhap.ToString())
 
 
                 };
-                    var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);//quản lý xác thực người dùng, ClaimsIdentity đại diện cho danh tính của người dùng và lưu trữ các khẳng định (claims) về người dùng như tên, vai trò, thông tin xác thực, và các thông tin khác
+                    var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);//quản lý xác thực người dùng hiện tại trong ứng dụng,cung cấp những thao tác với danh sách claim
                     var principal = new ClaimsPrincipal(identity);// cung cấp thuộc tính truy xuất thong tin người dùng
-                    await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal, new AuthenticationProperties
+                    await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal, new AuthenticationProperties // 
                     {
-                        IsPersistent = true
+                        IsPersistent = false
                     });
                     return LocalRedirect("/Home/Index");
 
@@ -64,6 +66,8 @@ public class UserController : Controller
         await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
         return RedirectToAction("Index", "Home");
     }
+
+
 
     [HttpGet]
     public RedirectResult dangkynew(dangnhapview dangnhapview)
@@ -118,7 +122,7 @@ public class UserController : Controller
     {
         using (var db = new storeContext())
         {
-          
+
 
             // Lấy giá trị của một Claim cụ thể
             string name = User.FindFirstValue(ClaimTypes.Name);
@@ -126,7 +130,7 @@ public class UserController : Controller
 
 
             var userdangnhap = db.Dangnhapusers.Where(c => c.Tendangnhap == name).FirstOrDefault();
-            
+
             var user = db.Users.Where(c => c.Iddangnhap == int.Parse(identifier)).FirstOrDefault();
 
             var update = new dangky();
@@ -136,7 +140,7 @@ public class UserController : Controller
                 update.password = userdangnhap?.Password;
                 update.idrole = userdangnhap.Idrole;
                 update.iddangnhap = userdangnhap.Iddangnhap;
-                
+
                 return View(update);
             }
             if (userdangnhap != null && user != null)
@@ -154,14 +158,26 @@ public class UserController : Controller
             return new RedirectResult(url: "/Home/Index");
         }
     }
-    public RedirectResult saveupdate(dangky dangky)
+    public async Task<RedirectResult> saveupdate(dangky dangky)
     {
         if (ModelState.IsValid)
         {
             using (var db = new storeContext())
             {
+                int iduser = 0;
+                var user1 = db.Users.ToList();
 
-
+                foreach (var item in user1)
+                {
+                    if (iduser == item.UserId)
+                    {
+                        iduser = iduser + 1;
+                    }
+                    else
+                    {
+                        break;
+                    }
+                }
                 var user = db.Users.FirstOrDefault(c => c.Iddangnhap == dangky.iddangnhap);
 
                 if (user == null)
@@ -174,15 +190,16 @@ public class UserController : Controller
                         EmailUser = dangky.EmailUser,
                         Iddangnhap = dangky.iddangnhap,
                         RegistrationDate = DateTime.Now,
-                         Idrole = dangky.idrole,
-                    }) ;
-                    db.SaveChanges();               
+                        Idrole = dangky.idrole,
+                        UserId = iduser,
+                    });
+                    db.SaveChanges();
                     return new RedirectResult(url: "/user/thongtincanhan");
                 }
                 else
                 {
                     var matkhau = db.Dangnhapusers.FirstOrDefault(c => c.Iddangnhap == dangky.iddangnhap);
-                 
+
                     user.AddressUser = dangky.AddressUser;
                     user.EmailUser = dangky.EmailUser;
                     user.PhoneUser = dangky.PhoneUser;
@@ -190,32 +207,95 @@ public class UserController : Controller
                     matkhau.Password = dangky.password;
                     user.Idrole = dangky.idrole;
                     matkhau.Idrole = dangky.idrole;
-                    db.SaveChanges();                 
+                    db.SaveChanges();
                 }
             }
+
+
+            ClaimsIdentity nameclaims = User.Identity as ClaimsIdentity;
+
+
+            Claim claim = new Claim(ClaimTypes.Role, "user1");
+            Claim claim1 = new Claim(ClaimTypes.GivenName, dangky.tendangnhap);
+
+            if (nameclaims != null)
+            {
+
+                var name = nameclaims.FindFirst(ClaimTypes.Role);
+                if (name != null)
+                {
+                    nameclaims.RemoveClaim(name);
+                }
+            }
+
+            nameclaims.AddClaim(claim);
+
+
+            var principal = new ClaimsPrincipal(nameclaims);
+
+
+
+            await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal, new AuthenticationProperties // 
+            {
+                IsPersistent = false
+            });
+
+
+
         }
         return new RedirectResult(url: "/user/thongtincanhan");
     }
+
+
+
+
+
+
+    /*await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+    return new RedirectResult(url:"/user/dangnhap");*/
+
     public IActionResult dangky() => View();
 
 
-     public IActionResult addsanpham(int id,int soluong)
+    public IActionResult sanphamadd(int id)
+    {
+        using (var db = new storeContext())
         {
-            using (var db = new storeContext())
+            Product1 product1 = new Product1();
+
+
+          var  product = db.Products.ToList();
+
+            foreach (var item in product)
             {
-                var thongtindonhang = new thongtinsanpham();
-            string identifier = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            //  var oderitem = db.Orderitems.Where(c => c.ProductId == id).FirstOrDefault();
+
+            }
+      
+
+            return View(product);
+        }
+    }
+
+
+    [HttpGet]
+    public IActionResult themvaooder(int id, int soluong)
+    {
+        using (var db = new storeContext())
+        {
+         
+            string identifier = User.FindFirstValue(ClaimTypes.GivenName);
+
+            var user = db.Users.Where(c => c.NameUser == identifier).FirstOrDefault();
             //  if (oderitem != null)
             var donhang = new Order
             {
-                UserId = int.Parse(identifier),
+                UserId = user.UserId,
                 OrderDate = DateTime.Today,
                 Status = "đang xử lý",
 
             };
             db.Orders.Add(donhang);
-         
+
             var item = new Orderitem
             {
                 OrderId = donhang.OrderId,
@@ -226,10 +306,12 @@ public class UserController : Controller
             db.SaveChanges();
 
 
-            return new RedirectResult(url: "/Home/Index");
+            return RedirectToAction("thongtindonhang", user.UserId);
         }
-     }
+    }
+
 }
+
 public partial class dangnhapview
 {
     public string NameUser { get; set; }
@@ -242,3 +324,13 @@ public partial class dangnhapview
 }
 
 
+public partial class Product1
+{
+    public int Id { get; set; }
+    public string? Name { get; set; }
+    public string? Description { get; set; }
+    public float Price { get; set; }
+    public int? CategoryId { get; set; }
+    public string? ImageUrl { get; set; }
+    public int? Stockquantity { get; set; }
+}

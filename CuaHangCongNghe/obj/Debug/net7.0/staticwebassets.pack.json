@@ -129,6 +129,10 @@
       "PackagePath": "staticwebassets\\css\\.DS_Store"
     },
     {
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\800-200-800x200-56.png",
+      "PackagePath": "staticwebassets\\css\\800-200-800x200-56.png"
+    },
+    {
       "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\StyleSheet.css",
       "PackagePath": "staticwebassets\\css\\StyleSheet.css"
     },
@@ -253,8 +257,16 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\800-200-800x200-56.png",
+      "PackagePath": "staticwebassets\\images\\800-200-800x200-56.png"
+    },
+    {
       "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\Screenshot 2023-04-02 181428.png",
       "PackagePath": "staticwebassets\\images\\Screenshot 2023-04-02 181428.png"
+    },
+    {
+      "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\Screenshot 2023-06-09 161548.png",
+      "PackagePath": "staticwebassets\\images\\Screenshot 2023-06-09 161548.png"
     },
     {
       "Id": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\asus.png",

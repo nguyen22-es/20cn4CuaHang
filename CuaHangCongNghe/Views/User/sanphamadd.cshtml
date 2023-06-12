@@ -1,0 +1,20 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form action="themvaooder" method="get">
+    <div class="col-md-4">
+        <div class="card">
+            <img class="product-image" src="~/@Model.ImageUrl" />
+            <div class="card_main">
+                <h6 class="price_text">giá: @Model.Price</h6>
+                <h6 class="price_text">số lượng còn lại: @Model.Stockquantity</h6>
+                <h5 class="samsung_text">@Model.Name</h5>
+                <h5 class="price_text">trạng thái: @Model.Description</h5>
+                <input name="id" type="hidden" value="@Model.Id" />           
+                <input name="soluong" type="number" value="" />
+                <button type="submit" class="btn btn-primary">thêm vào giỏ hàng</button>
+            </div>
+        </div>
+    </div>
+</form>   

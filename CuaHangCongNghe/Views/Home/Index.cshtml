@@ -139,19 +139,17 @@
                                     <div class="card_main">
                                         <h6 class="price_text">giá: @item.Price</h6>
                                         <h6 class="price_text">số lượng còn lại: @item.Stockquantity</h6>
-                                        <h5 class="samsung_text">@item.Name</h5>
+
                                         @if (User.Identity.IsAuthenticated )
                                         {
                                             if(User.IsInRole("user1"))
                                             {
-                                                <a href="admin/addsanpham/@item.Id" class="btn btn-primary">thêm vào giỏ hàng</a>
+                                                <a href="User/sanphamadd/@item.Id" class="btn btn-primary">thêm vào giỏ hàng</a>
                                             }
                                             else if(User.IsInRole("user"))
                                             {
                                                 
-                                                <input type="number" name="sanpham" id="sanphamip" class="form-control-range" value="" >
-
-                                                <a href="admin/addsanpham?id=@item.Id&soluong=sanphamip" class="btn btn-primary">thêm vào giỏ hàng</a>
+                                            
                                             }
                                           
                                         }
@@ -184,7 +182,7 @@
                     int coun = 0;
                     foreach (var item in Model.Products)
                     {
-                        if (coun < 3 && item.CategoryId == 1)
+                        if ( item.CategoryId == 1)
                         {
                             <div class="col-md-4">
                                 <div class="card">

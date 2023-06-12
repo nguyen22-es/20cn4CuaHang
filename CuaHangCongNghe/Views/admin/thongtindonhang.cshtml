@@ -40,14 +40,16 @@
                                 <td>
                                     @thongtindonhang.Status
                                 </td>
-                                @if (User.Identity.IsAuthenticated && User.IsInRole("user"))
+                                <td>
+                                @if (User.Identity.IsAuthenticated && User.IsInRole("user1"))
                                 {
 
                                     <form action="/admin/saveTrangThai" method="post">
-                                    <label for="fruits">Chọn một loại trái cây:</label>
+                                    <label for="fruits"></label>
                                     <input type="hidden" id="idInput" name="id1" value="@thongtindonhang.oderid">
                                     <input type="hidden" id="iduser" name="id" value="@thongtindonhang.iduser">
                                     <select id="fruits" name="name">
+                                        <option value=""></option>
                                         <option value="đang xử lý">đang xử lý</option>
                                         <option value="đã giao">đã giao</option>
                                         <option value="chưa giao">chưa giao</option>
@@ -57,6 +59,7 @@
 
                                     </form>                             
                                 }
+                                </td>
                             </tr>
                         }
                     }

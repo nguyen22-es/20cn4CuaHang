@@ -114,7 +114,7 @@ namespace CuaHangCongNghe.Controllers
                         var thongtindonhang = xemlist(item.OrderId);
                         if (thongtindonhang != null)
                         {
-                            listthongtindonhang.thongtinsanphams.Add(xemlist(item.OrderId));
+                            listthongtindonhang.thongtinsanphams.Add(thongtindonhang);
                         }
                     }
                 }
@@ -178,7 +178,7 @@ namespace CuaHangCongNghe.Controllers
                 }
 
                 // Lưu đường dẫn hình ảnh vào thuộc tính ImageUrl của sản phẩm
-                sanpham.ImageUrl = "images/" + fileName;
+                sanpham.ImageUrl = "~/images/" + fileName;
             }
             else
             {

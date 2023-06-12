@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "tebtl+NsMNjISWG0Aq2+pf5Kt88z2xk+X+Vif4C3jzU=",
+  "Hash": "Oi6P1LzQc1GWRWSotBNZEK2gCcTqLiNV/L7W81UfJVQ=",
   "Source": "CuaHangCongNghe",
   "BasePath": "_content/CuaHangCongNghe",
   "Mode": "Default",
@@ -578,6 +578,23 @@
       "OriginalItemSpec": "wwwroot\\css\\.DS_Store"
     },
     {
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\800-200-800x200-56.png",
+      "SourceId": "CuaHangCongNghe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
+      "BasePath": "_content/CuaHangCongNghe",
+      "RelativePath": "css/800-200-800x200-56.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\800-200-800x200-56.png"
+    },
+    {
       "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\animate.min.css",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
@@ -1105,6 +1122,23 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\800-200-800x200-56.png",
+      "SourceId": "CuaHangCongNghe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
+      "BasePath": "_content/CuaHangCongNghe",
+      "RelativePath": "images/800-200-800x200-56.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\800-200-800x200-56.png"
+    },
+    {
       "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\asus.png",
       "SourceId": "CuaHangCongNghe",
       "SourceType": "Discovered",
@@ -1511,6 +1545,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\Screenshot 2023-04-02 181428.png"
+    },
+    {
+      "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\Screenshot 2023-06-09 161548.png",
+      "SourceId": "CuaHangCongNghe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
+      "BasePath": "_content/CuaHangCongNghe",
+      "RelativePath": "images/Screenshot 2023-06-09 161548.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Screenshot 2023-06-09 161548.png"
     },
     {
       "Identity": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\search-icon.png",
