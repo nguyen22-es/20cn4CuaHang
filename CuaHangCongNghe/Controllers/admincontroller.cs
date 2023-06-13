@@ -1,4 +1,4 @@
-﻿using CuaHangCongNghe.Models.Tables;
+using CuaHangCongNghe.Models.Tables;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using CuaHangCongNghe.Controllers.laydulieu;
@@ -19,19 +19,34 @@ namespace CuaHangCongNghe.Controllers
             _logger = logger;
         }
 
-      public IActionResult thongTinNguoiDung()
+      public IActionResult thongTinNguoiDung(string nametim)
         {
             using (var db = new storeContext())
             {
                 var userViewModel = new userViewModel();
-
                 var user1 = db.Users.ToList();
+                userViewModel.Users= new List<User>();
+                if (nametim == null)
+                {
+                    userViewModel.Users = user1;
+                }
+                else
+                {
+                    userViewModel.Users = new List<User>(); 
 
-                userViewModel.Users = user1;
+                    foreach (var user in user1)
+                    {
+                        bool isAdmin = user.NameUser.IndexOf(nametim, StringComparison.OrdinalIgnoreCase) >= 0;
+                        if (isAdmin)
+                        {
+                            userViewModel.Users.Add(user);
+                        }
+                    }
+                }
 
                 return View(userViewModel);
             }
-           
+
         }
         public RedirectResult Deleteuser(int id)
         {
