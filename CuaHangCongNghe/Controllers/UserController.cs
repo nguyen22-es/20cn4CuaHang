@@ -26,10 +26,12 @@ public class UserController : Controller
         {
             using (var db = new storeContext())
             {
+
                 var user = db.Dangnhapusers.FirstOrDefault(c => c.Tendangnhap == dangnhap.NameUser & c.Password == dangnhap.Password);
-                var namerole = db.Nameroles.FirstOrDefault(c => c.Idrole == user.Idrole);
+               
                 if (user != null)
                 {
+                    var namerole = db.Nameroles.FirstOrDefault(c => c.Idrole == user.Idrole);
                     var claims = new List<Claim>()
             {
 
@@ -43,7 +45,7 @@ public class UserController : Controller
                     var principal = new ClaimsPrincipal(identity);// cung cấp thuộc tính truy xuất thong tin người dùng
                     await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal, new AuthenticationProperties // 
                     {
-                        IsPersistent = false
+                        IsPersistent = true
                     });
                     return LocalRedirect("/Home/Index");
 
@@ -160,8 +162,7 @@ public class UserController : Controller
     }
     public async Task<RedirectResult> saveupdate(dangky dangky)
     {
-        if (ModelState.IsValid)
-        {
+       
             using (var db = new storeContext())
             {
                 int iduser = 0;
@@ -179,6 +180,7 @@ public class UserController : Controller
                     }
                 }
                 var user = db.Users.FirstOrDefault(c => c.Iddangnhap == dangky.iddangnhap);
+                var matkhau1 = db.Dangnhapusers.FirstOrDefault(c => c.Iddangnhap == dangky.iddangnhap);
 
                 if (user == null)
                 {
@@ -190,9 +192,11 @@ public class UserController : Controller
                         EmailUser = dangky.EmailUser,
                         Iddangnhap = dangky.iddangnhap,
                         RegistrationDate = DateTime.Now,
-                        Idrole = dangky.idrole,
+                        Idrole = 3,
                         UserId = iduser,
+                  
                     });
+                    matkhau1.Idrole = 3;
                     db.SaveChanges();
                     return new RedirectResult(url: "/user/thongtincanhan");
                 }
@@ -205,9 +209,9 @@ public class UserController : Controller
                     user.PhoneUser = dangky.PhoneUser;
                     user.NameUser = dangky.NameUser;
                     matkhau.Password = dangky.password;
-                    user.Idrole = dangky.idrole;
+                    user.Idrole = 3;
                     matkhau.Idrole = dangky.idrole;
-                    db.SaveChanges();
+                     db.SaveChanges();
                 }
             }
 
@@ -216,7 +220,7 @@ public class UserController : Controller
 
 
             Claim claim = new Claim(ClaimTypes.Role, "user1");
-            Claim claim1 = new Claim(ClaimTypes.GivenName, dangky.tendangnhap);
+            Claim claim1 = new Claim(ClaimTypes.GivenName, dangky.iduser.ToString());
 
             if (nameclaims != null)
             {
@@ -242,7 +246,7 @@ public class UserController : Controller
 
 
 
-        }
+        
         return new RedirectResult(url: "/user/thongtincanhan");
     }
 
@@ -261,18 +265,16 @@ public class UserController : Controller
     {
         using (var db = new storeContext())
         {
-            Product1 product1 = new Product1();
+            Product product1 = new Product();
+           
+
+          var product = db.Products.Where(c => c.Id ==id).FirstOrDefault();
+
+            product1 = product;
 
 
-          var  product = db.Products.ToList();
 
-            foreach (var item in product)
-            {
-
-            }
-      
-
-            return View(product);
+            return View(product1);
         }
     }
 
@@ -282,31 +284,70 @@ public class UserController : Controller
     {
         using (var db = new storeContext())
         {
-         
-            string identifier = User.FindFirstValue(ClaimTypes.GivenName);
 
-            var user = db.Users.Where(c => c.NameUser == identifier).FirstOrDefault();
-            //  if (oderitem != null)
-            var donhang = new Order
+
+            int iduser = 0;
+            var user1 = db.Orders.ToList();
+
+            foreach (var m in user1)
             {
+                if (iduser == m.OrderId)
+                {
+                    iduser = iduser + 2;
+                }
+                else
+                {
+                    break;
+                }
+            }
+            int a = 0;
+            var c = db.Orderitems.ToList();
+
+            foreach (var m in c)
+            {
+                if (a == m.OrderItemsId)
+                {
+                    a = a + 1;
+                }
+                else
+                {
+                    break;
+                }
+            }
+
+
+
+            string identifier = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var user = db.Users.Where(c => c.Iddangnhap == int.Parse(identifier)).FirstOrDefault();
+            int u = user.UserId;
+            //  if (oderitem != null)
+            Order donhang = new Order
+            {
+                OrderId = iduser,
                 UserId = user.UserId,
                 OrderDate = DateTime.Today,
                 Status = "đang xử lý",
 
             };
-            db.Orders.Add(donhang);
 
+            db.Orders.Add(donhang);
+            
             var item = new Orderitem
-            {
-                OrderId = donhang.OrderId,
+            {   
+                OrderItemsId = a,
+                OrderId = iduser,
                 Quantity = soluong,
                 ProductId = id,
             };
             db.Orderitems.Add(item);
+          
+            var sp = db.Products.FirstOrDefault(c => c.Id == id);
+            if (sp != null)
+            {
+                sp.Stockquantity = sp.Stockquantity - soluong;
+            }
             db.SaveChanges();
-
-
-            return RedirectToAction("thongtindonhang", user.UserId);
+            return new RedirectResult(url: "/user/thongtincanhan/u");
         }
     }
 

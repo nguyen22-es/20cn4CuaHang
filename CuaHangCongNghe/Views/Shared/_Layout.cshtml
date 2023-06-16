@@ -41,35 +41,71 @@
             <nav class="navbar navbar-light bg-light justify-content-between">
                 <div id="mySidenav" class="sidenav">
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <a href="@Url.Action("Index", "Home")">Home</a>
-                    <a href="@Url.Action("maytinh", "Home")">Máy Tính</a>
-                    <a href="mans_clothes.html">Điện thoại</a>
-                    <a href="womans_clothes.html">Phụ kiện</a>
-                    <a href="@Url.Action("thongtincanhan", "User")">Cá Nhân</a>
-                    <a href="@Url.Action("thongTinNguoiDung", "admin")">thông tin khách h</a>
-                    <a href="@Url.Action("themsanpham", "admin")">thông tin khách h</a>
+                    <a href="@Url.Action("Index", "Home")">HOME</a>
+                    <a href="@Url.Action("maytinh", "Home")">SẢN PHẨM</a>
+            
+                  
+                   
+                   
                     @if (User.Identity.IsAuthenticated)
                     {
+                        if (User.IsInRole("admin"))
+                        {
+                            <a href="@Url.Action("product", "admin")">DANH SÁCH SẢN PHẨM</a>
+                            <a href="@Url.Action("thongTinNguoiDung", "admin")">THÔNG TIN KHÁCH HÀNG</a>
+                            <form action="@Url.Action("Logout", "User")" method="post">
+                                <button type="submit">ĐĂNG XUẤT</button>
+                            </form>
 
-                        <form action="@Url.Action("Logout", "User")" method="post">
-                            <button type="submit">Đăng xuất</button>
-                        </form>
+                        }
+
+                        else if (User.IsInRole("user") || User.IsInRole("user1"))
+                        {
+                            <a href="@Url.Action("thongtincanhan", "User")">CÁ NHÂN</a>
+
+                            <form action="@Url.Action("Logout", "User")" method="post">
+                                <button type="submit">Đăng xuất</button>
+                            </form>
+                        }
+                    
                     }
-                    else
+                    else if (!User.Identity.IsAuthenticated)
                     {
-                        <a href="@Url.Action("dangnhap", "User")">Đăng nhập</a>
+
+                        <a href="@Url.Action("dangnhap", "User")">ĐĂNG NHẬP</a>
+
                     }
                 </div>
                 <span style="font-size:30px;cursor:pointer; color: #fff;" onclick="openNav()"><img src="~/images/toggle-icon.png"></span>
-                <a class="navbar-brand" href="index.html"><img src="~/images/logo.png"></a></a>
+                <a class="navbar-brand" href="@Url.Action("Index", "Home")"><img src="~/images/logo.png"></a></a>
                 <form class="form-inline ">
                     <div class="login_text">
                         <ul>
                             @if (User.Identity.IsAuthenticated)
                     {
-                            <li><a href="#"><img src="~/images/user-icon.png"></a></li>
-                            <li><a href="#"><img src="~/images/trolly-icon.png"></a></li>
-                            <li><a href="#"><img src="~/images/search-icon.png"></a></li>
+                                if (User.IsInRole("admin"))
+                                {
+
+                                    <li><a href="@Url.Action("thongTinNguoiDung", "admin")">
+                                        <img src="~/images/user-icon.png">
+                                        </a>
+                                        <span style="color: black;">chào!@User.Identity.Name.ToString()</span>
+                                        </li>
+
+                                    <li> <a href="@Url.Action("product", "admin")"><img src="~/images/trolly-icon.png"></a></li>
+
+                                }
+                                else if (User.IsInRole("user") || User.IsInRole("user1"))
+                                {
+                                    <li>
+                                        <a href="@Url.Action("thongtincanhan", "User")">
+                                            <img src="~/images/user-icon.png">
+                                        </a>
+                                        <span style="color: black;">chào!@User.Identity.Name.ToString()</span>
+                                    </li>
+                                    <li><a href="@Url.Action("thongtindonhang", "admin")"><img src="~/images/trolly-icon.png"></a></li>
+                                }
+
                     }
                         </ul>
                     </div>

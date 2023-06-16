@@ -29,7 +29,7 @@ namespace CuaHangCongNghe.Models.Tables
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseMySql("server=localhost;database=store;user=root;password=son2002e;allow user variables=True", Microsoft.EntityFrameworkCore.ServerVersion.Parse("8.0.32-mysql"));
+                optionsBuilder.UseMySql("server=localhost;database=store;user=ducanh;password=16102002;allow user variables=True", Microsoft.EntityFrameworkCore.ServerVersion.Parse("8.0.33-mysql"));
             }
         }
 
@@ -116,6 +116,7 @@ namespace CuaHangCongNghe.Models.Tables
                 entity.HasOne(d => d.User)
                     .WithMany(p => p.Orders)
                     .HasForeignKey(d => d.UserId)
+                    .OnDelete(DeleteBehavior.Cascade)
                     .HasConstraintName("orders_ibfk_1");
             });
 
@@ -143,18 +144,20 @@ namespace CuaHangCongNghe.Models.Tables
                 entity.HasOne(d => d.Order)
                     .WithMany(p => p.Orderitems)
                     .HasForeignKey(d => d.OrderId)
+                    .OnDelete(DeleteBehavior.Cascade)
                     .HasConstraintName("orderitems_ibfk_1");
 
                 entity.HasOne(d => d.Product)
                     .WithMany(p => p.Orderitems)
                     .HasForeignKey(d => d.ProductId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("orderitems_ibfk_2");
             });
 
             modelBuilder.Entity<Product>(entity =>
             {
                 entity.ToTable("products");
+
+                entity.HasIndex(e => e.CategoryId, "FK_products_categories");
 
                 entity.Property(e => e.Id).HasColumnName("ID");
 
@@ -175,6 +178,11 @@ namespace CuaHangCongNghe.Models.Tables
                 entity.Property(e => e.Price).HasColumnName("price");
 
                 entity.Property(e => e.Stockquantity).HasColumnName("stockquantity");
+
+                entity.HasOne(d => d.Category)
+                    .WithMany(p => p.Products)
+                    .HasForeignKey(d => d.CategoryId)
+                    .HasConstraintName("FK_products_categories");
             });
 
             modelBuilder.Entity<User>(entity =>

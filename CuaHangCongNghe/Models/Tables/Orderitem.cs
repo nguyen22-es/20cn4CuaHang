@@ -10,7 +10,7 @@ namespace CuaHangCongNghe.Models.Tables
         public int ProductId { get; set; }
         public int Quantity { get; set; }
 
-        public virtual Order Order { get; set; } = null!;
-        public virtual Category Product { get; set; } = null!;
+        public virtual Order? Order { get; set; }
+        public virtual Category? Product { get; set; }
     }
 }

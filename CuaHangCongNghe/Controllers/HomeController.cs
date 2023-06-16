@@ -35,10 +35,11 @@ public class HomeController : Controller
         return View();
     }
     
-    public IActionResult maytinh(/*float giamax,float giamin,*/ string name1)
+    public IActionResult maytinh(string name1,string name2,string name3)
     {
         using (var db = new storeContext())
         {
+          
             List<Product> Listsanpham1 = new List<Product>();
            
          

@@ -15,7 +15,7 @@ namespace CuaHangCongNghe.Models.Tables
         public DateTime OrderDate { get; set; }
         public string? Status { get; set; }
 
-        public virtual User User { get; set; } = null!;
+        public virtual User? User { get; set; }
         public virtual ICollection<Orderitem> Orderitems { get; set; }
     }
 }

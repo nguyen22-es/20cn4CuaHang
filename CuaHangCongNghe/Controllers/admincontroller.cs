@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Hosting.Internal;
 using System.IO;
 using Microsoft.CodeAnalysis.VisualBasic.Syntax;
+using static CuaHangCongNghe.Controllers.HomeController;
 
 namespace CuaHangCongNghe.Controllers
 {
@@ -193,12 +194,9 @@ namespace CuaHangCongNghe.Controllers
                 }
 
                 // Lưu đường dẫn hình ảnh vào thuộc tính ImageUrl của sản phẩm
-                sanpham.ImageUrl = "~/images/" + fileName;
+                sanpham.ImageUrl = "images/" + fileName;
             }
-            else
-            {
-                sanpham.ImageUrl = "không có gì";
-            }
+           
 
     
 
@@ -222,7 +220,7 @@ namespace CuaHangCongNghe.Controllers
                         };
                         db.Products.Add(newProduct);
                         db.SaveChanges();
-                    return new RedirectResult("thongtinNguoiDung");
+                    return new RedirectResult("product");
                 }
                
 
@@ -235,7 +233,80 @@ namespace CuaHangCongNghe.Controllers
            
             return new RedirectResult("index");
         }
+        [HttpGet]
+        public ActionResult product(string nametim)
+        {
 
+            using (var db = new storeContext())
+            {
+
+
+                var Listsanpham = new listsanpham();
+                var user1 = db.Products.ToList();
+                Listsanpham.Products = new List<Product>();
+                if (nametim == null)
+                {
+                    Listsanpham.Products = user1;
+                }
+                else
+                {
+                    Listsanpham.Products = new List<Product>();
+
+                    foreach (var user in user1)
+                    {
+                        bool isAdmin = user.Name.IndexOf(nametim, StringComparison.OrdinalIgnoreCase) >= 0;
+                        if (isAdmin)
+                        {
+                            Listsanpham.Products.Add(user);
+                        }
+                    }
+                }
+
+                return View(Listsanpham);
+            }
+
+        }
+
+        public RedirectResult Deleteproduct(int id)
+        {
+            using (var db = new storeContext())
+            {
+                var user = db.Products.Where(c => c.Id == id).FirstOrDefault();
+                if (user != null)
+                {
+
+                    db.Products.Remove(user);
+                    db.SaveChanges();
+                }
+                return new RedirectResult(url: "/admin/product");
+            }
+        }
+        public ActionResult updateproduct(int id)
+        {
+            using (var db = new storeContext())
+            {
+                var user = db.Products.Where(c => c.Id == id).FirstOrDefault();
+               
+                return View(user);
+            }
+        }
+        public ActionResult editproduct(Product product)
+        {
+            using (var db = new storeContext())
+            {
+                var user = db.Products.Where(c => c.Id == product.Id).FirstOrDefault();
+                if (user != null)
+                {
+
+                  user.Stockquantity = product.Stockquantity;   
+                user.Price = product.Price;
+                    user.Description = product.Description;
+                    user.Name = product.Name;
+                    db.SaveChanges();
+                }
+                return new RedirectResult(url: "/admin/product");
+            }
+        }
         public partial class userViewModel
         {
             public List<User> Users { get; set; }
@@ -256,5 +327,6 @@ namespace CuaHangCongNghe.Controllers
         }
 
     }
-
 }
+
+

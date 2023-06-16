@@ -41,7 +41,7 @@
                                     @thongtindonhang.Status
                                 </td>
                                 <td>
-                                @if (User.Identity.IsAuthenticated && User.IsInRole("user1"))
+                                @if (User.Identity.IsAuthenticated && User.IsInRole("admin"))
                                 {
 
                                     <form action="/admin/saveTrangThai" method="post">

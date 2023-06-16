@@ -10680,23 +10680,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ztzkk\\.nuget\\packages\\": {},
+    "C:\\Users\\ducanh\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\CuaHangCongNghe.csproj",
+      "projectUniqueName": "C:\\Users\\ducanh\\Source\\Repos\\20cn4nhom2\\20cn4CuaHang\\CuaHangCongNghe\\CuaHangCongNghe.csproj",
       "projectName": "CuaHangCongNghe",
-      "projectPath": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\CuaHangCongNghe.csproj",
-      "packagesPath": "C:\\Users\\ztzkk\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ztzkk\\source\\repos\\20cn4CuaHang\\CuaHangCongNghe\\obj\\",
+      "projectPath": "C:\\Users\\ducanh\\Source\\Repos\\20cn4nhom2\\20cn4CuaHang\\CuaHangCongNghe\\CuaHangCongNghe.csproj",
+      "packagesPath": "C:\\Users\\ducanh\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ducanh\\Source\\Repos\\20cn4nhom2\\20cn4CuaHang\\CuaHangCongNghe\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\ztzkk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ducanh\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
