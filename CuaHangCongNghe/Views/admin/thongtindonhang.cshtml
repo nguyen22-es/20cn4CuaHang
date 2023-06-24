@@ -41,24 +41,45 @@
                                     @thongtindonhang.Status
                                 </td>
                                 <td>
-                                @if (User.Identity.IsAuthenticated && User.IsInRole("user1"))
+                                @if (User.Identity.IsAuthenticated )
                                 {
+                                        if (User.IsInRole("admin"))
+                                        {
+                                            <form action="/admin/saveTrangThai" method="post">
+                                                <label for="fruits"></label>
+                                                <input type="hidden" id="idInput" name="id1" value="@thongtindonhang.oderid">
+                                                <input type="hidden" id="iduser" name="id" value="@thongtindonhang.iduser">
+                                                <select id="fruits" name="name">
+                                                    <option value=""></option>
+                                                    <option value="3">đang xử lý</option>
+                                                    <option value="4">đã giao</option>
+                                                    <option value="2">chưa giao</option>
+                                                    <option value="5">giao chậm</option>
+                                                </select>
+                                                <input type="submit" value="Thay đổi">
 
-                                    <form action="/admin/saveTrangThai" method="post">
-                                    <label for="fruits"></label>
-                                    <input type="hidden" id="idInput" name="id1" value="@thongtindonhang.oderid">
-                                    <input type="hidden" id="iduser" name="id" value="@thongtindonhang.iduser">
-                                    <select id="fruits" name="name">
-                                        <option value=""></option>
-                                        <option value="đang xử lý">đang xử lý</option>
-                                        <option value="đã giao">đã giao</option>
-                                        <option value="chưa giao">chưa giao</option>
-                                        <option value="giao chậm">giao chậm</option>
-                                    </select>
-                                    <input type="submit" value="Thay đổi">
+                                            </form>
+                                        }
+                                        else if (User.IsInRole("user1"))
+                                        {
+                                            if (thongtindonhang.idstatus == 0)
+                                            {
+                                                <a href="/thanhtoan/pay/@thongtindonhang.oderid" class="btn btn-danger btn-icon-split">
+                                                    <span class="icon text-white-50">
+                                                        <i class="fas fa-trash"></i>
+                                                    </span>
+                                                    <span class="text">Thanh toán</span>
+                                                </a>
 
-                                    </form>                             
-                                }
+                                                <a href="/user/Deleteoder?id=@thongtindonhang.oderid&sanpham=@thongtindonhang.idHang&soluong=@thongtindonhang.Soluong" class="btn btn-danger btn-icon-split">
+                                                    <span class="icon text-white-50">
+                                                        <i class="fas fa-trash"></i>
+                                                    </span>
+                                                    <span class="text">Xóa</span>
+                                                </a>
+                                            }
+                                        }
+                                    }
                                 </td>
                             </tr>
                         }

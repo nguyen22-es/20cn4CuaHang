@@ -1,0 +1,76 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form action="/admin/editproduct" method="get">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+@model CuaHangCongNghe.Models.son1.Product
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-4 item-photo">
+                <img style="max-width:100%;" src="~/@Model.ImageUrl">
+            </div>
+            <div class="col-xs-5" style="border:0px solid gray">
+                <!-- Datos del vendedor y titulo del producto -->
+                <h3>
+                    <input name="Name" value="@Model.Name" required>
+                </h3>
+
+                <!-- Precios -->
+                <h6 class="title-price"><small>Giá sản phẩm</small></h6>
+                <input style="margin-top:0px;" name="Price" value="@Model.Price" required>
+
+                <!-- Detalles especificos del producto -->
+                <div class="section">
+                    
+                    <div>
+                        <div class="attr" style="width:25px;background:#5a5a5a;"></div>
+                        <div class="attr" style="width:25px;background:white;"></div>
+                    </div>
+                </div>
+                <div class="section" style="padding-bottom:5px;">
+                    <h6 class="title-attr"><small>số lượng sản phẩm</small></h6>
+
+               
+                <div class="section" style="padding-bottom:20px;">
+                        <input name="Stockquantity" class="title-attr" value="@Model.Stockquantity" required>
+                    <div>
+                        </div>
+
+                        
+                        <input type="hidden" name="id" value="@Model.Id" required>
+
+                    </div>
+                </div>
+
+                <!-- Botones de compra -->
+                <div class="section" style="padding-bottom:20px;">
+                    <button class="btn btn-success"><span style="margin-right:20px" class="glyphicon glyphicon-save-cart" aria-hidden="true"></span>thay đổi </button>
+                    <h6><a href="#"><span class="glyphicon glyphicon-heart-empty" style="cursor:pointer;"></span> </a></h6>
+                </div>
+            </div>
+
+            <div class="col-xs-9">
+                <ul class="menu-items">
+                    <li class="active">thông tin chi tiết về sản phẩm</li>
+
+
+                </ul>
+                <div style="width:100%;border-top:1px solid silver">
+
+                    <small>
+
+                        <input name="Description" value="@Model.Description" style="border: none" required>
+                      
+                    </small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</form>
+

@@ -977,3 +977,9 @@ button {
 .margin_top_90 {
     margin-top: 90px;
 }
+
+.image_1 {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}

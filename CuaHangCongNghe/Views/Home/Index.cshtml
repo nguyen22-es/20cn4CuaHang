@@ -3,71 +3,82 @@
 }
 @model CuaHangCongNghe.Controllers.HomeController.listsanpham
 <!-- banner section start -->
-<div class="banner_section layout_padding">
-    <div id="my_slider" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link href="https://raw.githubusercontent.com/daneden/animate.css/master/animate.css" rel="stylesheet">
+
+<div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="mask flex-center">
                 <div class="container">
-                    <div class="row border_1">
-                        <div class="col-md-4">
-                            <div class="image_1"><img src="~/images/img-1.png" style="width:100%"></div>
+                    <div class="row align-items-center">
+                        <div class="col-md-7 col-12 order-md-1 order-2">
+                            <h4>
+                                <br>
+                                ĐỒNG HỒ THÔNG MINH MỚI
+                            </h4>
+                            <p>
+                                <br>Kết nối và kiểm soát sức khỏe của bạn
+
+                            </p>
+                            <a href="~/Home/maytinh">BUY NOW</a>
                         </div>
-                        <div class="col-md-4">
-                            <h1 class="banner_taital">khuyến mãi lớn</h1>
-                            <div class="buynow_bt active"><a href="#">mua ngay</a></div>
-                            <div class="contact_bt"><a href="contact.html">Contact Us</a></div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="image_2"><img src="~/images/img-2.png" style="width:100%"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="container">
-                    <div class="row border_1">
-                        <div class="col-md-4">
-                            <div class="image_1"><img src="~/images/img-1.png" style="width:100%"></div>
-                        </div>
-                        <div class="col-md-4">
-                            <h1 class="banner_taital">khuyến mãi lớn</h1>
-                            <div class="buynow_bt active"><a href="#">mua ngay</a></div>
-                            <div class="contact_bt"><a href="contact.html">Contact Us</a></div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="image_2"><img src="~/images/img-2.png" style="width:100%"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="container">
-                    <div class="row border_1">
-                        <div class="col-md-4">
-                            <div class="image_1"><img src="~/images/img-1.png" style="width:100%"></div>
-                        </div>
-                        <div class="col-md-4">
-                            <h1 class="banner_taital">khuyến mãi lớn</h1>
-                            <div class="buynow_bt active"><a href="#">mua ngay</a></div>
-                            <div class="contact_bt"><a href="contact.html">Contact Us</a></div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="image_2"><img src="~/images/img-2.png" style="width:100%"></div>
-                        </div>
+                        <div class="col-md-5 col-12 order-md-2 order-1"><img src="https://i.imgur.com/NKvkfTT.png" class="mx-auto" alt="slide"></div>
                     </div>
                 </div>
             </div>
         </div>
-        <a class="carousel-control-prev" href="#my_slider" role="button" data-slide="prev">
-            <i class="fa fa-angle-left"></i>
-        </a>
-        <a class="carousel-control-next" href="#my_slider" role="button" data-slide="next">
-            <i class="fa fa-angle-right"></i>
-        </a>
+        <div class="carousel-item">
+            <div class="mask flex-center">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-7 col-12 order-md-1 order-2">
+                            <h4>
+                                <br>
+                                TRẢI NGHIỆM ÂM NHẠC KHÔNG GIỚI HẠN
+                            </h4>
+                            <p>
+                                <br>
+
+                            </p>
+                            <a href="~/Home/maytinh">BUY NOW</a>
+                        </div>
+                        <div class="col-md-5 col-12 order-md-2 order-1"><img src="https://i.imgur.com/duWgXRs.png" class="mx-auto" alt="slide"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="mask flex-center">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-7 col-12 order-md-1 order-2">
+                            <h4>
+                                <br>
+                                Khám phá không gian xung quanh một cách toàn diện
+                            </h4>
+                            <p>
+                                <br>
+
+                            </p>
+                            <a href="~/Home/maytinh">BUY NOW</a>
+                        </div>
+                        <div class="col-md-5 col-12 order-md-2 order-1"><img src="https://i.imgur.com/DGkR4OQ.png" class="mx-auto" alt="slide"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <a href="#myCarousel" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
 </div>
+
 <!-- banner section end -->
 <!-- catagary section start -->
+
 <div class="catagary_section layout_padding">
     <div class="container">
         <div class="catagary_main">
@@ -75,7 +86,6 @@
                 <h2 class="categary_text">Danh mục</h2>
             </div>
             <div class="catagary_right">
-                
             </div>
         </div>
     </div>
@@ -85,157 +95,207 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="box_man">
-                    <h3 class="mobile_text">điện thoại</h3>
-                    <div class="mobile_img"><img src="~/images/mobile-img.png"></div>
+                    <h3 class="mobile_text"> máy tính</h3>
+                    <div class="watch_img"><img src="~/images/asus_laptophieunangchinh1.jpg" /></div>
                     <div class="cart_main">
-                        <div class="cart_bt"><a href="#">mua ngay</a></div>
+                        <input type="hidden" name="name1" value="máy tính" />
+                        <a class="btn btn-primary" href="#" onclick="addToCart('máy tính')">Khám phá</a>
+
                     </div>
                 </div>
             </div>
 
             <div class="col-md-4">
                 <div class="box_man">
-                    <h3 class="mobile_text">máy tính</h3>
-                    <div class="watch_img"><img src="~/images/watch-img.png"></div>
+                    <h3 class="mobile_text"> điện thoại</h3>
+                    <div class="watch_img"><img src="~/images/ảnh loat iphone.jpg" /></div>
                     <div class="cart_main">
-                        <div class="cart_bt"><a href="#">mua ngay</a></div>
-                       
+                        <a class="btn btn-primary" href="#" onclick="addToCart('điện thoại')">Khám phá</a>
 
                     </div>
                 </div>
             </div>
+
             <div class="col-md-4">
                 <div class="box_man">
-                    <h3 class="mobile_text">phụ kiện</h3>
-                    <div class="camera_img"><img src="~/images/camera-img.png"></div>
-                    <div class="cart_main">
-                        <div class="cart_bt"><a href="#">mua ngay</a></div>
+                    <h3 class="mobile_text"> phụ kiện</h3>
+                    <div class="watch_img">
+                        <img src="~/images/phu_kien.jpg" div />
+                        <div class="cart_main">
 
+                            <a href="#" class="btn btn-primary" onclick="addToCart('phụ kiện')">Khám phá</a>
+
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- catagary section end -->
-<!-- computers section start -->
-<div class="computers_section layout_padding">
-    <div class="container">
-        <h1 class="computers_taital">máy tính & Laptop</h1>
+    <script>
+        function addToCart(value) {
+            // Thực hiện xử lý với giá trị "phụ kiện"
+            // Ví dụ: Chuyển hướng đến trang "/Home/maytinh" với giá trị được truyền vào
+            window.location.href = "/Home/maytinh/value=" + encodeURIComponent(value);
+        }
+    </script>
+    <!-- catagary section end -->
+    <!-- computers section start -->
+    <div class="computers_section layout_padding">
+        <div class="container">
+            <h1 class="computers_taital">máy tính & Laptop</h1>
+        </div>
     </div>
-</div>
-<div class="computers_section_2">
-    <div class="container-fluid">
-        <div class="computer_main">
-            <div class="row">
-                @{int count =  0;
-                foreach (var item in Model.Products)
-                {
-                    if (count < 5 && item.CategoryId == 2)
+    <div class="computers_section_2">
+        <div class="container-fluid">
+            <div class="computer_main">
+                <div class="row">
+
+                    @foreach (var item in Model.Products)
                     {
-                        <div class="col-md-4">
-                            <div class="card">
-                                    <img class="product-image" src="@item.ImageUrl" alt="@item.Name">
+                        int count = 0;
+                        if (count < 5 && item.CategoryId == 1)
+                        {
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img class="product-image" src="~/@item.ImageUrl" alt="@item.Name">
                                     <div class="card_main">
                                         <h6 class="price_text">giá: @item.Price</h6>
                                         <h6 class="price_text">số lượng còn lại: @item.Stockquantity</h6>
 
-                                        @if (User.Identity.IsAuthenticated )
+                                        @if (User.Identity.IsAuthenticated)
                                         {
-                                            if(User.IsInRole("user1"))
+                                            if (User.IsInRole("user1"))
                                             {
-                                                <a href="User/sanphamadd/@item.Id" class="btn btn-primary">thêm vào giỏ hàng</a>
+                                                <a href="/User/sanphamadd/@item.Id" class="btn btn-primary">thêm vào giỏ hàng</a>
                                             }
-                                            else if(User.IsInRole("user"))
+                                            else if (User.IsInRole("user"))
                                             {
-                                                
-                                            
+                                                <a href="@Url.Action("thongtincanhan", "User")" class="btn btn-primary">thêm vào giỏ hàng</a>
+
                                             }
-                                          
+
                                         }
                                         else
                                         {
-                                            <a href="#" class="btn btn-primary">thêm vào giỏ hàng</a>
+
+
+                                            <a href="@Url.Action("dangnhap", "User")" class="btn btn-primary">thêm vào giỏ hàng</a>
                                         }
                                     </div>
-                            </div>
-                        </div>
-                    }
-
-                    count++;
-                }
-             }
-            </div>
-        </div>
-    </div>
-</div>
-<div class="computers_section layout_padding">
-    <div class="container">
-        <h1 class="computers_taital">điện thoại</h1>
-    </div>
-</div>
-<div class="computers_section_2">
-    <div class="container-fluid">
-        <div class="computer_main">
-            <div class="row">
-                @{
-                    int coun = 0;
-                    foreach (var item in Model.Products)
-                    {
-                        if ( item.CategoryId == 1)
-                        {
-                            <div class="col-md-4">
-                                <div class="card">
-                                    <img class="product-image" src="@item.ImageUrl" alt="@item.Name">
-                                    <div class="card_main">
-                                        <h6 class="price_text">giá: @item.Price</h6>
-                                        <h6 class="price_text">số lượng còn lại: @item.Stockquantity</h6>
-                                        <h5 class="samsung_text">@item.Name</h5>
-                                        <a href="#" class="btn btn-primary">thêm vào giỏ hàng</a>
-                                    </div>
                                 </div>
                             </div>
                         }
 
-                        coun++;
+                        count++;
                     }
-                }
+
+                </div>
             </div>
         </div>
     </div>
-</div>
-<div class="computers_section layout_padding">
-    <div class="container">
-        <h1 class="computers_taital">phụ kiện</h1>
+    <div class="computers_section layout_padding">
+        <div class="container">
+            <h1 class="computers_taital">điện thoại</h1>
+        </div>
     </div>
-</div>
-<div class="computers_section_2">
-    <div class="container-fluid">
-        <div class="computer_main">
-            <div class="row">
-                @{
-                    int cou = 0;
-                    foreach (var item in Model.Products)
-                    {
-                        if (cou < 3 && item.CategoryId == 3)
+    <div class="computers_section_2">
+        <div class="container-fluid">
+            <div class="computer_main">
+                <div class="row">
+                    @{
+                        int coun = 0;
+                        foreach (var item in Model.Products)
                         {
-                            <div class="col-md-4">
-                                <div class="card">
-                                    <img class="product-image" src="@item.ImageUrl" alt="@item.Name">
-                                    <div class="card_main">
-                                        <h6 class="price_text">giá: @item.Price</h6>
-                                        <h6 class="price_text">số lượng còn lại: @item.Stockquantity</h6>
-                                        <h5 class="samsung_text">@item.Name</h5>
-                                        <a href="#" class="btn btn-primary">thêm vào giỏ hàng</a>
+                            if (item.CategoryId == 2)
+                            {
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img class="product-image" src="@item.ImageUrl" alt="@item.Name">
+                                        <div class="card_main">
+                                            <h6 class="price_text">giá: @item.Price</h6>
+                                            <h6 class="price_text">số lượng còn lại: @item.Stockquantity</h6>
+                                            <h5 class="samsung_text">@item.Name</h5>
+                                            @if (User.Identity.IsAuthenticated)
+                                            {
+                                                if (User.IsInRole("user1"))
+                                                {
+                                                    <a href="/User/sanphamadd/@item.Id" class="btn btn-primary">thêm vào giỏ hàng</a>
+                                                }
+                                                else if (User.IsInRole("user"))
+                                                {
+                                                    <a href="/user/thongtincanhan" class="btn btn-primary">thêm vào giỏ hàng</a>
+
+                                                }
+
+                                            }
+                                            else
+                                            {
+
+
+                                                <a href="@Url.Action("dangnhap", "User")" class="btn btn-primary">thêm vào giỏ hàng</a>
+                                            }
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        }
+                            }
 
-                        cou++;
+                            coun++;
+                        }
                     }
-                }
+                </div>
             </div>
         </div>
     </div>
-</div>
+    <div class="computers_section layout_padding">
+        <div class="container">
+            <h1 class="computers_taital">phụ kiện</h1>
+        </div>
+    </div>
+    <div class="computers_section_2">
+        <div class="container-fluid">
+            <div class="computer_main">
+                <div class="row">
+                    @{
+                        int cou = 0;
+                        foreach (var item in Model.Products)
+                        {
+                            if (cou < 3 && item.CategoryId == 3)
+                            {
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img class="product-image" src="~/@item.ImageUrl" alt="@item.Name">
+                                        <div class="card_main">
+                                            <h6 class="price_text">giá: @item.Price</h6>
+                                            <h6 class="price_text">số lượng còn lại: @item.Stockquantity</h6>
+                                            <h5 class="samsung_text">@item.Name</h5>
+                                            @if (User.Identity.IsAuthenticated)
+                                            {
+                                                if (User.IsInRole("user1"))
+                                                {
+                                                    <a href="/User/sanphamadd/@item.Id" class="btn btn-primary">thêm vào giỏ hàng</a>
+                                                }
+                                                else if (User.IsInRole("user"))
+                                                {
+                                                    <a href="/user/thongtincanhan" class="btn btn-primary">thêm vào giỏ hàng</a>
+
+                                                }
+
+                                            }
+                                            else
+                                            {
+
+
+                                                <a href="@Url.Action("dangnhap", "User")" class="btn btn-primary">thêm vào giỏ hàng</a>
+                                            }
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+
+                            cou++;
+                        }
+                    }
+                </div>
+            </div>
+        </div>
+    </div>

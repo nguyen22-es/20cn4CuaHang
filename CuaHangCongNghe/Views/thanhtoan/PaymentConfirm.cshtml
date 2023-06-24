@@ -1,0 +1,46 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<head>
+    <style>
+        #capture {
+            background-color: white;
+            color: black;
+        }
+    </style>
+    <title>RETURN URL FROM VNPAY</title>
+   
+   <script src="~/js (2)/html2canvas.min.js"></script>
+    <script>
+        function captureScreenshot() {
+            html2canvas(document.getElementById('capture')).then(function (canvas) {
+                var link = document.createElement('a');
+                link.href = canvas.toDataURL();
+                link.download = 'screenshot.png';
+                link.click();
+            });
+        }
+    </script>
+</head>
+<body>
+    <div id="capture">
+    @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+    {
+        <div>@ViewBag.ErrorMessage</div>
+    }
+    else
+    {
+        <div> @ViewBag.InnerText</div>
+            <div> @ViewBag.name</div>
+            
+         
+        <div> @ViewBag.InnerTextTerminalID</div>
+        <div> @ViewBag.InnerTextorderId</div>
+        <div> @ViewBag.InnerTextvnpayTranId</div>
+        <div> @ViewBag.InnerTextvnp_Amount</div>
+        <div> @ViewBag.InnerTextbankCode</div>
+            <div> @ViewBag.date</div>
+    }
+    </div>
+    <button onclick="captureScreenshot()" class="btn btn-danger btn-icon-split">Chụp và Lưu hóa đơn</button>
+</body>

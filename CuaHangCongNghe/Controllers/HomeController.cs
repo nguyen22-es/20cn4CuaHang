@@ -1,8 +1,8 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using CuaHangCongNghe.Models;
+using CuaHangCongNghe.Models.son1;
 using Microsoft.AspNetCore.Authorization;
-using CuaHangCongNghe.Models.Tables;
+using CuaHangCongNghe.Models;
 using CuaHangCongNghe.Controllers.laydulieu;
 
 namespace CuaHangCongNghe.Controllers;
@@ -17,7 +17,7 @@ public class HomeController : Controller
     }
 
   
-    public IActionResult Index()
+    public IActionResult Index() // hiển thị sản phẩm ở trang index
     {
         using (var db = new storeContext())
         {
@@ -35,10 +35,11 @@ public class HomeController : Controller
         return View();
     }
     
-    public IActionResult maytinh(/*float giamax,float giamin,*/ string name1)
+    public IActionResult maytinh(string name1)// hiển thị tất cả sản phẩm hoặc những dản phẩm có tên category là name1
     {
         using (var db = new storeContext())
         {
+          
             List<Product> Listsanpham1 = new List<Product>();
            
          
@@ -70,6 +71,7 @@ public class HomeController : Controller
            
         }
     }
+ 
    
 
 

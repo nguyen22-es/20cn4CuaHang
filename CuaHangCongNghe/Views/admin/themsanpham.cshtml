@@ -19,19 +19,70 @@
         <label for="description">mô tả sản phẩm:</label>
         <input name="sanpham.Description" id="description" class="form-control" required>
     </div>
-    
 
-  
-    <label for="ipdanhmuc1">Chọn một loại sản phẩm:</label>
-    <select id="ipdanhmuc1" name="name1">
-        @foreach (var item in Model.Categories)
-        {
-            <option value="@item.Name">@item.Name</option>
-        }
-    </select>
+    
+    <div class="custom-control custom-radio">
+        <input id="httt-2" name="httt_ma" type="radio" class="custom-control-input" required="" value="2"
+               onchange="showPaymentOption(2)">
+        <label class="custom-control-label" for="httt-2">chọn loại sản phẩm</label>
+    </div>
+
+
+    <div class="custom-control custom-radio">
+        <input id="httt-3" name="httt_ma" type="radio" class="custom-control-input" required="" value="3"
+               onchange="showPaymentOption(3)">
+        <label class="custom-control-label" for="httt-3">thêm loại sản phẩm khác</label>
+    </div>
+
+    
+    
+    <div id="payment-options">
+        <div id="payment-option-2" style="display: none;">
+            <label for="ipdanhmuc1">Chọn một loại sản phẩm:</label>
+            <select id="ipdanhmuc1" name="name1" >
+             
+                @foreach (var item in Model.Categories)
+                {
+
+                    <option value="@item.Name">@item.Name</option>
+                }
+
+            </select>
+        </div>
+
+            <div id="payment-option-3" style="display: none;">
+                <div class="form-group">
+                    <label for="namecategory">thêm loại sản phẩm:</label>
+                <input id="namecategory" name="nam1" value="" class="form-control" >
+                </div>
+            </div>
+      </div>
+
+
+
+
+
+    @if (!string.IsNullOrEmpty(ViewBag.YourString))
+    {
+        <p>@ViewBag.YourString</p>
+    }
     <div class="form-group">
-     
+
         <input type="file" name="image" id="image" class="form-control-file" required>
     </div>
     <input type="submit" class="btn btn-primary" value="thêm sản phẩm">
 </form>
+<script>
+    function showPaymentOption(option) {
+       
+        document.querySelectorAll("#payment-options > div").forEach(function (option) {
+            option.style.display = "none";
+        });
+
+
+        var selectedOption = document.getElementById("payment-option-" + option);
+        if (selectedOption) {
+            selectedOption.style.display = "block";
+        }
+    }
+</script>
