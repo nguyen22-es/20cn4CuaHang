@@ -1,260 +1,250 @@
-using CuaHangCongNghe.Models.Tables;
+﻿using CuaHangCongNghe.Models;
+using CuaHangCongNghe.Repository;
+using CuaHangCongNghe.Service;
+using CuaHangCongNghe.Services;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using CuaHangCongNghe.Controllers.laydulieu;
-using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.Hosting.Internal;
-using System.IO;
-using Microsoft.CodeAnalysis.VisualBasic.Syntax;
+using Shop.Extensions;
+using System.Security.Claims;
 
 namespace CuaHangCongNghe.Controllers
 {
-    [AllowAnonymous]
-    public class admincontroller : Controller
+    [Authorize(Roles = "AdminAccess")]
+    public class AdminController : Controller
     {
-        private readonly ILogger<admincontroller> _logger;
+        private readonly ProductService productService;
+        private readonly oderItemService oderItemService;
+        private readonly UserManager<ApplicationUser> userManager;
+        private readonly RoleManager<IdentityRole> roleManager;
+      
 
-        public admincontroller(ILogger<admincontroller> logger)
+        public AdminController(ProductService productService, oderItemService oderItemService, UserManager<ApplicationUser> userManager, RoleManager<IdentityRole> roleManager)
         {
-            _logger = logger;
+            this.productService = productService;
+            this.oderItemService = oderItemService;
+            this.userManager = userManager;
+            this.roleManager = roleManager;
         }
 
-      public IActionResult thongTinNguoiDung(string nametim)
+        public IActionResult GetAllOrders() => View(oderItemService.GetCurrentAllOrder());
+
+        public IActionResult GetOrder(string id) 
         {
-            using (var db = new storeContext())
-            {
-                var userViewModel = new userViewModel();
-                var user1 = db.Users.ToList();
-                userViewModel.Users= new List<User>();
-                if (nametim == null)
-                {
-                    userViewModel.Users = user1;
-                }
-                else
-                {
-                    userViewModel.Users = new List<User>(); 
-
-                    foreach (var user in user1)
-                    {
-                        bool isAdmin = user.NameUser.IndexOf(nametim, StringComparison.OrdinalIgnoreCase) >= 0;
-                        if (isAdmin)
-                        {
-                            userViewModel.Users.Add(user);
-                        }
-                    }
-                }
-
-                return View(userViewModel);
-            }
-
-        }
-        public RedirectResult Deleteuser(int id)
-        {
-            using (var db = new storeContext())
-            {
-                var user = db.Users.Where(c => c.UserId == id).FirstOrDefault();
-                if (user != null)
-                {
-
-                    db.Users.Remove(user);
-                    db.SaveChanges();
-                }
-                return new RedirectResult(url: "/admin/thongTinNguoiDung");
-            }
-        }
-        public thongtinsanpham xemlist(int id)
-        {
-            using (var db = new storeContext())
-            {
-                var thongtindonhang = new thongtinsanpham();
-
-                var oder = db.Orders.Where(c => c.OrderId == id).FirstOrDefault();
-                if (oder != null)
-                {
-                    thongtindonhang.iduser = oder.UserId;
-                    thongtindonhang.oderid = oder.OrderId;
-                    thongtindonhang.oderDate = oder.OrderDate;
-                    thongtindonhang.Status = oder.Status;
-                    thongtindonhang.idDonHang = oder.OrderId;
-                }
-                else
-                {
-                    thongtindonhang.oderDate = DateTime.MinValue; // Giá trị mặc định cho oderDate khi oder là null
-                    thongtindonhang.Status = string.Empty; // Giá trị mặc định cho Status khi oder là null
-                    thongtindonhang.idDonHang = 0; // Giá trị mặc định cho idDonHang khi oder là null
-                }
-
-                var oderitems = db.Orderitems.Where(c => c.OrderId == thongtindonhang.idDonHang).FirstOrDefault();
-                if (oderitems != null)
-                {
-                    thongtindonhang.idHang = oderitems.ProductId;
-                    thongtindonhang.Soluong = oderitems.Quantity;
-                }
-                else
-                {
-                    thongtindonhang.idHang = 0; // Giá trị mặc định cho idHang khi oderitems là null
-                    thongtindonhang.Soluong = 0; // Giá trị mặc định cho Soluong khi oderitems là null
-                }
-
-                var sanpham = db.Products.Where(c => c.Id == thongtindonhang.idHang).FirstOrDefault();
-                if (sanpham != null)
-                {
-                    thongtindonhang.Namesanpham = sanpham.Name;
-                    thongtindonhang.Price = sanpham.Price * thongtindonhang.Soluong;
-                }
-                else
-                {
-                    thongtindonhang.Namesanpham = string.Empty; // Giá trị mặc định cho Namesanpham khi sanpham là null
-                    thongtindonhang.Price = 0; // Giá trị mặc định cho Price khi sanpham là null
-                }
-
-                return thongtindonhang;
-            }
+            return View(oderItemService.GetCurrentAllOrder(id));
         }
 
-        public IActionResult thongtindonhang(int id)
+        public IActionResult ChangeOrderStatus(int id, int status)
         {
-            using (var db = new storeContext())
-            {
-                var oderlist = new oder();
-                var listthongtindonhang = new listoder();
-                listthongtindonhang.thongtinsanphams = new List<thongtinsanpham>(); ;
-                var listoder = db.Orders.ToList();
-                oderlist.Orders = listoder;
-
-                foreach (var item in listoder)
-                {
-                    if (item.UserId == id)
-                    {
-                        var thongtindonhang = xemlist(item.OrderId);
-                        if (thongtindonhang != null)
-                        {
-                            listthongtindonhang.thongtinsanphams.Add(thongtindonhang);
-                        }
-                    }
-                }
-
-                return View(listthongtindonhang);
-            }
-
+            oderItemService.ChangeStatus(id, status);
+            return RedirectToAction("GetOrder", new { id = id });
         }
+
+        public IActionResult GetUsers() => View(userManager.Users.ToList());
+
+        public IActionResult CreateUser() => View();
+
         [HttpPost]
-        public IActionResult saveTrangThai(string name, int id1,int id)
+        public async Task<IActionResult> CreateUser(RegisterViewModel model)
         {
             if (ModelState.IsValid)
             {
-                using (var db = new storeContext())
+                var user = new ApplicationUser { UserName = model.nameLogin };
+                var result = await userManager.CreateAsync(user, model.Password);
+                if (result.Succeeded)
                 {
-                    var status = db.Orders.FirstOrDefault(c => c.OrderId == id1);
-                    if (status != null)
+                    return RedirectToAction("GetUsers");
+                }
+                else
+                {
+                    result.AddErrorsTo(ModelState);
+                }
+            }
+            return View(model);
+        }
+        
+
+        public async Task<IActionResult> GetUser(string id)
+        {
+            var user = await userManager.FindByIdAsync(id);
+            var model = new UserViewModel { Id = user.Id, EmailUser = user.Email, NameUser = user.Name,  PhoneUser = user.PhoneNumber };
+            return View(model);
+        }
+
+        public async Task<IActionResult> ChangeUserPassword(string id)
+        {
+            var user = await userManager.FindByIdAsync(id);
+            if (user == null)
+            {
+                return NotFound();
+            }
+            var model = new UserViewModel { Id = user.Id, NameUser = user.Name };
+            return View(model);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> ChangeUserPassword(UserViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var user = await userManager.FindByIdAsync(model.Id);
+                if (user != null)
+                {
+                    var result = await userManager.ChangePasswordAsync(user, model.PasswordConfirm, model.NewPassword);
+                    if (result.Succeeded)
                     {
-                        status.Status = name;
-                        db.SaveChanges();
+                        return RedirectToAction("GetUser", new { id = model.Id });
+                    }
+                    else
+                    {
+                        result.AddErrorsTo(ModelState);
+                    }
+                }
+                else
+                {
+                    ModelState.AddModelError(string.Empty, "nghười dùng không tồn tại");
+                }
+            }
+            return View(model);
+        }
+
+        public async Task<IActionResult> EditUser(string id)
+        {
+            var user = await userManager.FindByIdAsync(id);
+            if (user == null)
+            {
+                return NotFound();
+            }
+            var model = new UserViewModel { Id = user.Id, EmailUser = user.Email, NameUser = user.UserName, PhoneUser = user.PhoneNumber };
+            return View(model);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> EditUser(UserViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var user = await userManager.FindByIdAsync(model.Id);
+                if (user != null)
+                {
+                    user.Email = model.EmailUser;
+                    user.UserName = model.NameUser;
+                    user.PhoneNumber = model.PhoneUser;
+                    var result = await userManager.UpdateAsync(user);
+                    if (result.Succeeded)
+                    {
+                        return RedirectToAction("GetUser", new { id = model.Id });
+                    }
+                    else
+                    {
+                        result.AddErrorsTo(ModelState);
                     }
                 }
             }
-
-            return RedirectToAction("thongtindonhang",new {id});
+            return View(model);
         }
-        public ActionResult themsanpham()
+
+        public async Task<ActionResult> DeleteUser(string id)
         {
-
-            using (var db = new storeContext())
+            var user = await userManager.FindByIdAsync(id);
+            if (user != null)
             {
-                var listdanhmuc = new listdanhmuc();
-
-                var user1 = db.Categories.ToList();
-
-                listdanhmuc.Categories = user1;
-
-                return View(listdanhmuc);
+                var result = await userManager.DeleteAsync(user);
+                if (!result.Succeeded)
+                {
+                    result.AddErrorsTo(ModelState);
+                }
             }
-            
+            return RedirectToAction("GetUsers");
         }
 
+        public IActionResult GetRoles() => View(roleManager.Roles.ToList());
+
+        public async Task<ActionResult> DeleteRole(string id)
+        {
+            var role = await roleManager.FindByIdAsync(id);
+            if (role != null)
+            {
+                var result = await roleManager.DeleteAsync(role);
+                if (!result.Succeeded)
+                {
+                    result.AddErrorsTo(ModelState);
+                }
+            }
+            return RedirectToAction("GetRoles");
+        }
+
+        public IActionResult CreateRole() => View();
 
         [HttpPost]
-        public IActionResult savesanpham(sanpham sanpham, IFormFile image, string name1)
+        public async Task<ActionResult> CreateRole(string name)
         {
-
-            // Lưu thông tin sản phẩm vào cơ sở dữ liệu
-            // Lưu đường dẫn của hình ảnh vào thuộc tính ImageUrl của sản phẩm
-
-            if (image != null )
+            if (!string.IsNullOrEmpty(name))
             {
-                // Tạo đường dẫn lưu trữ hình ảnh
-                string fileName = Path.GetFileName(image.FileName);
-                string path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images",fileName); //lấy đường dẫn tới tệp wwwroot/images
-
-                // Lưu hình ảnh vào thư mục Images
-                using (var stream = new FileStream(path, FileMode.Create))
+                var result = await roleManager.CreateAsync(new IdentityRole(name));
+                if (result.Succeeded)
                 {
-                    image.CopyTo(stream);
+                    return RedirectToAction("GetRoles");
                 }
-
-                // Lưu đường dẫn hình ảnh vào thuộc tính ImageUrl của sản phẩm
-                sanpham.ImageUrl = "~/images/" + fileName;
+                else
+                {
+                    result.AddErrorsTo(ModelState);
+                }
             }
-            else
+            return View();
+        }
+
+        public async Task<ActionResult> EditUserRights(string id)
+        {
+            var user = await userManager.FindByIdAsync(id);
+            if (user != null)
             {
-                sanpham.ImageUrl = "không có gì";
-            }
-
-    
-
-                using (var db = new storeContext())
+                var userRoles = await userManager.GetRolesAsync(user);
+                var allRoles = roleManager.Roles.ToList();
+                var model = new ChangeRoleViewModel
                 {
-
-                    var name = db.Categories.FirstOrDefault(c => c.Name == name1);
-                    int y = name.Id;
-                    if (name != null)
-                    {
-                       
-                     
-                        Product newProduct = new Product
-                        {
-                            Name = sanpham.Name,
-                            Description = sanpham.Description,
-                            Price = sanpham.Price,
-                            ImageUrl = sanpham.ImageUrl,
-                            Stockquantity = sanpham.Stockquantity,
-                            CategoryId = y
-                        };
-                        db.Products.Add(newProduct);
-                        db.SaveChanges();
-                    return new RedirectResult("thongtinNguoiDung");
-                }
-               
-
+                    UserId = user.Id,
+                    UserEmail = user.Email,
+                    UserRoles = userRoles,
+                    AllRoles = allRoles
+                };
+                return View(model);
             }
-              
-            
-
-            // Nếu có lỗi, quay lại view để hiển thị lỗi
-           
-           
-            return new RedirectResult("index");
+            return NotFound();
         }
 
-        public partial class userViewModel
+        [HttpPost]
+        public async Task<ActionResult> EditUserRights(string id, List<string> roles)
         {
-            public List<User> Users { get; set; }
+            var user = await userManager.FindByIdAsync(id);
+            if (user != null)
+            {
+                var userRoles = await userManager.GetRolesAsync(user);
+                var addedRoles = roles.Except(userRoles);
+                var removedRoles = userRoles.Except(roles);
+                var result = await userManager.AddToRolesAsync(user, addedRoles);
+                if (!result.Succeeded)
+                {
+                    result.AddErrorsTo(ModelState);
+                    return RedirectToAction("GetUser", new { id = id });
+                }
+                result = await userManager.RemoveFromRolesAsync(user, removedRoles);
+                if (!result.Succeeded)
+                {
+                    result.AddErrorsTo(ModelState);
+                }
+                return RedirectToAction("GetUser", new { id = id });
+            }
+            return NotFound();
+        }
 
-        }
-       
-        public partial class oder
-        {
-            public List<Order>  Orders { get; set; }
-        }
-        public partial class listoder
-        {
-            public List<thongtinsanpham> thongtinsanphams { get; set; }
-        }
-        public partial class listdanhmuc
-        {
-            public List<Category> Categories { get; set; }
-        }
+        public IActionResult AddProduct() => View();
 
+        [HttpPost]
+        public IActionResult AddProduct(ProductViewModel productViewModel)
+        {
+            productService.Create(productViewModel);
+            return RedirectToAction("AddProduct");
+        }
     }
-
 }
