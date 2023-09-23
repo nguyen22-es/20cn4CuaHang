@@ -174,39 +174,20 @@ namespace CuaHangCongNghe.Controllers
             return RedirectToAction("GetRoles");
         }
 
-        public IActionResult CreateRole() => View();
 
-        [HttpPost]
-        public async Task<ActionResult> CreateRole(string name)
-        {
-            if (!string.IsNullOrEmpty(name))
-            {
-                var result = await roleManager.CreateAsync(new IdentityRole(name));
-                if (result.Succeeded)
-                {
-                    return RedirectToAction("GetRoles");
-                }
-                else
-                {
-                    result.AddErrorsTo(ModelState);
-                }
-            }
-            return View();
-        }
+
 
         public async Task<ActionResult> EditUserRights(string id)
         {
             var user = await userManager.FindByIdAsync(id);
             if (user != null)
             {
-                var userRoles = await userManager.GetRolesAsync(user);
+                var userRoles = await userManager.GetUsersInRoleAsync(user.Id);
                 var allRoles = roleManager.Roles.ToList();
-                var model = new ChangeRoleViewModel
+                var model = new RoleManagerClaims
                 {
-                    UserId = user.Id,
-                    UserEmail = user.Email,
-                    UserRoles = userRoles,
-                    AllRoles = allRoles
+                    name = user.UserName,
+                    Role = allRoles
                 };
                 return View(model);
             }

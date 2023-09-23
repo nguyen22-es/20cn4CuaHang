@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using Microsoft.AspNetCore.Identity;
+using System.Collections.Generic;
 using System.Security.Claims;
 
 namespace CuaHangCongNghe.Models
@@ -7,7 +8,7 @@ namespace CuaHangCongNghe.Models
     {
      public  string  name     { get; set; }
 
-        public string Role { get; set; }
+     public List<IdentityRole> Role { get; set; }
 
     }
 }

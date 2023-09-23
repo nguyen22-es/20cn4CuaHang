@@ -31,27 +31,33 @@ namespace CuaHangCongNghe.Controllers
         {
             if (ModelState.IsValid)
             {
-                var result = signInManager.PasswordSignInAsync(model.NameLogin, model.Password, model.RememberMe, false).Result;
-                if (result.Succeeded)
+                // Kiểm tra xem người dùng tồn tại với tên đăng nhập
+                var user = await userManager.FindByNameAsync(model.NameLogin);
+
+                if (user != null)
                 {
-                    if (!string.IsNullOrEmpty(model.ReturnUrl) && Url.IsLocalUrl(model.ReturnUrl))
+                    var result = await signInManager.PasswordSignInAsync(user, model.Password, model.RememberMe, false);
+
+                    if (result.Succeeded)
                     {
-                        return Redirect(model.ReturnUrl);
-                    }
-                    else
-                    {
-                        return RedirectToAction("Index", "Home");
+                        if (!string.IsNullOrEmpty(model.ReturnUrl) && Url.IsLocalUrl(model.ReturnUrl))
+                        {
+                            return Redirect(model.ReturnUrl);
+                        }
+                        else
+                        {
+                            return RedirectToAction("Index", "Home");
+                        }
                     }
                 }
-                else
-                {
-                    ModelState.AddModelError("", "người dùng không tồn tại");
-                }
+
+                ModelState.AddModelError("NameLogin", "Tên đăng nhập hoặc mật khẩu không đúng");
             }
             else
             {
-                ModelState.AddModelError("", "các trường phải đưuọc điền đầy đủ");
+                ModelState.AddModelError("", "Các trường phải được điền đầy đủ");
             }
+
             return View(model);
         }
 
@@ -88,7 +94,7 @@ namespace CuaHangCongNghe.Controllers
 
                 foreach (var error in result.Errors)
                 {
-                    ModelState.AddModelError("", error.Description);
+                    ModelState.AddModelError("NameLogin", error.Description);
                 }
             }
 

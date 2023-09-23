@@ -96,7 +96,7 @@ namespace CuaHangCongNghe.Service
             if (existingOrder != null)
             {
                 var OrderItem = existingOrder.Orderitems.FirstOrDefault(x => x.OrderItemsId == cartItemId);
-                OrderItem.Quantity = amount;
+                OrderItem.Quantity += amount;
             }
 
 

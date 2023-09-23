@@ -17,6 +17,7 @@
           "Microsoft.EntityFrameworkCore.Tools.DotNet": "2.0.3",
           "Microsoft.Extensions.Configuration": "7.0.0-preview.7.22375.6",
           "Microsoft.Extensions.Configuration.Json": "6.0.0",
+          "Microsoft.Extensions.DependencyInjection": "7.0.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "7.0.6",
           "log4net": "2.0.15",
           "Log4net.Extensions.Logging": "1.0.0"

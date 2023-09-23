@@ -28,16 +28,18 @@ var configuration = new ConfigurationBuilder()
 
 builder.Services.AddSingleton(configuration);
 
-builder.Services.AddIdentity<IdentityUser, IdentityRole>()
-    .AddEntityFrameworkStores<AppIdentityDbContext>()
-    .AddDefaultTokenProviders();
-   
+
 
 builder.Services.AddDbContext<storeContext>(options =>
     options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddDbContext<AppIdentityDbContext>(options =>
     options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
+
+
+builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
+    .AddEntityFrameworkStores<AppIdentityDbContext>()
+    .AddDefaultTokenProviders();
 
 builder.Services.AddTransient<ProductService>();
 builder.Services.AddTransient<UserService>();
@@ -46,7 +48,7 @@ builder.Services.AddTransient<OderItemRepository, OderDbRepository>();
 builder.Services.AddTransient<ProductRepository, ProductDbRepository>();
 builder.Services.AddTransient<UserRepository, UserDbRepository>();
 builder.Services.AddScoped<RoleManager<IdentityRole>>();
-builder.Services.AddScoped<UserManager<IdentityUser>>();
+builder.Services.AddScoped<UserManager<ApplicationUser>>();
 builder.Services.AddMvc();
 
  async Task InitializeRoles(IServiceProvider serviceProvider)
@@ -69,9 +71,9 @@ builder.Services.AddMvc();
 
 
 
-
-
 var app = builder.Build();
+
+
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
