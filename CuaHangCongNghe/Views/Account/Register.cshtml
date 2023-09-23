@@ -1,0 +1,25 @@
+﻿@model CuaHangCongNghe.Models.RegisterViewModel
+
+<body class="text-center">
+    <div class="album py-5">
+        <form method="post" asp-controller="Account" asp-action="Register">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <h1 class="h3 mb-3 font-weight-normal">Đăng ký</h1>
+            <div class="container col-md-4 align-self-center">
+                <label asp-for="nameLogin" class="sr-only"></label>
+                <input asp-for="nameLogin" class="form-control" placeholder="Đăng nhập" />
+                <span asp-validation-for="nameLogin" class="sr-only"></span>
+                <div class="album py-1"></div>
+                <label asp-for="Password" class="sr-only"></label>
+                <input asp-for="Password" class="form-control" placeholder="Đăng ký" />
+                <span asp-validation-for="Password" class="sr-only"></span>
+                <div class="album py-1"></div>
+                <label asp-for="PasswordConfirm" class="sr-only"></label>
+                <input asp-for="PasswordConfirm" class="form-control" placeholder="Xác nhận mật khẩu" />
+                <span asp-validation-for="PasswordConfirm" class="sr-only"></span>
+                <div class="album py-3"></div>
+            </div>
+            <button class="btn btn-dark col-md-3" type="submit">Đăng ký</button>
+        </form>
+    </div>
+</body>
