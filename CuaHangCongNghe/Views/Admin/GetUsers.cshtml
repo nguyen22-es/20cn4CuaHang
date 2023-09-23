@@ -1,0 +1,54 @@
+﻿@model List<CuaHangCongNghe.Repository.ApplicationUser>
+
+<div class="row">
+    <div class="col-md-3 my-4">
+        <div class="list-group ">
+            <a asp-action="GetOrders" class="list-group-item list-group-item-action">Đơn đặt hàng </a>
+            <a asp-action="GetUsers" class="list-group-item list-group-item-action">người dùng</a>
+            <a asp-action="GetRoles" class="list-group-item list-group-item-action">vai trò</a>
+            <a asp-action="AddProduct" class="list-group-item list-group-item-action">thêm sản phẩm</a>
+        </div>
+    </div>
+    <div class="col-md-9 my-4">
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4>Danh sách khách hàng </h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 table-responsive">
+                        <table class="table table-hover table-sm">
+                            <thead>
+                                <tr>
+                                    <th>Email (логин)</th>
+                                    <th>Tên khách hàng</th>
+                                    <th>Địa chỉ</th>
+                                    <th>Số điện thoại</th>
+                                    <th>ngày đăng ký</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @for (int i = Model.Count - 1; i >= 0; i--)
+                                {
+                                    var user = Model[i];
+                                    <tr class="table-row" data-href="/Admin/GetUser/@user.Id">
+                                        <td>@user.Email</td>
+                                        <td>@user.UserName</td>
+                                        <td>@user.Address</td>
+                                        <td>@user.PhoneNumber</td>
+                                        <td>@user.DateTime</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                        <div class="text-right">
+                            <a class="btn btn-info" asp-action="CreateUser" role="button">Thêm khách hàng mới</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

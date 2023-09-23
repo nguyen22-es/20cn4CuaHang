@@ -5,7 +5,7 @@ namespace CuaHangCongNghe.Models
     public class LoginViewModel 
     {
         [Required]
-        [EmailAddress]
+   
         public string NameLogin { get; set; }
 
         [Required]
@@ -14,6 +14,6 @@ namespace CuaHangCongNghe.Models
 
         public bool RememberMe { get; set; }
 
-        public string ReturnUrl { get; set; }
+        public string ReturnUrl { get; set; } = "/Account/Login";
     }
 }

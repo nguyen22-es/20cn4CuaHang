@@ -5,7 +5,6 @@ namespace CuaHangCongNghe.Models
     public class RegisterViewModel
     {
         [Required (ErrorMessage = "Name không được để trống")]
-        [EmailAddress]
         public string nameLogin { get; set; }
 
         [Required(ErrorMessage = "Mật khẩu không được để trống")]

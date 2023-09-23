@@ -1,6 +1,5 @@
 ﻿
 
-using CuaHangCongNghe.Models.Shop;
 using System.ComponentModel.DataAnnotations;
 
 namespace CuaHangCongNghe.Models

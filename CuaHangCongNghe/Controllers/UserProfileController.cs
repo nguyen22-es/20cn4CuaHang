@@ -23,7 +23,7 @@ namespace CuaHangCongNghe.Controllers
         public async Task<IActionResult> Index()
         {
             var user = await userManager.FindByIdAsync(userManager.GetUserId(User));
-            var model = new UserViewModel { Id = user.Id, EmailUser = user.Email, NameUser = user.UserName, PhoneUser = user.PhoneNumber };
+            var model = new UserViewModel { Id = user.Id, EmailUser = user.Email, NameUser = user.UserName, PhoneUser = user.PhoneNumber,RegistrationDate = user.DateTime,AddressUser = user.Address };
             return View(model);
 
           
@@ -36,7 +36,7 @@ namespace CuaHangCongNghe.Controllers
             {
                 return NotFound();
             }
-            var model = new UserViewModel { Id = user.Id, EmailUser = user.Email, NameUser = user.UserName, PhoneUser = user.PhoneNumber };
+            var model = new UserViewModel { Id = user.Id, EmailUser = user.Email, NameUser = user.UserName, PhoneUser = user.PhoneNumber, RegistrationDate = user.DateTime, AddressUser = user.Address };
             return View(model);
         }
 
@@ -50,7 +50,9 @@ namespace CuaHangCongNghe.Controllers
                 {
                     user.Email = model.EmailUser;
                     user.UserName = model.NameUser;
-                    user.PhoneNumber = model.PhoneUser;                   
+                    user.PhoneNumber = model.PhoneUser;
+                    user.Address = model.AddressUser;
+                    
                     var result = await userManager.UpdateAsync(user);
                     if (result.Succeeded)
                     {
@@ -72,7 +74,7 @@ namespace CuaHangCongNghe.Controllers
             {
                 return NotFound();
             }
-            var model = new UserViewModel { Id = user.Id, EmailUser = user.Email, NameUser = user.UserName, PhoneUser = user.PhoneNumber };
+            var model = new UserViewModel { Id = user.Id, EmailUser = user.Email, NameUser = user.UserName, PhoneUser = user.PhoneNumber, RegistrationDate = user.DateTime, AddressUser = user.Address };
             return View(model);
         }
 

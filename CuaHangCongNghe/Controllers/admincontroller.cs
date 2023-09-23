@@ -6,28 +6,30 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Shop.Extensions;
-
+using System.Security.Claims;
 
 namespace CuaHangCongNghe.Controllers
 {
-    [Authorize(Roles = "AdminAccess")]
+    //[Authorize(Roles = "AdminAccess")]
     public class AdminController : Controller
     {
         private readonly ProductService productService;
         private readonly oderItemService oderItemService;
         private readonly UserManager<ApplicationUser> userManager;
         private readonly RoleManager<IdentityRole> roleManager;
+        private readonly UserService userService;
       
 
-        public AdminController(ProductService productService, oderItemService oderItemService, UserManager<ApplicationUser> userManager, RoleManager<IdentityRole> roleManager)
+        public AdminController(ProductService productService, oderItemService oderItemService, UserManager<ApplicationUser> userManager, RoleManager<IdentityRole> roleManager, UserService userService)
         {
             this.productService = productService;
             this.oderItemService = oderItemService;
             this.userManager = userManager;
             this.roleManager = roleManager;
+            this.userService = userService;
         }
 
-        public IActionResult GetAllOrders() => View(oderItemService.GetCurrentAllOrder());
+        public IActionResult GetAllUers() => View( userService.GetAll());
 
         public IActionResult GetOrder(string id) 
         {

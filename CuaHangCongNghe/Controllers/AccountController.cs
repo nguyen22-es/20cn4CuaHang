@@ -2,8 +2,7 @@
 using CuaHangCongNghe.Repository;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-
-
+using Shop.Extensions;
 
 namespace CuaHangCongNghe.Controllers
 {
@@ -51,7 +50,7 @@ namespace CuaHangCongNghe.Controllers
                     }
                 }
 
-                ModelState.AddModelError("NameLogin", "Tên đăng nhập hoặc mật khẩu không đúng");
+                ModelState.AddModelError("", "Tên đăng nhập hoặc mật khẩu không đúng");
             }
             else
             {
@@ -69,35 +68,29 @@ namespace CuaHangCongNghe.Controllers
 
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Register(RegisterViewModel model)
+        public IActionResult Register(RegisterViewModel model)
         {
             if (ModelState.IsValid)
             {
                 var user = new ApplicationUser
                 {
-                    Name = model.nameLogin,
-                 
-                   
+                   Name = model.nameLogin,
+                    DateTime = DateTime.Today,
+                     UserName = model.nameLogin,
+                    Address = "123 Main St"
+
                 };
-
-                var result = await userManager.CreateAsync(user, model.Password);
-
+                var result = userManager.CreateAsync(user, model.Password).Result;
                 if (result.Succeeded)
                 {
-
-                    // Đăng nhập người dùng sau khi đăng ký (tùy chọn)
-                    await signInManager.SignInAsync(user, isPersistent: false);
-               
-                    return RedirectToAction("Index", "Home"); // Chuyển hướng sau khi đăng ký thành công
+                    signInManager.SignInAsync(user, false);
+                    return RedirectToAction("Login");
                 }
-
-                foreach (var error in result.Errors)
+                else
                 {
-                    ModelState.AddModelError("NameLogin", error.Description);
+                    result.AddErrorsTo(ModelState);
                 }
             }
-
             return View(model);
         }
 
