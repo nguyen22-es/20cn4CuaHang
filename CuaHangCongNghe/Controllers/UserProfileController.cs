@@ -9,15 +9,17 @@ using Shop.Extensions;
 
 namespace CuaHangCongNghe.Controllers
 {
-    [Authorize(Policy = "UserAccess")]
+   // [Authorize(Policy = "UserAccess")]
     public class UserProfileController : Controller
     {
+    
         private readonly UserManager<ApplicationUser> userManager;
         private readonly oderItemService  oderItemService;
         public UserProfileController(UserManager<ApplicationUser> userManager, oderItemService oderItemService)
         {
             this.userManager = userManager;
             this.oderItemService = oderItemService;
+           
         }
 
         public async Task<IActionResult> Index()
@@ -43,16 +45,24 @@ namespace CuaHangCongNghe.Controllers
         [HttpPost]
         public async Task<IActionResult> Edit(UserViewModel model)
         {
-            if (ModelState.IsValid)
+           
+        
+
+           
+           
+            if (model != null)
             {
                 var user = await userManager.FindByIdAsync(model.Id);
                 if (user != null)
                 {
+                    string filePath = @"D:\20paymentUrl.txt";
+                    string userString = $"Name: {model.NameUser}, Email: {model.EmailUser}, Address: {model.AddressUser}, Phone: {model.PhoneUser}";
+                    // Ghi giá trị của paymentUrl vào tệp
+                    System.IO.File.WriteAllText(filePath, userString);
                     user.Email = model.EmailUser;
                     user.UserName = model.NameUser;
                     user.PhoneNumber = model.PhoneUser;
-                    user.Address = model.AddressUser;
-                    
+                    user.Address = model.AddressUser;                   
                     var result = await userManager.UpdateAsync(user);
                     if (result.Succeeded)
                     {
@@ -63,7 +73,7 @@ namespace CuaHangCongNghe.Controllers
                         result.AddErrorsTo(ModelState);
                     }
                 }
-            }
+           }
             return View(model);
         }
 

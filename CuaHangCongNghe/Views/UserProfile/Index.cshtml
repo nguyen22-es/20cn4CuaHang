@@ -1,0 +1,39 @@
+﻿@model CuaHangCongNghe.Models.UserViewModel
+
+
+<div class="row">
+    <div class="col-md-3 my-4">
+        <div class="list-group ">
+            <a asp-action="Index" class="list-group-item list-group-item-action">thông tin người dùng</a>
+            <a asp-action="Edit" asp-route-id="@Model.Id" class="list-group-item list-group-item-action">thay đổi thông tin cá nhân</a>
+            <a asp-action="ChangePassword" asp-route-id="@Model.Id" class="list-group-item list-group-item-action">thay đổi thông tin cá nhân</a>
+            <a asp-controller="Cart" asp-action="Index" class="list-group-item list-group-item-action">Thông tin đơn hàng</a>
+            <a asp-action="GetAllOrders" class="list-group-item list-group-item-action">Заказы</a>
+            <a class="list-group-item list-group-item-action">
+                <form method="post" asp-controller="Account" asp-action="Logout">
+                    <input type="submit" value="Đăng xuất" style="background:none;border:none;padding:0">
+                </form>
+            </a>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <dl class="row">
+                <dt class="col-sm-3">Tên người dùng:</dt>
+                <dd class="col-sm-9">@Model.NameUser</dd>
+
+                <dt class="col-sm-3">Email:</dt>
+                <dd class="col-sm-9">@Model.EmailUser</dd>
+
+                <dt class="col-sm-3">Số điện thoại:</dt>
+                <dd class="col-sm-9">@Model.PhoneUser</dd>
+
+                <dt class="col-sm-3">Địa chỉ:</dt>
+                <dd class="col-sm-9">@Model.AddressUser</dd>
+
+                <dt class="col-sm-3">Ngày đăng ký:</dt>
+                <dd class="col-sm-9">@Model.RegistrationDate</dd>
+            </dl>
+        </div>
+    </div>
+</div>
