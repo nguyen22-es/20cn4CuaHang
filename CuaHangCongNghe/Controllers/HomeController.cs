@@ -1,9 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Shop.Models;
-using Shop.Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using CuaHangCongNghe.Services;
+using Microsoft.AspNetCore.Mvc;
+
 
 namespace Shop.Controllers
 {
@@ -18,7 +15,7 @@ namespace Shop.Controllers
             this.productService = productService;
         }
 
-        public IActionResult Index(int page)
+      /*  public IActionResult Index(int page)
         {
             var products = productService.GetAllProducts();
             var pager = CreatePagination(products, page);
@@ -87,6 +84,6 @@ namespace Shop.Controllers
                 searchProducts = products.Where(x => x.Name.ToUpper().Contains(name)).ToList();
             }
             return View(searchProducts);
-        }
+        }*/
     }
 }
