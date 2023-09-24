@@ -55,10 +55,7 @@ namespace CuaHangCongNghe.Controllers
                 var user = await userManager.FindByIdAsync(model.Id);
                 if (user != null)
                 {
-                    string filePath = @"D:\20paymentUrl.txt";
-                    string userString = $"Name: {model.NameUser}, Email: {model.EmailUser}, Address: {model.AddressUser}, Phone: {model.PhoneUser}";
-                    // Ghi giá trị của paymentUrl vào tệp
-                    System.IO.File.WriteAllText(filePath, userString);
+                    
                     user.Email = model.EmailUser;
                     user.UserName = model.NameUser;
                     user.PhoneNumber = model.PhoneUser;
@@ -91,12 +88,15 @@ namespace CuaHangCongNghe.Controllers
         [HttpPost]
         public async Task<IActionResult> ChangePassword(UserViewModel model)
         {
+            string filePath = @"D:\20paymentUrl.txt";
+            string userString = $"Name: {model.NameUser}, Email: {model.EmailUser}, Address: {model.AddressUser}, Phone: {model.PhoneUser},{model.NewPassword},{model.Password},{model.PasswordConfirm},id:{model.Id}";
+            System.IO.File.WriteAllText(filePath, userString);
             if (ModelState.IsValid)
-            {
+            {                             
                 var user = await userManager.FindByIdAsync(model.Id);
                 if (user != null)
                 {
-                    var result = await userManager.ChangePasswordAsync(user, model.PasswordConfirm, model.NewPassword);
+                    var result = await userManager.ChangePasswordAsync(user, model.Password, model.NewPassword);
                     if (result.Succeeded)
                     {
                         return RedirectToAction("Index");

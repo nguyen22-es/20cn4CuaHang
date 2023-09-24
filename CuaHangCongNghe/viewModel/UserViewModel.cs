@@ -13,7 +13,6 @@ namespace CuaHangCongNghe.Models
         public string PhoneUser { get; set; }    
         public DateTime RegistrationDate { get; set; }
         public string Id { get; set; }
-        public List<OrderViewModel> Orders { get; set; }
         public string Password { get; set; }
         public string NewPassword { get; set; }
         [Compare("NewPassword", ErrorMessage = "mật khẩu không khớp")]

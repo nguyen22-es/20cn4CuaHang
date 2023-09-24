@@ -1,12 +1,12 @@
 ﻿
 using CuaHangCongNghe.Models;
 using CuaHangCongNghe.Models.Shop;
-using System.Collections.Generic;
+
 
 namespace Shop.Models
 {
     public static class MappingExtensions
-    {
+    {     
 
         public static List<OrderViewModel> ToOrdersViewModel(this List<Order> orders)
         {
@@ -14,8 +14,10 @@ namespace Shop.Models
             foreach (var order in orders)
             {
                 var item = order.ToOrderViewModel();
-                items.Add(item);
+               items.Add(item);
             }
+
+           
             return items;
         }
         public static OrderViewModel ToOrderViewModel(this Order order)
@@ -90,9 +92,8 @@ namespace Shop.Models
                 AddressUser = user.AddressUser,
                 NameUser = user.NameUser,
                 EmailUser = user.EmailUser,
-
                 RegistrationDate = user.RegistrationDate,
-                Orders = user.Orders.ToList().ToOrdersViewModel()       
+                  
                
             };
         }
