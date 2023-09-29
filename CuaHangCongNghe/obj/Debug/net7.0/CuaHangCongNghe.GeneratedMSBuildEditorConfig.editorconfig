@@ -24,12 +24,40 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ztzkk/OneDrive - Trường Đại Học Kiến Trúc Hà Nội/Documents/DoAn20Cn4/20cn4CuaHang_bancuoidapix/20cn4CuaHang/CuaHangCongNghe/Views/Admin/GetAllUers.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cR2V0QWxsVWVycy5jc2h0bWw=
+[C:/Users/ztzkk/OneDrive - Trường Đại Học Kiến Trúc Hà Nội/Documents/DoAn20Cn4/20cn4CuaHang_bancuoidapix/20cn4CuaHang/CuaHangCongNghe/Views/Admin/AddProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRkUHJvZHVjdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ztzkk/OneDrive - Trường Đại Học Kiến Trúc Hà Nội/Documents/DoAn20Cn4/20cn4CuaHang_bancuoidapix/20cn4CuaHang/CuaHangCongNghe/Views/Admin/ChangeUserPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ2hhbmdlVXNlclBhc3N3b3JkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ztzkk/OneDrive - Trường Đại Học Kiến Trúc Hà Nội/Documents/DoAn20Cn4/20cn4CuaHang_bancuoidapix/20cn4CuaHang/CuaHangCongNghe/Views/Admin/CreateUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ3JlYXRlVXNlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ztzkk/OneDrive - Trường Đại Học Kiến Trúc Hà Nội/Documents/DoAn20Cn4/20cn4CuaHang_bancuoidapix/20cn4CuaHang/CuaHangCongNghe/Views/Admin/EditUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdFVzZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ztzkk/OneDrive - Trường Đại Học Kiến Trúc Hà Nội/Documents/DoAn20Cn4/20cn4CuaHang_bancuoidapix/20cn4CuaHang/CuaHangCongNghe/Views/Admin/EditUserRights.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdFVzZXJSaWdodHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ztzkk/OneDrive - Trường Đại Học Kiến Trúc Hà Nội/Documents/DoAn20Cn4/20cn4CuaHang_bancuoidapix/20cn4CuaHang/CuaHangCongNghe/Views/Admin/GetOrder.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cR2V0T3JkZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ztzkk/OneDrive - Trường Đại Học Kiến Trúc Hà Nội/Documents/DoAn20Cn4/20cn4CuaHang_bancuoidapix/20cn4CuaHang/CuaHangCongNghe/Views/Admin/GetUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cR2V0VXNlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ztzkk/OneDrive - Trường Đại Học Kiến Trúc Hà Nội/Documents/DoAn20Cn4/20cn4CuaHang_bancuoidapix/20cn4CuaHang/CuaHangCongNghe/Views/Admin/GetUsers.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cR2V0VXNlcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ztzkk/OneDrive - Trường Đại Học Kiến Trúc Hà Nội/Documents/DoAn20Cn4/20cn4CuaHang_bancuoidapix/20cn4CuaHang/CuaHangCongNghe/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ztzkk/OneDrive - Trường Đại Học Kiến Trúc Hà Nội/Documents/DoAn20Cn4/20cn4CuaHang_bancuoidapix/20cn4CuaHang/CuaHangCongNghe/Views/Home/Privacy.cshtml]

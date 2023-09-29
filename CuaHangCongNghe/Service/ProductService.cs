@@ -39,9 +39,40 @@ namespace CuaHangCongNghe.Services
         {
             if (productViewModel.File != null)
             {
-                string path = "/images/products/" + productViewModel.File.FileName;
-                productViewModel.File.CopyTo(new FileStream(appEnvironment.WebRootPath + path, FileMode.Create));
+                // Tạo đường dẫn thư mục và tên tệp tin
+                string folderPath = @"C:\Hình ảnh\";
+                string fileName = productViewModel.File.FileName;
+                string filePath = Path.Combine(folderPath, fileName);
+
+                // Kiểm tra xem thư mục tồn tại chưa, nếu chưa thì tạo mới
+                if (!Directory.Exists(folderPath))
+                {
+                    Directory.CreateDirectory(folderPath);
+                }
+
+                // Kiểm tra xem tệp tin đã tồn tại chưa, nếu tồn tại, bạn có thể xử lý theo ý muốn
+                if (File.Exists(filePath))
+                {
+                    // Ví dụ: Tạo tên tệp mới bằng cách thêm một số duy nhất vào tên
+                    string extension = Path.GetExtension(fileName);
+                    string fileNameWithoutExtension = Path.GetFileNameWithoutExtension(fileName);
+                    int counter = 1;
+
+                    while (File.Exists(filePath))
+                    {
+                        fileName = $"{fileNameWithoutExtension}_{counter}{extension}";
+                        filePath = Path.Combine(folderPath, fileName);
+                        counter++;
+                    }
+                }
+
+                // Sao chép tệp tin vào đường dẫn đã tạo
+                using (var fileStream = new FileStream(filePath, FileMode.Create))
+                {
+                    productViewModel.File.CopyTo(fileStream);
+                }
             }
+
             productRepository.Create(productViewModel.ToProduct());
         }
     }

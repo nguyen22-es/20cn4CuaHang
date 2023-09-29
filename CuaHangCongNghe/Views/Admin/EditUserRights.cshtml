@@ -1,0 +1,45 @@
+﻿@using Microsoft.AspNetCore.Identity
+@model CuaHangCongNghe.Models.ChangeRoleViewModel
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="list-group my-4">
+                <a asp-action="GetOrders" class="list-group-item list-group-item-action">Đơn hàng</a>
+                <a asp-action="GetUsers" class="list-group-item list-group-item-action active">Người dùng</a>
+                <a asp-action="GetRoles" class="list-group-item list-group-item-action">Vai trò</a>
+                <a asp-action="AddProduct" class="list-group-item list-group-item-action">Thêm sản phẩm</a>
+            </div>
+        </div>
+        <div class="col-md-9 my-4">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Thay đổi vai trò người dùng @Model.UserName</h4>
+                    <hr />
+
+                    <form asp-action="EditUserRights" method="post">
+                        <input type="hidden" name="userId" value="@Model.UserId" />
+                        <div class="form-group">
+                            @foreach (IdentityRole role in Model.AllRoles)
+                            {
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="roles" value="@role.Name"
+                                    @(Model.UserRoles.Contains(role.Name) ? "checked" : "") />
+                                    <label class="form-check-label" for="roles">@role.Name</label>
+                                </div>
+                            }
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <a class="btn btn-secondary" asp-action="GetUser" asp-route-id="@Model.UserId">
+                                    <i class="bi bi-arrow-left mr-2"></i>Quay lại
+                                </a>
+                                <button type="submit" class="btn btn-primary ml-auto">Xác nhận</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

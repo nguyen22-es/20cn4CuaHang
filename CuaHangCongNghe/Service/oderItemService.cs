@@ -68,9 +68,6 @@ namespace CuaHangCongNghe.Service
             if (existingOrder != null)
             {
                 return existingOrder.ToOrdersViewModel();
-                 
-
-
             }
 
             return null;

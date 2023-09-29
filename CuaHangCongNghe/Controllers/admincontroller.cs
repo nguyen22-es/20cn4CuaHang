@@ -2,11 +2,9 @@
 using CuaHangCongNghe.Repository;
 using CuaHangCongNghe.Service;
 using CuaHangCongNghe.Services;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Shop.Extensions;
-using System.Security.Claims;
 
 namespace CuaHangCongNghe.Controllers
 {
@@ -31,11 +29,17 @@ namespace CuaHangCongNghe.Controllers
 
         public IActionResult GetAllUers() => View( userService.GetAll());
 
-        public IActionResult GetOrder(string id) 
+        public async Task<IActionResult> GetOrder(string id)
         {
-            return View(oderItemService.GetCurrentAllOrder(id));
-        }
+            var userViewModelOrder = new UserOrdersViewModel();
 
+            var orders = oderItemService.GetCurrentAllOrder(id);
+            var user = await userManager.FindByIdAsync(id);
+            userViewModelOrder.Orders = orders;
+            var model = new UserViewModel { Id = user.Id, EmailUser = user.Email, NameUser = user.UserName, PhoneUser = user.PhoneNumber };
+            userViewModelOrder.User = model;
+            return View();
+        }
         public IActionResult ChangeOrderStatus(int id, int status)
         {
             oderItemService.ChangeStatus(id, status);
@@ -69,7 +73,7 @@ namespace CuaHangCongNghe.Controllers
         public async Task<IActionResult> GetUser(string id)
         {
             var user = await userManager.FindByIdAsync(id);
-            var model = new UserViewModel { Id = user.Id, EmailUser = user.Email, NameUser = user.Name,  PhoneUser = user.PhoneNumber };
+            var model = new UserViewModel { Id = user.Id, EmailUser = user.Email, NameUser = user.Name,  PhoneUser = user.PhoneNumber,RegistrationDate = user.DateTime };
             return View(model);
         }
 
@@ -184,12 +188,14 @@ namespace CuaHangCongNghe.Controllers
             var user = await userManager.FindByIdAsync(id);
             if (user != null)
             {
-                var userRoles = await userManager.GetUsersInRoleAsync(user.Id);
+                var userRoles = await userManager.GetRolesAsync(user);
                 var allRoles = roleManager.Roles.ToList();
-                var model = new RoleManagerClaims
+                var model = new ChangeRoleViewModel
                 {
-                    name = user.UserName,
-                    Role = allRoles
+                    UserId = user.Id,
+                    UserName = user.UserName,
+                    AllRoles = allRoles,
+                    UserRoles = userRoles,
                 };
                 return View(model);
             }

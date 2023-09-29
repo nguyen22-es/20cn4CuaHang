@@ -1,7 +1,6 @@
-﻿using CuaHangCongNghe.Models;
-using System.Collections.Generic;
+﻿
 
-namespace Shop.Models
+namespace CuaHangCongNghe.Models
 {
     public class UserOrdersViewModel
     {

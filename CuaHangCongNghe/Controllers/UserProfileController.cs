@@ -1,7 +1,6 @@
 ﻿using CuaHangCongNghe.Models;
 using CuaHangCongNghe.Repository;
 using CuaHangCongNghe.Service;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Shop.Extensions;

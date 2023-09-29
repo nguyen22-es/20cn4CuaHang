@@ -16,7 +16,7 @@ namespace CuaHangCongNghe.Models.Shop
         {
         }
 
-        public virtual DbSet<Category> Categories { get; set; } = null!;
+      
         public virtual DbSet<Order> Orders { get; set; } = null!;
         public virtual DbSet<Orderitem> Orderitems { get; set; } = null!;
         public virtual DbSet<Product> Products { get; set; } = null!;
@@ -34,16 +34,7 @@ namespace CuaHangCongNghe.Models.Shop
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Category>(entity =>
-            {
-                entity.ToTable("categories");
-
-                entity.Property(e => e.Id)
-                    .ValueGeneratedNever()
-                    .HasColumnName("ID");
-
-                entity.Property(e => e.Name).HasMaxLength(255);
-            });
+      
 
             modelBuilder.Entity<Order>(entity =>
             {
@@ -107,7 +98,6 @@ namespace CuaHangCongNghe.Models.Shop
 
                 entity.Property(e => e.Id).HasColumnName("ID");
 
-                entity.Property(e => e.CategoryId).HasColumnName("categoryID");
 
                 entity.Property(e => e.Description).HasColumnType("text");
 
@@ -124,11 +114,7 @@ namespace CuaHangCongNghe.Models.Shop
 
                 entity.Property(e => e.Stockquantity).HasColumnName("stockquantity");
 
-                entity.HasOne(d => d.Category)
-                    .WithMany(p => p.Products)
-                    .HasForeignKey(d => d.CategoryId)
-                    .OnDelete(DeleteBehavior.SetNull)
-                    .HasConstraintName("FK_products_categories");
+               
             });
 
             modelBuilder.Entity<Status>(entity =>
