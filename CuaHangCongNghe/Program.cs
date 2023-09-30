@@ -67,7 +67,25 @@ builder.Services.AddMvc();
         await roleManager.CreateAsync(adminRole);
     }
 }
-
+ static void ConfigureCookieSettings(IServiceCollection services)
+{
+    services.Configure<CookiePolicyOptions>(options =>
+    {
+        options.CheckConsentNeeded = context => true;
+        options.MinimumSameSitePolicy = SameSiteMode.None;
+    });
+    services.ConfigureApplicationCookie(options =>
+    {
+        options.Cookie.HttpOnly = true;
+        options.ExpireTimeSpan = TimeSpan.FromHours(1);
+        options.LoginPath = "/Account/Login";
+        options.LogoutPath = "/Account/Logout";
+        options.Cookie = new CookieBuilder
+        {
+            IsEssential = true
+        };
+    });
+}
 
 
 var app = builder.Build();

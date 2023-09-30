@@ -73,6 +73,28 @@ namespace CuaHangCongNghe.Service
             return null;
         }
 
+
+        public OrderViewModel GetOrderPay(string userId)
+        {
+            var existingOrder = oderItemRepository.getOrderPay(userId);
+
+            if (existingOrder != null)
+            {
+                return new OrderViewModel()
+                {
+                    Id = existingOrder.OrderId,
+                    ItemViewModels = existingOrder.Orderitems.ToList().ToOrderItemsViewModel()
+                };
+            }
+
+            return new OrderViewModel()
+            {
+                ItemViewModels = new List<OrderItemViewModel>()
+            };
+
+        }
+    
+
         public List<OrderItemViewModel> GetOrderItem(int OrderId)
         {
           return  oderItemRepository.getAllItem(OrderId).ToOrderItemsViewModel();

@@ -833,9 +833,7 @@ C:\Users\ztzkk\OneDrive - Trường Đại Học Kiến Trúc Hà Nội\Document
 C:\Users\ztzkk\OneDrive - Trường Đại Học Kiến Trúc Hà Nội\Documents\DoAn20Cn4\20cn4CuaHang_bancuoidapix\20cn4CuaHang\CuaHangCongNghe\obj\Debug\net7.0\staticwebassets.pack.json
 C:\Users\ztzkk\OneDrive - Trường Đại Học Kiến Trúc Hà Nội\Documents\DoAn20Cn4\20cn4CuaHang_bancuoidapix\20cn4CuaHang\CuaHangCongNghe\obj\Debug\net7.0\staticwebassets.build.json
 C:\Users\ztzkk\OneDrive - Trường Đại Học Kiến Trúc Hà Nội\Documents\DoAn20Cn4\20cn4CuaHang_bancuoidapix\20cn4CuaHang\CuaHangCongNghe\obj\Debug\net7.0\staticwebassets.development.json
-C:\Users\ztzkk\OneDrive - Trường Đại Học Kiến Trúc Hà Nội\Documents\DoAn20Cn4\20cn4CuaHang_bancuoidapix\20cn4CuaHang\CuaHangCongNghe\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\ztzkk\OneDrive - Trường Đại Học Kiến Trúc Hà Nội\Documents\DoAn20Cn4\20cn4CuaHang_bancuoidapix\20cn4CuaHang\CuaHangCongNghe\obj\Debug\net7.0\scopedcss\bundle\CuaHangCongNghe.styles.css
-C:\Users\ztzkk\OneDrive - Trường Đại Học Kiến Trúc Hà Nội\Documents\DoAn20Cn4\20cn4CuaHang_bancuoidapix\20cn4CuaHang\CuaHangCongNghe\obj\Debug\net7.0\scopedcss\projectbundle\CuaHangCongNghe.bundle.scp.css
 C:\Users\ztzkk\OneDrive - Trường Đại Học Kiến Trúc Hà Nội\Documents\DoAn20Cn4\20cn4CuaHang_bancuoidapix\20cn4CuaHang\CuaHangCongNghe\obj\Debug\net7.0\CuaHangCongNghe.csproj.CopyComplete
 C:\Users\ztzkk\OneDrive - Trường Đại Học Kiến Trúc Hà Nội\Documents\DoAn20Cn4\20cn4CuaHang_bancuoidapix\20cn4CuaHang\CuaHangCongNghe\obj\Debug\net7.0\CuaHangCongNghe.dll
 C:\Users\ztzkk\OneDrive - Trường Đại Học Kiến Trúc Hà Nội\Documents\DoAn20Cn4\20cn4CuaHang_bancuoidapix\20cn4CuaHang\CuaHangCongNghe\obj\Debug\net7.0\refint\CuaHangCongNghe.dll

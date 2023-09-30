@@ -93,7 +93,7 @@ namespace CuaHangCongNghe.Repository
 
         public Order getOrderPay(string userId)
         {
-            return  storeContext.Orders.AsNoTracking().Include(o => o.Orderitems).ThenInclude(p => p.Product).FirstOrDefault(n => n.UserId == userId && n.Status == 0);
+            return  storeContext.Orders.AsNoTracking().Include(o => o.Orderitems).ThenInclude(p => p.Product).FirstOrDefault(n => n.UserId == userId && n.Status == 0);// lấy order chưa thanh toán
         }
 
         public List<Order> TryGetByOrderUserId(string UserId)

@@ -26,7 +26,8 @@ namespace Shop.Controllers
 
         public IActionResult Index()
         {
-            return View(oderItemService.GetCurrentAllOrder(userManager.GetUserId(User)));
+            var orderViewModel = oderItemService.GetOrderPay(userManager.GetUserId(User));
+            return View(orderViewModel);
         }
 
         public IActionResult Add(int id,int amount)

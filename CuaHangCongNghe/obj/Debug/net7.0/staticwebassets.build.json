@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "3chmrQzgxjEzyBvoWHOeB6zjl1wuKbL3EY3VFaw8isk=",
+  "Hash": "ZAqNDKOATpu1BAUpF79pbW0TOr1GUhHcdZdu+eicIcQ=",
   "Source": "CuaHangCongNghe",
   "BasePath": "_content/CuaHangCongNghe",
   "Mode": "Default",
@@ -16,40 +16,6 @@
     }
   ],
   "Assets": [
-    {
-      "Identity": "C:\\Users\\ztzkk\\OneDrive - Trường Đại Học Kiến Trúc Hà Nội\\Documents\\DoAn20Cn4\\20cn4CuaHang_bancuoidapix\\20cn4CuaHang\\CuaHangCongNghe\\obj\\Debug\\net7.0\\scopedcss\\bundle\\CuaHangCongNghe.styles.css",
-      "SourceId": "CuaHangCongNghe",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\ztzkk\\OneDrive - Trường Đại Học Kiến Trúc Hà Nội\\Documents\\DoAn20Cn4\\20cn4CuaHang_bancuoidapix\\20cn4CuaHang\\CuaHangCongNghe\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
-      "BasePath": "_content/CuaHangCongNghe",
-      "RelativePath": "CuaHangCongNghe.styles.css",
-      "AssetKind": "All",
-      "AssetMode": "CurrentProject",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ApplicationBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\ztzkk\\OneDrive - Trường Đại Học Kiến Trúc Hà Nội\\Documents\\DoAn20Cn4\\20cn4CuaHang_bancuoidapix\\20cn4CuaHang\\CuaHangCongNghe\\obj\\Debug\\net7.0\\scopedcss\\bundle\\CuaHangCongNghe.styles.css"
-    },
-    {
-      "Identity": "C:\\Users\\ztzkk\\OneDrive - Trường Đại Học Kiến Trúc Hà Nội\\Documents\\DoAn20Cn4\\20cn4CuaHang_bancuoidapix\\20cn4CuaHang\\CuaHangCongNghe\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\CuaHangCongNghe.bundle.scp.css",
-      "SourceId": "CuaHangCongNghe",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\ztzkk\\OneDrive - Trường Đại Học Kiến Trúc Hà Nội\\Documents\\DoAn20Cn4\\20cn4CuaHang_bancuoidapix\\20cn4CuaHang\\CuaHangCongNghe\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
-      "BasePath": "_content/CuaHangCongNghe",
-      "RelativePath": "CuaHangCongNghe.bundle.scp.css",
-      "AssetKind": "All",
-      "AssetMode": "Reference",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ProjectBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\ztzkk\\OneDrive - Trường Đại Học Kiến Trúc Hà Nội\\Documents\\DoAn20Cn4\\20cn4CuaHang_bancuoidapix\\20cn4CuaHang\\CuaHangCongNghe\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\CuaHangCongNghe.bundle.scp.css"
-    },
     {
       "Identity": "C:\\Users\\ztzkk\\OneDrive - Trường Đại Học Kiến Trúc Hà Nội\\Documents\\DoAn20Cn4\\20cn4CuaHang_bancuoidapix\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\computers.html",
       "SourceId": "CuaHangCongNghe",

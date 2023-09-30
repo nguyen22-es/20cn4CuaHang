@@ -18,6 +18,7 @@ namespace CuaHangCongNghe.Models
 
 
     public double FullPrice => ItemViewModels.Sum(x => x.Price);
+        public double FullAmount => ItemViewModels.Sum(x => x.quantity);
 
 
 

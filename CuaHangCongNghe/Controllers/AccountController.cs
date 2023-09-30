@@ -26,28 +26,26 @@ namespace CuaHangCongNghe.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Login(LoginViewModel model)
+        public IActionResult Login(LoginViewModel model)
         {
             if (ModelState.IsValid)
             {
                 // Kiểm tra xem người dùng tồn tại với tên đăng nhập
-                var user = await userManager.FindByNameAsync(model.NameLogin);
-
-                if (user != null)
-                {
-                    var result = await signInManager.PasswordSignInAsync(user, model.Password, model.RememberMe, false);
+               
+                    var result =  signInManager.PasswordSignInAsync(model.NameLogin, model.Password, model.RememberMe, false).Result;
 
                     if (result.Succeeded)
                     {
                         if (!string.IsNullOrEmpty(model.ReturnUrl) && Url.IsLocalUrl(model.ReturnUrl))
                         {
-                            return Redirect(model.ReturnUrl);
+                              return Redirect(model.ReturnUrl);
+                           // return RedirectToAction("Index", "Home");
                         }
                         else
                         {
                             return RedirectToAction("Index", "Home");
                         }
-                    }
+                    
                 }
 
                 ModelState.AddModelError("", "Tên đăng nhập hoặc mật khẩu không đúng");
