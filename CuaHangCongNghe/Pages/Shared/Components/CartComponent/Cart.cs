@@ -3,9 +3,9 @@ using CuaHangCongNghe.Repository;
 using CuaHangCongNghe.Service;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.VisualBasic;
 
-namespace CuaHangCongNghe.Pages.Shared.Components.BasketComponent
+
+namespace CuaHangCongNghe.Pages.Shared.Components.BasketComponent // cho phép tạo và sử dụng các thành phần giao diện có thể sử dụng lại trên nhiều thành phần khác nhau
 {
     public class Cart : ViewComponent
     {
@@ -20,7 +20,7 @@ namespace CuaHangCongNghe.Pages.Shared.Components.BasketComponent
             this.userManager = userManager;
         }
 
-        public async Task<IViewComponentResult> InvokeAsync(string userName)
+        public async Task<IViewComponentResult> InvokeAsync(string userName) // sẽ được gọi khi sử dụng trong 1 trang Razor 
         {
             var itemsCount = GetBasketViewModel().FullAmount;
             return View(itemsCount);
@@ -49,3 +49,4 @@ namespace CuaHangCongNghe.Pages.Shared.Components.BasketComponent
         }
     }
 }
+// hiển thị số lượng sản phẩm trong giỏ hàng của người dùng trên giao diện người dùng và quản lý thông tin về giỏ hàng dựa trên người dùng hiện tại hoặc dựa trên cookie nếu người dùng chưa đăng nhập

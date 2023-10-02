@@ -116,10 +116,16 @@ namespace CuaHangCongNghe.Controllers
         {
             var user = await userManager.FindByIdAsync(userManager.GetUserId(User));
 
-            var Orders = new List<OrderViewModel>();
+            var model = new UserViewModel();
+
+            model.Id = user.Id;
+
+            var Orders = new UserOrdersViewModel();
             if(user != null)
             {
-                Orders = oderItemService.GetCurrentAllOrder(user.Id);
+                Orders.Orders = oderItemService.GetCurrentAllOrder(user.Id);
+               Orders.User = model;
+               
             }
            
             return View(Orders);

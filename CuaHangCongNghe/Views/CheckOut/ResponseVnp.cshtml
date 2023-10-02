@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Trả lời từ VNPAY</title>
+</head>
+<body>
+    @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+    {
+        <h1>Lỗi:</h1>
+        <p>@ViewBag.ErrorMessage</p>
+    }
+    else
+    {
+        <h1>Kết quả giao dịch:</h1>
+        <p>@ViewBag.InnerText</p>
+        <p>@ViewBag.InnerTextTerminalID</p>
+        <p>@ViewBag.InnerTextorderId</p>
+        <p>@ViewBag.InnerTextvnpayTranId</p>
+        <p>@ViewBag.InnerTextvnp_Amount</p>
+        <p>@ViewBag.InnerTextbankCode</p>
+        <p>@ViewBag.date</p>
+    }
+</body>
+</html>

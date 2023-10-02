@@ -1,0 +1,90 @@
+﻿@model CuaHangCongNghe.viewModel.UserOrderViewModel
+
+<div class="py-4 text-center">
+    <h2><b>Đặt hàng</b></h2>
+</div>
+<div class="row">
+    <div class="col-md-4 order-md-2 mb-4">
+        <h4 class="d-flex justify-content-between align-items-center mb-3">
+            <a class="text-info" asp-controller="Cart" asp-action="Index">Giỏ hàng</a>
+            <span class="badge badge-info badge-pill">@Model.Order.FullAmount</span>
+        </h4>
+        <ul class="list-group mb-3">
+            @for (int i = 0; i < Model.Order.ItemViewModels.Count; i++)
+            {
+                var item = Model.Order.ItemViewModels[i];
+                <li class="list-group-item d-flex justify-content-between lh-condensed">
+                    <div>
+                        <a class="text-info" asp-controller="Product" asp-action="Index" asp-route-id="@item.Product.Id"><h6 class="my-0">@item.Product.Name</h6></a>
+                        <small class="text-muted">Số lượng: @item.quantity</small>
+                    </div>
+                    <span class="text-muted">@item.Price đ</span>
+                </li>
+            }
+            <li class="list-group-item d-flex justify-content-between">
+                <span>Tổng cộng:</span>
+                <strong>@Model.Order.FullPrice đ</strong>
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-8 order-md-1">
+        <form method="post">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label asp-for="@Model.User.NameUser">Họ</label>
+                    <input type="text" asp-for="@Model.User.NameUser" class="form-control" required>
+                    <div class="invalid-feedback">
+                        Vui lòng nhập họ của người nhận.
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label asp-for="@Model.User.PhoneUser">Số điện thoại</label>
+                <input type="tel" asp-for="@Model.User.PhoneUser" class="form-control" required>
+                <div class="invalid-feedback" style="width: 100%;">
+                    Vui lòng nhập số điện thoại của người nhận.
+                </div>
+            </div>
+            <div class="mb-3">
+                <label asp-for="@Model.User.EmailUser">Email</label>
+                <input type="email" asp-for="@Model.User.EmailUser" class="form-control" required>
+                <div class="invalid-feedback">
+                    Vui lòng nhập email hợp lệ của người nhận.
+                </div>
+            </div>
+            <div class="mb-3">
+                <label asp-for="@Model.User.AddressUser">Địa chỉ giao hàng</label>
+                <input type="text" asp-for="@Model.User.AddressUser" class="form-control" required>
+                <div class="invalid-feedback">
+                    Vui lòng nhập địa chỉ giao hàng của người nhận.
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <input type="hidden" asp-for="@Model.Order.Status" value="@(0)" />
+            </div>
+            <div class="mb-3">
+                <input type="hidden" asp-for="@Model.Order.OrderDate" value="@(DateTime.Now)" />
+            </div>
+            <div class="mb-3">
+                @for (int i = 0; i < Model.Order.ItemViewModels.Count; i++)
+                {
+                    var item = Model.Order.ItemViewModels[i];
+                    <input type="hidden" name="@("Items[" + i + "].Key")" value="@item.Product.Id" />
+                    <input type="hidden" name="@("Items[" + i + "].Value")" value="@item.quantity" />
+                }
+            </div>
+            <hr class="mb-4">
+            <h1>Chọn phương thức thanh toán</h1>
+
+            <input type="radio" id="giaoHang" name="status" value="2">
+            <label for="giaoHang">ship cod</label><br>
+
+            <input type="radio" id="thanhToan" name="paymentMethod" value="thanhToan">
+            <label for="thanhToan">Thanh toán điện tử</label><br>
+
+            <input type="submit" value="Xác nhận">
+            <button class="btn btn-info btn-lg btn-block" type="submit" asp-controller="CheckOut" asp-action="SaveOrder" asp-action="PaymentCall">xác nhận thanh toán</button>
+        </form>
+    </div>
+</div>

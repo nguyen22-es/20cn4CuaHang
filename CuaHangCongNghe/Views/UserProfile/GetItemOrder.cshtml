@@ -1,1 +1,56 @@
-﻿
+﻿@using CuaHangCongNghe.Repository;
+@using Microsoft.AspNetCore.Identity;
+@model List<CuaHangCongNghe.Models.OrderViewModel>
+
+@inject UserManager<ApplicationUser> UserManager
+<div class="row">
+    <div class="col-md-3 my-4">
+        <div class="list-group ">
+            <a asp-action="Index" class="list-group-item list-group-item-action">thông tin người dùng</a>
+
+            @{
+                var user = await UserManager.GetUserAsync(User);
+                if (user != null)
+                {
+                    var userId = user.Id;
+                    <a asp-action="Edit" asp-route-id="@userId
+                    " class="list-group-item list-group-item-action">thay đổi thông tin cá nhân</a>
+                    <a asp-action="ChangePassword" asp-route-id="@userId" class="list-group-item list-group-item-action">thay đổi mật khẩu</a>
+                }
+
+            }
+
+            
+            <a asp-controller="Cart" asp-action="Index" class="list-group-item list-group-item-action">Thông tin đơn hàng</a>
+            <a asp-action="GetAllOrders" class="list-group-item list-group-item-action">đơn hàng</a>
+            <a class="list-group-item list-group-item-action">
+                <form method="post" asp-controller="Account" asp-action="Logout">
+                    <input type="submit" value="Đăng xuất" style="background:none;border:none;padding:0">
+                </form>
+            </a>
+        </div>
+    </div>
+<h2>Danh sách đơn hàng</h2>
+
+@if (Model.Count > 0)
+{
+
+
+    @foreach (var order in Model)
+    {
+        <strong>trạng thái:</strong> @order.Status
+        <br />
+
+
+        foreach (var item in order.ItemViewModels)
+        {
+            <li>
+                <strong>tên sản phẩm:</strong> @item.Product.Name<br />
+                <strong>ID Người dùng:</strong> @item.quantity<br />
+                <strong>Trạng thái:</strong> @item.Price<br />
+            </li>
+        }
+        <strong>Tổng số tiền phải thanh toán:</strong> @order.FullPrice
+        <br />
+    }
+}

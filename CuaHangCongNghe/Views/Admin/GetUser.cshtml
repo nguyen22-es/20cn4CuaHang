@@ -39,19 +39,17 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-12">
-                        <div class="text-right">
-                            <div class="btn-group">
-                                <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Thao tác
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" asp-action="ChangeUserPassword" asp-route-id="@Model.Id">Thay đổi mật khẩu</a>
-                                    <a class="dropdown-item" asp-action="EditUser" asp-route-id="@Model.Id">Thay đổi thông tin người dùng</a>
-                                    <a class="dropdown-item" asp-action="EditUserRights" asp-route-id="@Model.Id">Thay đổi quyền người dùng</a>
-                                    <a class="dropdown-item" asp-action="DeleteUser" asp-route-id="@Model.Id">Xóa người dùng</a>
-                                </div>
-                            </div>
+                    <div class="col-12">
+                        <div class="btn-group float-right">
+                            <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                Thao tác
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" asp-action="ChangeUserPassword" asp-route-id="@Model.Id">Thay đổi mật khẩu</a>
+                                <a class="dropdown-item" asp-action="EditUser" asp-route-id="@Model.Id">Thay đổi thông tin người dùng</a>
+                                <a class="dropdown-item" asp-action="EditUserRights" asp-route-id="@Model.Id">Thay đổi quyền người dùng</a>
+                                <a class="dropdown-item" asp-action="DeleteUser" asp-route-id="@Model.Id">Xóa người dùng</a>
+                            </ul>
                         </div>
                     </div>
                 </div>

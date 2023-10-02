@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "V1LS7Jsf8C923seRSFCx6KUMMBAXnNXdR5w4cn2NedJDAp6rIg68U+MXgJ2rCdcRjJFdx+HtqWlsk4hA2nrF7g==",
+  "dgSpecHash": "mtPRj4JFWAhUdyobGPuxLcpsrVCUX+m1HN+LAo8R02ne8NvDfG8u3BUPMOtNgW9B6L96cP3HPVeGPxVPokZ4/A==",
   "success": true,
   "projectFilePath": "C:\\Users\\ztzkk\\OneDrive - Trường Đại Học Kiến Trúc Hà Nội\\Documents\\DoAn20Cn4\\20cn4CuaHang_bancuoidapix\\20cn4CuaHang\\CuaHangCongNghe\\CuaHangCongNghe.csproj",
   "expectedPackageFiles": [
@@ -107,6 +107,7 @@
     "C:\\Users\\ztzkk\\.nuget\\packages\\nuget.projectmodel\\6.3.1\\nuget.projectmodel.6.3.1.nupkg.sha512",
     "C:\\Users\\ztzkk\\.nuget\\packages\\nuget.protocol\\6.3.1\\nuget.protocol.6.3.1.nupkg.sha512",
     "C:\\Users\\ztzkk\\.nuget\\packages\\nuget.versioning\\6.3.1\\nuget.versioning.6.3.1.nupkg.sha512",
+    "C:\\Users\\ztzkk\\.nuget\\packages\\pagedlist\\1.17.0\\pagedlist.1.17.0.nupkg.sha512",
     "C:\\Users\\ztzkk\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\ztzkk\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\ztzkk\\.nuget\\packages\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
@@ -203,6 +204,16 @@
       "warningLevel": 1,
       "message": "Log4net.Extensions.Logging 1.0.0 depends on Microsoft.Extensions.Primitives (>= 1.0.2) but Microsoft.Extensions.Primitives 1.0.2 was not found. An approximate best match of Microsoft.Extensions.Primitives 1.1.0 was resolved.",
       "libraryId": "Microsoft.Extensions.Primitives",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'PagedList 1.17.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "PagedList",
       "targetGraphs": [
         "net7.0"
       ]

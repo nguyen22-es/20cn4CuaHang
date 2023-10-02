@@ -2,6 +2,7 @@
 using CuaHangCongNghe.Repository;
 using CuaHangCongNghe.Service;
 using CuaHangCongNghe.Services;
+using CuaHangCongNghe.viewModel;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Shop.Extensions;
@@ -27,7 +28,24 @@ namespace CuaHangCongNghe.Controllers
             this.userService = userService;
         }
 
-        public IActionResult GetAllUers() => View( userService.GetAll());
+        public async Task<IActionResult> GetOrders()
+        {
+            var ListUserViewModelOrder = new List<UserOrderViewModel>();
+
+            var l = new UserOrderViewModel();
+            var orders = oderItemService.GetCurrentAllOrder();
+
+            foreach(var item in orders)
+            {
+                var user = await userManager.FindByIdAsync(item.UserId);
+
+                l.Order = item;
+                l.User =  new UserViewModel { Id = user.Id, EmailUser = user.Email, NameUser = user.UserName, PhoneUser = user.PhoneNumber, RegistrationDate = user.DateTime, AddressUser = user.Address };
+
+                ListUserViewModelOrder.Add(l);
+            }
+            return View(ListUserViewModelOrder);
+        }
 
         public async Task<IActionResult> GetOrder(string id)
         {
@@ -180,8 +198,25 @@ namespace CuaHangCongNghe.Controllers
             return RedirectToAction("GetRoles");
         }
 
+        [HttpPost]
+        public async Task<ActionResult> CreateRole(string name)
+        {
+            if (!string.IsNullOrEmpty(name))
+            {
+                var result = await roleManager.CreateAsync(new IdentityRole(name));
+                if (result.Succeeded)
+                {
+                    return RedirectToAction("GetRoles");
+                }
+                else
+                {
+                    result.AddErrorsTo(ModelState);
+                }
+            }
+            return View();
+        }
 
-
+        public IActionResult CreateRole() => View();
 
         public async Task<ActionResult> EditUserRights(string id)
         {

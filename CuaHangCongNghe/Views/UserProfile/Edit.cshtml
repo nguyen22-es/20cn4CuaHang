@@ -1,24 +1,74 @@
-﻿@model List<CuaHangCongNghe.Models.OrderViewModel>
+﻿@model CuaHangCongNghe.Models.UserViewModel
 
-<h2>Danh sách đơn hàng</h2>
-
-@if (Model.Count > 0)
-{
-
-    
-            @foreach (var order in Model)
-            {
-                <strong>trạng thái:</strong> @order.Status<br />
-                             
-           
-                foreach(var item in order.ItemViewModels)
-                {
-                    <li>
-                        <strong>tên sản phẩm:</strong> @item.Product.Name<br />
-                        <strong>ID Người dùng:</strong> @item.quantity<br />
-                        <strong>Trạng thái:</strong> @item.Price<br />
-                    </li>
-                }
-                <strong>Tổng số tiền phải thanh toán:</strong> @order.FullPrice <br />
-            }
-}
+<div class="row">
+    <div class="col-md-3 my-4">
+        <div class="list-group ">
+            <a asp-action="Index" class="list-group-item list-group-item-action">thông tin người dùng</a>
+            <a asp-action="Edit" asp-route-id="@Model.Id" class="list-group-item list-group-item-action">thay đổi thông tin cá nhân</a>
+            <a asp-action="ChangePassword" asp-route-id="@Model.Id" class="list-group-item list-group-item-action">thay đổi mật khẩu</a>
+            <a asp-controller="Cart" asp-action="Index" class="list-group-item list-group-item-action">Thông tin đơn hàng</a>
+            <a asp-action="GetAllOrders" class="list-group-item list-group-item-action">đơn hàng</a>
+            <a class="list-group-item list-group-item-action">
+                <form method="post" asp-controller="Account" asp-action="Logout">
+                    <input type="submit" value="Đăng xuất" style="background:none;border:none;padding:0">
+                </form>
+            </a>
+        </div>
+    </div>
+    <div class="col-md-9 my-4">
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-12">
+                     
+                            <h4>@Model.NameUser</h4>
+                        
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <form asp-action="Edit" asp-controller="UserProfile">
+                            <div asp-validation-summary="All" class="text-danger offset-4 col-8"></div>
+                            <div class="form-group row">
+                                <label asp-for="NameUser" class="col-4 col-form-label">tên khách hàng</label>
+                                <div class="col-8">
+                                    <input asp-for="NameUser" placeholder="NameUser" class="form-control here" type="text">
+                                    <span asp-validation-for="NameUser" class="sr-only"></span>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label asp-for="PhoneUser" class="col-4 col-form-label">số điện thoại</label>
+                                <div class="col-8">
+                                    <input asp-for="PhoneUser" placeholder="PhoneUser" class="form-control here" type="text">
+                                    <span asp-validation-for="PhoneUser" class="sr-only"></span>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label asp-for="EmailUser" class="col-4 col-form-label">Email </label>
+                                <div class="col-8">
+                                    <input asp-for="EmailUser" placeholder="EmailUser" class="form-control here" type="EmailUser" required>
+                                    <span asp-validation-for="EmailUser" class="sr-only"></span>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label asp-for="AddressUser" class="col-4 col-form-label">Địa chỉ</label>
+                                <div class="col-8">
+                                    <input asp-for="AddressUser" placeholder=" AddressUser" class="form-control here" type="tel">
+                                    <span asp-validation-for="AddressUser" class="sr-only"></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="d-flex col-md-12">
+                                    <div class="ml-auto">
+                                        <button type="submit" class="btn btn-info">xác nhận</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

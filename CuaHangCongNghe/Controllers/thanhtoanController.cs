@@ -2,14 +2,12 @@
 using Microsoft.AspNetCore.Mvc;
 using CuaHangCongNghe.Controllers.laydulieu;
 
-using System.Security.Claims;
+
 using System.Text;
-using Newtonsoft.Json;
 using System.Net;
 using System.Security.Cryptography;
-using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using CuaHangCongNghe.Models.Shop;
-using CuaHangCongNghe.Models;
+
+using CuaHangCongNghe.laydulieu;
 
 namespace CuaHangCongNghe.Controllers;
 
@@ -85,45 +83,7 @@ public class thanhtoanController : Controller
         return isValid;
 
     }
-    /*public ActionResult pay(int id)
-    {
-        using (var db = new storeContext())
-        {
 
-            string identifier = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            var userthanhtoan = db.Users.Where(c => c.Iddangnhap == int.Parse(identifier)).FirstOrDefault();
-            var item = db.Orderitems.FirstOrDefault(c => c.OrderId == id);
-            var hienthi = new OrderViewModel();
-
-            if (userthanhtoan != null && item != null)
-            {
-               /* hienthi.oderid = item.OrderId;
-                hienthi.Stockquantity = item.Quantity;
-                hienthi.idsanpham = item.ProductId;
-
-                var sanpham = db.Products.Where(c => c.Id == hienthi.idsanpham).FirstOrDefault();
-                if (sanpham != null)
-                {
-                    hienthi.Name = sanpham.Name;
-                    hienthi.Price = sanpham.Price * hienthi.Stockquantity;
-                }
-
-            }
-
-            User currentUser = userthanhtoan; 
-
-            /*var result = new Tuple<hienthisanpham, User>(hienthi, currentUser);
-            sanphamthanhtoan sanphamthanhtoan = new sanphamthanhtoan();
-            sanphamthanhtoan.tuple = result;
-
-            return View(sanphamthanhtoan);
-
-
-
-
-        }
-
-    }*/
     [HttpPost]
     public ActionResult call(double gia,int oderid, string kh_ten, string kh_diachi, string kh_email, string kh_dienthoai)
     {
@@ -270,69 +230,7 @@ public class thanhtoanController : Controller
 
 
     }
-    [HttpGet]
-    public ActionResult CreatePaymentmomo()
-    {
-        string endpoint = "https://test-payment.momo.vn/v2/gateway/api/create";
-        string partnerCode = "MOMOBKUN20180529";
-        string accessKey = "klm05TvNBzhg7h7j";
-        string secretKey = "at67qH6mk8w5Y1nAyMoYKMWACiEi2bsa";
-        string orderInfo = "Thanh toán qua MoMo";
-        string amount = "10000";
-        string orderId = DateTime.Now.Ticks.ToString();
-        string redirectUrl = "https://webhook.site/b3088a6a-2d17-4f8d-a383-71389a6c600b";
-        string ipnUrl = "https://webhook.site/b3088a6a-2d17-4f8d-a383-71389a6c600b";
-        string extraData = "";
-       
-
-
-            partnerCode = partnerCode;
-            accessKey = accessKey;
-            secretKey = secretKey;
-            orderId = orderId;
-            orderInfo = orderInfo;
-            amount = amount;
-            ipnUrl = ipnUrl;
-            redirectUrl = redirectUrl;
-            extraData = extraData;
-
-            string requestId = DateTime.Now.Ticks.ToString();
-            string requestType = "payWithATM";
-           
-            // before sign HMAC SHA256 signature
-            string rawHash = "accessKey=" + accessKey + "&amount=" + amount + "&extraData=" + extraData + "&ipnUrl=" + ipnUrl + "&orderId=" + orderId + "&orderInfo=" + orderInfo + "&partnerCode=" + partnerCode + "&redirectUrl=" + redirectUrl + "&requestId=" + requestId + "&requestType=" + requestType;
-            string signature = GetHmacSha256Hash(rawHash, secretKey);
-
-            Dictionary<string, string> data = new Dictionary<string, string>
-        {
-            { "partnerCode", partnerCode },
-            { "partnerName", "Test" },
-            { "storeId", "MomoTestStore" },
-            { "requestId", requestId },
-            { "amount", amount },
-            { "orderId", orderId },
-            { "orderInfo", orderInfo },
-            { "redirectUrl", redirectUrl },
-            { "ipnUrl", ipnUrl },
-            { "lang", "vi" },
-            { "extraData", extraData },
-            { "requestType", requestType },
-            { "signature", signature }
-        };
-
-            string result = ExecPostRequest(endpoint, JsonConvert.SerializeObject(data));
-            dynamic jsonResult = JsonConvert.DeserializeObject(result);
-        string la = jsonResult.ToString();
-        string filePath = @"D:\20paymentUrl.txt";
-
-        // Ghi giá trị của paymentUrl vào tệp
-        System.IO.File.WriteAllText(filePath, la);
-        // Just an example, please handle the response accordingly
-        return Redirect(jsonResult["payUrl"].ToString());
-
-       
-
-    }
+    
 
 }
     

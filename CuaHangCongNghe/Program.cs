@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
 using CuaHangCongNghe;
+using Microsoft.Extensions.Hosting;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -42,6 +43,7 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
     .AddDefaultTokenProviders();
 
 builder.Services.AddTransient<ProductService>();
+builder.Services.AddTransient<PaymentService>();
 builder.Services.AddTransient<UserService>();
 builder.Services.AddTransient<oderItemService>();
 builder.Services.AddTransient<OderItemRepository, OderDbRepository>();
@@ -49,24 +51,9 @@ builder.Services.AddTransient<ProductRepository, ProductDbRepository>();
 builder.Services.AddTransient<UserRepository, UserDbRepository>();
 builder.Services.AddScoped<RoleManager<IdentityRole>>();
 builder.Services.AddScoped<UserManager<ApplicationUser>>();
+builder.Services.AddTransient<AppIdentityDbContextSeeder>();
 builder.Services.AddMvc();
 
- async Task InitializeRoles(IServiceProvider serviceProvider)
-{
-    var roleManager = serviceProvider.GetRequiredService<RoleManager<IdentityRole>>();
-
-    if (!await roleManager.RoleExistsAsync("user"))
-    {
-        var userRole = new IdentityRole("user");
-        await roleManager.CreateAsync(userRole);
-    }
-
-    if (!await roleManager.RoleExistsAsync("admin"))
-    {
-        var adminRole = new IdentityRole("admin");
-        await roleManager.CreateAsync(adminRole);
-    }
-}
  static void ConfigureCookieSettings(IServiceCollection services)
 {
     services.Configure<CookiePolicyOptions>(options =>
@@ -88,10 +75,16 @@ builder.Services.AddMvc();
 }
 
 
+
+
+var serviceProvider = builder.Services.BuildServiceProvider();
+var userManager = serviceProvider.GetRequiredService<UserManager<ApplicationUser>>();
+var roleManager = serviceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+
+// Khởi tạo dữ liệu mẫu nếu cần
+var seedTask = AppIdentityDbContextSeeder.SeedAsync(userManager, roleManager);
+seedTask.Wait();
 var app = builder.Build();
-
-
-
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {

@@ -1,18 +1,12 @@
 ﻿@model CuaHangCongNghe.Models.UserOrdersViewModel
 
 <div class="row">
-    <div class="col-md-3 my-4">
-        <div class="list-group ">
-            <a asp-action="Index" class="list-group-item list-group-item-action">Данные пользователя</a>
-            <a asp-action="Edit" asp-route-id="@Model.User.Id" class="list-group-item list-group-item-action">Изменить данные</a>
-            <a asp-action="ChangePassword" asp-route-id="@Model.User.Id" class="list-group-item list-group-item-action">Изменить пароль</a>
-            <a asp-controller="Cart" asp-action="Index" class="list-group-item list-group-item-action">Корзина</a>
-            <a asp-action="GetAllOrders" class="list-group-item list-group-item-action">Заказы</a>
-            <a class="list-group-item list-group-item-action">
-                <form method="post" asp-controller="Account" asp-action="Logout">
-                    <input type="submit" value="Выйти из профиля" style="background:none;border:none;padding:0">
-                </form>
-            </a>
+    <div class="col-md-3">
+        <div class="list-group my-4">
+            <a asp-action="GetOrders" class="list-group-item list-group-item-action ">Đơn hàng</a>
+            <a asp-action="GetUsers" class="list-group-item list-group-item-action active">Người dùng</a>
+            <a asp-action="GetRoles" class="list-group-item list-group-item-action ">Vai trò</a>
+            <a asp-action="AddProduct" class="list-group-item list-group-item-action ">Thêm sản phẩm</a>
         </div>
     </div>
 

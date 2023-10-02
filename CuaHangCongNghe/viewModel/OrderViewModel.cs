@@ -10,7 +10,7 @@ namespace CuaHangCongNghe.Models
     public string UserId { get; set; }
     public int Status { get; set; }
     public DateTime OrderDate { get; set; }
-
+    
 
 
 
