@@ -10,7 +10,6 @@ namespace CuaHangCongNghe.Repository
 
         void AddInformation(User userInfo);
 
-        void AddProduct(string id, Product product,int quantity);
 
         void DeleteOder(int id,Product product,int quantity);
 

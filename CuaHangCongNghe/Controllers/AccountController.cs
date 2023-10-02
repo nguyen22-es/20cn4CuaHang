@@ -28,9 +28,7 @@ namespace CuaHangCongNghe.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Login(LoginViewModel model)
         {
-            string filePath = @"D:\20paymentUrl.txt";
-            string userString = $"Name: {model.NameLogin}, Email: {model.ReturnUrl}, Address: {model.Password}";
-            System.IO.File.WriteAllText(filePath, userString);
+            
             if (ModelState.IsValid)
             {
                 // Kiểm tra xem người dùng tồn tại với tên đăng nhập

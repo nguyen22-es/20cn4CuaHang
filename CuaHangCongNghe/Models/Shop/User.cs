@@ -11,10 +11,10 @@ namespace CuaHangCongNghe.Models.Shop
         }
 
         public string UserId { get; set; } = null!;
-        public string NameUser { get; set; }
-        public string EmailUser { get; set; }
-        public string AddressUser { get; set; }
-        public string PhoneUser { get; set; }
+        public string? NameUser { get; set; }
+        public string? EmailUser { get; set; }
+        public string? AddressUser { get; set; }
+        public string? PhoneUser { get; set; }
         public DateTime RegistrationDate { get; set; }
 
         public virtual ICollection<Order> Orders { get; set; }

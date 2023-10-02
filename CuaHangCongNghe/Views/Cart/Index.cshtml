@@ -15,7 +15,7 @@
                     <thead>
                         <tr>
                             <th style="width:60%">Các mặt hàng</th>
-                            <th style="width:12%">giá</th>
+                            <th style="width:12%">Giá</th>
                             <th style="width:10%">Số lượng</th>
                             <th style="width:16%"></th>
                         </tr>
@@ -40,9 +40,9 @@
                                 </td>
                                 <td><h5>@item.Price &#8381;</h5></td>
                                 <td>
-                                    <input type="hidden" name="@("Items[" + i + "].Key")" value="@item.Id" />
-                                    <input type="number" min="1" class="form-control text-center" name="@("Items[" + i + "].Value")" value="@item.quantity">
-                                    <p class="text-center"><small>@item.Product.Price &#8381;/шт</small></p>
+                                    <input type="hidden" name="@("Items[" + i + "].Key")" value="@item.Product.Id" />
+                                    <input type="number" min="1" class="form-control text-center" name="@("Items[" + i + "].Value")" value="">
+                                    <p class="text-center"><small>@item.Product.Price &#8381;/VNĐ</small></p>
                                 </td>
                                 <td class="actions">
                                     <div class="text-right">
@@ -66,18 +66,13 @@
     <form method="post">
         <div class="row mt-4 d-flex align-items-center">
             <div class="col-sm-6 order-md-2 text-right">
-                @for (int i = 0; i < Model.ItemViewModels.Count; i++)
-                {
-                    var item = Model.ItemViewModels[i];
-                    <input type="hidden" name="@("Items[" + i + "].Key")" value="@item.Product.Id" />
-                    <input type="hidden" name="@("Items[" + i + "].Value")" value="@item.Price" />
-                }
-                <button class="btn btn-info mb-4 btn-lg pl-5 pr-5" name="orderbutton" value="" type="submit" asp-controller="CheckOut" asp-action="CreateOrder">
+                <input type="hidden" name="orderbutton" value="true" />
+                <button class="btn btn-info mb-4 btn-lg pl-5 pr-5" type="submit" asp-controller="CheckOut" asp-action="CreateOrder">
                     thủ tục thanh toán
                 </button>
             </div>
             <div class="col-sm-6 mb-3 mb-m-1 order-md-1 text-md-left">
-                <a class="text-info" asp-controller="Home" asp-action="Index"><i class="bi bi-arrow-left mr-2 text-info"></i>Tiếp tực mua sắm</a>
+                <a class="text-info" asp-controller="Home" asp-action="Index"><i class="bi bi-arrow-left mr-2 text-info"></i>Tiếp túc mua sắm</a>
             </div>
         </div>
     </form>
@@ -87,8 +82,8 @@ else
     <div class="row">
         <div class="col-lg-12 col-md-12 col-12">
             <div class="starter-template py-5 text-center">
-                <h2><b>giỏ hàng bạn trống</b></h2>
-                <p class="lead"><a class="text-info" asp-controller="Home" asp-action="Index">nhấp chuột </a>, để tiếp tục múa sắm...</p>
+                <h2><b>Giỏ hàng trống</b></h2>
+                <p class="lead"><a class="text-info" asp-controller="Home" asp-action="Index">Nhấp vào đây</a> để tiếp tục mua sắm...</p>
             </div>
         </div>
     </div>

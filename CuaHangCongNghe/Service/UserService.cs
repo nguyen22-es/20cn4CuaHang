@@ -1,4 +1,5 @@
 using CuaHangCongNghe.Models;
+using CuaHangCongNghe.Models.Shop;
 using CuaHangCongNghe.Repository;
 using Shop.Models;
 
@@ -42,6 +43,17 @@ namespace CuaHangCongNghe.Services
          {
              return userRepository.TryGetByUserId(id).toUserViewModel();
          }
+
+
+        public void createUser(string IdUser)
+        {
+            User user = new User()
+            {
+                UserId = IdUser,
+            };
+
+             userRepository.CreateUser(user);
+        }
 
 
     }

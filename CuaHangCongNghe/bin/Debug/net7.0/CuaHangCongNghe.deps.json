@@ -20,6 +20,7 @@
           "Microsoft.Extensions.DependencyInjection": "7.0.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "7.0.6",
           "PagedList": "1.17.0",
+          "System.Linq": "4.3.0",
           "log4net": "2.0.15",
           "Log4net.Extensions.Logging": "1.0.0"
         },

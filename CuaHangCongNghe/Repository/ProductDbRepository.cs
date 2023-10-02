@@ -18,8 +18,8 @@ namespace CuaHangCongNghe.Repository
 
         public Product Get(int id)
         {
-            var allProduct = GetAll();
-            return allProduct.FirstOrDefault(p => p.Id == id);
+
+            return storeContext.Products.FirstOrDefault(x => x.Id == id);
         }
 
       

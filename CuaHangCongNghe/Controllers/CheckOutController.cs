@@ -96,7 +96,7 @@ namespace Shop.Controllers
 
 
         [HttpGet]
-        public IActionResult ResponseVnp()
+        public ActionResult ResponseVnp()
         {
             string returnContent = string.Empty;
 

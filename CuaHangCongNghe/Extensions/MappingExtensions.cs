@@ -57,12 +57,14 @@ namespace Shop.Models
         {
             return new ProductViewModel()
             {
-               Id  = product.Id,
+                Id = product.Id,
                 Name = product.Name,
                 Description = product.Description,
                 Price = product.Price,
                 ImageUrl = product.ImageUrl,
-                Stockquantity = product.Stockquantity
+                Stockquantity = product.Stockquantity,
+                
+                
             };
         }
 
@@ -101,7 +103,8 @@ namespace Shop.Models
         public static User ToUserInfo(this UserViewModel userViewModel)
         {
             return new User
-            {           
+            {
+                UserId = userViewModel.Id,
                 PhoneUser = userViewModel.PhoneUser,
                 AddressUser = userViewModel.AddressUser,
                 NameUser = userViewModel.NameUser,

@@ -55,7 +55,7 @@
                                 <a class="text-dark" asp-controller="Product" asp-route-id="@product.Id">@product.Name</a>
                             </h4>
                             <h5>@product.Price &#8381;</h5>
-                            <p class="card-text">@product.Description</p>
+                            <p class="card-text">@product.Stockquantity</p>
                         </div>
                         <div class="card-body d-flex align-items-end">
                             <a class="btn btn-info" asp-controller="Cart" asp-action="Add" asp-route-id="@product.Id" role="button">Thêm vào giỏ hàng</a>

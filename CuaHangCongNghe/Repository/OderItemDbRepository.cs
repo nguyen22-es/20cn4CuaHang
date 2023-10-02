@@ -46,12 +46,13 @@ namespace CuaHangCongNghe.Repository
             var order = new Order 
             { 
                 UserId = userId,
+            
                 OrderDate = DateTime.Now,
                 Status = 0,
 
             };
             storeContext.Orders.Add(order);
-            order.Orderitems.Add(new Orderitem { OrderId = order.OrderId, ProductId = product.Id, Quantity = quantity });//натсроить чтобы id генерировалась автоматически
+            order.Orderitems.Add(new Orderitem { OrderId = order.OrderId, ProductId = product.Id, Quantity = quantity });
             storeContext.SaveChanges();
             return order;
         }
@@ -93,7 +94,7 @@ namespace CuaHangCongNghe.Repository
 
         public Order getOrderPay(string userId)
         {
-            return  storeContext.Orders.AsNoTracking().Include(o => o.Orderitems).ThenInclude(p => p.Product).FirstOrDefault(n => n.UserId == userId && n.Status == 0);// lấy order chưa thanh toán
+            return  storeContext.Orders.Include(o => o.Orderitems).ThenInclude(p => p.Product).FirstOrDefault(n => n.UserId == userId && n.Status == 0);// lấy order chưa thanh toán
         }
 
         public List<Order> TryGetByOrderUserId(string UserId)
@@ -118,10 +119,10 @@ namespace CuaHangCongNghe.Repository
             
         }
 
-        public void Update(Order existingOrder)
+        public void Update(Orderitem existingOrder)
         {
-            var Oder = storeContext.Orders.FirstOrDefault(x => x.OrderId == existingOrder.OrderId);
-            Oder = existingOrder;
+            var order = storeContext.Orderitems.FirstOrDefault(x => x.OrderItemsId == existingOrder.OrderItemsId);
+            order = existingOrder;
             storeContext.SaveChanges();
         }
     }

@@ -9,7 +9,7 @@ namespace CuaHangCongNghe
         List<Order> GetAll();
         Order Create(string userId, Product product,int quantity);
         Orderitem AddItem(int id, Orderitem orderitem);
-        void Update(Order order);
+        void Update(Orderitem  orderitem);
         void DeleteItem(int orderitem);
         void DeleteOder(int orderId);
         Order AddProduct(int Id, Product product, int quantity);

@@ -36,6 +36,33 @@ namespace CuaHangCongNghe.Service
 
             var OrderViewModel = new OrderViewModel
             {
+                Status = 0,
+                Id = order.OrderId,
+                UserId = order.UserId,
+                ItemViewModels = order.Orderitems.ToList().ToOrderItemsViewModel()
+            };
+            return OrderViewModel;
+        }
+        public OrderViewModel AddCart(ProductViewModel productViewModel, string userId)
+        {
+            var orders = oderItemRepository.getOrderPay(userId);
+            var product = productViewModel.ToProduct();
+
+            Order order;
+
+
+            if (orders == null)
+            {
+
+                order = oderItemRepository.Create(userId, product, 1);
+            }
+            else
+            {
+                order = oderItemRepository.AddProduct(orders.OrderId, product, 1);
+            }
+
+            var OrderViewModel = new OrderViewModel
+            {
                 Status = order.Status,
                 Id = order.OrderId,
                 UserId = order.UserId,
@@ -109,18 +136,32 @@ namespace CuaHangCongNghe.Service
             oderItemRepository.DeleteItem(orderItem);
         }
 
-        public void UpdateAmount(string userId, int cartItemId, int amount)
+          public void UpdateQuantity(string userId, int cartItemId, int quantity)
+    {
+    
+        var existingOrder = oderItemRepository.getOrderPay(userId);
+
+  
+        if (existingOrder == null)
         {
-            var existingOrder = oderItemRepository.getOrderPay(userId);
-            if (existingOrder != null)
-            {
-                var OrderItem = existingOrder.Orderitems.FirstOrDefault(x => x.OrderItemsId == cartItemId);
-                OrderItem.Quantity += amount;
-            }
-
-
-            oderItemRepository.Update(existingOrder);
+            return;
         }
+
+    
+        var cartItem = existingOrder.Orderitems.FirstOrDefault(x => x.OrderItemsId == cartItemId);
+
+   
+        if (cartItem == null)
+        {
+            return;
+        }
+
+   
+        cartItem.Quantity = quantity;
+
+        // Update the order.
+        oderItemRepository.Update(cartItem);
+    }
 
         
 

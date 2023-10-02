@@ -31,45 +31,6 @@ namespace CuaHangCongNghe.Repository
             storeContext.SaveChanges();
         }
 
-        public void AddProduct(string userId, Product product, int quantity)
-        {
-            var order = storeContext.Orders.FirstOrDefault(x => x.UserId == userId);
-            if (order != null)
-            {
-            
-                Order odernew = new Order
-                {
-                  
-                    UserId = order.UserId,
-                    OrderDate = DateTime.Today,
-                    Status = 0,
-
-                };          
-
-                var item = new Orderitem
-                {
-                  
-                    OrderId = order.OrderId,
-                    Quantity = quantity,
-                    ProductId = product.Id,
-                };             
-
-             
-
-            }
-            if(order == null)
-            {
-                var item = new Orderitem
-                {
-
-                    OrderId = order.OrderId,
-                    Quantity = quantity,
-                    ProductId = product.Id,
-                };
-            }
-
-            storeContext.SaveChanges();
-        }
 
 
 
@@ -92,10 +53,9 @@ namespace CuaHangCongNghe.Repository
 
         public List<User> GetAll()
         {
-           return storeContext.Users.AsNoTracking().Include(o => o.Orders).ThenInclude(i =>i.Orderitems).ThenInclude(p => p.Product).ToList();
+            return storeContext.Users.AsNoTracking().ToList();
         }
 
-      
 
         public User TryGetByUserId(string id)
         {
