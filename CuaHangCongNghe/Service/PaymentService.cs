@@ -30,17 +30,6 @@ namespace CuaHangCongNghe.Service
             string vnp_TmnCode = _configuration["vnp_TmnCode"];
             string vnp_HashSecret = _configuration["vnp_HashSecret"];
 
-            OrderInfo order = new OrderInfo();
-            //Save order to db
-            order.OrderId = userOrderViewModel.Order.Id; // Giả lập mã giao dịch hệ thống merchant gửi sang VNPAY
-            order.Amount = userOrderViewModel.Order.FullPrice;//gia; //gia                    // Giả lập số tiền thanh toán hệ thống merchant gửi sang VNPAY 100,000 VND 
-            order.Status = "0"; //0: Trạng thái thanh toán "chờ thanh toán" hoặc "Pending"
-            order.CreatedDate = DateTime.Now;
-            order.kh_diachi = userOrderViewModel.User.AddressUser;
-            order.kh_email = userOrderViewModel.User.EmailUser;
-            order.kh_ten = userOrderViewModel.User.NameUser;
-            order.kh_dienthoai = userOrderViewModel.User.PhoneUser;
-
 
             VnPayLibrary pay = new VnPayLibrary();
             pay.AddRequestData("vnp_Bill_Mobile", userOrderViewModel.User.PhoneUser.Trim());
@@ -63,7 +52,7 @@ namespace CuaHangCongNghe.Service
             pay.AddRequestData("vnp_OrderType", "other");
             pay.AddRequestData("vnp_ReturnUrl", vnp_Returnurl);
             pay.AddRequestData("vnp_Locale", "vn");
-            pay.AddRequestData("vnp_OrderInfo", order.OrderId.ToString());
+            pay.AddRequestData("vnp_OrderInfo", userOrderViewModel.Order.Id.ToString());
             pay.AddRequestData("vnp_TxnRef", DateTime.Now.Ticks.ToString());
             string paymentUrl = pay.CreateRequestUrl(vnp_Url, vnp_HashSecret);
 
@@ -71,31 +60,7 @@ namespace CuaHangCongNghe.Service
         }
 
 
-        public bool compare(VnPayCallbackData parsedQuery, string secretKey)
-        {
-            System.Text.StringBuilder dataBuilder = new System.Text.StringBuilder();
-            dataBuilder.Append("vnp_Amount=").Append(parsedQuery.vnp_Amount)
-                .Append("&vnp_BankCode=").Append(parsedQuery.vnp_BankCode)
-                .Append("&vnp_BankTranNo=").Append(parsedQuery.vnp_BankTranNo)
-                .Append("&vnp_CardType=").Append(parsedQuery.vnp_CardType)
-                .Append("&vnp_OrderInfo=").Append(parsedQuery.vnp_OrderInfo)
-                .Append("&vnp_PayDate=").Append(parsedQuery.vnp_PayDate)
-                .Append("&vnp_ResponseCode=").Append(parsedQuery.vnp_ResponseCode)
-                .Append("&vnp_TmnCode=").Append(parsedQuery.vnp_TmnCode)
-                .Append("&vnp_TransactionNo=").Append(parsedQuery.vnp_TransactionNo)
-                .Append("&vnp_TransactionStatus=").Append(parsedQuery.vnp_TransactionStatus)
-                .Append("&vnp_TxnRef=").Append(parsedQuery.vnp_TxnRef);
-            string data = dataBuilder.ToString();
-            var vnp_SecureHash = parsedQuery.vnp_SecureHash;
-
-            string secureHash = Utils.HmacSHA512(secretKey, data);
-
-            bool isValid = string.Equals(secureHash, vnp_SecureHash, StringComparison.OrdinalIgnoreCase);
-            return isValid;
-
-        }
-
-
+      
 
     }
 }

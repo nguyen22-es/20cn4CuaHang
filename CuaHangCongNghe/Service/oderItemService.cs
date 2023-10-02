@@ -43,32 +43,25 @@ namespace CuaHangCongNghe.Service
             };
             return OrderViewModel;
         }
-        public OrderViewModel AddCart(ProductViewModel productViewModel, string userId)
+        public void AddCart(ProductViewModel productViewModel, string userId)
         {
             var orders = oderItemRepository.getOrderPay(userId);
             var product = productViewModel.ToProduct();
 
-            Order order;
+           
 
 
             if (orders == null)
             {
 
-                order = oderItemRepository.Create(userId, product, 1);
+              oderItemRepository.Create(userId, product, 1);
             }
             else
             {
-                order = oderItemRepository.AddProduct(orders.OrderId, product, 1);
+              oderItemRepository.AddProduct(orders.OrderId, product, 1);
             }
 
-            var OrderViewModel = new OrderViewModel
-            {
-                Status = order.Status,
-                Id = order.OrderId,
-                UserId = order.UserId,
-                ItemViewModels = order.Orderitems.ToList().ToOrderItemsViewModel()
-            };
-            return OrderViewModel;
+
         }
 
         public List<OrderViewModel> GetCurrentAllOrder()
@@ -137,7 +130,7 @@ namespace CuaHangCongNghe.Service
         }
 
           public void UpdateQuantity(string userId, int cartItemId, int quantity)
-    {
+        {
     
         var existingOrder = oderItemRepository.getOrderPay(userId);
 

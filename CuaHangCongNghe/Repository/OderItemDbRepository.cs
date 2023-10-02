@@ -24,7 +24,7 @@ namespace CuaHangCongNghe.Repository
             var existingSameProduct = order.Orderitems.FirstOrDefault(x => x.ProductId == product.Id);
             if (existingSameProduct != null)
             {
-                existingSameProduct.Quantity += quantity;
+                existingSameProduct.Quantity = quantity;
             }
             else
             {

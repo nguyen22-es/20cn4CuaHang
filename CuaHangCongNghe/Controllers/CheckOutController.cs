@@ -12,6 +12,7 @@ using Microsoft.AspNetCore.Mvc;
 
 using System;
 using System.Collections.Generic;
+using Newtonsoft.Json;
 
 namespace Shop.Controllers
 {
@@ -33,11 +34,14 @@ namespace Shop.Controllers
             _configuration = configuration;
         }
 
-        public IActionResult Thanks()
+        [HttpPost]
+        public IActionResult Pay(UserOrderViewModel userOrderViewModel)
         {
-            return View();
+         
+               
+                return View(userOrderViewModel);
+            
         }
-
         [HttpPost]
         public async Task<IActionResult> CreateItemOrder(Dictionary<int, int> items)
         {
@@ -49,39 +53,36 @@ namespace Shop.Controllers
             foreach (var item in items)
             {
                 product = productService.GetProduct(item.Key);
-                oderItemService.AddProductToItems(product, user.Id, item.Value);
+                userOrderViewModel.Order = oderItemService.AddProductToItems(product, user.Id, item.Value);
 
             } 
-            userOrderViewModel.Order = oderItemService.GetOrderPay(user.Id);
+          
             userOrderViewModel.User = new UserViewModel { Id = user.Id, EmailUser = user.Email, NameUser = user.UserName, PhoneUser = user.PhoneNumber, RegistrationDate = user.DateTime, AddressUser = user.Address };
 
             return View(userOrderViewModel);
         }
 
 
-        [HttpPost]
-        public IActionResult GetAllOrder(int OrderId)
-        {
-            List<OrderItemViewModel> orderItemViewModel;
-
-            orderItemViewModel = oderItemService.GetOrderItem(OrderId);
-
-            return View(orderItemViewModel);
-        }
 
         [HttpPost]
-        public IActionResult SaveOrder(Dictionary<int, int> items, UserOrderViewModel  userOrderViewModel)
+        public IActionResult SaveOrder(UserOrderViewModel  userOrderViewModel, Dictionary<int, int> items)
         {
-           
+            if (!ModelState.IsValid)
+            {
+                return View(userOrderViewModel);
+            }
             userService.AddInformation(userManager.GetUserId(User), userOrderViewModel.User);
            
-            return RedirectToAction("Thanks");
+            return RedirectToAction("CreateItemOrder",new { items });
         }
+
+
+
         public IActionResult Status(int orderId, int status)
         {
             oderItemService.ChangeStatus(orderId,status);
 
-            return RedirectToAction("Thanks");
+            return RedirectToAction("pay");
         }
 
      

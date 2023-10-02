@@ -40,8 +40,8 @@
                                 </td>
                                 <td><h5>@item.Price &#8381;</h5></td>
                                 <td>
-                                    <input type="hidden" name="@("Items[" + i + "].Key")" value="@item.Product.Id" />
-                                    <input type="number" min="1" class="form-control text-center" name="@("Items[" + i + "].Value")" value="">
+                                    <input type="hidden" name="@("Items[" + i + "].Key")" value="@item.Id" />
+                                    <input type="number" min="1" class="form-control text-center" name="@("Items[" + i + "].Value")" value="@item.quantity">
                                     <p class="text-center"><small>@item.Product.Price &#8381;/VNĐ</small></p>
                                 </td>
                                 <td class="actions">
@@ -66,8 +66,13 @@
     <form method="post">
         <div class="row mt-4 d-flex align-items-center">
             <div class="col-sm-6 order-md-2 text-right">
-                <input type="hidden" name="orderbutton" value="true" />
-                <button class="btn btn-info mb-4 btn-lg pl-5 pr-5" type="submit" asp-controller="CheckOut" asp-action="CreateOrder">
+                @for (int i = 0; i < Model.ItemViewModels.Count; i++)
+                {
+                    var item = Model.ItemViewModels[i];
+                    <input type="hidden" name="@("Items[" + i + "].Key")" value="@item.Product.Id" />
+                    <input type="hidden" name="@("Items[" + i + "].Value")" value="@item.quantity" />
+                }
+                <button class="btn btn-info mb-4 btn-lg pl-5 pr-5" type="submit" asp-controller="CheckOut" asp-action="CreateItemOrder">
                     thủ tục thanh toán
                 </button>
             </div>
