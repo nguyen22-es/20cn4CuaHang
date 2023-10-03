@@ -1,24 +1,19 @@
-﻿<!DOCTYPE html>
+﻿@model List<string>
+
+<!DOCTYPE html>
 <html>
 <head>
-    <title>Trả lời từ VNPAY</title>
+    <title>Your View</title>
 </head>
 <body>
-    @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
-    {
-        <h1>Lỗi:</h1>
-        <p>@ViewBag.ErrorMessage</p>
-    }
-    else
-    {
-        <h1>Kết quả giao dịch:</h1>
-        <p>@ViewBag.InnerText</p>
-        <p>@ViewBag.InnerTextTerminalID</p>
-        <p>@ViewBag.InnerTextorderId</p>
-        <p>@ViewBag.InnerTextvnpayTranId</p>
-        <p>@ViewBag.InnerTextvnp_Amount</p>
-        <p>@ViewBag.InnerTextbankCode</p>
-        <p>@ViewBag.date</p>
-    }
+    <div>
+        <h1>Danh sách nội dung:</h1>
+        <ul>
+            @foreach (var item in Model)
+            {
+                <li>@item</li>
+            }
+        </ul>
+    </div>
 </body>
 </html>

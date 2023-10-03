@@ -1,26 +1,55 @@
 ﻿@model CuaHangCongNghe.viewModel.UserOrderViewModel
 
-
-<div class="col-md-4 order-md-2 mb-4">
-    <h4 class="d-flex justify-content-between align-items-center mb-3">
-        <a class="text-info" asp-controller="Cart" asp-action="Index">Giỏ hàng</a>
-        <span class="badge badge-info badge-pill">@Model.Order.FullAmount</span>
-    </h4>
-    <ul class="list-group mb-3">
-        @for (int i = 0; i < Model.Order.ItemViewModels.Count; i++)
-        {
-            var item = Model.Order.ItemViewModels[i];
-            <li class="list-group-item d-flex justify-content-between lh-condensed">
-                <div>
-                    <a class="text-info" asp-controller="Product" asp-action="Index" asp-route-id="@item.Product.Id"><h6 class="my-0">@item.Product.Name</h6></a>
-                    <small class="text-muted">Số lượng: @item.quantity</small>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 order-md-2 mb-4">
+            <h4 class="d-flex justify-content-between align-items-center mb-3">
+                Giỏ hàng
+                <span class="badge badge-info badge-pill">@Model.Order.FullAmount</span>
+            </h4>
+            <ul class="list-group mb-3">
+                @for (int i = 0; i < Model.Order.ItemViewModels.Count; i++)
+                {
+                    var item = Model.Order.ItemViewModels[i];
+                    <li class="list-group-item d-flex justify-content-between lh-condensed">
+                        <div>
+                            <a class="text-info" asp-controller="Product" asp-action="Index" asp-route-id="@item.Product.Id"><h6 class="my-0">@item.Product.Name</h6></a>
+                            <span class="text-muted">Số lượng: @item.quantity</span>
+                        </div>
+                        <span class="text-muted">@item.Price &#8381;</span>
+                    </li>
+                }
+                <li class="list-group-item d-flex justify-content-between">
+                    <span>Tổng tiền:</span>
+                    <strong>@Model.Order.FullPrice &#8381;</strong>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <form asp-action="Payment" method="post" >
+                <div class="mb-3">
+                    @for (int i = 0; i < Model.Order.ItemViewModels.Count; i++)
+                    {
+                        var item = Model.Order.ItemViewModels[i];
+                        <input type="hidden" name="@("Items[" + i + "].Key")" value="@item.Product.Id" />
+                        <input type="hidden" name="@("Items[" + i + "].Value")" value="@item.quantity" />
+                    }
                 </div>
-                <span class="text-muted">@item.Price đ</span>
-            </li>
-        }
-        <li class="list-group-item d-flex justify-content-between">
-            <span>Tổng cộng:</span>
-            <strong>@Model.Order.FullPrice đ</strong>
-        </li>
-    </ul>
+                <input type="hidden" name="orderID" value="@Model.Order.Id" />
+
+                <h1>Chọn phương thức thanh toán</h1>
+
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="giaoHang" name="status" value="2">
+                    <label class="form-check-label" for="giaoHang">Ship COD</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="thanhToan" name="status" value="1">
+                    <label class="form-check-label" for="thanhToan">Thanh toán điện tử</label>
+                </div>
+
+                <button type="submit" class="btn btn-success btn-lg btn-block">Xác nhận thanh toán</button>
+            </form>
+        </div>
+    </div>
 </div>

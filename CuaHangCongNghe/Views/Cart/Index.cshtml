@@ -72,9 +72,11 @@
                     <input type="hidden" name="@("Items[" + i + "].Key")" value="@item.Product.Id" />
                     <input type="hidden" name="@("Items[" + i + "].Value")" value="@item.quantity" />
                 }
-                <button class="btn btn-info mb-4 btn-lg pl-5 pr-5" type="submit" asp-controller="CheckOut" asp-action="CreateItemOrder">
-                    thủ tục thanh toán
+                @if (Model.ItemViewModels.Count > 0) {
+                    <button class="btn btn-info mb-4 btn-lg pl-5 pr-5" type="submit" asp-controller="CheckOut" asp-action="CreateItemOrder">
+                        thủ tục thanh toán
                 </button>
+                }
             </div>
             <div class="col-sm-6 mb-3 mb-m-1 order-md-1 text-md-left">
                 <a class="text-info" asp-controller="Home" asp-action="Index"><i class="bi bi-arrow-left mr-2 text-info"></i>Tiếp túc mua sắm</a>

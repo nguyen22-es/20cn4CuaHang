@@ -6,6 +6,7 @@ namespace CuaHangCongNghe
 {
     public interface OderItemRepository
     {
+        Order GetOrder(int IdOrder);
         List<Order> GetAll();
         Order Create(string userId, Product product,int quantity);
         Orderitem AddItem(int id, Orderitem orderitem);

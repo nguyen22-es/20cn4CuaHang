@@ -32,14 +32,15 @@ namespace CuaHangCongNghe.Controllers
         {
             var ListUserViewModelOrder = new List<UserOrderViewModel>();
 
-            var l = new UserOrderViewModel();
+           
             var orders = oderItemService.GetCurrentAllOrder();
 
-            foreach(var item in orders)
+            for (int i = 0; i < orders.Count;i++)
             {
-                var user = await userManager.FindByIdAsync(item.UserId);
+                var l = new UserOrderViewModel();
+                var user = await userManager.FindByIdAsync(orders[i].UserId);
 
-                l.Order = item;
+                l.Order = orders[i];
                 l.User =  new UserViewModel { Id = user.Id, EmailUser = user.Email, NameUser = user.UserName, PhoneUser = user.PhoneNumber, RegistrationDate = user.DateTime, AddressUser = user.Address };
 
                 ListUserViewModelOrder.Add(l);
@@ -47,16 +48,14 @@ namespace CuaHangCongNghe.Controllers
             return View(ListUserViewModelOrder);
         }
 
-        public async Task<IActionResult> GetOrder(string id)
+        public async Task<IActionResult> GetOrder(int id)
         {
-            var userViewModelOrder = new UserOrdersViewModel();
+  
 
-            var orders = oderItemService.GetCurrentAllOrder(id);
-            var user = await userManager.FindByIdAsync(id);
-            userViewModelOrder.Orders = orders;
-            var model = new UserViewModel { Id = user.Id, EmailUser = user.Email, NameUser = user.UserName, PhoneUser = user.PhoneNumber };
-            userViewModelOrder.User = model;
-            return View();
+            var orders = oderItemService.GetOrder(id);
+
+
+            return View(orders);
         }
         public IActionResult ChangeOrderStatus(int id, int status)
         {

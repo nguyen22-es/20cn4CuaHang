@@ -123,7 +123,7 @@ namespace CuaHangCongNghe.Controllers
             var Orders = new UserOrdersViewModel();
             if(user != null)
             {
-                Orders.Orders = oderItemService.GetCurrentAllOrder(user.Id);
+                Orders.Orders = oderItemService.GetCurrentAllOrderUser(user.Id);
                Orders.User = model;
                
             }

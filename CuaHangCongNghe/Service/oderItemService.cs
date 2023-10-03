@@ -80,7 +80,7 @@ namespace CuaHangCongNghe.Service
             return null;
         }
 
-        public List<OrderViewModel> GetCurrentAllOrder(string userId)
+        public List<OrderViewModel> GetCurrentAllOrderUser(string userId)
         {
            
             var existingOrder = oderItemRepository.TryGetByOrderUserId(userId);
@@ -91,6 +91,13 @@ namespace CuaHangCongNghe.Service
             }
 
             return null;
+        }
+
+        public OrderViewModel GetOrder(int  IdOrder)
+        {
+            var Order = oderItemRepository.GetOrder(IdOrder).ToOrderViewModel();
+
+            return Order;
         }
 
 

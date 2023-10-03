@@ -841,3 +841,6 @@ C:\Users\ztzkk\OneDrive - Trường Đại Học Kiến Trúc Hà Nội\Document
 C:\Users\ztzkk\OneDrive - Trường Đại Học Kiến Trúc Hà Nội\Documents\DoAn20Cn4\20cn4CuaHang_bancuoidapix\20cn4CuaHang\CuaHangCongNghe\obj\Debug\net7.0\CuaHangCongNghe.genruntimeconfig.cache
 C:\Users\ztzkk\OneDrive - Trường Đại Học Kiến Trúc Hà Nội\Documents\DoAn20Cn4\20cn4CuaHang_bancuoidapix\20cn4CuaHang\CuaHangCongNghe\obj\Debug\net7.0\ref\CuaHangCongNghe.dll
 C:\Users\ztzkk\OneDrive - Trường Đại Học Kiến Trúc Hà Nội\Documents\DoAn20Cn4\20cn4CuaHang_bancuoidapix\20cn4CuaHang\CuaHangCongNghe\bin\Debug\net7.0\PagedList.dll
+C:\Users\ztzkk\OneDrive - Trường Đại Học Kiến Trúc Hà Nội\Documents\DoAn20Cn4\20cn4CuaHang_bancuoidapix\20cn4CuaHang\CuaHangCongNghe\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\ztzkk\OneDrive - Trường Đại Học Kiến Trúc Hà Nội\Documents\DoAn20Cn4\20cn4CuaHang_bancuoidapix\20cn4CuaHang\CuaHangCongNghe\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
+C:\Users\ztzkk\OneDrive - Trường Đại Học Kiến Trúc Hà Nội\Documents\DoAn20Cn4\20cn4CuaHang_bancuoidapix\20cn4CuaHang\CuaHangCongNghe\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll

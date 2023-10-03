@@ -73,12 +73,8 @@ namespace CuaHangCongNghe.Repository
       
 
         public List<Order> GetAll()
-        {
-          //  return storeContext.Users.AsNoTracking().Include(o => o.Orders).ThenInclude(i => i.Orderitems).ThenInclude(p => p.Product).ToList();
-
-
-
-            return storeContext.Orders       
+        {        
+            return storeContext.Orders.AsNoTracking()
         .Include(order => order.Orderitems)
         .ThenInclude(orderItem => orderItem.Product)
         .ToList();
@@ -119,11 +115,19 @@ namespace CuaHangCongNghe.Repository
             
         }
 
+
         public void Update(Orderitem existingOrder)
         {
             var order = storeContext.Orderitems.FirstOrDefault(x => x.OrderItemsId == existingOrder.OrderItemsId);
             order = existingOrder;
             storeContext.SaveChanges();
+        }
+
+
+
+        public Order GetOrder(int IdOrder)
+        {
+            return storeContext.Orders.AsNoTracking().Include(o => o.Orderitems).ThenInclude(p => p.Product).FirstOrDefault(x => x.OrderId == IdOrder);
         }
     }
 }

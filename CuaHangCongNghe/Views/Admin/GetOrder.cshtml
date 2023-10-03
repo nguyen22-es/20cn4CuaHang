@@ -1,4 +1,4 @@
-﻿@model CuaHangCongNghe.Models.UserOrdersViewModel
+﻿@model CuaHangCongNghe.Models.OrderViewModel
 
 <div class="row">
     <div class="col-md-3">
@@ -12,26 +12,27 @@
 
             <h2>Danh sách đơn hàng</h2>
 
-            @if (Model.Orders.Count > 0)
+            @if (Model.ItemViewModels.Count > 0)
             {
 
-
-                @foreach (var order in Model.Orders)
+        <strong>trạng thái:</strong> @Model.Status
+        @foreach (var itemViewModel in Model.ItemViewModels)
                 {
-                    <strong>trạng thái:</strong> @order.Status
+                   
 
                     <br />
 
 
-                    foreach (var item in order.ItemViewModels)
-                    {
+
                         <li>
-                            <strong>tên sản phẩm:</strong> @item.Product.Name<br />
-                            <strong>ID Người dùng:</strong> @item.quantity<br />
-                            <strong>Trạng thái:</strong> @item.Price<br />
+                <strong>tên sản phẩm:</strong> @itemViewModel.Product.Name<br />
+                <strong>ID Người dùng:</strong> @itemViewModel.quantity<br />
+                <strong>Trạng thái:</strong> @itemViewModel.Price<br />
                         </li>
-                    }
-                    <strong>Tổng số tiền phải thanh toán:</strong> @order.FullPrice <br />
+
+           
                 }
+        <strong>Tổng số lượng sản phẩm:</strong> @Model.FullAmount <br />
+        <strong>Tổng số tiền phải thanh toán:</strong> @Model.FullPrice <br />
             }
         </div>

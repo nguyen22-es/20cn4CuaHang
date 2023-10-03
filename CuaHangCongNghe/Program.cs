@@ -41,9 +41,8 @@ builder.Services.AddDbContext<AppIdentityDbContext>(options =>
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
     .AddEntityFrameworkStores<AppIdentityDbContext>()
     .AddDefaultTokenProviders();
-
+builder.Services.AddScoped<IPaymentService, PaymentService>();
 builder.Services.AddTransient<ProductService>();
-builder.Services.AddTransient<PaymentService>();
 builder.Services.AddTransient<UserService>();
 builder.Services.AddTransient<oderItemService>();
 builder.Services.AddTransient<OderItemRepository, OderDbRepository>();
