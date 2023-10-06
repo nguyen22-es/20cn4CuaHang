@@ -14,8 +14,20 @@
 
             @if (Model.ItemViewModels.Count > 0)
             {
+        @if (@Model.Status == 1)
+        {
+            <td>đã thanh toán</td>
+        }
+        @if (@Model.Status == 2)
+        {
+            <td>Ship cod</td>
+        }
+        @if (@Model.Status == 0)
+        {
+            <td>chưa thanh toán</td>
+        }
 
-        <strong>trạng thái:</strong> @Model.Status
+
         @foreach (var itemViewModel in Model.ItemViewModels)
                 {
                    

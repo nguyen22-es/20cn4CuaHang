@@ -1,5 +1,6 @@
 ﻿using Azure.Core;
 using CuaHangCongNghe.laydulieu;
+using CuaHangCongNghe.Services;
 using CuaHangCongNghe.viewModel;
 using log4net;
 using System.Web;
@@ -10,15 +11,16 @@ namespace CuaHangCongNghe.Service
     {
 
         private readonly IConfiguration _configuration;
-    
+        private readonly ProductService productService;
         private readonly oderItemService _oderItemService;
         private readonly IHttpContextAccessor _httpContextAccessor;
 
-        public PaymentService(IConfiguration configuration, oderItemService oderItemService, IHttpContextAccessor httpContextAccessor)
+        public PaymentService(IConfiguration configuration, oderItemService oderItemService, IHttpContextAccessor httpContextAccessor, ProductService productService)
         {
             _oderItemService = oderItemService;
             _configuration = configuration;
             _httpContextAccessor = httpContextAccessor;
+            this.productService = productService;
         
         }
 
@@ -135,7 +137,10 @@ namespace CuaHangCongNghe.Service
                  order.Status = 1;
                  _oderItemService.ChangeStatus(order.Id, 1);
                 // Thanh toán thành công
-
+                foreach (var itemOrder in order.ItemViewModels)
+                {
+                    productService.UpdateProduct(itemOrder.Product.Id, itemOrder.quantity);
+                }
                 returns.Add("Mã giao dịch thanh toán:" + orderId);
                 returns.Add("Mã giao dịch tại VNPAY:" + vnpayTranId);
 

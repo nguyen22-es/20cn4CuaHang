@@ -1,8 +1,46 @@
-/*!
+﻿/*!
   * Bootstrap v4.3.1 (https://getbootstrap.com/)
   * Copyright 2011-2019 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
   */
+
+const darkModeCheckbox = document.getElementById('checkbox');
+// Lấy tham chiếu đến thẻ body
+const body = document.body;
+
+// Hàm xử lý khi checkbox thay đổi trạng thái
+function toggleDarkMode() {
+    const isDarkMode = body.classList.contains('dark-mode');
+
+    if (isDarkMode) {
+        body.classList.remove('dark-mode');
+        body.setAttribute('data-bs-theme', 'light');
+        // Lưu trạng thái Light Mode vào localStorage
+        localStorage.setItem('darkMode', 'light');
+    } else {
+        body.classList.add('dark-mode');
+        body.setAttribute('data-bs-theme', 'dark');
+        // Lưu trạng thái Dark Mode vào localStorage
+        localStorage.setItem('darkMode', 'dark');
+    }
+
+    // Lưu trạng thái của checkbox vào localStorage
+    localStorage.setItem('darkModeCheckbox', darkModeCheckbox.checked ? 'checked' : 'unchecked');
+}
+
+// Lắng nghe sự kiện khi checkbox "Dark Mode" thay đổi trạng thái
+darkModeCheckbox.addEventListener('change', toggleDarkMode);
+
+// Kiểm tra và khôi phục trạng thái của checkbox và Dark Mode từ localStorage khi trang web được tải
+const savedMode = localStorage.getItem('darkMode');
+if (savedMode === 'dark') {
+    toggleDarkMode();
+}
+
+const savedCheckboxState = localStorage.getItem('darkModeCheckbox');
+if (savedCheckboxState === 'checked') {
+    darkModeCheckbox.checked = true;
+}
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('jquery'), require('popper.js')) :
   typeof define === 'function' && define.amd ? define(['exports', 'jquery', 'popper.js'], factory) :

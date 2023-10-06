@@ -114,6 +114,10 @@ namespace Shop.Controllers
             if(status == "2")
             {
                 oderItemService.ChangeStatus(userOrderView.Order.Id,2);
+                foreach(var itemOrder in userOrderView.Order.ItemViewModels)
+                {
+                    productService.UpdateProduct(itemOrder.Product.Id, itemOrder.quantity);
+                }
                 
             }
 

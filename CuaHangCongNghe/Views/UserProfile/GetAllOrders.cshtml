@@ -25,7 +25,19 @@
         
                 @foreach (var order in Model.Orders)
                 {
-                    <strong>trạng thái:</strong> @order.Status<br />
+            @if (@order.Status == 1)
+            {
+                <td>đã thanh toán</td>
+            }
+            @if (@order.Status == 2)
+            {
+                <td>Ship cod</td>
+            }
+            @if (@order.Status == 0)
+            {
+                <td>chưa thanh toán</td>
+            }
+
                                  
                
                     foreach(var item in order.ItemViewModels)
@@ -33,7 +45,7 @@
                         <li>
                             <strong>tên sản phẩm:</strong> @item.Product.Name<br />
                             <strong>ID Người dùng:</strong> @item.quantity<br />
-                            <strong>Trạng thái:</strong> @item.Price<br />
+                            <strong>Số tiền phải thanh toán cho từng item:</strong> @item.Price<br />
                         </li>
                     }
                     <strong>Tổng số tiền phải thanh toán:</strong> @order.FullPrice <br />

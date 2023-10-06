@@ -59,18 +59,10 @@ namespace CuaHangCongNghe.Repository
 
         public User TryGetByUserId(string id)
         {
-            var users = GetAll();
-
-            foreach(var user in users)
-            {
-                if(user.UserId == id  )
-                {
-                    return user;
-                }
-
-            }
-            return null;
-
+            var user = storeContext.Users.FirstOrDefault(u => u.UserId == id);
+          
+          
+            return user;
         }
     }
 }

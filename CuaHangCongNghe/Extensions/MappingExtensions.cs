@@ -73,7 +73,7 @@ namespace Shop.Models
             var path = productViewModel.ImageUrl;
             if (productViewModel.File != null)
             {
-                path = "images/" + productViewModel.File.FileName;
+                path = "/images/" + productViewModel.File.FileName;
             }
             return new Product()
             {
@@ -81,6 +81,7 @@ namespace Shop.Models
                 Name = productViewModel.Name,
                 Description = productViewModel.Description,
                 Price = productViewModel.Price,
+                Stockquantity = productViewModel.Stockquantity,
                 ImageUrl = path
             };
         }

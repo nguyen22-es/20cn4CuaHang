@@ -74,9 +74,9 @@ namespace CuaHangCongNghe.Controllers
                 var user = new ApplicationUser
                 {
                    Name = model.nameLogin,
-                    DateTime = DateTime.Today,
+                    DateTime = DateTime.Now,
                      UserName = model.nameLogin,
-                    Address = "123 Main St"
+                    Address = ""
 
                 };
                 var result = userManager.CreateAsync(user, model.Password).Result;

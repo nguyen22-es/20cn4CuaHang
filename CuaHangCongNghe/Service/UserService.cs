@@ -41,8 +41,24 @@ namespace CuaHangCongNghe.Services
 
          public UserViewModel GetUser(string id)
          {
-             return userRepository.TryGetByUserId(id).toUserViewModel();
-         }
+           var user =  userRepository.TryGetByUserId(id).toUserViewModel();
+
+
+            if (user != null)
+            {
+                return user;
+            }
+
+
+            return null;
+        }
+        public User GetUserl(string id)
+        {
+            var user = userRepository.TryGetByUserId(id);
+           
+            return user;
+        }
+
 
 
         public void createUser(string IdUser)

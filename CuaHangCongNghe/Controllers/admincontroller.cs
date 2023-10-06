@@ -9,7 +9,7 @@ using Shop.Extensions;
 
 namespace CuaHangCongNghe.Controllers
 {
-    //[Authorize(Roles = "AdminAccess")]
+  //  [Authorize = "AdminAccess"]
     public class AdminController : Controller
     {
         private readonly ProductService productService;
@@ -35,16 +35,23 @@ namespace CuaHangCongNghe.Controllers
            
             var orders = oderItemService.GetCurrentAllOrder();
 
-            for (int i = 0; i < orders.Count;i++)
+            for (int i = 0; i < orders.Count; i++)
             {
                 var l = new UserOrderViewModel();
                 var user = await userManager.FindByIdAsync(orders[i].UserId);
 
-                l.Order = orders[i];
-                l.User =  new UserViewModel { Id = user.Id, EmailUser = user.Email, NameUser = user.UserName, PhoneUser = user.PhoneNumber, RegistrationDate = user.DateTime, AddressUser = user.Address };
-
-                ListUserViewModelOrder.Add(l);
+                if (user != null)
+                {
+                    l.Order = orders[i];
+                    l.User = new UserViewModel { Id = user.Id, EmailUser = user.Email, NameUser = user.UserName };
+                    ListUserViewModelOrder.Add(l);
+                }
+                else
+                {
+                    // Xử lý khi không tìm thấy người dùng
+                }
             }
+
             return View(ListUserViewModelOrder);
         }
 

@@ -4,7 +4,7 @@ using CuaHangCongNghe.Services;
 using Microsoft.AspNetCore.Mvc;
 
 
-namespace Shop.Controllers
+namespace CuaHangCongNghe.Controllers
 {
     public class HomeController : Controller
     {
@@ -12,6 +12,11 @@ namespace Shop.Controllers
         private const int pageSize = 12;
         private const int maxPages = 5;
         private readonly ProductService productService;
+
+        public IActionResult Themes()
+        {
+            return View();
+        }
 
         public HomeController(ProductService productService)
         {

@@ -41,7 +41,7 @@
                                 <td><h5>@item.Price &#8381;</h5></td>
                                 <td>
                                     <input type="hidden" name="@("Items[" + i + "].Key")" value="@item.Id" />
-                                    <input type="number" min="1" class="form-control text-center" name="@("Items[" + i + "].Value")" value="@item.quantity">
+                                    <input type="number" min="1" max="@item.Product.Stockquantity" class="form-control text-center" name="@("Items[" + i + "].Value")" value="@item.quantity">
                                     <p class="text-center"><small>@item.Product.Price &#8381;/VNĐ</small></p>
                                 </td>
                                 <td class="actions">

@@ -16,6 +16,15 @@ namespace CuaHangCongNghe.Repository
             storeContext.SaveChanges();
         }
 
+        public void Delete(int id)
+        {
+         var product =  storeContext.Products.FirstOrDefault(x => x.Id == id);
+
+
+        storeContext.Products.Remove(product);
+            storeContext.SaveChanges();
+        }
+
         public Product Get(int id)
         {
 
@@ -27,6 +36,13 @@ namespace CuaHangCongNghe.Repository
         public List<Product> GetAll()
         {
            return storeContext.Products.AsNoTracking().ToList();
+        }
+
+        public void Update(Product product)
+        {
+            var order = storeContext.Products.FirstOrDefault(x => x.Id == product.Id);
+            order = product;
+            storeContext.SaveChanges();
         }
     }
 }

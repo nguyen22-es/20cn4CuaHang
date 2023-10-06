@@ -2,12 +2,12 @@
 using CuaHangCongNghe.Service;
 using CuaHangCongNghe.Services;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Cors.Infrastructure;
+
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 
-namespace Shop.Controllers
+namespace CuaHangCongNghe.Controllers
 {
     [Authorize]
     public class CartController : Controller
@@ -32,32 +32,23 @@ namespace Shop.Controllers
             return View(orderViewModel);
         }
 
-        public IActionResult Add(int id)
+        public  IActionResult Add(int id)
         {
             
-            var idUser = userManager.GetUserId(User);
+            var IdUser = userManager.GetUserId(User);
 
+            
             var product = productService.GetProduct(id);
-
-           if( userService.GetUser(idUser) == null)
+            var user  = userService.GetUserl(IdUser);
+           
+            if (user == null)
             {
-                userService.createUser(idUser);
+                userService.createUser(IdUser);
             }
            
-            oderItemService.AddCart(product, userManager.GetUserId(User));
+            oderItemService.AddCart(product, IdUser);
             return RedirectToAction("Index");
         }
-
-      /*  public IActionResult Update(int cartItemId, int quantity)
-        {
-            string filePath = @"D:\19paymentUrl.txt";
-            string userString = $"Namdfsde: {cartItemId}, Emsdfail: {quantity}";
-            System.IO.File.WriteAllText(filePath, userString);
-            oderItemService.UpdateQuantity(userManager.GetUserId(User), cartItemId, quantity);
-            
-            
-            return RedirectToAction("Index");
-        }*/
 
         public IActionResult Update(Dictionary<int, int> items)
         {

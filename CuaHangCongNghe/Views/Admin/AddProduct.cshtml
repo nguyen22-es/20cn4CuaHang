@@ -2,64 +2,73 @@
 
 <div class="row">
     <div class="col-md-3">
-        <div class="list-group my-4">
-            <a asp-action="GetOrders" class="list-group-item list-group-item-action ">Đơn hàng</a>
-            <a asp-action="GetUsers" class="list-group-item list-group-item-action ">Người dùng</a>
-            <a asp-action="GetRoles" class="list-group-item list-group-item-action ">Vai trò</a>
-            <a asp-action="AddProduct" class="list-group-item list-group-item-action active">Thêm sản phẩm</a>
+        <!-- Nội dung phần bên trái -->
+        <div class="card my-4">
+            <div class="card-body">
+
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><button class="dropdown-item" type="button">Action</button></li>
+                        <li><button class="dropdown-item" type="button">Another action</button></li>
+                        <li><button class="dropdown-item" type="button">Something else here</button></li>
+                    </ul>
+                </div>
+
+            </div>         
+            </div>
         </div>
     </div>
     <div class="col-md-9">
-        <div class="card my-4">
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h4>Thêm sản phẩm mới</h4>
-                        <hr />
-                    </div>
+
+        <form asp-action="AddProduct" asp-antiforgery="true" enctype="multipart/form-data">
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="Name">Hiển thị</label>
                 </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <form asp-action="AddProduct" asp-antiforgery="true" enctype="multipart/form-data">
-                            <div class="form-group row">
-                                <div class="col-4">
-                                    <label asp-for="Name">Hiển thị</label>
-                                </div>
-                                <div class="col-8">
-                                    <input type="text" asp-for="Name" class="form-control" required>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <div class="col-4">
-                                    <label asp-for="Price">giá</label>
-                                </div>
-                                <div class="col-8">
-                                    <input asp-for="Price" class="form-control" required>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <div class="col-4">
-                                    <label asp-for="Description">Mô tả</label>
-                                </div>
-                                <div class="col-8">
-                                    <textarea asp-for="Description" class="form-control" rows="3" required></textarea>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <div class="col-4">
-                                    <label asp-for="File">tải hình ảnh</label>
-                                </div>
-                                <div class="col-8">
-                                    <input type="file" asp-for="File" class="form-control-file" required>
-                                </div>
-                            </div>
-                            <div class="text-right">
-                                <button type="submit" class="btn btn-info">thêm</button>
-                            </div>
-                        </form>
-                    </div>
+                <div class="col-8">
+                    <input type="text" asp-for="Name" class="form-control" required>
                 </div>
             </div>
-        </div>
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="Price">giá</label>
+                </div>
+                <div class="col-8">
+                    <input type="number" asp-for="Price" class="form-control" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="Price">số lượng</label>
+                </div>
+                <div class="col-8">
+                    <input type="number" asp-for="Stockquantity" class="form-control" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="Description">Mô tả</label>
+                </div>
+                <div class="col-8">
+                    <textarea asp-for="Description" class="form-control" rows="3" required></textarea>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="File">tải hình ảnh</label>
+                </div>
+                <div class="col-8">
+                    <input type="file" asp-for="File" class="form-control-file" required>
+                </div>
+            </div>
+            <div class="text-right">
+                <button type="submit" class="btn btn-info">thêm</button>
+            </div>
+        </form>
+
+        <!-- Nội dung phần bên phải -->
     </div>
 </div>

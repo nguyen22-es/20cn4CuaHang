@@ -9,5 +9,10 @@ namespace CuaHangCongNghe.Repository
         Product Get(int id);
 
         void Create(Product product);
+
+        void Update (Product product);
+
+        void Delete(int id);
+
     }
 }
