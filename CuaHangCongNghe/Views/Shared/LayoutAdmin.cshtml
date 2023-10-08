@@ -1,0 +1,27 @@
+﻿
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    @await Html.PartialAsync("MetatagsPartial")
+    @await Html.PartialAsync("CssPartial")
+</head>
+<body data-bs-theme="light">
+    @await Html.PartialAsync("HeaderPartial")
+    <link rel="stylesheet" href="/css/admin.css">
+    <div class="container">
+        <main role="main" class="pb-3">
+        <div class="row">
+            <div class="col-md-4">
+        @await Html.PartialAsync("adminDashboard")
+        </div>            
+            @RenderBody()
+            </div>
+        </main>
+    </div>
+    @await Html.PartialAsync("FooterPartial")
+    @await Html.PartialAsync("ScriptsPartial")
+    @RenderSection("Scripts", required: false)
+
+</body>
+</html>
+

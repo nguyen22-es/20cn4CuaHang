@@ -3,44 +3,35 @@
   * Copyright 2011-2019 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
   */
+const listItems = document.querySelectorAll(".list-group-item");
 
-const darkModeCheckbox = document.getElementById('checkbox');
-// Lấy tham chiếu đến thẻ body
-const body = document.body;
+listItems.forEach((li) => {
+    li.addEventListener("click", (event) => {
+        li.classList.add("active");
+    });
+});
+const darkModeSwitch = document.getElementById("darkModeSwitch");
 
-// Hàm xử lý khi checkbox thay đổi trạng thái
-function toggleDarkMode() {
-    const isDarkMode = body.classList.contains('dark-mode');
+// Kiểm tra xem có giá trị đã lưu trong localStorage hay không
+const savedTheme = localStorage.getItem("theme");
+if (savedTheme) {
+    document.body.setAttribute("data-bs-theme", savedTheme);
+    darkModeSwitch.checked = savedTheme === "dark";
+}
 
-    if (isDarkMode) {
-        body.classList.remove('dark-mode');
-        body.setAttribute('data-bs-theme', 'light');
-        // Lưu trạng thái Light Mode vào localStorage
-        localStorage.setItem('darkMode', 'light');
+darkModeSwitch.addEventListener("change", () => {
+    if (darkModeSwitch.checked) {
+        // Bật Dark Mode
+        document.body.setAttribute("data-bs-theme", "dark");
+        localStorage.setItem("theme", "dark"); // Lưu trạng thái
     } else {
-        body.classList.add('dark-mode');
-        body.setAttribute('data-bs-theme', 'dark');
-        // Lưu trạng thái Dark Mode vào localStorage
-        localStorage.setItem('darkMode', 'dark');
+        // Tắt Dark Mode
+        document.body.setAttribute("data-bs-theme", "light");
+        localStorage.setItem("theme", "light"); // Lưu trạng thái
     }
+});
 
-    // Lưu trạng thái của checkbox vào localStorage
-    localStorage.setItem('darkModeCheckbox', darkModeCheckbox.checked ? 'checked' : 'unchecked');
-}
 
-// Lắng nghe sự kiện khi checkbox "Dark Mode" thay đổi trạng thái
-darkModeCheckbox.addEventListener('change', toggleDarkMode);
-
-// Kiểm tra và khôi phục trạng thái của checkbox và Dark Mode từ localStorage khi trang web được tải
-const savedMode = localStorage.getItem('darkMode');
-if (savedMode === 'dark') {
-    toggleDarkMode();
-}
-
-const savedCheckboxState = localStorage.getItem('darkModeCheckbox');
-if (savedCheckboxState === 'checked') {
-    darkModeCheckbox.checked = true;
-}
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('jquery'), require('popper.js')) :
   typeof define === 'function' && define.amd ? define(['exports', 'jquery', 'popper.js'], factory) :

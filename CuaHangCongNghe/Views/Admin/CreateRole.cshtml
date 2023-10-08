@@ -1,41 +1,28 @@
-﻿
-<div class="row">
-    <div class="col-md-3">
-        <div class="list-group my-4">
-            <a asp-action="GetOrders" class="list-group-item list-group-item-action ">Đơn hàng</a>
-            <a asp-action="GetUsers" class="list-group-item list-group-item-action active">Người dùng</a>
-            <a asp-action="GetRoles" class="list-group-item list-group-item-action ">Vai trò</a>
-            <a asp-action="AddProduct" class="list-group-item list-group-item-action ">Thêm sản phẩm</a>
+﻿@{
+    Layout = "LayoutAdmin";
+}
+<div class="col-md-8">
+    <div class="card">
+        <div class="card-body">
+            <h4 style="font-weight: bold;">Thêm vai trò</h4>
         </div>
     </div>
-    <div class="col-md-9 my-4">
-        <div class="card">
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h4>Thêm vai trò</h4>
-                        <hr />
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <form asp-action="CreateRole" method="post">
-                            <div asp-validation-summary="All" class="text-danger offset-4 col-8"></div>
-                            <div class="form-group row">
-                                <label for="name" class="col-4 col-form-label">Tên của vai trò mới</label>
-                                <div class="col-8">
-                                    <input name="name" class="form-control" type="text" >
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <div class="offset-4 col-8 text-right">
-                                    <button type="submit" class="btn btn-info">xác nhận</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
+    <div class="card">
+        <div class="card-body">
+    <form asp-action="CreateRole" method="post">
+        <div asp-validation-summary="All" class="text-danger offset-4 col-8"></div>
+        <div class="form-group row">
+            <label for="name" class="col-4 col-form-label" style="font-weight: bold;">Tên của vai trò mới</label>
+            <div class="col-8">
+                <input name="name" class="form-control" type="text">
             </div>
         </div>
+        <div class="form-group row">
+            <div class="offset-4 col-8 text-right">
+                <button type="submit" class="btn btn-info" style="font-weight: bold;">xác nhận</button>
+            </div>
+        </div>
+    </form>
+</div>
     </div>
 </div>

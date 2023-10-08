@@ -1,0 +1,75 @@
+﻿body {
+  
+}
+.card .card-body {
+    width: 290px;
+
+    padding:20px;
+
+}
+label.col-4.col-form-label {
+    width: 290px;
+}
+
+.card {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    box-shadow: 5px 5px 10px #000;
+}
+
+.material-symbols-outlined {
+    margin-bottom: 40px;
+}
+
+.list-group-item i {
+    font-weight: bold;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    font-style: normal;
+    font-size: 16px;
+    color: #0d6efd;
+    font-family: Arial, sans-serif;
+}
+a.material-symbols-outlined {
+    text-decoration: none;
+    height: 80px;
+    color: #0d6efd;
+}
+.list-group-item span {
+    font-weight: bold;
+    justify-content: center;
+}
+a.btn.btn-info {
+    font-weight: bold;
+    width: 150px;
+    transform: translateX(-100px)
+}
+
+.list-group-item {
+    height: 80px;
+    width: 250px;
+    justify-content: center;
+    margin: 10px;
+    box-shadow: 5px 5px 10px #000;
+}
+
+    .list-group-item:hover {
+        background-color: #fff;
+        color: #190808;
+        transform: scale(1.1);
+    }
+.row .col-md-9 {
+
+    font-weight: bold;
+}
+.form-control-file {
+    font-weight: bold;
+}
+button.btn.btn-outline-secondary {
+    font-weight: bold;
+}
+div.text-right {
+    height: 40px;
+    width:150px;
+   margin-left:500px;
+}

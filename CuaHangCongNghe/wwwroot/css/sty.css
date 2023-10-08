@@ -22,10 +22,9 @@ h3 {
     margin-top: 5px;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
-}
-a {
     text-decoration: none;
 }
+
 
 .gallery {
     display: flex;
@@ -46,11 +45,15 @@ a {
     float: left;
     text-align: center;
     border-radius: 20px;
+    text-decoration: none;
     cursor: pointer;
     padding-top: 100px;
     box-shadow: 2px 14px 28px rgba(0,0,0,0.25),0 10px 10px rgba(0,0,0,0.22);
     transition: .4s;
     background: #f2f2f2;
+}
+gallery a {
+    text-decoration: none;
 }
 
     .content:hover {
@@ -123,6 +126,20 @@ button {
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
 }
+content .h3 {
+    background: #0b181c0b;
+    text-align: center;
+    font-size: 24px;
+    color: #0b0202;
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
 
 .buy {
     background: #0b181c0b;
@@ -138,6 +155,9 @@ button {
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
 }
+a {
+    text-decoration: none;
+}
 
 @media(max-width:1000px) {
     .content {
@@ -150,3 +170,4 @@ button {
         width: 100%;
     }
 }
+

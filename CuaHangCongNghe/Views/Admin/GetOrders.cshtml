@@ -1,72 +1,68 @@
 ﻿@model List<CuaHangCongNghe.viewModel.UserOrderViewModel>
+@{
+    Layout = "LayoutAdmin";
+}
+<div class="col-md-8">
+    <div class="card card-stats" style="height:120px;width:200px;">
 
-<div class="row">
-    <div class="col-md-3">
-        <div class="list-group my-4">
-            <a asp-action="GetOrders" class="list-group-item list-group-item-action active ">Đơn hàng</a>
-            <a asp-action="GetUsers" class="list-group-item list-group-item-action ">Người dùng</a>
-            <a asp-action="GetRoles" class="list-group-item list-group-item-action ">Vai trò</a>
-            <a asp-action="AddProduct" class="list-group-item list-group-item-action ">Thêm sản phẩm</a>
+        <div class="card-content">
+            <p class="category"><strong>số lượng đơn hàng</strong></p>
+            <h3 class="card-title">@Model.Count</h3>
         </div>
     </div>
-
     <h2>Danh sách đơn hàng</h2>
-        <div class="row">
-            <div class="col-md-12 table-responsive">
-                <table class="table table-hover table-sm">
-                    <thead>
-                        <tr>
-                        <th>Người dùng (đăng nhập)</th>
-                        <th>Thời gian</th>
-                        <th>Số tiền</th>
-                        <th>Trạng thái</th>
-                     
-                       
-                        </tr>
-                    </thead>
-                    <tbody>
-        @if (Model.Count > 0)
-        {
-                      
+    <table class="table table-success table-striped">
+        <thead>
+            <tr>
+                <th>Người dùng (đăng nhập)</th>
+                <th>Thời gian</th>
+                <th>Số tiền</th>
+                <th>Trạng thái</th>
 
-            @foreach (var order in Model)
+
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.Count > 0)
             {
 
-                <tr class="table-row" data-href="/Admin/GetOrder/@order.Order.Id" onclick="redirectToHref(this);">
 
-                   <td>@order.User.NameUser</td>
-                                <td>@order.Order.OrderDate.ToString("dddd, dd MMMM yyyy")</td>
-                    <td>@order.Order.FullPrice &#8381;</td>
+                @foreach (var order in Model)
+                {
+
+                    <tr class="table-row" data-href="/Admin/GetOrder/@order.Order.Id" onclick="redirectToHref(this);">
+
+                        <td>@order.User.NameUser</td>
+                        <td>@order.Order.OrderDate.ToString("dddd, dd MMMM yyyy")</td>
+                        <td>@order.Order.FullPrice &#8381;</td>
 
 
-                                @if (@order.Order.Status == 1)
-                                {
-                                    <td>đã thanh toán</td>
-                                }
-                                @if (@order.Order.Status == 2)
-                                {
-                                    <td>Ship cod</td>
-                                }
-                                @if (@order.Order.Status == 0)
-                                {
-                                    <td>chưa thanh toán</td>
-                                }
+                        @if (@order.Order.Status == 1)
+                        {
+                            <td>đã thanh toán</td>
+                        }
+                        @if (@order.Order.Status == 2)
+                        {
+                            <td>Ship cod</td>
+                        }
+                        @if (@order.Order.Status == 0)
+                        {
+                            <td>chưa thanh toán</td>
+                        }
 
-                 
 
-                </tr>
+
+                    </tr>
+                }
             }
-        }
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    <script>
-        function redirectToHref(row) {
-            var href = row.getAttribute("data-href");
-            if (href) {
-                window.location.href = href;
-            }
-        }
-    </script>
+        </tbody>
+    </table>
 </div>
+<script>
+    function redirectToHref(row) {
+        var href = row.getAttribute("data-href");
+        if (href) {
+            window.location.href = href;
+        }
+    }
+</script>

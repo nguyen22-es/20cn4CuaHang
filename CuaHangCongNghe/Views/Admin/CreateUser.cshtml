@@ -1,18 +1,10 @@
 ﻿@model CuaHangCongNghe.Models.RegisterViewModel
 
+@{
+    Layout = "LayoutAdmin";
+}
 
-
-
-<div class="row">
-    <div class="col-md-3">
-        <div class="list-group my-4">
-            <a asp-action="GetOrders" class="list-group-item list-group-item-action ">Đơn hàng</a>
-            <a asp-action="GetUsers" class="list-group-item list-group-item-action active">Người dùng</a>
-            <a asp-action="GetRoles" class="list-group-item list-group-item-action ">Vai trò</a>
-            <a asp-action="AddProduct" class="list-group-item list-group-item-action ">Thêm sản phẩm</a>
-        </div>
-    </div>
-    <div class="col-md-9 my-4">
+    <div class="col-md-8">
         <div class="card">
             <div class="card-body">
                 <div class="row">
@@ -28,7 +20,7 @@
                             <div class="form-group row">
                                 <label asp-for="nameLogin" class="col-4 col-form-label">Tên đăng nhập</label>
                                 <div class="col-8">
-                                    <input asp-for="nameLogin" class="form-control here" type="text" required>
+                                    <input asp-for="nameLogin"  class="form-control here" type="text" required>
                                     <span asp-validation-for="nameLogin" class="sr-only"></span>
                                 </div>
                             </div>
@@ -57,4 +49,3 @@
             </div>
         </div>
     </div>
-</div>

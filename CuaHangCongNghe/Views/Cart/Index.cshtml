@@ -8,7 +8,7 @@
                 <div class="py-4 text-center">
                     <h2><b>Rổ hàng</b></h2>
                     <p class="text-center font-weight-light">
-                        Số lượng hàng hóa trong giỏ hàng <i class="font-weight-bold text-info">@Model.FullAmount</i>
+                        <i class="font-weight-bold text-info"> Số lượng hàng hóa trong giỏ hàng:@Model.FullAmount</i>
                     </p>
                 </div>
                 <table class="table table-condensed table-responsive">
@@ -34,7 +34,7 @@
                                         </div>
                                         <div class="col-md-9 text-left mt-sm-2">
                                             <a class="text-info" asp-controller="Product" asp-action="Index" asp-route-id="@item.Product.Id"><h4>@item.Product.Name</h4></a>
-                                            <p class="font-weight-light">Brand &amp; Name</p>
+                                            <p class="font-weight-light"></p>
                                         </div>
                                     </div>
                                 </td>
@@ -42,14 +42,14 @@
                                 <td>
                                     <input type="hidden" name="@("Items[" + i + "].Key")" value="@item.Id" />
                                     <input type="number" min="1" max="@item.Product.Stockquantity" class="form-control text-center" name="@("Items[" + i + "].Value")" value="@item.quantity">
-                                    <p class="text-center"><small>@item.Product.Price &#8381;/VNĐ</small></p>
+                                    <p class="text-center"><small><h6>@item.Product.Price &#8381;/VNĐ</h6></small></p>
                                 </td>
                                 <td class="actions">
                                     <div class="text-right">
-                                        <button class="btn btn-white border-secondary bg-white btn-md mb-2" asp-action="Update">
+                                        <button class="form-control" asp-action="Update">
                                             <i class="bi bi-arrow-repeat"></i>
                                         </button>
-                                        <a class="btn btn-white border-secondary bg-white btn-md mb-2" asp-action="DeleteItem" asp-route-itemId="@item.Id" role="button"><i class="bi bi-trash"></i></a>
+                                        <a class="btn  border-secondary btn-md mb-2" asp-action="DeleteItem" asp-route-itemId="@item.Id" role="button"><i class="bi bi-trash"></i></a>
                                     </div>
                                 </td>
                             </tr>

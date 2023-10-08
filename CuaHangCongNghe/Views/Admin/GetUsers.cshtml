@@ -1,65 +1,53 @@
 ﻿@using static System.Runtime.InteropServices.JavaScript.JSType;
 @model List<CuaHangCongNghe.Repository.ApplicationUser>
+@{
+    Layout = "LayoutAdmin";
+}
+    <div class="col-md-8">
+        <div class="card card-stats" style="height:120px;width:200px;">
 
-<div class="row">
-    <div class="col-md-3">
-        <div class="list-group my-4">
-            <a asp-action="GetOrders" class="list-group-item list-group-item-action ">Đơn hàng</a>
-            <a asp-action="GetUsers" class="list-group-item list-group-item-action active">Người dùng</a>
-            <a asp-action="GetRoles" class="list-group-item list-group-item-action ">Vai trò</a>
-            <a asp-action="AddProduct" class="list-group-item list-group-item-action ">Thêm sản phẩm</a>
-        </div>
-    </div>
-    <div class="col-md-9 my-4">
-        <div class="card">
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h4>Danh sách khách hàng </h4>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12 table-responsive">
-                        <table class="table table-hover table-sm">
-                            <thead>
-                                <tr>
-                                    <th>Email</th>
-                                    <th>Tên khách hàng</th>
-                                    <th>Địa chỉ</th>
-                                    <th>Số điện thoại</th>
-                                    <th>ngày đăng ký</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                @for (int i = Model.Count - 1; i >= 0; i--)
-                                {
-                                    var user = Model[i];
-                                    <tr class="table-row" data-href="/Admin/GetUser/@user.Id" onclick="redirectToHref(this);">
-                                        <td>@user.Email</td>
-                                        <td>@user.UserName</td>
-                                        <td>@user.Address</td>
-                                        <td>@user.PhoneNumber</td>
-                                        <td>@user.DateTime</td>
-                                    </tr>
-                                }
-                            </tbody>
-                        </table>
-                        <div class="text-right">
-                            <a class="btn btn-info" asp-action="CreateUser" role="button">Thêm khách hàng mới</a>
-                        </div>
-                    </div>
-                </div>
+            <div class="card-content">
+                <p class="category"><strong>số lượng khách hàng</strong></p>
+                <h3 class="card-title">@Model.Count</h3>
             </div>
         </div>
-    </div>
-
-
-    <script>
-        function redirectToHref(row) {
-            var href = row.getAttribute("data-href");
-            if (href) {
-                window.location.href = href;
+    <h4>Danh sách khách hàng </h4>
+    <table class="table table-success table-striped">
+        <thead>
+            <tr>
+                <th>Email</th>
+                <th>Tên khách hàng</th>
+                <th>Địa chỉ</th>
+                <th>Số điện thoại</th>
+                <th>ngày đăng ký</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (int i = Model.Count - 1; i >= 0; i--)
+            {
+                var user = Model[i];
+                <tr class="table-row" data-href="/Admin/GetUser/@user.Id" onclick="redirectToHref(this);">
+                    <td>@user.Email</td>
+                    <td>@user.UserName</td>
+                    <td>@user.Address</td>
+                    <td>@user.PhoneNumber</td>
+                    <td>@user.DateTime.ToString("MM/dd/yyyy")</td>
+                </tr>
             }
-        }
-    </script>
+        </tbody>
+    </table>
+    <div class="text-right">
+        <a class="btn btn-info" asp-action="CreateUser" role="button">Thêm khách hàng mới</a>
+    </div>
 </div>
+
+
+
+<script>
+    function redirectToHref(row) {
+        var href = row.getAttribute("data-href");
+        if (href) {
+            window.location.href = href;
+        }
+    }
+</script>

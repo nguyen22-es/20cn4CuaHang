@@ -55,11 +55,11 @@
 
                             <div class="content">
                                 <a asp-controller="Product" asp-route-id="@product.Id"><img  src="@Url.Content(product.ImageUrl)" alt="hình ảnh sản phẩm"></a>
-                                <a class="b" asp-controller="Product" asp-route-id="@product.Id">@product.Name</a>
-                                <h6>giá:@product.Price &#8381;</h6>
+                                <a class="b" asp-controller="Product" asp-route-id="@product.Id"></a><h3>@product.Name</h3>
+                                <h6>giá:@product.Price VNĐ;</h6>
                                 <p>Số lượng:@product.Stockquantity</p>
 
-                                <a class="buy" asp-controller="Cart" asp-action="Add" asp-route-id="@product.Id" role="button">ADD TO CART </a>
+                                <a asp-controller="Cart" asp-action="Add" asp-route-id="@product.Id" role="button"></a><h3>ADD TO CART </h3>
                             </div>
 
                         }
