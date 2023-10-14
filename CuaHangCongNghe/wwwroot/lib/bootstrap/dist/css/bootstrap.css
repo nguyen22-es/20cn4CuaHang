@@ -547,6 +547,7 @@ pre code {
 
 .container {
     width: 100%;
+    justify-content: center;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
@@ -699,9 +700,10 @@ pre code {
 }
 
 .col-12 {
-  -ms-flex: 0 0 100%;
-  flex: 0 0 100%;
-  max-width: 100%;
+    
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
 }
 
 .order-first {

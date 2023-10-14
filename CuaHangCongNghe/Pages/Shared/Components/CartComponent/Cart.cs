@@ -9,11 +9,11 @@ namespace CuaHangCongNghe.Pages.Shared.Components.BasketComponent // cho phép t
 {
     public class Cart : ViewComponent
     {
-        private readonly oderItemService  oderItemService;
+        private readonly OrderItemService  oderItemService;
         private readonly SignInManager<ApplicationUser> signInManager;
         private readonly UserManager<ApplicationUser> userManager;
 
-        public Cart(oderItemService basketService, SignInManager<ApplicationUser> signInManager, UserManager<ApplicationUser> userManager)
+        public Cart(OrderItemService basketService, SignInManager<ApplicationUser> signInManager, UserManager<ApplicationUser> userManager)
         {
             oderItemService = basketService;
             this.signInManager = signInManager;

@@ -19,13 +19,13 @@ namespace Shop.Controllers
         private readonly UserService  userService;
         private readonly ProductService productService;
         private readonly UserManager<ApplicationUser> userManager;
-        private readonly oderItemService  oderItemService;
+        private readonly OrderItemService  oderItemService;
         private readonly IPaymentService paymentService;
         private readonly IConfiguration _configuration;
         private static readonly ILog log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
         private static UserOrderViewModel userOrderViewModel;
-        public CheckOutController(IPaymentService paymentService,oderItemService oderItemService, UserService userService, ProductService productService, UserManager<ApplicationUser> userManager, IConfiguration configuration)
+        public CheckOutController(IPaymentService paymentService,OrderItemService oderItemService, UserService userService, ProductService productService, UserManager<ApplicationUser> userManager, IConfiguration configuration)
         {
             this.oderItemService = oderItemService;
             this.userManager = userManager;
@@ -84,7 +84,7 @@ namespace Shop.Controllers
         {
            
                 var user = userService.GetUser(userManager.GetUserId(User));
-            // PaymentService paymentService =  new PaymentService(_configuration,oderItemService);
+            // PaymentService paymentService =  new PaymentService(_configuration,OrderItemService);
                 var userOrderView = new UserOrderViewModel();
                 ProductViewModel product;
 

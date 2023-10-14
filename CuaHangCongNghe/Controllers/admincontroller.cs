@@ -7,19 +7,20 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Shop.Extensions;
 
+
 namespace CuaHangCongNghe.Controllers
 {
   //  [Authorize = "AdminAccess"]
     public class AdminController : Controller
     {
         private readonly ProductService productService;
-        private readonly oderItemService oderItemService;
+        private readonly OrderItemService oderItemService;
         private readonly UserManager<ApplicationUser> userManager;
         private readonly RoleManager<IdentityRole> roleManager;
         private readonly UserService userService;
       
 
-        public AdminController(ProductService productService, oderItemService oderItemService, UserManager<ApplicationUser> userManager, RoleManager<IdentityRole> roleManager, UserService userService)
+        public AdminController(ProductService productService, OrderItemService oderItemService, UserManager<ApplicationUser> userManager, RoleManager<IdentityRole> roleManager, UserService userService)
         {
             this.productService = productService;
             this.oderItemService = oderItemService;
@@ -27,7 +28,30 @@ namespace CuaHangCongNghe.Controllers
             this.roleManager = roleManager;
             this.userService = userService;
         }
+        [HttpGet]
+        public IActionResult statistical()
+        {
+            var statistical = new statistical();
 
+            var allOrderPay = oderItemService.GetAllOrdernPay();
+
+            foreach(var i in allOrderPay)
+            {
+                if (statistical.Sta.ContainsKey(i.OrderDate.ToString("dd")))
+                {
+                    statistical.Sta[i.OrderDate.ToString("dd")] += i.FullPrice; 
+            
+                }
+                else
+                {
+                   
+                    statistical.Sta.Add(i.OrderDate.ToString("dd"), i.FullPrice);
+                }
+                     
+            }
+            return Json(statistical);
+
+        }
         public async Task<IActionResult> GetOrders()
         {
             var ListUserViewModelOrder = new List<UserOrderViewModel>();
@@ -268,6 +292,30 @@ namespace CuaHangCongNghe.Controllers
             return NotFound();
         }
 
+        public IActionResult EditProduct(int Id)
+        {
+            var Product = productService.GetProduct(Id);
+            return View(Product);
+        }
+        [HttpPost]
+        public IActionResult EditProducts(ProductViewModel productViewModel)
+        {
+
+            productService.Update(productViewModel);
+
+
+
+            return RedirectToAction("AllProduct");
+        }
+
+        public IActionResult AllProduct()
+        {
+
+         var allProduct =   productService.GetAllProducts();
+
+
+         return View(allProduct);
+        }
         public IActionResult AddProduct() => View();
 
         [HttpPost]

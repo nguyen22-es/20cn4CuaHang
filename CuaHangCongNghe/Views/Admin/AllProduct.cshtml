@@ -1,0 +1,46 @@
+﻿@model List<CuaHangCongNghe.Models.ProductViewModel>
+@{
+    Layout = "LayoutAdmin";
+}
+
+
+<div class="col-md-8" style="margin-top:150px">
+
+
+
+
+
+<table class="table table-striped-columns" style="margin-top:100px;">
+    <thead>
+        <tr>
+            <th scope="col">STT</th>
+            <th scope="col">Tên sản phẩm</th>
+            <th scope="col">số lượng</th>
+            <th scope="col">giá</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (int i = Model.Count - 1; i >= 0; i--)
+        {
+            var item = Model[i];
+                <tr class="table-row" data-href="/Admin/EditProduct/@item.Id" onclick="redirectToHref(this);">
+                <td>@i</td>
+                <td>@item.Name</td>
+                <td>@item.Stockquantity</td>
+                <td>@item.Price</td>
+            </tr>
+        }
+       
+      
+    </tbody>
+</table>
+</div>
+<script>
+    function redirectToHref(row) {
+        var href = row.getAttribute("data-href");
+        if (href) {
+            window.location.href = href;
+        }
+    }
+</script>
+

@@ -7,7 +7,7 @@ namespace CuaHangCongNghe.Models.Shop
     {
         public Product()
         {
-            Orderitems = new HashSet<Orderitem>();
+            OrderItems = new HashSet<OrderItem>();
         }
 
         public int Id { get; set; }
@@ -18,6 +18,6 @@ namespace CuaHangCongNghe.Models.Shop
         public int Stockquantity { get; set; }
 
 
-        public virtual ICollection<Orderitem> Orderitems { get; set; }
+        public virtual ICollection<OrderItem> OrderItems { get; set; }
     }
 }

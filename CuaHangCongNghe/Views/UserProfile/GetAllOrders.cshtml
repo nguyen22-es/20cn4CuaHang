@@ -1,54 +1,141 @@
-﻿@model CuaHangCongNghe.Models.UserOrdersViewModel
+﻿@using CuaHangCongNghe.Repository;
+@using Microsoft.AspNetCore.Identity;
+@model CuaHangCongNghe.Models.UserOrdersViewModel
+@inject UserManager<ApplicationUser> userManager;
+<link rel="stylesheet" href="~/css/pro.css">
+<div class="row g-0 text-center" style="margin-top:100px;">
+    <div class="col-6 col-md-4">
+        <div class="breadcrumb">
+            <a>@User.Identity.Name</a>
+        </div>
+        <div class="ku14+s">
+            <div class="Amwkjq">
+                <div class="rhmIbk">
+                    <div class="stardust-dropdown">
+                    </div>
+                    <div class="stardust-dropdown ">
+                        <div class="stardust-dropdown__item-header">
+                            <a asp-action="Index" class="+1U02e">
+                                <div class="bfikuD">
+                                    <img style="margin-top:100px;"
+                                         src="https://down-vn.img.susercontent.com/file/ba61750a46794d8847c3f463c5e71cc4">
+                                </div>
+                                <div class="DlL0zX"><span class="adF7Xs">Tài khoản của tôi</span></div>
+                            </a>
+                        </div>
+                        <div class="stardust-dropdown__item-body--open" style="opacity: 1;">
+                            <div class="Yu7gVR">
+                                <a asp-action="Index" class="FEE-3D">
+                                    <span class="qyt-aY">
+                                        Hồ
+                                        sơ
+                                    </span>
+                                </a>
+                                <a asp-action="Edit" asp-route-id="@userManager.GetUserId(User)" class="FEE-3D">
+                                    <span class="qyt-aY">
+                                        Thay đổi thông tin cá nhân
+                                    </span>
+                                </a>
+                                <a asp-action="ChangePassword" asp-route-id="@userManager.GetUserId(User)"
+                                   class="FEE-3D">
+                                    <span class="qyt-aY">
+                                        Đổi mật
+                                        khẩu
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stardust-dropdown">
+                        <div class="stardust-dropdown__item-header">
+                            <a asp-action="GetAllOrders" class="+1U02e">
+                                <div class="bfikuD">
+                                    <img style="margin-top:100px;"
+                                         src="https://down-vn.img.susercontent.com/file/f0049e9df4e536bc3e7f140d071e9078">
+                                </div>
+                                <div class="DlL0zX"><span class="adF7Xs">Đơn Mua</span></div>
+                            </a>
+                        </div>
+                        <div class="stardust-dropdown__item-body" style="opacity: 0;">
+                            <div class="Yu7gVR"></div>
+                        </div>
+                    </div>
 
-<div class="row">
-    <div class="col-md-3 my-4">
-        <div class="list-group ">
-            <a asp-action="Index" class="list-group-item list-group-item-action">thông tin người dùng</a>
-            <a asp-action="Edit" asp-route-id="@Model.User.Id" class="list-group-item list-group-item-action">thay đổi thông tin cá nhân</a>
-            <a asp-action="ChangePassword" asp-route-id="@Model.User.Id" class="list-group-item list-group-item-action">thay đổi mật khẩu</a>
-            <a asp-controller="Cart" asp-action="Index" class="list-group-item list-group-item-action">Thông tin đơn hàng</a>
-            <a asp-action="GetAllOrders" class="list-group-item list-group-item-action">đơn hàng</a>
-            <a class="list-group-item list-group-item-action">
-                <form method="post" asp-controller="Account" asp-action="Logout">
-                    <input type="submit" value="Đăng xuất" style="background:none;border:none;padding:0">
-                </form>
-            </a>
+                </div>
+            </div>
         </div>
     </div>
- 
-
-    <h2>Danh sách đơn hàng</h2>
-    
-    @if (Model.Orders.Count > 0)
-    {
-    
-        
-                @foreach (var order in Model.Orders)
-                {
-            @if (@order.Status == 1)
-            {
-                <td>đã thanh toán</td>
-            }
-            @if (@order.Status == 2)
-            {
-                <td>Ship cod</td>
-            }
-            @if (@order.Status == 0)
-            {
-                <td>chưa thanh toán</td>
-            }
-
-                                 
+    <div class="col-sm-6 col-md-8">
+        <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist" style="flex-wrap: nowrap;">
+                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                        type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+                    Tất cả
+                </button>
+                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                        type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+                    Chờ thanh toán
+                </button>
+                <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+                        type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
+                    Ship cod
+                </button>
+                <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+                        type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
+                    Đã thanh toán
+                </button>
+                <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+                        type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
+                    Đang giao
+                </button>
                
-                    foreach(var item in order.ItemViewModels)
-                    {
-                        <li>
-                            <strong>tên sản phẩm:</strong> @item.Product.Name<br />
-                            <strong>ID Người dùng:</strong> @item.quantity<br />
-                            <strong>Số tiền phải thanh toán cho từng item:</strong> @item.Price<br />
-                        </li>
-                    }
-                    <strong>Tổng số tiền phải thanh toán:</strong> @order.FullPrice <br />
+            </div>
+        </nav>
+        @foreach (var order in Model.Orders)
+        {
+
+            <hr>
+            <div class="shop shop-cursor">
+                <div class="shop-header border-bottom">
+
+                    <div class="shop-right">
+                        <div class="shop-right-status">@order.NameStatus</div>
+                        <div class="shop-right-action"></div>
+                    </div>
+                </div>
+
+
+                @foreach (var item in order.ItemViewModels)
+                {
+                    <a asp-action="GetItemOrder" asp-route-id="@order.Id" style=" text-decoration: none;">
+                        <div class="card border-0">
+
+                            <img src="@item.Product.ImageUrl" style="width: 80px; height: 80px;" />
+
+                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+
+
+                            <div class="card-body" style="display:flex;">
+                                <div class="item-main item-main-mini">
+                                    <div>
+                                        <div class="text title item-title" data-spm="details_title">
+                                            @item.Product.Name
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-status"><div class="item-price text bold">₫ @item.Product.Price</div></div>
+
+                                <div class="item-quantity" style="margin-left:100px"><span><span class="text desc info multiply">Số lượng: </span><span class="text">&nbsp;@item.quantity</span></span></div>
+                              
+                            </div>
+
+                        </div>
+                    </a>
                 }
-    }
+
+            </div>
+
+
+        }
+    </div>
 </div>

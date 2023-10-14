@@ -9,6 +9,7 @@ namespace CuaHangCongNghe.Models
     public int Id { get; set; }
     public string UserId { get; set; }
     public int Status { get; set; }
+    public string NameStatus { get; set; }
     public DateTime OrderDate { get; set; }
     
 

@@ -1,6 +1,7 @@
 ﻿using CuaHangCongNghe.Models;
 using CuaHangCongNghe.Repository;
 using CuaHangCongNghe.Service;
+using CuaHangCongNghe.viewModel;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Shop.Extensions;
@@ -13,11 +14,11 @@ namespace CuaHangCongNghe.Controllers
     {
     
         private readonly UserManager<ApplicationUser> userManager;
-        private readonly oderItemService  oderItemService;
-        public UserProfileController(UserManager<ApplicationUser> userManager, oderItemService oderItemService)
+        private readonly OrderItemService  OrderItemService;
+        public UserProfileController(UserManager<ApplicationUser> userManager, OrderItemService OrderItemService)
         {
             this.userManager = userManager;
-            this.oderItemService = oderItemService;
+            this.OrderItemService = OrderItemService;
            
         }
 
@@ -87,9 +88,7 @@ namespace CuaHangCongNghe.Controllers
         [HttpPost]
         public async Task<IActionResult> ChangePassword(UserViewModel model)
         {
-            string filePath = @"D:\20paymentUrl.txt";
-            string userString = $"Name: {model.NameUser}, Email: {model.EmailUser}, Address: {model.AddressUser}, Phone: {model.PhoneUser},{model.NewPassword},{model.Password},{model.PasswordConfirm},id:{model.Id}";
-            System.IO.File.WriteAllText(filePath, userString);
+            
             if (ModelState.IsValid)
             {                             
                 var user = await userManager.FindByIdAsync(model.Id);
@@ -123,7 +122,7 @@ namespace CuaHangCongNghe.Controllers
             var Orders = new UserOrdersViewModel();
             if(user != null)
             {
-                Orders.Orders = oderItemService.GetCurrentAllOrderUser(user.Id);
+                Orders.Orders = OrderItemService.GetCurrentAllOrderUser(user.Id);
                Orders.User = model;
                
             }
@@ -131,9 +130,18 @@ namespace CuaHangCongNghe.Controllers
             return View(Orders);
         }
 
-        public async Task<ActionResult> GetItemOreder(int id)
+        public async Task<ActionResult> GetItemOrder(int id)
         {
-            return View(oderItemService.GetOrderItem(id));
+            var user = await userManager.FindByIdAsync(userManager.GetUserId(User));
+            var model = new UserViewModel { Id = user.Id, EmailUser = user.Email, NameUser = user.UserName, PhoneUser = user.PhoneNumber, RegistrationDate = user.DateTime, AddressUser = user.Address };
+            var items = new UserOrderViewModel();
+            var order = OrderItemService.GetOrder(id);
+
+            items.Order = order;
+            items.User = model;
+
+
+            return View(items);
         }
     }
 }

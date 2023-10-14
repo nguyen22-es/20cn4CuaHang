@@ -7,7 +7,7 @@ namespace CuaHangCongNghe.Models.Shop
     {
         public Order()
         {
-            Orderitems = new HashSet<Orderitem>();
+            OrderItems = new HashSet<OrderItem>();
         }
 
         public int OrderId { get; set; }
@@ -15,8 +15,8 @@ namespace CuaHangCongNghe.Models.Shop
         public int Status { get; set; }
         public string UserId { get; set; }
 
-        public virtual Status? StatusNavigation { get; set; }
-        public virtual User? User { get; set; }
-        public virtual ICollection<Orderitem> Orderitems { get; set; }
+        public virtual Status StatusNavigation { get; set; }
+        public virtual User User { get; set; }
+        public virtual ICollection<OrderItem> OrderItems { get; set; }
     }
 }

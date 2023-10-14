@@ -29,6 +29,14 @@
       "PackagePath": "staticwebassets\\css\\admin.css"
     },
     {
+      "Id": "C:\\Users\\ztzkk\\OneDrive - Trường Đại Học Kiến Trúc Hà Nội\\Documents\\DoAn20Cn4\\20cn4CuaHang_bancuoidapix\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\item.css",
+      "PackagePath": "staticwebassets\\css\\item.css"
+    },
+    {
+      "Id": "C:\\Users\\ztzkk\\OneDrive - Trường Đại Học Kiến Trúc Hà Nội\\Documents\\DoAn20Cn4\\20cn4CuaHang_bancuoidapix\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\pro.css",
+      "PackagePath": "staticwebassets\\css\\pro.css"
+    },
+    {
       "Id": "C:\\Users\\ztzkk\\OneDrive - Trường Đại Học Kiến Trúc Hà Nội\\Documents\\DoAn20Cn4\\20cn4CuaHang_bancuoidapix\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\sty.css",
       "PackagePath": "staticwebassets\\css\\sty.css"
     },
@@ -63,6 +71,10 @@
     {
       "Id": "C:\\Users\\ztzkk\\OneDrive - Trường Đại Học Kiến Trúc Hà Nội\\Documents\\DoAn20Cn4\\20cn4CuaHang_bancuoidapix\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\—Pngtree—cool new mobile phone promotion_1006678.jpg",
       "PackagePath": "staticwebassets\\images\\—Pngtree—cool new mobile phone promotion_1006678.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ztzkk\\OneDrive - Trường Đại Học Kiến Trúc Hà Nội\\Documents\\DoAn20Cn4\\20cn4CuaHang_bancuoidapix\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js\\chart.js",
+      "PackagePath": "staticwebassets\\js\\chart.js"
     },
     {
       "Id": "C:\\Users\\ztzkk\\OneDrive - Trường Đại Học Kiến Trúc Hà Nội\\Documents\\DoAn20Cn4\\20cn4CuaHang_bancuoidapix\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\LICENSE",

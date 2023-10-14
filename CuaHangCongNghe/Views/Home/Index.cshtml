@@ -2,7 +2,8 @@
 
 <div class="row">
     <div class="col-12">
-        <div class="d-flex justify-content-center my-4">
+
+        <div class="d-flex justify-content-center my-4" >
             <form method="get" asp-controller="Home" asp-action="Search" class="input-group col-10">
                 <input type="text" name="name" class="form-control" placeholder="tìm kiếm" aria-label="Recipient's username" aria-describedby="basic-addon2">
                 <div class="input-group-append">
@@ -17,35 +18,36 @@
     </div>
 </div>
 <div class="row">
+<div class="row">
     <div class="col-12">
-        <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active">
-                    <img src="/images/18001771.jpg" alt="First slide">
+            <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <img src="/images/18001771.jpg" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/images/—Pngtree—cool new mobile phone promotion_1006678.jpg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/images/18001771.jpg" alt="Third slide">
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <img   src="/images/—Pngtree—cool new mobile phone promotion_1006678.jpg" alt="Second slide">
-                </div>
-                <div class="carousel-item">
-                    <img  src="/images/18001771.jpg" alt="Third slide">
-                </div>
+                <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
-            <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
         <div class="row">
-            <body>
+       
                 <div class="gallery" id="gallery">
                     @foreach (var product in Model.ProductsOnCurrentPage)
                     {
@@ -54,21 +56,23 @@
                           
 
                             <div class="content">
-                                <a asp-controller="Product" asp-route-id="@product.Id"><img  src="@Url.Content(product.ImageUrl)" alt="hình ảnh sản phẩm"></a>
-                                <a class="b" asp-controller="Product" asp-route-id="@product.Id"></a><h3>@product.Name</h3>
-                                <h6>giá:@product.Price VNĐ;</h6>
+                                <a asp-controller="Product" asp-route-id="@product.Id"><img style="margin-top:10px"  src="@Url.Content(product.ImageUrl)" alt="hình ảnh sản phẩm"></a>
+                            <a class="b" asp-controller="Product" asp-route-id="@product.Id"><h3>@product.Name</h3></a>
+                                <h6 style="color:black">giá:@product.Price VNĐ</h6>
                                 <p>Số lượng:@product.Stockquantity</p>
 
-                                <a asp-controller="Cart" asp-action="Add" asp-route-id="@product.Id" role="button"></a><h3>ADD TO CART </h3>
+                            <a asp-controller="Cart" asp-action="Add" style=" text-decoration: none;" asp-route-id="@product.Id" role="button"><h3>ADD TO CART </h3></a>
                             </div>
 
                         }
                     }
                 </div>
-            </body>
+          
         </div>
     </div>
 </div>
+    </div>
+ 
 <nav>
     <ul class="pagination justify-content-center mt-4">
         @if (Model.HasPreviousPage)

@@ -10,7 +10,9 @@
 label.col-4.col-form-label {
     width: 290px;
 }
-
+h3 {
+    text-decoration: none;
+}
 .card {
     margin-top: 50px;
     margin-bottom: 40px;

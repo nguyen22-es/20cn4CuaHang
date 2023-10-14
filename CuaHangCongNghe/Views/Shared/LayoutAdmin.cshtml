@@ -5,23 +5,25 @@
     @await Html.PartialAsync("MetatagsPartial")
     @await Html.PartialAsync("CssPartial")
 </head>
-<body data-bs-theme="light">
+<body data-bs-theme="light" style="" >
     @await Html.PartialAsync("HeaderPartial")
     <link rel="stylesheet" href="/css/admin.css">
     <div class="container">
-        <main role="main" class="pb-3">
-        <div class="row">
+        <main role="main" class="pb-3"  >
+            <div class="row" >
             <div class="col-md-4">
         @await Html.PartialAsync("adminDashboard")
-        </div>            
+        </div>
+                <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                <script src="/js/chart.js" type="text/javascript"></script>
             @RenderBody()
-            </div>
+        
+        </div>
         </main>
     </div>
     @await Html.PartialAsync("FooterPartial")
     @await Html.PartialAsync("ScriptsPartial")
     @RenderSection("Scripts", required: false)
-
 </body>
 </html>
 

@@ -1,56 +1,206 @@
 ﻿@using CuaHangCongNghe.Repository;
 @using Microsoft.AspNetCore.Identity;
-@model List<CuaHangCongNghe.Models.OrderViewModel>
+@model CuaHangCongNghe.viewModel.UserOrderViewModel
+@inject UserManager<ApplicationUser> userManager
+<link rel="stylesheet" href="~/css/pro.css">
+<link rel="stylesheet" href="~/css/item.css">
+<div class="row g-0 text-center" style="margin-top:100px;">
+    <div class="col-6 col-md-4">
+        <div class="breadcrumb">
+            <a>@User.Identity.Name</a>
+        </div>
+        <div class="ku14+s">
+            <div class="Amwkjq">
+                <div class="rhmIbk">
+                    <div class="stardust-dropdown">
+                    </div>
+                    <div class="stardust-dropdown ">
+                        <div class="stardust-dropdown__item-header">
+                            <a asp-action="Index" class="+1U02e">
+                                <div class="bfikuD">
+                                    <img style="margin-top:100px;"
+                                         src="https://down-vn.img.susercontent.com/file/ba61750a46794d8847c3f463c5e71cc4">
+                                </div>
+                                <div class="DlL0zX"><span class="adF7Xs">Tài khoản của tôi</span></div>
+                            </a>
+                        </div>
+                        <div class="stardust-dropdown__item-body--open" style="opacity: 1;">
+                            <div class="Yu7gVR">
+                                <a asp-action="Index" class="FEE-3D">
+                                    <span class="qyt-aY">
+                                        Hồ
+                                        sơ
+                                    </span>
+                                </a>
+                                <a asp-action="Edit" asp-route-id="@userManager.GetUserId(User)" class="FEE-3D">
+                                    <span class="qyt-aY">
+                                        Thay đổi thông tin cá nhân
+                                    </span>
+                                </a>
+                                <a asp-action="ChangePassword" asp-route-id="@userManager.GetUserId(User)"
+                                   class="FEE-3D">
+                                    <span class="qyt-aY">
+                                        Đổi mật
+                                        khẩu
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stardust-dropdown">
+                        <div class="stardust-dropdown__item-header">
+                            <a asp-action="GetAllOrders" class="+1U02e">
+                                <div class="bfikuD">
+                                    <img style="margin-top:100px;"
+                                         src="https://down-vn.img.susercontent.com/file/f0049e9df4e536bc3e7f140d071e9078">
+                                </div>
+                                <div class="DlL0zX"><span class="adF7Xs">Đơn Mua</span></div>
+                            </a>
+                        </div>
+                        <div class="stardust-dropdown__item-body" style="opacity: 0;">
+                            <div class="Yu7gVR"></div>
+                        </div>
+                    </div>
 
-@inject UserManager<ApplicationUser> UserManager
-<div class="row">
-    <div class="col-md-3 my-4">
-        <div class="list-group ">
-            <a asp-action="Index" class="list-group-item list-group-item-action">thông tin người dùng</a>
-
-            @{
-                var user = await UserManager.GetUserAsync(User);
-                if (user != null)
-                {
-                    var userId = user.Id;
-                    <a asp-action="Edit" asp-route-id="@userId
-                    " class="list-group-item list-group-item-action">thay đổi thông tin cá nhân</a>
-                    <a asp-action="ChangePassword" asp-route-id="@userId" class="list-group-item list-group-item-action">thay đổi mật khẩu</a>
-                }
-
-            }
-
-            
-            <a asp-controller="Cart" asp-action="Index" class="list-group-item list-group-item-action">Thông tin đơn hàng</a>
-            <a asp-action="GetAllOrders" class="list-group-item list-group-item-action">đơn hàng</a>
-            <a class="list-group-item list-group-item-action">
-                <form method="post" asp-controller="Account" asp-action="Logout">
-                    <input type="submit" value="Đăng xuất" style="background:none;border:none;padding:0">
-                </form>
-            </a>
+                </div>
+            </div>
         </div>
     </div>
-<h2>Danh sách đơn hàng</h2>
+    <div class="col-sm-6 col-md-8">
+        <div class="breadcrumb">
+            <a>Chi tiết đơn hàng</a>
+        </div>
+        <div class="--t06n">
+            <main class="Ajo2nP">
+                <section>
+                    <h2 class="a11y-hidden"></h2>
+                </section>
+                <section style="
+    text-align: left;">
+                    <h2 class="a11y-hidden"></h2>
+                    <div>
+                        <div class="cmp831">
+                            <div class="DM1xQK"></div>
+                        </div>
+                        <div class="mu8SJw">
+                            <div class="_0Ihttg">
+                                <div class="PW9gQm" tabindex="0">Địa chỉ nhận hàng</div>
+                                <div class="P9zS+I">
+                                </div>
+                            </div>
+                            <div class="wMj1t2">
+                                <div class="iWu+Gv">
+                                    <div class="KZmoHt" tabindex="0">@Model.User.NameUser</div>
+                                    <div class="AnJAa1">
+                                        <span tabindex="0">@Model.User.PhoneUser</span><br><span tabindex="0">
+                                            @Model.User.AddressUser
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section style="text-align: left;margin-bottom:40px">
+                    <h2 class="a11y-hidden"></h2>
+                    <div>
+                        <section>
+                            <h3 class="a11y-hidden"></h3>
+                            <div class="mbaGbp">
 
-@if (Model.Count > 0)
-{
+                                <div class="NuQDJM"></div>
+                                <div class="FbLutl">
+                                    <div>
+                                        @foreach (var item in Model.Order.ItemViewModels)
+                                        {
+                                            <section>
+                                                <a class="x7nENX" aria-label=""
+                                                   href="/Chuột-Fuhlen-G90-G90-ProX-Chính-Hãng-BH-3-năm-i.10657640.224022789">
+                                                    <div class="aybVBK">
+                                                        <img src="@item.Product.ImageUrl" class="rGP9Yd"
+                                                             alt="" tabindex="0">
+                                                        <div class="_7uZf6Q">
+                                                            <div>
+                                                                <div class="iJlxsT">
+                                                                    <span class="x5GTyN"
+                                                                          tabindex="0">@item.Product.Name</span>
+                                                                </div>
+                                                            </div>
+                                                            <div>
 
+                                                                <div class="_3F1-5M" tabindex="0">x @item.quantity</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="_9UJGhr" tabindex="0">
+                                                        <div class="rjqzk1">
+                                                            <span class="-x3Dqh">₫ @item.Price</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
 
-    @foreach (var order in Model)
-    {
-        <strong>trạng thái:</strong> @order.Status
-        <br />
+                                            </section>
+                                        }
+                                    </div>
+                                    <div class="Cde7Oe"></div>
+                                </div>
 
-
-        foreach (var item in order.ItemViewModels)
-        {
-            <li>
-                <strong>tên sản phẩm:</strong> @item.Product.Name<br />
-                <strong>ID Người dùng:</strong> @item.quantity<br />
-                <strong>Trạng thái:</strong> @item.Price<br />
-            </li>
-        }
-        <strong>Tổng số tiền phải thanh toán:</strong> @order.FullPrice
-        <br />
-    }
-}
+                                <div class="TokOv1 a59vwO">
+                                    <div class="_8kMYJ3 B6pCRN"><span>Thành tiền</span></div>
+                                    <div class="CxyZBG">
+                                        <div class="_8ZGgbl">₫@Model.Order.FullPrice</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ga0VXk">
+                                <div class="_4aGAAO">
+                                    <span>
+                                        Vui lòng thanh toán <span class="WAB0Vg">₫@Model.Order.FullPrice</span> khi
+                                        nhận
+                                        hàng.
+                                    </span>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+                <section style="text-align: left;margin-bottom:40px">
+                    <h2 class="a11y-hidden"></h2>
+                    <div class="TX9IwS">
+                        <div class="O2KPzo">
+                            <div class="mn7INg xFSVYg"> </div>
+                            <div class="mn7INg EfbgJE"> </div>
+                        </div>
+                        <div class="TokOv1">
+                            <div class="_8kMYJ3">
+                                <span>
+                                    <span class="JMmT2C">
+                                        <span class="qyvpC4">
+                                            <svg width="16"
+                                                 height="17" viewBox="0 0 253 263" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <title>Shopee Guarantee</title>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                      d="M126.5 0.389801C126.5 0.389801 82.61 27.8998 5.75 26.8598C5.08763 26.8507 4.43006 26.9733 3.81548 27.2205C3.20091 27.4677 2.64159 27.8346 2.17 28.2998C1.69998 28.7657 1.32713 29.3203 1.07307 29.9314C0.819019 30.5425 0.688805 31.198 0.689995 31.8598V106.97C0.687073 131.07 6.77532 154.78 18.3892 175.898C30.003 197.015 46.7657 214.855 67.12 227.76L118.47 260.28C120.872 261.802 123.657 262.61 126.5 262.61C129.343 262.61 132.128 261.802 134.53 260.28L185.88 227.73C206.234 214.825 222.997 196.985 234.611 175.868C246.225 154.75 252.313 131.04 252.31 106.94V31.8598C252.31 31.1973 252.178 30.5414 251.922 29.9303C251.667 29.3191 251.292 28.7649 250.82 28.2998C250.35 27.8358 249.792 27.4696 249.179 27.2225C248.566 26.9753 247.911 26.852 247.25 26.8598C170.39 27.8998 126.5 0.389801 126.5 0.389801Z"
+                                                      fill="#ee4d2d"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                      d="M207.7 149.66L119.61 107.03C116.386 105.472 113.914 102.697 112.736 99.3154C111.558 95.9342 111.772 92.2235 113.33 88.9998C114.888 85.7761 117.663 83.3034 121.044 82.1257C124.426 80.948 128.136 81.1617 131.36 82.7198L215.43 123.38C215.7 120.38 215.85 117.38 215.85 114.31V61.0298C215.848 60.5592 215.753 60.0936 215.57 59.6598C215.393 59.2232 215.128 58.8281 214.79 58.4998C214.457 58.1705 214.063 57.909 213.63 57.7298C213.194 57.5576 212.729 57.4727 212.26 57.4798C157.69 58.2298 126.5 38.6798 126.5 38.6798C126.5 38.6798 95.31 58.2298 40.71 57.4798C40.2401 57.4732 39.7735 57.5602 39.3376 57.7357C38.9017 57.9113 38.5051 58.1719 38.1709 58.5023C37.8367 58.8328 37.5717 59.2264 37.3913 59.6604C37.2108 60.0943 37.1186 60.5599 37.12 61.0298V108.03L118.84 147.57C121.591 148.902 123.808 151.128 125.129 153.884C126.45 156.64 126.797 159.762 126.113 162.741C125.429 165.72 123.755 168.378 121.363 170.282C118.972 172.185 116.006 173.221 112.95 173.22C110.919 173.221 108.915 172.76 107.09 171.87L40.24 139.48C46.6407 164.573 62.3785 186.277 84.24 200.16L124.49 225.7C125.061 226.053 125.719 226.24 126.39 226.24C127.061 226.24 127.719 226.053 128.29 225.7L168.57 200.16C187.187 188.399 201.464 170.892 209.24 150.29C208.715 150.11 208.2 149.9 207.7 149.66Z"
+                                                      fill="#fff"></path>
+                                            </svg>
+                                        </span>
+                                    </span><span class="_3Nh1BH">
+                                        Phương thức Thanh
+                                        toán
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="CxyZBG">
+                                <div>Thanh toán khi nhận hàng</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+</div>

@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
 using CuaHangCongNghe;
 using Microsoft.Extensions.Hosting;
-
+using System.ComponentModel;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -44,8 +44,8 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
 builder.Services.AddScoped<IPaymentService, PaymentService>();
 builder.Services.AddTransient<ProductService>();
 builder.Services.AddTransient<UserService>();
-builder.Services.AddTransient<oderItemService>();
-builder.Services.AddTransient<OderItemRepository, OderDbRepository>();
+builder.Services.AddTransient<OrderItemService>();
+builder.Services.AddTransient<OrderItemRepository, OderDbRepository>();
 builder.Services.AddTransient<ProductRepository, ProductDbRepository>();
 builder.Services.AddTransient<UserRepository, UserDbRepository>();
 builder.Services.AddScoped<RoleManager<IdentityRole>>();

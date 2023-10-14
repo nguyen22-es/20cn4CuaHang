@@ -1,6 +1,5 @@
 ﻿using CuaHangCongNghe.Models;
 using CuaHangCongNghe.Repository;
-using Microsoft.AspNetCore.Hosting;
 using Shop.Models;
 
 
@@ -9,12 +8,12 @@ namespace CuaHangCongNghe.Services
     public class ProductService
     {
         private readonly ProductRepository productRepository;
-        IWebHostEnvironment appEnvironment;
+       
 
         public ProductService(ProductRepository productRepository, IWebHostEnvironment appEnvironment)
         {
             this.productRepository = productRepository;
-            this.appEnvironment = appEnvironment;
+          
         }
 
         public List<ProductViewModel> GetAllProducts()
@@ -27,6 +26,10 @@ namespace CuaHangCongNghe.Services
                 productsViewModel.Add(productViewModel);
             }
             return productsViewModel;
+        }
+        public void Update(ProductViewModel productViewModel)
+        {
+           productRepository.Update(productViewModel.ToProduct());
         }
 
         public ProductViewModel GetProduct(int id)

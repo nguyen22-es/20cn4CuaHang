@@ -1,0 +1,47 @@
+﻿@model CuaHangCongNghe.Models.ProductViewModel
+
+@{
+    Layout = "LayoutAdmin";
+}
+
+<div class="col-md-8" style="margin-top:100px">
+    <div class="row">
+        <form  asp-action="EditProducts" method="post">
+            <input type="hidden" name="Id" value="@Model.Id" />
+
+            <div class="form-group">
+                <label for="Name">Tên sản phẩm:</label>
+                <input type="text" id="Name" name="Name" value="@Model.Name" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label for="Description">Mô tả:</label>
+                <textarea id="Description" name="Description" class="form-control">@Model.Description</textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="Price">Giá:</label>
+                <input type="number" id="Price" name="Price" value="@Model.Price" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label for="Stockquantity">Số lượng tồn kho:</label>
+                <input type="number" id="Stockquantity" name="Stockquantity" value="@Model.Stockquantity" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label for="File">Hình ảnh:</label>
+                <input type="file" id="File" name="File" class="form-control-file" />
+            </div>
+
+            <div class="form-group">
+                <label for="ImageUrl">URL hình ảnh:</label>
+                <input type="text" id="ImageUrl" name="ImageUrl" value="@Model.ImageUrl" class="form-control" />
+            </div>
+
+            <button type="submit" class="btn btn-primary">Lưu sản phẩm</button>
+        </form>
+
+    </div>
+
+</div>

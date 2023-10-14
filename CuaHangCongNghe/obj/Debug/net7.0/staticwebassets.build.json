@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "QnX8yPPxBiyOJaJb5b6Q00oX4MXXc24q1oM6Hn/4e+Y=",
+  "Hash": "kdzeGM9HSEwK/J0Ze4IvCTranDnwv/ze0TUsG5syAhs=",
   "Source": "CuaHangCongNghe",
   "BasePath": "_content/CuaHangCongNghe",
   "Mode": "Default",
@@ -32,6 +32,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\admin.css"
+    },
+    {
+      "Identity": "C:\\Users\\ztzkk\\OneDrive - Trường Đại Học Kiến Trúc Hà Nội\\Documents\\DoAn20Cn4\\20cn4CuaHang_bancuoidapix\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\item.css",
+      "SourceId": "CuaHangCongNghe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ztzkk\\OneDrive - Trường Đại Học Kiến Trúc Hà Nội\\Documents\\DoAn20Cn4\\20cn4CuaHang_bancuoidapix\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
+      "BasePath": "_content/CuaHangCongNghe",
+      "RelativePath": "css/item.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\item.css"
+    },
+    {
+      "Identity": "C:\\Users\\ztzkk\\OneDrive - Trường Đại Học Kiến Trúc Hà Nội\\Documents\\DoAn20Cn4\\20cn4CuaHang_bancuoidapix\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\pro.css",
+      "SourceId": "CuaHangCongNghe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ztzkk\\OneDrive - Trường Đại Học Kiến Trúc Hà Nội\\Documents\\DoAn20Cn4\\20cn4CuaHang_bancuoidapix\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
+      "BasePath": "_content/CuaHangCongNghe",
+      "RelativePath": "css/pro.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\pro.css"
     },
     {
       "Identity": "C:\\Users\\ztzkk\\OneDrive - Trường Đại Học Kiến Trúc Hà Nội\\Documents\\DoAn20Cn4\\20cn4CuaHang_bancuoidapix\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\css\\sty.css",
@@ -185,6 +219,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\samSung.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ztzkk\\OneDrive - Trường Đại Học Kiến Trúc Hà Nội\\Documents\\DoAn20Cn4\\20cn4CuaHang_bancuoidapix\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\js\\chart.js",
+      "SourceId": "CuaHangCongNghe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ztzkk\\OneDrive - Trường Đại Học Kiến Trúc Hà Nội\\Documents\\DoAn20Cn4\\20cn4CuaHang_bancuoidapix\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
+      "BasePath": "_content/CuaHangCongNghe",
+      "RelativePath": "js/chart.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\chart.js"
     },
     {
       "Identity": "C:\\Users\\ztzkk\\OneDrive - Trường Đại Học Kiến Trúc Hà Nội\\Documents\\DoAn20Cn4\\20cn4CuaHang_bancuoidapix\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",

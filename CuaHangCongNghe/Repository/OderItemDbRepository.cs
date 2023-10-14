@@ -6,14 +6,14 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CuaHangCongNghe.Repository
 {
-    public class OderDbRepository : OderItemRepository
+    public class OderDbRepository : OrderItemRepository
     {
         private readonly storeContext storeContext;
         public OderDbRepository(storeContext storeContext)
         {
             this.storeContext = storeContext;
         }
-        public Orderitem AddItem(int id, Orderitem orderitem)
+        public OrderItem AddItem(int id, OrderItem orderItem)
         {
             throw new NotImplementedException();
         }
@@ -21,14 +21,14 @@ namespace CuaHangCongNghe.Repository
         public Order AddProduct(int Id, Product product,int quantity)
         {
             var order = storeContext.Orders.FirstOrDefault(x => x.OrderId == Id);
-            var existingSameProduct = order.Orderitems.FirstOrDefault(x => x.ProductId == product.Id);
+            var existingSameProduct = order.OrderItems.FirstOrDefault(x => x.ProductId == product.Id);
             if (existingSameProduct != null)
             {
                 existingSameProduct.Quantity = quantity;
             }
             else
             {
-                order.Orderitems.Add(new Orderitem { OrderId = order.OrderId, ProductId = product.Id, Quantity = quantity });
+                order.OrderItems.Add(new OrderItem { OrderId = order.OrderId, ProductId = product.Id, Quantity = quantity });
             }
             storeContext.SaveChanges();
             return order;
@@ -52,7 +52,7 @@ namespace CuaHangCongNghe.Repository
 
             };
             storeContext.Orders.Add(order);
-            order.Orderitems.Add(new Orderitem { OrderId = order.OrderId, ProductId = product.Id, Quantity = quantity });
+            order.OrderItems.Add(new OrderItem { OrderId = order.OrderId, ProductId = product.Id, Quantity = quantity });
             storeContext.SaveChanges();
             return order;
         }
@@ -74,24 +74,44 @@ namespace CuaHangCongNghe.Repository
 
         public List<Order> GetAll()
         {        
-            return storeContext.Orders.AsNoTracking()
-        .Include(order => order.Orderitems)
+            return storeContext.Orders.AsNoTracking().Include(status => status.StatusNavigation)
+        .Include(order => order.OrderItems)
         .ThenInclude(orderItem => orderItem.Product)
         .ToList();
 
         }
 
-        public List<Orderitem> getAllItem(int orderId)
+        public List<OrderItem> getAllItem(int orderId)
         {
             return storeContext.Orderitems
-        .Where(Orderitem => Orderitem.OrderId == orderId)    
+        .Where(OrderItem => OrderItem.OrderId == orderId).Include(c => c.Product)   
         .ToList();
         }
 
         public Order getOrderPay(string userId)
         {
-            return  storeContext.Orders.Include(o => o.Orderitems).ThenInclude(p => p.Product).FirstOrDefault(n => n.UserId == userId && n.Status == 0);// lấy order chưa thanh toán
+
+            var Orders = GetAll();
+           
+            if (Orders != null)
+            {
+                foreach (var order in Orders)
+                {
+                    if (order.UserId == userId && order.Status==0)
+                    {
+                        return order;
+                    }
+                }
+               
+            }
+
+            return null;
+
+
+
+           // return  storeContext.Orders.Include(o => o.OrderItems).ThenInclude(p => p.Product).FirstOrDefault(n => n.UserId == userId && n.Status == 0);// lấy status chưa thanh toán
         }
+        
 
         public List<Order> TryGetByOrderUserId(string UserId)
         {
@@ -116,7 +136,7 @@ namespace CuaHangCongNghe.Repository
         }
 
 
-        public void Update(Orderitem existingOrder)
+        public void Update(OrderItem existingOrder)
         {
             var order = storeContext.Orderitems.FirstOrDefault(x => x.OrderItemsId == existingOrder.OrderItemsId);
             order = existingOrder;
@@ -127,7 +147,40 @@ namespace CuaHangCongNghe.Repository
 
         public Order GetOrder(int IdOrder)
         {
-            return storeContext.Orders.AsNoTracking().Include(o => o.Orderitems).ThenInclude(p => p.Product).FirstOrDefault(x => x.OrderId == IdOrder);
+            var Orders = GetAll();
+           
+            if (Orders != null)
+            {
+                foreach (var order in Orders)
+                {
+                    if (order.OrderId == IdOrder)
+                    {
+                        return order;
+                    }
+                }
+               
+            }
+
+            return null;
+        }
+
+        public List<Order> GetAllOrderPay()
+        {
+            var listOder = GetAll();
+            var allOrderUser = new List<Order>();
+            if (listOder != null)
+            {
+                foreach (Order oder in listOder)
+                {
+                    if (oder.Status == 2)
+                    {
+                        allOrderUser.Add(oder);
+                    }
+                }
+                return allOrderUser;
+            }
+
+            return null;
         }
     }
 }

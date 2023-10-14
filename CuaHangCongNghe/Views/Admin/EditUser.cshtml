@@ -2,22 +2,15 @@
 @{
     Layout = "LayoutAdmin";
 }
-<div class="row">
-    <div class="col-md-3">
-        <div class="list-group my-4">
-            <a asp-action="GetOrders" class="list-group-item list-group-item-action ">Đơn hàng</a>
-            <a asp-action="GetUsers" class="list-group-item list-group-item-action active">Người dùng</a>
-            <a asp-action="GetRoles" class="list-group-item list-group-item-action ">Vai trò</a>
-            <a asp-action="AddProduct" class="list-group-item list-group-item-action ">Thêm sản phẩm</a>
-        </div>
-    </div>
-    <div class="col-md-9 my-4">
+
+    <div class="col-md-8">
         <div class="card">
             <div class="card-body">
                 <div class="row">
                     <div class="col-md-12">
-                        <h4>thay đổi thông tin người dùng @Model.NameUser</h4>
+                        <h4>thay đổi thông tin người dùng</h4>
                         <hr />
+                    <h3>  @Model.NameUser </h3>
                     </div>
                 </div>
                 <div class="row">
@@ -58,4 +51,3 @@
             </div>
         </div>
     </div>
-</div>

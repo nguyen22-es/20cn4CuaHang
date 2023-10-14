@@ -40,9 +40,19 @@ namespace CuaHangCongNghe.Repository
 
         public void Update(Product product)
         {
-            var order = storeContext.Products.FirstOrDefault(x => x.Id == product.Id);
-            order = product;
-            storeContext.SaveChanges();
+            var product1 = storeContext.Products.FirstOrDefault(x => x.Id == product.Id);
+
+            if (product1 != null)
+            {
+               
+                product1.Name = product.Name;
+                product1.Description = product.Description;
+                product1.Price = product.Price;
+                product1.Stockquantity = product.Stockquantity;
+                product1.ImageUrl = product.ImageUrl;
+
+                storeContext.SaveChanges();
+            }
         }
     }
 }

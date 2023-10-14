@@ -40,7 +40,7 @@ namespace CuaHangCongNghe.Repository
             storeContext.SaveChanges();
         }
 
-        public void DeleteOder(int itemId, Product product, int quantity)
+        public void DeleteOrder(int itemId, Product product, int quantity)
         {
             var item = storeContext.Orderitems.FirstOrDefault(x => x.OrderItemsId == itemId);
             if(item != null)

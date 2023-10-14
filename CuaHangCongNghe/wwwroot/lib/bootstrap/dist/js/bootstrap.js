@@ -3,13 +3,21 @@
   * Copyright 2011-2019 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
   */
-const listItems = document.querySelectorAll(".list-group-item");
 
-listItems.forEach((li) => {
-    li.addEventListener("click", (event) => {
-        li.classList.add("active");
-    });
+document.addEventListener('DOMContentLoaded', function () {
+    var myAccountLink = document.querySelector('a[asp-route-id="Index"]');
+    var myAccountDropdown = document.getElementById('myAccountDropdown');
+
+    if (myAccountLink && myAccountDropdown) {
+        myAccountLink.addEventListener('click', function (e) {
+            e.preventDefault();
+            myAccountDropdown.classList.add('stardust-dropdown--open');
+            myAccountDropdown.classList.add('stardust-dropdown__item-body--open');
+            
+        });
+    }
 });
+
 const darkModeSwitch = document.getElementById("darkModeSwitch");
 
 // Kiểm tra xem có giá trị đã lưu trong localStorage hay không

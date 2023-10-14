@@ -18,7 +18,7 @@ namespace CuaHangCongNghe.Models.Shop
 
       
         public virtual DbSet<Order> Orders { get; set; } = null!;
-        public virtual DbSet<Orderitem> Orderitems { get; set; } = null!;
+        public virtual DbSet<OrderItem> Orderitems { get; set; } = null!;
         public virtual DbSet<Product> Products { get; set; } = null!;
         public virtual DbSet<Status> Statuses { get; set; } = null!;
         public virtual DbSet<User> Users { get; set; } = null!;
@@ -65,7 +65,7 @@ namespace CuaHangCongNghe.Models.Shop
                     .HasConstraintName("FK_orders_users");
             });
 
-            modelBuilder.Entity<Orderitem>(entity =>
+            modelBuilder.Entity<OrderItem>(entity =>
             {
                 entity.HasKey(e => e.OrderItemsId);
 
@@ -80,13 +80,13 @@ namespace CuaHangCongNghe.Models.Shop
                 entity.Property(e => e.Quantity).HasColumnName("quantity");
 
                 entity.HasOne(d => d.Order)
-                    .WithMany(p => p.Orderitems)
+                    .WithMany(p => p.OrderItems)
                     .HasForeignKey(d => d.OrderId)
                     .OnDelete(DeleteBehavior.Cascade)
                     .HasConstraintName("FK_orderitems_orders");
 
                 entity.HasOne(d => d.Product)
-                    .WithMany(p => p.Orderitems)
+                    .WithMany(p => p.OrderItems)
                     .HasForeignKey(d => d.ProductId)
                     .OnDelete(DeleteBehavior.SetNull)
                     .HasConstraintName("FK_orderitems_products1");

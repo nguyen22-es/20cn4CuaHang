@@ -1,73 +1,113 @@
 ﻿@model CuaHangCongNghe.Models.UserViewModel
 
-<div class="row">
-    <div class="col-md-3 my-4">
-        <div class="list-group ">
-            <a asp-action="Index" class="list-group-item list-group-item-action">thông tin người dùng</a>
-            <a asp-action="Edit" asp-route-id="@Model.Id" class="list-group-item list-group-item-action">thay đổi thông tin cá nhân</a>
-            <a asp-action="ChangePassword" asp-route-id="@Model.Id" class="list-group-item list-group-item-action">thay đổi mật khẩu</a>
-            <a asp-controller="Cart" asp-action="Index" class="list-group-item list-group-item-action">Thông tin đơn hàng</a>
-            <a asp-action="GetAllOrders" class="list-group-item list-group-item-action">đơn hàng</a>
-            <a class="list-group-item list-group-item-action">
-                <form method="post" asp-controller="Account" asp-action="Logout">
-                    <input type="submit" value="Đăng xuất" style="background:none;border:none;padding:0">
-                </form>
-            </a>
+<link rel="stylesheet" href="~/css/pro.css">
+<div class="row g-0 text-center" style="margin-top:100px;">
+    <div class="col-6 col-md-4">
+        <div class="breadcrumb">
+            <a>@User.Identity.Name</a>
+        </div>
+        <div class="ku14+s">
+            <div class="Amwkjq">
+                <div class="rhmIbk">
+                    <div class="stardust-dropdown">
+                    </div>
+                    <div class="stardust-dropdown " >
+                        <div class="stardust-dropdown__item-header">
+                            <a asp-action="Index" class="+1U02e">
+                                <div class="bfikuD">
+                                    <img style="margin-top:100px;"
+                                        src="https://down-vn.img.susercontent.com/file/ba61750a46794d8847c3f463c5e71cc4">
+                                </div>
+                                <div class="DlL0zX"><span class="adF7Xs">Tài khoản của tôi</span></div>
+                            </a>
+                        </div>
+                        <div class="stardust-dropdown__item-body--open"  style="opacity: 1;">
+                            <div class="Yu7gVR">
+                                <a asp-action="Index" class="FEE-3D">
+                                    <span class="qyt-aY">
+                                        Hồ
+                                        sơ
+                                    </span>
+                                </a>
+                                <a asp-action="Edit" asp-route-id="@Model.Id" class="FEE-3D">
+                                    <span class="qyt-aY">
+                                        Thay đổi thông tin cá nhân
+                                    </span>
+                                </a>
+                                <a asp-action="ChangePassword" asp-route-id="@Model.Id" class="FEE-3D">
+                                    <span class="qyt-aY">
+                                        Đổi mật
+                                        khẩu
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stardust-dropdown">
+                        <div class="stardust-dropdown__item-header">
+                            <a asp-action="GetAllOrders" class="+1U02e">
+                                <div class="bfikuD">
+                                    <img style="margin-top:100px;"
+                                        src="https://down-vn.img.susercontent.com/file/f0049e9df4e536bc3e7f140d071e9078">
+                                </div>
+                                <div class="DlL0zX"><span class="adF7Xs">Đơn Mua</span></div>
+                            </a>
+                        </div>
+                        <div class="stardust-dropdown__item-body" style="opacity: 0;">
+                            <div class="Yu7gVR"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </div>
-    <div class="col-md-9 my-4">
-        <div class="card">
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-md-12">
-                     
-                            <h4>@Model.NameUser</h4>
-                        
-                        <hr>
+    <div class="col-sm-6 col-md-8">
+        <div class="breadcrumb">
+            <a>Thay đổi thông tin cá nhân</a>
+        </div>
+        <div class="container text-center">
+            <div class="row g-2">
+                <form asp-action="Edit" asp-controller="UserProfile">
+                    <div asp-validation-summary="All" class="text-danger offset-4 col-8"></div>
+                    <div class="form-group row">
+                        <label asp-for="NameUser" class="col-4 col-form-label">tên khách hàng</label>
+                        <div class="col-8">
+                            <input asp-for="NameUser" placeholder="NameUser" class="form-control here" type="text">
+                            <span asp-validation-for="NameUser" class="sr-only"></span>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <form asp-action="Edit" asp-controller="UserProfile">
-                            <div asp-validation-summary="All" class="text-danger offset-4 col-8"></div>
-                            <div class="form-group row">
-                                <label asp-for="NameUser" class="col-4 col-form-label">tên khách hàng</label>
-                                <div class="col-8">
-                                    <input asp-for="NameUser" placeholder="NameUser" class="form-control here" type="text">
-                                    <span asp-validation-for="NameUser" class="sr-only"></span>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label asp-for="PhoneUser" class="col-4 col-form-label">số điện thoại</label>
-                                <div class="col-8">
-                                    <input asp-for="PhoneUser" placeholder="PhoneUser" class="form-control here" type="text">
-                                    <span asp-validation-for="PhoneUser" class="sr-only"></span>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label asp-for="EmailUser" class="col-4 col-form-label">Email </label>
-                                <div class="col-8">
-                                    <input asp-for="EmailUser" placeholder="EmailUser" class="form-control here" type="EmailUser" required>
-                                    <span asp-validation-for="EmailUser" class="sr-only"></span>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label asp-for="AddressUser" class="col-4 col-form-label">Địa chỉ</label>
-                                <div class="col-8">
-                                    <input asp-for="AddressUser" placeholder=" AddressUser" class="form-control here" type="tel">
-                                    <span asp-validation-for="AddressUser" class="sr-only"></span>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="d-flex col-md-12">
-                                    <div class="ml-auto">
-                                        <button type="submit" class="btn btn-info">xác nhận</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
+                    <div class="form-group row">
+                        <label asp-for="PhoneUser" class="col-4 col-form-label">số điện thoại</label>
+                        <div class="col-8">
+                            <input asp-for="PhoneUser" placeholder="PhoneUser" class="form-control here" type="text">
+                            <span asp-validation-for="PhoneUser" class="sr-only"></span>
+                        </div>
                     </div>
-                </div>
+                    <div class="form-group row">
+                        <label asp-for="EmailUser" class="col-4 col-form-label">Email </label>
+                        <div class="col-8">
+                            <input asp-for="EmailUser" placeholder="EmailUser" class="form-control here"
+                                type="EmailUser" required>
+                            <span asp-validation-for="EmailUser" class="sr-only"></span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label asp-for="AddressUser" class="col-4 col-form-label">Địa chỉ</label>
+                        <div class="col-8">
+                            <input asp-for="AddressUser" placeholder=" AddressUser" class="form-control here"
+                                type="tel">
+                            <span asp-validation-for="AddressUser" class="sr-only"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="d-flex col-md-12">
+                            <div class="ml-auto">
+                                <button type="submit" class="btn btn-info">xác nhận</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>

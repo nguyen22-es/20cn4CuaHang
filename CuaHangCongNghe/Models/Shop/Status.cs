@@ -11,7 +11,7 @@ namespace CuaHangCongNghe.Models.Shop
         }
 
         public int StatusId { get; set; }
-        public string? StatusName { get; set; }
+        public string StatusName { get; set; }
 
         public virtual ICollection<Order> Orders { get; set; }
     }

@@ -15,10 +15,10 @@ namespace CuaHangCongNghe.Controllers
        
         private readonly ProductService productService;
         private readonly UserManager<ApplicationUser> userManager;
-        private readonly oderItemService oderItemService;
+        private readonly OrderItemService oderItemService;
         private readonly UserService userService;
 
-        public CartController(oderItemService oderItemService, ProductService productService, UserManager<ApplicationUser> userManager, UserService userService)
+        public CartController(OrderItemService oderItemService, ProductService productService, UserManager<ApplicationUser> userManager, UserService userService)
         {
             this.oderItemService = oderItemService;
             this.productService = productService;

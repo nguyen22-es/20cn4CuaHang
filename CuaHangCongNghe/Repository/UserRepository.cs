@@ -11,7 +11,7 @@ namespace CuaHangCongNghe.Repository
         void AddInformation(User userInfo);
 
 
-        void DeleteOder(int id,Product product,int quantity);
+        void DeleteOrder(int id,Product product,int quantity);
 
         void CreateUser(User user);
 

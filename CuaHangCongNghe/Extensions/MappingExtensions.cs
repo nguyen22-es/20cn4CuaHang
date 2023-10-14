@@ -20,22 +20,23 @@ namespace Shop.Models
            
             return items;
         }
-        public static OrderViewModel ToOrderViewModel(this Order order)
+        public static OrderViewModel ToOrderViewModel(this Order Order)
         {
             return new OrderViewModel
             {
-                Id = order.OrderId,
-                OrderDate = order.OrderDate,
-                Status = order.Status,
-                UserId = order.UserId,
-                ItemViewModels = order.Orderitems.ToList().ToOrderItemsViewModel()
+                Id = Order.OrderId,
+                OrderDate = Order.OrderDate,
+                Status = Order.Status,
+                UserId = Order.UserId,
+                NameStatus = Order.StatusNavigation.StatusName,
+                ItemViewModels = Order.OrderItems.ToList().ToOrderItemsViewModel()
             };
         }
 
-        public static List<OrderItemViewModel> ToOrderItemsViewModel(this List<Orderitem> orderitems)
+        public static List<OrderItemViewModel> ToOrderItemsViewModel(this List<OrderItem> OrderItems)
         {
             var items = new List<OrderItemViewModel>();
-            foreach (var orderItem in orderitems)
+            foreach (var orderItem in OrderItems)
             {
                 var item = orderItem.ToOrderItemViewModel();
                 items.Add(item);
@@ -43,13 +44,13 @@ namespace Shop.Models
             return items;
         }
 
-        public static OrderItemViewModel ToOrderItemViewModel(this Orderitem orderitem)
+        public static OrderItemViewModel ToOrderItemViewModel(this OrderItem OrderItem)
         {
             return new OrderItemViewModel
             {
-                Id = orderitem.OrderItemsId,
-                quantity = orderitem.Quantity,
-                Product = orderitem.Product.ToProductViewModel()
+                Id = OrderItem.OrderItemsId,
+                quantity = OrderItem.Quantity,
+                Product = OrderItem.Product.ToProductViewModel()
             };
         }
 
