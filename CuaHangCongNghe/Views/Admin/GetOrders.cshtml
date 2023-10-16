@@ -43,22 +43,8 @@
                         <td>@order.Order.OrderDate.ToString("dddd, dd MMMM yyyy")</td>
                         <td>@order.Order.FullPrice &#8381;</td>
 
-
-                        @if (@order.Order.Status == 1)
-                        {
-                            <td>đã thanh toán</td>
-                        }
-                        @if (@order.Order.Status == 2)
-                        {
-                            <td>Ship cod</td>
-                        }
-                        @if (@order.Order.Status == 0)
-                        {
-                            <td>chưa thanh toán</td>
-                        }
-
-
-
+                            <td>@order.Order.NameStatus</td>
+                       
                     </tr>
                 }
             }

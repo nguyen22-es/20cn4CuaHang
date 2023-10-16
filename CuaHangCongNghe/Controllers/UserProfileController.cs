@@ -111,24 +111,48 @@ namespace CuaHangCongNghe.Controllers
             }
             return View(model);
         }
-        public async Task<IActionResult> GetAllOrders()
+        public async Task<IActionResult> GetAllOrders(int? status)
         {
+         
             var user = await userManager.FindByIdAsync(userManager.GetUserId(User));
+            var model = new UserViewModel { Id = user.Id };
+            var Orders = new UserOrdersViewModel { User = model };
 
-            var model = new UserViewModel();
-
-            model.Id = user.Id;
-
-            var Orders = new UserOrdersViewModel();
-            if(user != null)
+   
+          
+            if (status == null)
             {
                 Orders.Orders = OrderItemService.GetCurrentAllOrderUser(user.Id);
-               Orders.User = model;
-               
             }
-           
+            if (status != null)
+            {
+                Orders.Orders = OrderItemService.GetCurrentAllOrderUser(user.Id).Where(c => c.Status == status).ToList();
+            }
+
             return View(Orders);
         }
+        public async Task<IActionResult> fragment(int? status)
+        {
+
+            var user = await userManager.FindByIdAsync(userManager.GetUserId(User));
+            var model = new UserViewModel { Id = user.Id };
+            var Orders = new UserOrdersViewModel { User = model };
+
+
+
+            if (status == null)
+            {
+                Orders.Orders = OrderItemService.GetCurrentAllOrderUser(user.Id);
+            }
+            if (status != null)
+            {
+                Orders.Orders = OrderItemService.GetCurrentAllOrderUser(user.Id).Where(c => c.Status == status).ToList();
+            }
+
+            return View(Orders);
+        }
+
+
 
         public async Task<ActionResult> GetItemOrder(int id)
         {

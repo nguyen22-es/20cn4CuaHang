@@ -16,7 +16,6 @@
     font-size: 16px;
     line-height: 19px;
     text-align: center;
-    color: rgba(0,0,0,.8);
     background: #fff;
     border-bottom: 2px solid rgba(0,0,0,.09);
     display: flex;
@@ -27,9 +26,6 @@
     transition: color .2s
 }
 
-    .gAImis, .OFl2GI:hover {
-        color: #ee4d2d
-    }
 
 .gAImis {
     border-color: #ee4d2d
@@ -45,7 +41,7 @@
     margin: 0 0 0 4px;
     vertical-align: initial;
     font-size: 14px;
-    color: #ee4d2d
+
 }
 
 .VrgkXA {
@@ -54,7 +50,7 @@
     display: flex;
     align-items: center;
     box-shadow: 0 1px 1px 0 rgba(0,0,0,.05);
-    color: #212121;
+
     background: #eaeaea;
     border-radius: 2px
 }
@@ -116,7 +112,7 @@
     margin: 20px 0 0;
     font-size: 18px;
     line-height: 1.4;
-    color: rgba(0,0,0,.8);
+
     font-weight: 400
 }
 
@@ -226,7 +222,7 @@
     }
 
     ._7wKGws > .stardust-button:not(.stardust-button--primary), .yHlRfY > .stardust-button:not(.stardust-button--primary) {
-        color: #555;
+
         border: 1px solid rgba(0,0,0,.09)
     }
 
@@ -274,7 +270,7 @@
 
 .I2Mvul {
     font-weight: 500;
-    color: rgba(0,0,0,.87)
+
 }
 
 .\+EBiPA, .I2Mvul {
@@ -290,7 +286,7 @@
     .\+EBiPA .WUExvN, .\+EBiPA a {
         display: flex;
         align-items: center;
-        color: rgba(0,0,0,.87)
+
     }
 
     .\+EBiPA svg {
@@ -306,21 +302,6 @@
     line-height: 14px
 }
 
-.IQfYqJ {
-    color: rgba(0,0,0,.54)
-}
-
-.Lw8asF .IQfYqJ {
-    color: #f69113
-}
-
-.tjM0Qz .IQfYqJ {
-    color: #30b566
-}
-
-._1PK0sX {
-    color: rgba(0,0,0,.65)
-}
 
 .gVao\+T {
     margin: 0 0 0 4px;
@@ -341,17 +322,17 @@
     min-width: 200px;
     text-align: left;
     background-color: #fff;
-    color: rgba(0,0,0,.87)
+
 }
 
 .\+6Lkj6 {
     margin: 4px 0 0;
     display: inline-block;
-    color: #2672dd
+
 }
 
 .FpQmrn {
-    color: #ee4d2d;
+
     font-size: 18px
 }
 
@@ -372,7 +353,7 @@
     padding: 12px 0 0;
     align-items: center;
     flex-wrap: nowrap;
-    color: rgba(0,0,0,.87)
+
 }
 
 .aybVBK, .x7nENX {
@@ -429,12 +410,12 @@
     text-transform: uppercase;
     font-size: 12px;
     line-height: 16px;
-    color: #ee4d2d;
+
     border: 1px solid rgba(0,0,0,.09)
 }
 
 .vb0b-P {
-    color: rgba(0,0,0,.54)
+
 }
 
 ._3F1-5M, .vb0b-P {
@@ -449,19 +430,16 @@
     vertical-align: middle;
     font-size: 14px;
     line-height: 16px;
-    color: rgba(0,0,0,.87)
+
 }
 
-.OkfGBc {
-    color: #ee4d2d
-}
 
 .j2En5\+ {
     margin: 0 4px 0 0;
     -webkit-text-decoration-line: line-through;
     -moz-text-decoration-line: line-through;
     text-decoration-line: line-through;
-    color: #000;
+
     opacity: .26;
     overflow: hidden;
     text-overflow: ellipsis
@@ -471,7 +449,7 @@
     margin: 5px 0 0;
     text-transform: capitalize;
     font-size: 14px;
-    color: rgba(0,0,0,.54)
+
 }
 
 .Cb0suY {
@@ -486,7 +464,6 @@
     margin: 0 0 4px;
     font-size: 12px;
     line-height: 14px;
-    color: rgba(0,0,0,.54);
     text-transform: capitalize
 }
 
@@ -511,12 +488,12 @@
     font-size: 12px;
     line-height: 16px;
     border-radius: 1px;
-    color: #ee4d2d;
+
     border: .5px solid #ee4d2d
 }
 
 ._2NiP-u {
-    color: #26aa99;
+
     border: .5px solid #26aa99
 }
 
@@ -553,7 +530,7 @@
 
 ._9KTxuf {
     margin: 0 0 2px;
-    color: rgba(0,0,0,.54)
+
 }
 
 .-ebRXs {
@@ -575,8 +552,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     font-size: 12px;
-    line-height: 14px;
-    color: #ee4d2d
+
 }
 
 .rjqzk1 {
@@ -608,7 +584,6 @@
 
 .V\+w7Xs {
     line-height: 24px;
-    color: #ee4d2d;
     text-align: right;
     text-transform: uppercase;
     white-space: nowrap
@@ -664,7 +639,6 @@
         margin: 0 4px 1px 0;
         vertical-align: middle;
         font-size: 1rem;
-        color: #00bfa5;
         stroke: #26aa99
     }
 
@@ -680,14 +654,11 @@
 
 .nkmfr2 {
     text-decoration: none;
-    color: rgba(0,0,0,.87);
-    color: #26aa99;
     vertical-align: middle
 }
 
 .wzvm5O {
     word-wrap: break-word;
-    color: #05a;
     cursor: pointer
 }
 
@@ -733,11 +704,11 @@
     margin: 0 10px 0 0;
     font-size: 14px;
     line-height: 20px;
-    color: rgba(0,0,0,.8)
+
 }
 
 .DeWpya {
-    color: #ee4d2d;
+
     font-size: 24px;
     line-height: 30px
 }
@@ -763,12 +734,10 @@
     text-align: left;
     font-size: 12px;
     line-height: 16px;
-    color: rgba(0,0,0,.54)
+
 }
 
-.an9g3V {
-    color: #ee4d2d
-}
+
 
 .QY-TMp {
     padding: 8px 18px;
@@ -812,14 +781,14 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     z-index: 2;
-    color: #555;
+
     background: #fff;
     border: 1px solid rgba(0,0,0,.09);
     border-radius: 2px
 }
 
     .nu5wWe:focus, .nu5wWe:hover {
-        color: #ee4d2d;
+
         border: 1px solid #ee4d2d;
         border-bottom-color: #fff;
         border-radius: 2px 2px 0 0
@@ -859,11 +828,11 @@
     white-space: nowrap;
     border: 0 !important;
     border-radius: 0;
-    color: rgba(0,0,0,.8)
+
 }
 
     .lLqDZM:not(:disabled):focus, .lLqDZM:not(:disabled):hover {
-        color: #ee4d2d;
+
         background: #f8f8f8
     }
 
@@ -874,16 +843,13 @@
     border: 1px solid #e9953a
 }
 
-    .IHLEkK > svg {
-        color: #e9953a !important
-    }
 
 .JMmT2C {
     cursor: pointer
 }
 
 ._5fvHLp {
-    color: #ee4d2d;
+
     font-size: 18px
 }
 
@@ -920,8 +886,7 @@
     word-wrap: break-word;
     font-size: 14px;
     line-height: 22px;
-    background: #fff;
-    color: rgba(0,0,0,.8)
+
 }
 
 .k6XPgQ {
@@ -947,7 +912,7 @@
 .bRCCcp {
     margin: 8px 0 0;
     font-weight: 300;
-    color: rgba(0,0,0,.54)
+
 }
 
 [dir=ltr] .orTUBb {
@@ -965,7 +930,7 @@
     -ms-user-select: none;
     user-select: none;
     margin: 0 0 0 12px;
-    color: #05a
+
 }
 
 .Ql5Bwe div.stardust-popup__dialog--wrapper {
@@ -1030,7 +995,7 @@
         }
 
     .WQgxY1 .twis5O {
-        color: #ff424f;
+
         flex-shrink: 0
     }
 
@@ -1046,9 +1011,6 @@
         cursor: not-allowed
     }
 
-.Wjtho\+ ._1-SpS1 {
-    color: #ccc
-}
 
 .Wjtho\+ .NHS8CC {
     opacity: .7
@@ -1121,7 +1083,7 @@
 }
 
 .hP6XGp {
-    color: #ee4d2d;
+
     font-size: 18px
 }
 
@@ -1174,12 +1136,12 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     font-size: 14px;
-    color: rgba(0,0,0,.8)
+
 }
 
 .fH-UjW, .lTQATN {
     font-size: 14px;
-    color: rgba(0,0,0,.54)
+
 }
 
 .lTQATN {
@@ -1194,7 +1156,7 @@
     line-height: 12px;
     text-transform: capitalize;
     border-radius: 100px;
-    color: #fff;
+
     background-color: rgba(0,0,0,.4)
 }
 

@@ -52,13 +52,12 @@ namespace CuaHangCongNghe.Controllers
 
         public IActionResult Update(Dictionary<int, int> items)
         {
-            string filePath = @"D:\19paymentUrl.txt";
+           
          
 
             foreach (var item in items)
             {
-                string userString = $"Name: {item.Key}, Email: {item.Value}";
-                System.IO.File.WriteAllText(filePath, userString);
+               
                 oderItemService.UpdateQuantity(userManager.GetUserId(User), item.Key, item.Value);
             }
 

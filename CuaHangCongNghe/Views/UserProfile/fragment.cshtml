@@ -1,0 +1,91 @@
+﻿@model CuaHangCongNghe.Models.UserOrdersViewModel
+@{
+    Layout = null;
+}
+
+
+<div id="my-fm">
+    @foreach (var order in Model.Orders)
+    {
+
+        <hr>
+        <div class="shop shop-cursor" >
+            <div class="shop-header border-bottom">
+
+                <div class="shop-right">
+                    <div class="shop-right-status">@order.NameStatus</div>
+                    <div class="shop-right-action"></div>
+                </div>
+            </div>
+
+
+            @foreach (var item in order.ItemViewModels)
+            {
+                <a asp-action="GetItemOrder" asp-route-id="@order.Id" style=" text-decoration: none;">
+                    <div class="card border-0">
+
+                        <img src="@item.Product.ImageUrl" style="width: 80px; height: 80px;" />
+
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+
+
+                        <div class="card-body" style="display:flex;">
+                            <div class="item-main item-main-mini">
+                                <div>
+                                    <div class="text title item-title" data-spm="details_title">
+                                        @item.Product.Name
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-status">
+                                <div class="item-price text bold">₫ @item.Product.Price</div>
+                            </div>
+
+                            <div class="item-quantity" style="margin-left:100px">
+                                <span>
+                                    <span class="text desc info multiply">
+                                        Số
+                                        lượng:
+                                    </span><span class="text">&nbsp;@item.quantity</span>
+                                </span>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </a>
+            }
+
+        </div>
+
+
+    }
+</div>
+<script>
+
+    document.querySelectorAll(".nav-link").forEach(function (tab) {
+        tab.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            document.querySelectorAll(".nav-link").forEach(function (otherTab) {
+                otherTab.classList.remove("active");
+            });
+
+            tab.classList.add("active");
+
+            var status = tab.getAttribute("data-status");
+
+            fetch("/UserProfile/fragment?status=" + status)
+                .then(response => response.text())
+                .then(data => {
+                    const fragment = document.getElementById("#my-fm");
+               
+                    fragment.innerHTML = data;
+
+                    // Thay thế nội dung của phần tử myFragment bằng nội dung của phần tử my
+                
+                })
+                .catch(error => console.error(error));
+        });
+    });
+</script>

@@ -4,6 +4,8 @@
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
   */
 
+
+
 document.addEventListener('DOMContentLoaded', function () {
     var myAccountLink = document.querySelector('a[asp-route-id="Index"]');
     var myAccountDropdown = document.getElementById('myAccountDropdown');
