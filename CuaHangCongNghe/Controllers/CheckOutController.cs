@@ -43,25 +43,23 @@ namespace Shop.Controllers
             return View(userOrderViewModel);
             
         }
-        [HttpPost]
-        public async Task<IActionResult> CreateItemOrder(Dictionary<int, int> items)
+     
+        public async Task<IActionResult> CreateItemOrder()
         {
             var user = await userManager.FindByIdAsync(userManager.GetUserId(User));
 
             var  userOrderView = new UserOrderViewModel();
             ProductViewModel product;
 
-            foreach (var item in items)
-            {
-                product = productService.GetProduct(item.Key);
-                userOrderView.Order = oderItemService.AddProductToItems(product, user.Id, item.Value);
+         
+                userOrderView.Order = oderItemService.GetOrderPay(user.Id);
 
-            }
+      
             
 
             userOrderView.User = new UserViewModel { Id = user.Id, EmailUser = user.Email, NameUser = user.UserName, PhoneUser = user.PhoneNumber, RegistrationDate = user.DateTime, AddressUser = user.Address };
             userOrderViewModel = userOrderView;
-            return View(userOrderViewModel);
+            return View(userOrderView);
         }
 
 

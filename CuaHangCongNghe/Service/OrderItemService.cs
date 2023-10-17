@@ -20,7 +20,7 @@ namespace CuaHangCongNghe.Service
         {
             var orders = OrderItemRepository.getOrderPay(userId);
             var product = productViewModel.ToProduct();
-
+          
             Order order;
 
             
@@ -31,7 +31,7 @@ namespace CuaHangCongNghe.Service
             }
             else
             {
-                order = OrderItemRepository.AddProduct(orders.OrderId, product,amount);
+                order = OrderItemRepository.UpdateOrder(orders.OrderId, product,amount);
             }
 
             var OrderViewModel = new OrderViewModel
@@ -58,7 +58,7 @@ namespace CuaHangCongNghe.Service
             }
             else
             {
-              OrderItemRepository.AddProduct(orders.OrderId, product, 1);
+              OrderItemRepository.UpdateOrder(orders.OrderId, product, 1);
             }
 
 

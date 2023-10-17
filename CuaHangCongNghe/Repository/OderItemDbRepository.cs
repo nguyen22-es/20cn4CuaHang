@@ -18,7 +18,7 @@ namespace CuaHangCongNghe.Repository
             throw new NotImplementedException();
         }
 
-        public Order AddProduct(int Id, Product product,int quantity)
+        public Order UpdateOrder(int Id, Product product,int quantity)
         {
             var order = storeContext.Orders.FirstOrDefault(x => x.OrderId == Id);
             var existingSameProduct = order.OrderItems.FirstOrDefault(x => x.ProductId == product.Id);

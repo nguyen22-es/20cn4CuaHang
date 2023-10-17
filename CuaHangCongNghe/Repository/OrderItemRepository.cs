@@ -13,8 +13,7 @@ namespace CuaHangCongNghe
         void Update(OrderItem  OrderItem);
         void DeleteItem(int OrderItem);
         void DeleteOder(int orderId);
-        Order AddProduct(int Id, Product product, int quantity);
-
+        Order UpdateOrder(int Id, Product product, int quantity);
         List<Order> TryGetByOrderUserId(string UserId);
         List<Order> GetAllOrderPay();
         List<OrderItem> getAllItem(int idItem);
