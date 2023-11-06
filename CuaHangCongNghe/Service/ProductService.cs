@@ -1,11 +1,12 @@
 ﻿using CuaHangCongNghe.Models;
 using CuaHangCongNghe.Repository;
-using Shop.Models;
+using CuaHangCongNghe.Service;
+
 
 
 namespace CuaHangCongNghe.Services
 {
-    public class ProductService
+    public class ProductService : IProductService
     {
         private readonly ProductRepository productRepository;
        
@@ -29,7 +30,19 @@ namespace CuaHangCongNghe.Services
         }
         public void Update(ProductViewModel productViewModel)
         {
-           productRepository.Update(productViewModel.ToProduct());
+            if (productViewModel.File != null)
+            {
+
+                string fileName = Path.GetFileName(productViewModel.File.FileName);
+                string path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images", fileName);
+                using (var stream = new FileStream(path, FileMode.Create))
+                {
+                    productViewModel.File.CopyTo(stream);
+                }
+
+                productViewModel.ImageUrl = "images/" + fileName;
+            }
+            productRepository.Update(productViewModel.ToProduct());
         }
 
         public ProductViewModel GetProduct(int id)
@@ -48,10 +61,7 @@ namespace CuaHangCongNghe.Services
         }
 
 
-        public void DeleteProduct(int IdProduct)
-        {
 
-        }
 
         public void Create(ProductViewModel productViewModel)
         {

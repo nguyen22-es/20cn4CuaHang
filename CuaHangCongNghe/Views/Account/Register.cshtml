@@ -9,14 +9,30 @@
                 <label asp-for="nameLogin" class="sr-only"></label>
                 <input asp-for="nameLogin" class="form-control" placeholder="Đăng nhập" />
                 <span asp-validation-for="nameLogin" class="sr-only"></span>
+
+
+                <div class="album py-1"></div>
+                <label asp-for="nameUser" class="sr-only"></label>
+                <input asp-for="nameUser" class="form-control" placeholder="tên khách hàng" />
+                <span asp-validation-for="nameUser" class="sr-only"></span>
+
+                <div class="album py-1"></div>
+                <label asp-for="Address" class="sr-only"></label>
+                <input asp-for="Address" class="form-control" placeholder="địa chỉ" />
+                <span asp-validation-for="Address" class="sr-only"></span>
+
+
+
                 <div class="album py-1"></div>
                 <label asp-for="Password" class="sr-only"></label>
-                <input asp-for="Password" class="form-control" placeholder="Đăng ký" />
+                <input asp-for="Password" class="form-control" placeholder="Mật khẩu" />
                 <span asp-validation-for="Password" class="sr-only"></span>
+
                 <div class="album py-1"></div>
                 <label asp-for="PasswordConfirm" class="sr-only"></label>
                 <input asp-for="PasswordConfirm" class="form-control" placeholder="Xác nhận mật khẩu" />
                 <span asp-validation-for="PasswordConfirm" class="sr-only"></span>
+
                 <div class="album py-3"></div>
             </div>
             <button class="btn btn-dark col-md-3" type="submit">Đăng ký</button>

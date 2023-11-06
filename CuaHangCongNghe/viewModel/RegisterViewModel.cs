@@ -4,8 +4,16 @@ namespace CuaHangCongNghe.Models
 {
     public class RegisterViewModel
     {
-        [Required (ErrorMessage = "Name không được để trống")]
+        [Required (ErrorMessage = "tên đăng nhập không được để trống")]
         public string nameLogin { get; set; }
+
+        [Required(ErrorMessage = "tên khách hàng không được để trống")]
+        public string nameUser { get; set; }
+
+
+        [Required(ErrorMessage = "Địa chỉ không được để trống")]
+        public string Address { get; set; }
+
 
         [Required(ErrorMessage = "Mật khẩu không được để trống")]
         [DataType(DataType.Password)]

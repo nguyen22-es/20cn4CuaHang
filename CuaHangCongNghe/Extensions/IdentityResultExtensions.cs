@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 
-namespace Shop.Extensions
+namespace CuaHangCongNghe.Extensions
 {
     public static class IdentityResultExtensions
     {

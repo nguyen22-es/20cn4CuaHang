@@ -1,12 +1,13 @@
 using CuaHangCongNghe.Models;
 using CuaHangCongNghe.Models.Shop;
 using CuaHangCongNghe.Repository;
-using Shop.Models;
+using CuaHangCongNghe.Service;
+using CuaHangCongNghe.Models;
 
 
 namespace CuaHangCongNghe.Services
 {
-    public class UserService
+    public class UserService : IUserService
     {
         private readonly  UserRepository userRepository;
 

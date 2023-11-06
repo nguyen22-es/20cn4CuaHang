@@ -1,5 +1,6 @@
 ﻿using CuaHangCongNghe.Extensions;
 using CuaHangCongNghe.Models;
+using CuaHangCongNghe.Service;
 using CuaHangCongNghe.Services;
 using Microsoft.AspNetCore.Mvc;
 
@@ -11,14 +12,14 @@ namespace CuaHangCongNghe.Controllers
 
         private const int pageSize = 12;
         private const int maxPages = 5;
-        private readonly ProductService productService;
+        private readonly IProductService productService;
 
         public IActionResult Themes()
         {
             return View();
         }
 
-        public HomeController(ProductService productService)
+        public HomeController(IProductService productService)
         {
             this.productService = productService;
         }

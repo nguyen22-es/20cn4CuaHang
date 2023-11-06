@@ -2,7 +2,7 @@
 using CuaHangCongNghe.Repository;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Shop.Extensions;
+using CuaHangCongNghe.Extensions;
 
 namespace CuaHangCongNghe.Controllers
 {
@@ -31,7 +31,7 @@ namespace CuaHangCongNghe.Controllers
             
             if (ModelState.IsValid)
             {
-                // Kiểm tra xem người dùng tồn tại với tên đăng nhập
+              
                
                     var result =  signInManager.PasswordSignInAsync(model.NameLogin, model.Password, model.RememberMe, false).Result;
 
@@ -40,7 +40,7 @@ namespace CuaHangCongNghe.Controllers
                         if (!string.IsNullOrEmpty(model.ReturnUrl) && Url.IsLocalUrl(model.ReturnUrl))
                         {
                               return Redirect(model.ReturnUrl);
-                           // return RedirectToAction("Index", "Home");
+                  
                         }
                         else
                         {
@@ -73,10 +73,10 @@ namespace CuaHangCongNghe.Controllers
             {
                 var user = new ApplicationUser
                 {
-                   Name = model.nameLogin,
+                   UserName = model.nameLogin,
                     DateTime = DateTime.Now,
-                     UserName = model.nameLogin,
-                    Address = ""
+                     Name = model.nameUser,
+                    Address = model.Address
 
                 };
                 var result = userManager.CreateAsync(user, model.Password).Result;

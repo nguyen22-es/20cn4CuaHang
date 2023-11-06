@@ -6,8 +6,7 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
 using CuaHangCongNghe;
-using Microsoft.Extensions.Hosting;
-using System.ComponentModel;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -41,16 +40,16 @@ builder.Services.AddDbContext<AppIdentityDbContext>(options =>
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
     .AddEntityFrameworkStores<AppIdentityDbContext>()
     .AddDefaultTokenProviders();
-builder.Services.AddScoped<IPaymentService, PaymentService>();
-builder.Services.AddTransient<ProductService>();
-builder.Services.AddTransient<UserService>();
-builder.Services.AddTransient<OrderItemService>();
+builder.Services.AddTransient<IPaymentService, PaymentService>();
+builder.Services.AddTransient<IProductService, ProductService>();
+builder.Services.AddTransient<IUserService, UserService>();
+builder.Services.AddScoped<IOrderItemService, OrderItemService>();
 builder.Services.AddTransient<OrderItemRepository, OderDbRepository>();
 builder.Services.AddTransient<ProductRepository, ProductDbRepository>();
 builder.Services.AddTransient<UserRepository, UserDbRepository>();
 builder.Services.AddScoped<RoleManager<IdentityRole>>();
 builder.Services.AddScoped<UserManager<ApplicationUser>>();
-builder.Services.AddTransient<AppIdentityDbContextSeeder>();
+builder.Services.AddScoped<AppIdentityDbContextSeeder>();
 builder.Services.AddMvc();
 
  static void ConfigureCookieSettings(IServiceCollection services)
@@ -80,7 +79,7 @@ var serviceProvider = builder.Services.BuildServiceProvider();
 var userManager = serviceProvider.GetRequiredService<UserManager<ApplicationUser>>();
 var roleManager = serviceProvider.GetRequiredService<RoleManager<IdentityRole>>();
 
-// Khởi tạo dữ liệu mẫu nếu cần
+
 var seedTask = AppIdentityDbContextSeeder.SeedAsync(userManager, roleManager);
 seedTask.Wait();
 var app = builder.Build();

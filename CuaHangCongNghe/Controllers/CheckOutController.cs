@@ -16,18 +16,18 @@ namespace Shop.Controllers
 {
     public class CheckOutController : Controller
     {
-        private readonly UserService  userService;
-        private readonly ProductService productService;
+        private readonly IUserService  userService;
+        private readonly IProductService productService;
         private readonly UserManager<ApplicationUser> userManager;
-        private readonly OrderItemService  oderItemService;
+        private readonly IOrderItemService  OrderItemService;
         private readonly IPaymentService paymentService;
         private readonly IConfiguration _configuration;
         private static readonly ILog log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
         private static UserOrderViewModel userOrderViewModel;
-        public CheckOutController(IPaymentService paymentService,OrderItemService oderItemService, UserService userService, ProductService productService, UserManager<ApplicationUser> userManager, IConfiguration configuration)
+        public CheckOutController(IPaymentService paymentService,IOrderItemService oderItemService, IUserService userService, IProductService productService, UserManager<ApplicationUser> userManager, IConfiguration configuration)
         {
-            this.oderItemService = oderItemService;
+            this.OrderItemService = oderItemService;
             this.userManager = userManager;
             this.productService = productService;
             this.userService = userService;
@@ -52,7 +52,7 @@ namespace Shop.Controllers
             ProductViewModel product;
 
          
-                userOrderView.Order = oderItemService.GetOrderPay(user.Id);
+                userOrderView.Order = OrderItemService.GetOrderPay(user.Id);
 
       
             
@@ -65,10 +65,10 @@ namespace Shop.Controllers
 
 
         [HttpPost]
-        public IActionResult SaveOrder()
+        public IActionResult SaveOrder(UserOrderViewModel model)
         {
 
-            userService.AddInformation(userManager.GetUserId(User), userOrderViewModel.User);
+            userService.AddInformation(userManager.GetUserId(User), model.User);
             
 
           
@@ -78,7 +78,7 @@ namespace Shop.Controllers
          
         [HttpPost]
         [Route("api/v1/payment")]
-        public async Task<IActionResult> Payment(Dictionary<int, int> items,string status)
+        public async Task<IActionResult> Payment(string status)
         {
            
                 var user = userService.GetUser(userManager.GetUserId(User));
@@ -86,12 +86,12 @@ namespace Shop.Controllers
                 var userOrderView = new UserOrderViewModel();
                 ProductViewModel product;
 
-                foreach (var item in items)
-                {
-                    product = productService.GetProduct(item.Key);
-                    userOrderView.Order = oderItemService.AddProductToItems(product, user.Id, item.Value);
+               
+                
+                  
+               userOrderView.Order = OrderItemService.GetOrderPay(userManager.GetUserId(User));
 
-                }
+            
 
 
                 userOrderView.User = user;
@@ -111,7 +111,7 @@ namespace Shop.Controllers
             }
             if(status == "2")
             {
-                oderItemService.ChangeStatus(userOrderView.Order.Id,2);
+                OrderItemService.ChangeStatus(userOrderView.Order.Id,2);
                 foreach(var itemOrder in userOrderView.Order.ItemViewModels)
                 {
                     productService.UpdateProduct(itemOrder.Product.Id, itemOrder.quantity);

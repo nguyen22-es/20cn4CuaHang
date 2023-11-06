@@ -1,11 +1,10 @@
 ﻿using CuaHangCongNghe.Models;
 using CuaHangCongNghe.Repository;
 using CuaHangCongNghe.Service;
-using CuaHangCongNghe.Services;
 using CuaHangCongNghe.viewModel;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Shop.Extensions;
+using CuaHangCongNghe.Extensions;
 
 
 namespace CuaHangCongNghe.Controllers
@@ -13,27 +12,27 @@ namespace CuaHangCongNghe.Controllers
   //  [Authorize = "AdminAccess"]
     public class AdminController : Controller
     {
-        private readonly ProductService productService;
-        private readonly OrderItemService oderItemService;
+        private readonly IProductService productService;
+        private readonly IOrderItemService OrderItemService;
         private readonly UserManager<ApplicationUser> userManager;
         private readonly RoleManager<IdentityRole> roleManager;
-        private readonly UserService userService;
+       
       
 
-        public AdminController(ProductService productService, OrderItemService oderItemService, UserManager<ApplicationUser> userManager, RoleManager<IdentityRole> roleManager, UserService userService)
+        public AdminController(IProductService productService, IOrderItemService oderItemService, UserManager<ApplicationUser> userManager, RoleManager<IdentityRole> roleManager)
         {
             this.productService = productService;
-            this.oderItemService = oderItemService;
+            this.OrderItemService = oderItemService;
             this.userManager = userManager;
             this.roleManager = roleManager;
-            this.userService = userService;
+           
         }
         [HttpGet]
         public IActionResult statistical()
         {
             var statistical = new statistical();
 
-            var allOrderPay = oderItemService.GetAllOrdernPay();
+            var allOrderPay = OrderItemService.GetAllOrdernPay();
 
             foreach(var i in allOrderPay)
             {
@@ -57,7 +56,7 @@ namespace CuaHangCongNghe.Controllers
             var ListUserViewModelOrder = new List<UserOrderViewModel>();
 
            
-            var orders = oderItemService.GetCurrentAllOrder();
+            var orders = OrderItemService.GetCurrentAllOrder();
 
             for (int i = 0; i < orders.Count; i++)
             {
@@ -70,10 +69,6 @@ namespace CuaHangCongNghe.Controllers
                     l.User = new UserViewModel { Id = user.Id, EmailUser = user.Email, NameUser = user.UserName };
                     ListUserViewModelOrder.Add(l);
                 }
-                else
-                {
-                    // Xử lý khi không tìm thấy người dùng
-                }
             }
 
             return View(ListUserViewModelOrder);
@@ -83,14 +78,14 @@ namespace CuaHangCongNghe.Controllers
         {
   
 
-            var orders = oderItemService.GetOrder(id);
+            var orders = OrderItemService.GetOrder(id);
 
 
             return View(orders);
         }
         public IActionResult ChangeOrderStatus(int id, int status)
         {
-            oderItemService.ChangeStatus(id, status);
+            OrderItemService.ChangeStatus(id, status);
             return RedirectToAction("GetOrder", new { id = id });
         }
 
@@ -103,7 +98,7 @@ namespace CuaHangCongNghe.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = model.nameLogin };
+                var user = new ApplicationUser { Name = model.nameLogin };
                 var result = await userManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {

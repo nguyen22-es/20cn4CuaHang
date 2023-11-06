@@ -3,7 +3,7 @@ using CuaHangCongNghe.Models;
 using CuaHangCongNghe.Models.Shop;
 
 
-namespace Shop.Models
+namespace CuaHangCongNghe.Models
 {
     public static class MappingExtensions
     {     

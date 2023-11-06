@@ -4,7 +4,7 @@ using CuaHangCongNghe.Service;
 using CuaHangCongNghe.viewModel;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Shop.Extensions;
+using CuaHangCongNghe.Extensions;
 
 
 namespace CuaHangCongNghe.Controllers
@@ -14,8 +14,8 @@ namespace CuaHangCongNghe.Controllers
     {
     
         private readonly UserManager<ApplicationUser> userManager;
-        private readonly OrderItemService  OrderItemService;
-        public UserProfileController(UserManager<ApplicationUser> userManager, OrderItemService OrderItemService)
+        private readonly IOrderItemService  OrderItemService;
+        public UserProfileController(UserManager<ApplicationUser> userManager, IOrderItemService OrderItemService)
         {
             this.userManager = userManager;
             this.OrderItemService = OrderItemService;
@@ -25,7 +25,7 @@ namespace CuaHangCongNghe.Controllers
         public async Task<IActionResult> Index()
         {
             var user = await userManager.FindByIdAsync(userManager.GetUserId(User));
-            var model = new UserViewModel { Id = user.Id, EmailUser = user.Email, NameUser = user.UserName, PhoneUser = user.PhoneNumber,RegistrationDate = user.DateTime,AddressUser = user.Address };
+            var model = new UserViewModel { Id = user.Id, EmailUser = user.Email, NameUser = user.Name, PhoneUser = user.PhoneNumber,RegistrationDate = user.DateTime,AddressUser = user.Address };
             return View(model);
 
           
@@ -38,17 +38,13 @@ namespace CuaHangCongNghe.Controllers
             {
                 return NotFound();
             }
-            var model = new UserViewModel { Id = user.Id, EmailUser = user.Email, NameUser = user.UserName, PhoneUser = user.PhoneNumber, RegistrationDate = user.DateTime, AddressUser = user.Address };
+            var model = new UserViewModel { Id = user.Id, EmailUser = user.Email, NameUser = user.Name, PhoneUser = user.PhoneNumber, RegistrationDate = user.DateTime, AddressUser = user.Address };
             return View(model);
         }
 
         [HttpPost]
         public async Task<IActionResult> Edit(UserViewModel model)
-        {
-           
-        
-
-           
+        {              
            
             if (model != null)
             {
@@ -57,7 +53,7 @@ namespace CuaHangCongNghe.Controllers
                 {
                     
                     user.Email = model.EmailUser;
-                    user.UserName = model.NameUser;
+                    user.Name = model.NameUser;
                     user.PhoneNumber = model.PhoneUser;
                     user.Address = model.AddressUser;                   
                     var result = await userManager.UpdateAsync(user);
@@ -81,7 +77,7 @@ namespace CuaHangCongNghe.Controllers
             {
                 return NotFound();
             }
-            var model = new UserViewModel { Id = user.Id, EmailUser = user.Email, NameUser = user.UserName, PhoneUser = user.PhoneNumber, RegistrationDate = user.DateTime, AddressUser = user.Address };
+            var model = new UserViewModel { Id = user.Id, EmailUser = user.Email, NameUser = user.Name, PhoneUser = user.PhoneNumber, RegistrationDate = user.DateTime, AddressUser = user.Address };
             return View(model);
         }
 
@@ -157,7 +153,7 @@ namespace CuaHangCongNghe.Controllers
         public async Task<ActionResult> GetItemOrder(int id)
         {
             var user = await userManager.FindByIdAsync(userManager.GetUserId(User));
-            var model = new UserViewModel { Id = user.Id, EmailUser = user.Email, NameUser = user.UserName, PhoneUser = user.PhoneNumber, RegistrationDate = user.DateTime, AddressUser = user.Address };
+            var model = new UserViewModel { Id = user.Id, EmailUser = user.Email, NameUser = user.Name, PhoneUser = user.PhoneNumber, RegistrationDate = user.DateTime, AddressUser = user.Address };
             var items = new UserOrderViewModel();
             var order = OrderItemService.GetOrder(id);
 

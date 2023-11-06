@@ -13,25 +13,38 @@ namespace CuaHangCongNghe.Repository
         {
             this.storeContext = storeContext;
         }
-        public OrderItem AddItem(int id, OrderItem orderItem)
+        public void CreateItem(int Id, Product product)
         {
-            throw new NotImplementedException();
+            var orderItem = new OrderItem()
+            {
+                OrderId = Id,
+                ProductId = product.Id,
+                Quantity = 1,
+            };
+            
+            storeContext.Orderitems.Add(orderItem);
+            storeContext.SaveChanges();
+
+
         }
 
-        public Order UpdateOrder(int Id, Product product,int quantity)
+        public void UpdateOrder(Order order, Product product,int quantity)
         {
-            var order = storeContext.Orders.FirstOrDefault(x => x.OrderId == Id);
-            var existingSameProduct = order.OrderItems.FirstOrDefault(x => x.ProductId == product.Id);
-            if (existingSameProduct != null)
+           
+            var existingSameItem = order.OrderItems.FirstOrDefault(x => x.ProductId == product.Id);
+            if (existingSameItem != null)
             {
-                existingSameProduct.Quantity = quantity;
+                existingSameItem.Quantity = quantity;
+                Update(existingSameItem);
+              
             }
             else
             {
                 order.OrderItems.Add(new OrderItem { OrderId = order.OrderId, ProductId = product.Id, Quantity = quantity });
+                storeContext.SaveChanges();
             }
-            storeContext.SaveChanges();
-            return order;
+            
+       
         }
 
         public void ChangeStatus(int id, int status)
@@ -139,7 +152,7 @@ namespace CuaHangCongNghe.Repository
         public void Update(OrderItem existingOrder)
         {
             var order = storeContext.Orderitems.FirstOrDefault(x => x.OrderItemsId == existingOrder.OrderItemsId);
-            order = existingOrder;
+            order.Quantity = existingOrder.Quantity;
             storeContext.SaveChanges();
         }
 

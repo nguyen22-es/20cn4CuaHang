@@ -1,16 +1,17 @@
 ﻿
+using CuaHangCongNghe.Service;
 using CuaHangCongNghe.Services;
 using Microsoft.AspNetCore.Mvc;
 
 using System;
 
-namespace Shop.Controllers
+namespace CuaHangCongNghe.Controllers
 {
     public class ProductController : Controller
     {
-        private readonly ProductService productService;
+        private readonly IProductService productService;
 
-        public ProductController(ProductService productService)
+        public ProductController(IProductService productService)
         {
             this.productService = productService;
         }

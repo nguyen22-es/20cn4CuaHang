@@ -11,11 +11,11 @@ namespace CuaHangCongNghe.Service
     {
 
         private readonly IConfiguration _configuration;
-        private readonly ProductService productService;
-        private readonly OrderItemService _oderItemService;
+        private readonly IProductService productService;
+        private readonly IOrderItemService _oderItemService;
         private readonly IHttpContextAccessor _httpContextAccessor;
 
-        public PaymentService(IConfiguration configuration, OrderItemService oderItemService, IHttpContextAccessor httpContextAccessor, ProductService productService)
+        public PaymentService(IConfiguration configuration, IOrderItemService oderItemService, IHttpContextAccessor httpContextAccessor, IProductService productService)
         {
             _oderItemService = oderItemService;
             _configuration = configuration;

@@ -1,13 +1,13 @@
 
 using CuaHangCongNghe.Models;
 using CuaHangCongNghe.Models.Shop;
-using Shop.Models;
+using CuaHangCongNghe.Models;
 
 
 namespace CuaHangCongNghe.Service
 
 {
-    public class OrderItemService
+    public class OrderItemService :IOrderItemService
     {
         private readonly OrderItemRepository OrderItemRepository;
 
@@ -16,7 +16,7 @@ namespace CuaHangCongNghe.Service
             this.OrderItemRepository = OrderItemRepository;
         }
 
-        public OrderViewModel AddProductToItems(ProductViewModel productViewModel, string userId, int amount)
+       /* public OrderViewModel AddProductToItems(ProductViewModel productViewModel, string userId, int amount)
         {
             var orders = OrderItemRepository.getOrderPay(userId);
             var product = productViewModel.ToProduct();
@@ -42,13 +42,13 @@ namespace CuaHangCongNghe.Service
                 ItemViewModels = order.OrderItems.ToList().ToOrderItemsViewModel()
             };
             return OrderViewModel;
-        }
+        }*/
         public void AddCart(ProductViewModel productViewModel, string userId)
         {
             var orders = OrderItemRepository.getOrderPay(userId);
             var product = productViewModel.ToProduct();
 
-           
+          
 
 
             if (orders == null)
@@ -58,7 +58,19 @@ namespace CuaHangCongNghe.Service
             }
             else
             {
-              OrderItemRepository.UpdateOrder(orders.OrderId, product, 1);
+                var item = orders.OrderItems.FirstOrDefault(c => c.ProductId == product.Id);
+                if(item != null)
+                {
+                 var amount =    item.Quantity +1;
+                    OrderItemRepository.UpdateOrder(orders, product, amount);
+                }
+                else
+                {
+
+
+                    OrderItemRepository.CreateItem(orders.OrderId, product);
+                }
+            
             }
 
 
