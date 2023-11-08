@@ -5,7 +5,7 @@ using CuaHangCongNghe.Models.Shop;
 
 namespace CuaHangCongNghe.Models
 {
-    public static class MappingExtensions
+    public static class MappingExtensions // ánh xạ từ csdl sang kiểu hiển thị giao diện
     {     
 
         public static List<OrderViewModel> ToOrdersViewModel(this List<Order> orders)

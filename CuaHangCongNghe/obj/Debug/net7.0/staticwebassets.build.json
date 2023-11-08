@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "njk6GEPzIcWZ75gJ3wpRUft5uevlI2uLPUFbrebDzU4=",
+  "Hash": "xJcWTS7Mt0Lrn3NEvaHvTVQ6hWlle5IV6hu6obfT51M=",
   "Source": "CuaHangCongNghe",
   "BasePath": "_content/CuaHangCongNghe",
   "Mode": "Default",
@@ -134,6 +134,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\18001771.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ztzkk\\OneDrive - Trường Đại Học Kiến Trúc Hà Nội\\Documents\\DoAn20Cn4\\20cn4CuaHang_bancuoidapix\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\asusVivobook_1_1.jpg",
+      "SourceId": "CuaHangCongNghe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ztzkk\\OneDrive - Trường Đại Học Kiến Trúc Hà Nội\\Documents\\DoAn20Cn4\\20cn4CuaHang_bancuoidapix\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
+      "BasePath": "_content/CuaHangCongNghe",
+      "RelativePath": "images/asusVivobook_1_1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\asusVivobook_1_1.jpg"
     },
     {
       "Identity": "C:\\Users\\ztzkk\\OneDrive - Trường Đại Học Kiến Trúc Hà Nội\\Documents\\DoAn20Cn4\\20cn4CuaHang_bancuoidapix\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\check.svg",
@@ -321,6 +338,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\tải xuống_1.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ztzkk\\OneDrive - Trường Đại Học Kiến Trúc Hà Nội\\Documents\\DoAn20Cn4\\20cn4CuaHang_bancuoidapix\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\tainghe1.jpg",
+      "SourceId": "CuaHangCongNghe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ztzkk\\OneDrive - Trường Đại Học Kiến Trúc Hà Nội\\Documents\\DoAn20Cn4\\20cn4CuaHang_bancuoidapix\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\",
+      "BasePath": "_content/CuaHangCongNghe",
+      "RelativePath": "images/tainghe1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\tainghe1.jpg"
     },
     {
       "Identity": "C:\\Users\\ztzkk\\OneDrive - Trường Đại Học Kiến Trúc Hà Nội\\Documents\\DoAn20Cn4\\20cn4CuaHang_bancuoidapix\\20cn4CuaHang\\CuaHangCongNghe\\wwwroot\\images\\xiaomi-ra-mat-tivi-mi-pro-moi-43-inch-4k-ma-chua-den-5-trieu-dong-2.jpg",

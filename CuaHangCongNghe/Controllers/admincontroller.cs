@@ -317,7 +317,7 @@ namespace CuaHangCongNghe.Controllers
         public IActionResult AddProduct(ProductViewModel productViewModel)
         {
             productService.Create(productViewModel);
-            return RedirectToAction("UpdateOrder");
+            return RedirectToAction("AllProduct");
         }
     }
 }

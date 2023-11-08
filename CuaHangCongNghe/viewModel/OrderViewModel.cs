@@ -16,10 +16,8 @@ namespace CuaHangCongNghe.Models
 
 
     public List<OrderItemViewModel> ItemViewModels { get; set; } = new List<OrderItemViewModel>();
-
-
     public double FullPrice => ItemViewModels.Sum(x => x.Price);
-        public double FullAmount => ItemViewModels.Sum(x => x.quantity);
+    public double FullAmount => ItemViewModels.Sum(x => x.quantity);
 
 
 

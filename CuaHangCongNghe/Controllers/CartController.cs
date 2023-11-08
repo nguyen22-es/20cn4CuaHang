@@ -36,7 +36,6 @@ namespace CuaHangCongNghe.Controllers
         {
             
             var IdUser = userManager.GetUserId(User);
-
             
             var product = productService.GetProduct(id);
             var user  = userService.GetUserl(IdUser);

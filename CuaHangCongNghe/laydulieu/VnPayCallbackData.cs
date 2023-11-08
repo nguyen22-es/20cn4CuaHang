@@ -2,7 +2,7 @@
 {
     public class VnPayCallbackData
     {
-        public string vnp_Amount { get; set; }
+        public string vnp_Amount { get; set; } 
         public string vnp_BankCode { get; set; }
         public string vnp_BankTranNo { get; set; }
         public string vnp_CardType { get; set; }
